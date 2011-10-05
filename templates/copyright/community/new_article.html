@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block stylesheet %}
+    <link rel="stylesheet" href="/media/css/community.css"/> 
+{% endblock %}
+
+
+{% block content %}
+
+<h1>{{ title }}</h1>
+
+{% if form.errors %}
+	<p><span class="red-text">Vinsamlegast lagaðu þær villur sem upp komu</span></p>
+{% endif %}
+	<div id="article-form">
+	<form action="" method="post">{% csrf_token %}
+		{{ form.as_p }}
+		<input type="submit" value="Birta grein">
+	</form>
+	</div>
+{% endblock %}
+

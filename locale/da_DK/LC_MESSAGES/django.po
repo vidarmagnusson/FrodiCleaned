@@ -1,0 +1,1821 @@
+# Translation of Frodi - the Educational Gateway
+# Copyright (C) 2011 - Icelandic Ministry for Education, Culture, and Science
+# This file is distributed under the same license as the PACKAGE package.
+# Birita í Dali <birita.i.dali@mrn.is>, 2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-08-23 09:21-0500\n"
+"PO-Revision-Date: 2011-08-15 15:27-0000\n"
+"Last-Translator: Birita í Dali <birita.i.dali@gmail.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: country/models/laws.py:19 country/models/laws.py:50
+#: country/models/laws.py:82 curricula/models/fields_and_exams.py:6
+#: curricula/models/fields_and_exams.py:20
+#: curricula/models/fields_and_exams.py:87 curricula/models/programmes.py:18
+#: curricula/models/programmes.py:65 feedzilla/models.py:48
+#: schools/models/housing.py:15 schools/models/housing.py:42
+#: schools/models/housing.py:69 schools/models/housing.py:88
+msgid "title"
+msgstr "tittel"
+
+#: country/models/laws.py:20 country/models/laws.py:49
+#: country/models/laws.py:80
+msgid "number"
+msgstr "nummer"
+
+#: country/models/laws.py:21 country/models/laws.py:51
+#: country/models/regions.py:15 curricula/models/courses.py:203
+#: curricula/models/extra_information.py:19
+#: curricula/models/fields_and_exams.py:8
+#: curricula/models/fields_and_exams.py:22
+#: curricula/models/fields_and_exams.py:67
+#: curricula/models/fields_and_exams.py:88 curricula/models/programmes.py:66
+#: schools/models/housing.py:16 schools/models/housing.py:43
+#: schools/models/housing.py:70 schools/models/housing.py:89
+#: schools/models/schools.py:161 schools/models/students.py:18
+msgid "description"
+msgstr "beskrivelse"
+
+#: country/models/laws.py:26
+msgid "URL of original version"
+msgstr "URL af den originale version"
+
+#: country/models/laws.py:40 country/models/laws.py:54
+msgid "law"
+msgstr "lov"
+
+#: country/models/laws.py:41
+msgid "laws"
+msgstr "love"
+
+#: country/models/laws.py:61
+#, python-format
+msgid "Chapter %(number)s - %(title)s (%(law)s)"
+msgstr "Kapittel %(number)s - %(title)s (%(law)s)"
+
+#: country/models/laws.py:67 country/models/laws.py:90
+msgid "law section"
+msgstr "lov felt"
+
+#: country/models/laws.py:68
+msgid "law sections"
+msgstr "lov felter"
+
+#: country/models/laws.py:81
+msgid "subnumber"
+msgstr "under-nummer"
+
+#: country/models/laws.py:86 feedzilla/models.py:51
+msgid "content"
+msgstr "innehold"
+
+#: country/models/laws.py:103
+#, python-format
+msgid "Article %(number)d"
+msgstr "Artikkel %(number)d"
+
+#: country/models/laws.py:124
+msgid "law article"
+msgstr "lov artikkel"
+
+#: country/models/laws.py:125
+msgid "law articles"
+msgstr "lov artikler"
+
+#: country/models/regions.py:13 country/models/regions.py:43
+#: curricula/models/extra_information.py:17 schools/models/schools.py:17
+#: schools/models/students.py:16
+msgid "name"
+msgstr "navn"
+
+#: country/models/regions.py:18
+msgid "coordinate points"
+msgstr "koordinater"
+
+#: country/models/regions.py:31
+msgid "country area"
+msgstr "land område"
+
+#: country/models/regions.py:32
+msgid "country areas"
+msgstr "land områder"
+
+#: country/models/regions.py:42
+msgid "zip code"
+msgstr "post kode"
+
+#: country/models/regions.py:44 schools/models/schools.py:169
+#: schools/models/students.py:22
+msgid "logo"
+msgstr "logo"
+
+#: country/models/regions.py:45
+msgid "area"
+msgstr "område"
+
+#: country/models/regions.py:54 curricula/models/extra_information.py:21
+#: schools/models/housing.py:18 schools/models/schools.py:25
+msgid "municipality"
+msgstr "kommune"
+
+#: country/models/regions.py:55
+msgid "municipalities"
+msgstr "kommuner"
+
+#: creativecommons/models.py:15
+msgid "title of license"
+msgstr "license tittel"
+
+#: creativecommons/models.py:18
+msgid "creativecommons.org url"
+msgstr "creativecommons.org url"
+
+#: creativecommons/models.py:21
+msgid "large representative image"
+msgstr "stort beskrivende billede"
+
+#: creativecommons/models.py:22
+msgid "small representative image"
+msgstr "lille beskrivende billede"
+
+#: creativecommons/models.py:25
+msgid "license abbreviation"
+msgstr "forkortelse af licens"
+
+#: curricula/forms/courses.py:48 curricula/forms/courses.py:49
+#: curricula/forms/courses.py:50 curricula/forms/programmes.py:20
+msgid ""
+"Hold down \"Control\", or \"Command\" on a Mac, to select more than one."
+msgstr ""
+"Hold \"control\", eller \"command\" inde på en Mac, hvis du vil vælge mere "
+"end én."
+
+#: curricula/models/courses.py:40 curricula/models/programmes.py:20
+msgid "subject"
+msgstr "fag"
+
+#: curricula/models/courses.py:41 curricula/models/courses.py:196
+msgid "subjects"
+msgstr "fag"
+
+#: curricula/models/courses.py:66
+msgid "subject combination"
+msgstr "fag sammensætning"
+
+#: curricula/models/courses.py:67
+msgid "subjects combinations"
+msgstr "fag sammensætninger"
+
+#: curricula/models/courses.py:82
+msgid "topic"
+msgstr "emne"
+
+#: curricula/models/courses.py:83 curricula/models/courses.py:197
+msgid "topics"
+msgstr "emner"
+
+#: curricula/models/courses.py:108
+msgid "topic combination"
+msgstr "emne sammensætning"
+
+#: curricula/models/courses.py:109
+msgid "topics combinations"
+msgstr "emne sammensætninger"
+
+#: curricula/models/courses.py:175 curricula/models/courses.py:213
+#: curricula/models/extra_information.py:55 curricula/models/programmes.py:99
+msgid "evaluation"
+msgstr "vurdering"
+
+#: curricula/models/courses.py:176
+msgid "evaluations"
+msgstr "vurderinger"
+
+#: curricula/models/courses.py:181
+msgid "In progress"
+msgstr "Under bearbejdelse"
+
+#: curricula/models/courses.py:182
+msgid "Ready for inspection"
+msgstr "klar til inspicering"
+
+#: curricula/models/courses.py:183
+msgid "Approved by school"
+msgstr "Godkendt af skole"
+
+#: curricula/models/courses.py:184 curricula/models/fields_and_exams.py:84
+msgid "Officially approved"
+msgstr "Officielt godkendt"
+
+#: curricula/models/courses.py:188 curricula/models/fields_and_exams.py:36
+msgid "Level 1"
+msgstr "1. niveau"
+
+#: curricula/models/courses.py:189 curricula/models/fields_and_exams.py:37
+msgid "Level 2"
+msgstr "2. niveau"
+
+#: curricula/models/courses.py:190 curricula/models/fields_and_exams.py:38
+msgid "Level 3"
+msgstr "3. niveau"
+
+#: curricula/models/courses.py:191 curricula/models/fields_and_exams.py:39
+msgid "Level 4"
+msgstr "4. niveau"
+
+#: curricula/models/courses.py:194
+msgid "descriptive name"
+msgstr "beskrivende navn"
+
+#: curricula/models/courses.py:194
+msgid ""
+"Write a short sentence which describes the subject and the topic of the "
+"course. Examples of descriptive names are: 21st century Icelandic art "
+"history, Maintenance control of machines, Sales and services, German "
+"pronunciation and vocabulary, Hair coloring, Linux administration."
+msgstr ""
+"Beskriv, med en kort sætning, faget og emnet for dette kurs. Exempler på "
+"beskrivende ord er: "
+
+#: curricula/models/courses.py:196
+msgid ""
+"Write or choose from the list to the right a subject that describes the "
+"foundational area of expertise which is taught in the course. Examples of "
+"subjects are: Mathematics, Icelandic, chemistry, electrical circuits, first "
+"aid, media, hair styling, industrial control, machine handling, management, "
+"electrical engineering, industrial architecture. It is permissible to name "
+"more than one subjects (separated by a comma) when creating multi-"
+"disciplinary courses."
+msgstr ""
+"Skriv, eller vælg fra listen til højre, et ord der beskriver hvilket "
+"grundområde kursen dækker. For eksempel: Matematik, Islandsk, kemi, "
+"elektriske systemer, førstehjælp, medier, frisør-studier, industri ledelse, "
+"maskinebrug, ledelse, elektronisk ingeniør, industri arkitektur. Man kan "
+"vælge mere end et område, (adskilt af komma) hvis den aktuelle kurs er "
+"tværfaglig."
+
+#: curricula/models/courses.py:197
+msgid ""
+"Write or choose from the list to the right one to four of the most "
+"influential topics of the course. Separate the topics by a comma. Examples "
+"of topics are: Pedagogy, genetics, statistics, grammar, alternating "
+"currents, machine architecture, welding. Keep in mind that only two letters "
+"will represent the topic in the course abbreviation"
+msgstr ""
+"Skriv, eller vælg fra listen til højre, et til fire af de mest aktuelle "
+"emner for kursen. Hold emnerne adksildte med komma. Eksemplar af emner er: "
+"Pædagogik, gen-studier, statistik, grammatik, skiftestrøm, maskine "
+"arkitektur, splejsning. Husk at kun to bogstaver kommer til at repræsentere "
+"emnet i kursens forkortelse."
+
+#: curricula/models/courses.py:199 curricula/models/fields_and_exams.py:42
+msgid "level"
+msgstr "niveau"
+
+#: curricula/models/courses.py:199
+#, python-format
+msgid ""
+"Make a suggestion about the course's competence level. Choose the "
+"corresponding competence level below. Note that at least 75%% of the course "
+"topics should belong to the course's competence level"
+msgstr ""
+
+#: curricula/models/courses.py:201
+#: templates/menntagatt/curricula/course_info.html:10
+msgid "school credits"
+msgstr "skole points (f.eks. ECTS)"
+
+#: curricula/models/courses.py:201
+msgid ""
+"Here is the scope of the course given in school credits. A school credit is "
+"the measurement of an average student work contribution in school, "
+"disregarding whether the studies are practical or theoretical and whether it "
+"takes place within or outside the school. Each school credit translates to "
+"about three days of work (6-8 hours a day) for the student. It is advised to "
+"keep the competence goals in mind when estimating work contribution and "
+"assigning school credits. (To use old school credits it is necessary to "
+"configure the schools information accordingly. This system will "
+"automatically translate between the two credits systems according to the "
+"formula: school credits = old credits x 60/35.)"
+msgstr ""
+
+#: curricula/models/courses.py:203
+msgid "A short description of the main content of the course"
+msgstr "En kort beskrivelse af kursens indhold"
+
+#: curricula/models/courses.py:205 curricula/models/programmes.py:90
+msgid "prerequisites"
+msgstr "vilkår"
+
+#: curricula/models/courses.py:205
+msgid ""
+"Here are listed the prerequisites for the course if there are any. "
+"Prerequisites can for example be specific courses that the student must have "
+"passed before or at the same time as this course, the amount of school "
+"credits for a specific topic on a specific level or any other description of "
+"prerequisites the student must fulfill."
+msgstr ""
+"Her er vilkårene for kursen beskrevet, hvis der er nogen. Vilkår kan for "
+"eksempel være andre kurser som eleven skal bestå før eller samtidig som "
+"denne kursus, mængde af skole points eleven skal have bestået, eller hvilke "
+"som helst andre vilkår som eleven skal kunne opfylde."
+
+#: curricula/models/courses.py:207
+msgid "knowledge goals"
+msgstr "viden mål"
+
+#: curricula/models/courses.py:207
+msgid ""
+"Knowledge goals describe the knowledge the student shall have acquired by "
+"passing the course. Knowledge ranges from facts to laws to processes and is "
+"both theoretical and applicable. The course evaluation takes these goals "
+"into account. On average 2 to 10 goals are expected to be added as "
+"continuation of the following sentence: A studet shall have acquired "
+"knowledge and understanding of:"
+msgstr ""
+
+#: curricula/models/courses.py:209
+msgid "skill goals"
+msgstr ""
+
+#: curricula/models/courses.py:209
+msgid ""
+"Skill goals describe the skills the student shall have acquired by passing "
+"the course. Skills can be both mental and practical and allow the student to "
+"apply methods and processes. The course evaluation takes these goals into "
+"account. On average 2 to 10 goals are expected to be added as continuation "
+"of the following sentence: A student shall have acquired the skills to: "
+"Verbs related to skills are e.g. apply, inspect, use, speak, write, draw, "
+"calculate, express, do, construct, manage..."
+msgstr ""
+
+#: curricula/models/courses.py:211
+msgid "competence goals"
+msgstr "kompetence mål"
+
+#: curricula/models/courses.py:211
+msgid ""
+"Competence goals describe the competence the student shall have acquired by "
+"passing the course. Competence means the overlook and ability to apply the "
+"knowledge and skills. These goals must therefore relate to or build upon the "
+"knowlede and skill goals of the course. Care must be taken to allow the "
+"competence goals to be evaluated. After writing each comptence goals one can "
+"describe its evaluation to make it easier to write the competence goals with "
+"evaluation in mind. Examples of evaluation methods can be: Oral exams, peer "
+"evaluation, guided evaluation, self-evaluation, evaluation of oral debates, "
+"normal debates, talks, presentations, arguments, work processes, work "
+"organization, finishing, resourcefulness, communications, responsible/"
+"consciencous work contribution ... On average 2 to 10 goals are expected to "
+"be added as continuation of the following sentence: A student shall be able "
+"to apply the general knowledge and skills he/she has acquired to: Verbs and "
+"phrases that relate to competence are e.g. gather, use, express, debate, "
+"explain, describe, participate, relate ... to, be active, be responsible, be "
+"able to, argue, understand, show initiative, do, work, evaluate ..."
+msgstr ""
+
+#: curricula/models/courses.py:213
+msgid ""
+"Here is a general description of evaluation and evaluation methods used in "
+"the course to evaluate the knowledge, skills and competences which the "
+"student has acquired in the course and worked according to the goals set "
+"forward in the course description. This is not the place to put ratios "
+"between evaluation techniques, that information belongs to the course "
+"syllabus"
+msgstr ""
+
+#: curricula/models/courses.py:215 curricula/models/fields_and_exams.py:91
+msgid "status"
+msgstr "tilstand"
+
+#: curricula/models/courses.py:216
+msgid "last modified"
+msgstr "sidst ændret"
+
+#: curricula/models/courses.py:218
+msgid "derived from"
+msgstr "baseret på"
+
+#: curricula/models/courses.py:219
+msgid "authors"
+msgstr "forfatter"
+
+#: curricula/models/courses.py:219
+msgid ""
+"The curricula system allows many individuals to collaborate on courses. It "
+"is easy to give others a chance to review, comment on, and improve the "
+"course, even if they work within or outside of your school. You as an author "
+"can choose co-authors. Author and co-authors are assigned while the course "
+"is being designed and created. When a course has been approved by school "
+"officals and added to a curricula database and connected to a programme, "
+"authors will not be attributed. Here below is a list of possible co-authors. "
+"The list contains persons you follow in the community who have access to the "
+"curricula database. If somebody is missing from the list you need to "
+"subscribe to that person in the community and/or ask the curricula managers "
+"in that person's school to give them access to the curricula database."
+msgstr ""
+
+#: curricula/models/courses.py:221
+msgid "course abbreviation"
+msgstr "forkortelse af kursus"
+
+#: curricula/models/courses.py:222
+msgid "version number"
+msgstr "version nummer"
+
+#: curricula/models/courses.py:260
+msgid "course"
+msgstr "kursus"
+
+#: curricula/models/courses.py:261 curricula/models/programmes.py:67
+msgid "courses"
+msgstr "kurser"
+
+#: curricula/models/extra_information.py:20
+msgid "address)"
+msgstr "addresse"
+
+#: curricula/models/extra_information.py:22 schools/models/housing.py:22
+#: schools/models/schools.py:27
+msgid "telephone"
+msgstr "telefon"
+
+#: curricula/models/extra_information.py:23 schools/models/housing.py:23
+#: schools/models/schools.py:30
+msgid "fax"
+msgstr "fax"
+
+#: curricula/models/extra_information.py:24 schools/models/housing.py:19
+#: schools/models/schools.py:33
+msgid "e-mail"
+msgstr "e-mail"
+
+#: curricula/models/extra_information.py:25 schools/models/schools.py:34
+#: schools/models/students.py:19
+msgid "website"
+msgstr "hjemmeside"
+
+#: curricula/models/extra_information.py:26
+#: curricula/models/fields_and_exams.py:16
+#: curricula/models/fields_and_exams.py:94
+msgid "field"
+msgstr "område"
+
+#: curricula/models/extra_information.py:47 schools/models/registration.py:15
+#: schools/models/schools.py:50 schools/models/schools.py:158
+#: schools/models/students.py:17
+msgid "school"
+msgstr "skole"
+
+#: curricula/models/extra_information.py:50
+msgid "activities"
+msgstr "aktiviteter"
+
+#: curricula/models/extra_information.py:51
+msgid "policy"
+msgstr "politik"
+
+#: curricula/models/extra_information.py:52
+msgid "administration"
+msgstr "styrelse"
+
+#: curricula/models/extra_information.py:53 curricula/models/programmes.py:91
+msgid "organization"
+msgstr "organisation"
+
+#: curricula/models/extra_information.py:54
+msgid "instructional methods"
+msgstr "undervisnings metoder"
+
+#: curricula/models/extra_information.py:56
+msgid "support measures"
+msgstr ""
+
+#: curricula/models/extra_information.py:57
+msgid "student services"
+msgstr "elev tjeneste"
+
+#: curricula/models/extra_information.py:58
+msgid "pupil rights"
+msgstr "elev rettigheder"
+
+#: curricula/models/extra_information.py:59
+msgid "co-operation"
+msgstr "samarbejde"
+
+#: curricula/models/extra_information.py:60
+msgid "quality control"
+msgstr "kvalitets kontrol"
+
+#: curricula/models/extra_information.py:61
+msgid "national curriculum"
+msgstr "national undervisningsplan"
+
+#: curricula/models/extra_information.py:62
+msgid "other information"
+msgstr "andre oplysninger"
+
+#: curricula/models/extra_information.py:65
+#, python-format
+msgid "Curriculum information for %(school)s"
+msgstr "Information om undervisningsforløbet for %(school)s"
+
+#: curricula/models/extra_information.py:70
+#: curricula/models/extra_information.py:71
+msgid "curriculum information"
+msgstr "information om undervisningsforløbet"
+
+#: curricula/models/fields_and_exams.py:7
+#: curricula/models/fields_and_exams.py:21
+msgid "id according to standard"
+msgstr ""
+
+#: curricula/models/fields_and_exams.py:17
+#, fuzzy
+msgid "fields"
+msgstr "område"
+
+#: curricula/models/fields_and_exams.py:23
+#, fuzzy
+msgid "subfield of"
+msgstr "område"
+
+#: curricula/models/fields_and_exams.py:31
+#, fuzzy
+msgid "subfield"
+msgstr "område"
+
+#: curricula/models/fields_and_exams.py:32
+#, fuzzy
+msgid "subfields"
+msgstr "område"
+
+#: curricula/models/fields_and_exams.py:57
+#, fuzzy, python-format
+msgid "Level %d"
+msgstr "1. niveau"
+
+#: curricula/models/fields_and_exams.py:61
+#: curricula/models/fields_and_exams.py:90
+#, fuzzy
+msgid "exam level"
+msgstr "niveau"
+
+#: curricula/models/fields_and_exams.py:62
+#, fuzzy
+msgid "exam levels"
+msgstr "niveau"
+
+#: curricula/models/fields_and_exams.py:66
+#, fuzzy
+msgid "exam title"
+msgstr "tittel"
+
+#: curricula/models/fields_and_exams.py:70 curricula/models/programmes.py:21
+msgid "minimum credits"
+msgstr ""
+
+#: curricula/models/fields_and_exams.py:71
+msgid "maximum credits"
+msgstr ""
+
+#: curricula/models/fields_and_exams.py:78 curricula/models/programmes.py:19
+msgid "exam"
+msgstr ""
+
+#: curricula/models/fields_and_exams.py:79
+msgid "exams"
+msgstr ""
+
+#: curricula/models/fields_and_exams.py:83
+msgid "Unapproved"
+msgstr ""
+
+#: curricula/models/fields_and_exams.py:93
+#, fuzzy
+msgid "author"
+msgstr "forfatter"
+
+#: curricula/models/fields_and_exams.py:105 curricula/models/programmes.py:79
+msgid "profession"
+msgstr ""
+
+#: curricula/models/fields_and_exams.py:106
+msgid "professions"
+msgstr ""
+
+#: curricula/models/programmes.py:14
+#, fuzzy
+msgid "subject level"
+msgstr "fag"
+
+#: curricula/models/programmes.py:15
+#, fuzzy
+msgid "subject levels"
+msgstr "fag"
+
+#: curricula/models/programmes.py:28
+msgid "extra rule"
+msgstr ""
+
+#: curricula/models/programmes.py:29
+msgid "extra rules"
+msgstr ""
+
+#: curricula/models/programmes.py:33
+msgid "Education Competence"
+msgstr ""
+
+#: curricula/models/programmes.py:34
+msgid "Health"
+msgstr ""
+
+#: curricula/models/programmes.py:35
+msgid "Creative thinking and knowledge application"
+msgstr ""
+
+#: curricula/models/programmes.py:36
+#, fuzzy
+msgid "Equality"
+msgstr "kvalitets kontrol"
+
+#: curricula/models/programmes.py:37
+msgid "Democracy and human rights"
+msgstr ""
+
+#: curricula/models/programmes.py:38
+msgid "Education for sustainability"
+msgstr ""
+
+#: curricula/models/programmes.py:39
+msgid "Reading, expression, communication in the mother language"
+msgstr ""
+
+#: curricula/models/programmes.py:40
+msgid "Reading, expression, communication in foreign languages"
+msgstr ""
+
+#: curricula/models/programmes.py:41
+msgid "Reading, expression, communication of numbers and information"
+msgstr ""
+
+#: curricula/models/programmes.py:51
+#, fuzzy
+msgid "key competence"
+msgstr "kompetence mål"
+
+#: curricula/models/programmes.py:52
+#, fuzzy
+msgid "key competences"
+msgstr "kompetence mål"
+
+#: curricula/models/programmes.py:61
+#, fuzzy
+msgid "key competence goal"
+msgstr "kompetence mål"
+
+#: curricula/models/programmes.py:62
+#, fuzzy
+msgid "key competence goals"
+msgstr "kompetence mål"
+
+#: curricula/models/programmes.py:74
+#, fuzzy
+msgid "course package"
+msgstr "kursus"
+
+#: curricula/models/programmes.py:75
+#, fuzzy
+msgid "course packages"
+msgstr "kurser"
+
+#: curricula/models/programmes.py:78
+#, fuzzy
+msgid "title of programme"
+msgstr "programmer"
+
+#: curricula/models/programmes.py:78
+msgid "A descriptive title for the programme"
+msgstr ""
+
+#: curricula/models/programmes.py:79
+msgid "The resulting professions of the programme"
+msgstr ""
+
+#: curricula/models/programmes.py:83
+#, fuzzy
+msgid "general description"
+msgstr "beskrivelse"
+
+#: curricula/models/programmes.py:85
+msgid "rights after graduation"
+msgstr ""
+
+#: curricula/models/programmes.py:87
+#, fuzzy
+msgid "competence goals of programme"
+msgstr "kompetence mål"
+
+#: curricula/models/programmes.py:90
+msgid "Something"
+msgstr ""
+
+#: curricula/models/programmes.py:91
+#, fuzzy
+msgid "organization of programme"
+msgstr "organisation"
+
+#: curricula/models/programmes.py:92
+msgid "work training and on-site education"
+msgstr ""
+
+#: curricula/models/programmes.py:93
+#, fuzzy
+msgid "rules regarding progress"
+msgstr "Kurser i brug"
+
+#: curricula/models/programmes.py:93
+msgid ""
+"rules that must be fulfilled for student to progress in his or her studies"
+msgstr ""
+
+#: curricula/models/programmes.py:94
+msgid "quality assurance"
+msgstr ""
+
+#: curricula/models/programmes.py:96
+msgid "foundations and key competences"
+msgstr ""
+
+#: curricula/models/programmes.py:97
+#, fuzzy
+msgid "foundation and key competence goals"
+msgstr "kompetence mål"
+
+#: curricula/models/programmes.py:100
+msgid "grades"
+msgstr ""
+
+#: curricula/models/programmes.py:101
+msgid "Evaluation of previous education"
+msgstr ""
+
+#: curricula/models/programmes.py:103
+#, fuzzy
+msgid "credits"
+msgstr "Point"
+
+#: curricula/models/programmes.py:103
+msgid "The total amount of credits for this programme."
+msgstr ""
+
+#: curricula/models/programmes.py:116
+#, fuzzy
+msgid "programme"
+msgstr "programmer"
+
+#: curricula/models/programmes.py:117 schools/models/registration.py:19
+msgid "programmes"
+msgstr "programmer"
+
+#: feedzilla/admin.py:33
+msgid "Post link"
+msgstr "Post link"
+
+#: feedzilla/models.py:15
+msgid "feed url"
+msgstr "kilde url"
+
+#: feedzilla/models.py:17
+msgid "last checked"
+msgstr "sidst set til"
+
+#: feedzilla/models.py:32 feedzilla/models.py:47 schools/models/schools.py:179
+msgid "feed"
+msgstr "kilde"
+
+#: feedzilla/models.py:33
+msgid "feeds"
+msgstr "kilder"
+
+#: feedzilla/models.py:49
+msgid "link"
+msgstr "link"
+
+#: feedzilla/models.py:50
+msgid "summary"
+msgstr "sammendræt"
+
+#: feedzilla/models.py:52
+msgid "creation time"
+msgstr "tid til at skabe"
+
+#: feedzilla/models.py:53
+msgid "identifier"
+msgstr "kendetegn"
+
+#: feedzilla/models.py:54
+msgid "active"
+msgstr "aktiv"
+
+#: feedzilla/models.py:61
+msgid "post"
+msgstr "post"
+
+#: feedzilla/models.py:62
+msgid "posts"
+msgstr "post"
+
+#: schools/models/housing.py:17 schools/models/schools.py:22
+msgid "address"
+msgstr "adresse"
+
+#: schools/models/housing.py:20
+msgid "URL for more information"
+msgstr "URL til flere oplysninger"
+
+#: schools/models/housing.py:21
+msgid "manager"
+msgstr "overordnet"
+
+#: schools/models/housing.py:32 schools/models/housing.py:45
+#: schools/models/housing.py:71 schools/models/schools.py:165
+msgid "student housing"
+msgstr "kostskole hus"
+
+#: schools/models/housing.py:33
+msgid "student housings"
+msgstr "kostskole hus"
+
+#: schools/models/housing.py:44
+msgid "monthly rent"
+msgstr "måneds-leje"
+
+#: schools/models/housing.py:47
+msgid "available amount"
+msgstr "mængde til stede"
+
+#: schools/models/housing.py:48
+msgid "size in square meters"
+msgstr "størrelse i kvadratmeter"
+
+#: schools/models/housing.py:57
+msgid "room type"
+msgstr "værelses type"
+
+#: schools/models/housing.py:58
+msgid "room types"
+msgstr "værelses typer"
+
+#: schools/models/housing.py:76
+msgid "housing service"
+msgstr "kostskole tjeneste"
+
+#: schools/models/housing.py:77
+msgid "housing services"
+msgstr "kostskole tjeneste"
+
+#: schools/models/housing.py:90
+msgid "price"
+msgstr "pris"
+
+#: schools/models/housing.py:91
+msgid "service"
+msgstr "tjeneste"
+
+#: schools/models/housing.py:96
+msgid "service offering"
+msgstr "tjeneste frembud"
+
+#: schools/models/housing.py:97
+msgid "service offerings"
+msgstr "tjeneste frembud"
+
+#: schools/models/registration.py:16
+msgid "contact person"
+msgstr "kontakt person"
+
+#: schools/models/registration.py:17
+msgid "email address of contact person"
+msgstr "kontakt personenes email adresse"
+
+#: schools/models/registration.py:18
+msgid "telephone number of contact person"
+msgstr "kontakt personens telefon nummer"
+
+#: schools/models/registration.py:21
+msgid "start date of registration"
+msgstr "første dag av registreringsforløbet"
+
+#: schools/models/registration.py:22
+msgid "end date of registration"
+msgstr "registreringsforløbets slutdato"
+
+#: schools/models/registration.py:26
+msgid "acceptance prerequisites"
+msgstr "vilkår for indtagelse"
+
+#: schools/models/registration.py:29
+#, python-format
+msgid "Registration information for %(programmes)s in %(school)s"
+msgstr "Registrerings information for %(programmes)s i %(school)s"
+
+#: schools/models/registration.py:34 schools/models/registration.py:35
+msgid "registration information"
+msgstr "registrerings information"
+
+#: schools/models/schools.py:19
+msgid "identity number"
+msgstr "identifikations-nummer"
+
+#: schools/models/schools.py:37
+msgid "principal"
+msgstr "rektor"
+
+#: schools/models/schools.py:51
+msgid "schools"
+msgstr "skoler"
+
+#: schools/models/schools.py:61 schools/models/schools.py:77
+msgid "official name"
+msgstr "offendligt navn"
+
+#: schools/models/schools.py:67
+#: templates/menntagatt/community/social-submit.html:30
+msgid "preschool"
+msgstr "forskole"
+
+#: schools/models/schools.py:68 schools/views/schools.py:25
+msgid "preschools"
+msgstr "forskoler"
+
+#: schools/models/schools.py:83
+#: templates/menntagatt/community/social-submit.html:29
+msgid "primary school"
+msgstr "grundskole"
+
+#: schools/models/schools.py:84 schools/views/schools.py:30
+msgid "primary schools"
+msgstr "grundskoler"
+
+#: schools/models/schools.py:92 schools/models/schools.py:114
+#: schools/models/schools.py:136
+msgid "abbreviation"
+msgstr "forkortelse"
+
+#: schools/models/schools.py:104
+#: templates/menntagatt/community/social-submit.html:28
+msgid "secondary school"
+msgstr "skole for 8-10 klasse"
+
+#: schools/models/schools.py:105 schools/views/schools.py:35
+msgid "secondary schools"
+msgstr "skoler for 8-10 klasse"
+
+#: schools/models/schools.py:126
+#: templates/menntagatt/community/social-submit.html:27
+msgid "university"
+msgstr "universitet"
+
+#: schools/models/schools.py:127 schools/views/schools.py:40
+msgid "universities"
+msgstr "universiteter"
+
+#: schools/models/schools.py:148
+msgid "learning center"
+msgstr "lære institution"
+
+#: schools/models/schools.py:149 schools/views/schools.py:45
+msgid "learning centers"
+msgstr "lære institutioner"
+
+#: schools/models/schools.py:170 schools/models/students.py:23
+msgid "representative photo"
+msgstr "representerende billede"
+
+#: schools/models/schools.py:171 schools/models/students.py:24
+msgid "introductory video"
+msgstr "introductions-film"
+
+#: schools/models/schools.py:175
+msgid "members"
+msgstr "medlemmer"
+
+#: schools/models/schools.py:182
+#, python-format
+msgid "School Information for %(school)s"
+msgstr "Skole information for %(school)s"
+
+#: schools/models/schools.py:187 schools/models/schools.py:188
+msgid "school information"
+msgstr "skole information"
+
+#: schools/models/schools.py:195
+msgid "Staff"
+msgstr "Stab"
+
+#: schools/models/schools.py:196
+msgid "Teacher"
+msgstr "Lærer"
+
+#: schools/models/schools.py:197
+msgid "Pupil"
+msgstr "Elev"
+
+#: schools/models/schools.py:198
+msgid "Stakeholder"
+msgstr ""
+"Grupper eller personer der påvirker eller kan påvirke virksomheden, og som "
+"påvirkes, eller kan påvirkes af virksomheden."
+
+#: schools/models/students.py:20
+msgid "email"
+msgstr "email"
+
+#: schools/models/students.py:21
+msgid "board members"
+msgstr "styrelsen"
+
+#: schools/models/students.py:33
+msgid "student society"
+msgstr "elev organisation"
+
+#: schools/models/students.py:34
+msgid "student societies"
+msgstr "elev organisationer"
+
+#: schools/views/schools.py:19
+msgid "all schools"
+msgstr "alle skoler"
+
+#: schools/views/schools.py:77
+#, python-format
+msgid "%(schools)s in %(area)s"
+msgstr "%(schools)s i %(area)s"
+
+#: schools/views/schools.py:79
+#, python-format
+msgid "All %(schools)s in the country"
+msgstr "Alle %(schools)s i landet"
+
+#: templates/menntagatt/404.html:9
+msgid "Subpages"
+msgstr "under-sider"
+
+#: templates/menntagatt/404.html:14
+msgid ""
+"Website not found. Please contact system administrator if you are sure that "
+"this should lead to a specific website."
+msgstr ""
+"Hjemmesiden blev ikke fundet. Kontakt venligst din computer administrator "
+"hvis du er sikker på at det skulle lede til en hjemmeside."
+
+#: templates/menntagatt/500.html:6
+msgid ""
+"An error occurred on the web server. The system administrator has been "
+"notified"
+msgstr ""
+"Der opstod en fejl på serveren. Kontakt venligst din computer administrator"
+
+#: templates/menntagatt/base.html:29 templates/menntagatt/welcome.html:89
+msgid "School information web site"
+msgstr "Skole informations hjemmeside"
+
+#: templates/menntagatt/base.html:30 templates/menntagatt/welcome.html:90
+msgid "About the site"
+msgstr "Om siden"
+
+#: templates/menntagatt/contentbox.html:26
+msgid "You are here"
+msgstr "Du er her"
+
+#: templates/menntagatt/header.html:8
+msgid "Logout"
+msgstr "Logout"
+
+#: templates/menntagatt/header.html:10 templates/menntagatt/welcome.html:65
+#: templates/menntagatt/community/social.html:43
+msgid "Login"
+msgstr "Login"
+
+#: templates/menntagatt/message.html:8
+#: templates/menntagatt/users/password_change_done.html:5
+msgid "Return to"
+msgstr "Vend tilbage til"
+
+#: templates/menntagatt/notfound.html:6
+msgid "Website not found"
+msgstr "Hjemmesiden blev ikke fundet"
+
+#: templates/menntagatt/welcome.html:39
+msgid "Recent community activity"
+msgstr "Nylig aktivitet i samfundet"
+
+#: templates/menntagatt/welcome.html:46
+msgid "News from the schools"
+msgstr "Nyheder fra skoler"
+
+#: templates/menntagatt/welcome.html:67
+#: templates/menntagatt/community/social.html:45
+#: templates/menntagatt/users/login.html:11
+#: templates/menntagatt/users/register.html:14
+msgid "Username"
+msgstr "Brugernavn"
+
+#: templates/menntagatt/welcome.html:69
+#: templates/menntagatt/community/social.html:49
+#: templates/menntagatt/users/login.html:19
+msgid "Log in"
+msgstr "Log ind"
+
+#: templates/menntagatt/welcome.html:72
+#: templates/menntagatt/community/social.html:52
+#: templates/menntagatt/users/login.html:23
+msgid "Not a user on the site?"
+msgstr "Er du ikke en bruger af denne side?"
+
+#: templates/menntagatt/welcome.html:73
+#: templates/menntagatt/community/social.html:53
+#: templates/menntagatt/users/login.html:23
+msgid "Register"
+msgstr "Registrer"
+
+#: templates/menntagatt/community/articles.html:8
+msgid "Read article"
+msgstr "Læs artikkel"
+
+#: templates/menntagatt/community/entry.html:20
+#: templates/menntagatt/community/social-submit.html:51
+msgid "Author"
+msgstr "Forfatter"
+
+#: templates/menntagatt/community/file.html:7
+msgid "Get"
+msgstr "Nå i"
+
+#: templates/menntagatt/community/new.html:15
+#: templates/menntagatt/management/new.html:11
+#: templates/menntagatt/users/register.html:7
+msgid "Please correct the following errors"
+msgstr "Ret venligst disse fejl"
+
+#: templates/menntagatt/community/new.html:20
+#: templates/menntagatt/community/social-submit.html:67
+#: templates/menntagatt/curricula/course_list.html:17
+#: templates/menntagatt/management/new.html:16
+msgid "Publish"
+msgstr "Udgiv"
+
+#: templates/menntagatt/community/pluggable-timeline.html:4
+#: templates/menntagatt/community/timeline.html:8
+msgid "marked"
+msgstr "mærkede"
+
+#: templates/menntagatt/community/pluggable-timeline.html:4
+#: templates/menntagatt/community/timeline.html:8
+msgid "as interesting"
+msgstr "som interessant"
+
+#: templates/menntagatt/community/pluggable-timeline.html:10
+#: templates/menntagatt/community/timeline.html:14
+msgid "is now following what"
+msgstr "følger nu med i hvad"
+
+#: templates/menntagatt/community/pluggable-timeline.html:10
+#: templates/menntagatt/community/timeline.html:14
+msgid "does"
+msgstr "laver"
+
+#: templates/menntagatt/community/social-submit.html:5
+msgid ""
+"Express yourself about something related to studies, teaching, or educations"
+msgstr "Sig noget om studier, undervisning eller lærdom"
+
+#: templates/menntagatt/community/social-submit.html:9
+msgid "Preview"
+msgstr "Forhåndsvisning"
+
+#: templates/menntagatt/community/social-submit.html:12
+#: templates/menntagatt/community/social-submit.html:38
+msgid "Close"
+msgstr "Luk"
+
+#: templates/menntagatt/community/social-submit.html:16
+msgid "Tags (e.g. resources, icelandic, primary school, language plaza)"
+msgstr "Kategori (f.eks. kilde, Islandsk, grundskole, sprogtorg)"
+
+#: templates/menntagatt/community/social-submit.html:18
+msgid "The following categories help others find your submissions faster"
+msgstr "De fålgende kategorier kan hjælpe andre at finde dine indlæg"
+
+#: templates/menntagatt/community/social-submit.html:20
+msgid "Site-wide"
+msgstr "over hele siden"
+
+#: templates/menntagatt/community/social-submit.html:21
+msgid "resources"
+msgstr "kilder"
+
+#: templates/menntagatt/community/social-submit.html:22
+msgid "data"
+msgstr "data"
+
+#: templates/menntagatt/community/social-submit.html:25
+msgid "Specific"
+msgstr "Specifik"
+
+#: templates/menntagatt/community/social-submit.html:26
+msgid "adult education"
+msgstr "Voksen uddannelse"
+
+#: templates/menntagatt/community/social-submit.html:36
+msgid "License"
+msgstr "Licens"
+
+#: templates/menntagatt/community/social-submit.html:36
+#: templates/menntagatt/community/social-submit.html:51
+#: templates/menntagatt/community/social-submit.html:54
+#: templates/menntagatt/users/password_change.html:27
+msgid "Change"
+msgstr "Forandring"
+
+#: templates/menntagatt/community/social-submit.html:51
+msgid "You"
+msgstr "Du"
+
+#: templates/menntagatt/community/social-submit.html:59
+msgid "Create as an article"
+msgstr "Sæt ind som en artikkel"
+
+#: templates/menntagatt/community/social-submit.html:60
+msgid "Submit files"
+msgstr "Sæt ind"
+
+#: templates/menntagatt/community/social-submit.html:64
+msgid "Drag and drop files here to attach them to your submission"
+msgstr "Vælg, hal ind, og slip filer her for at hæfte dem ved dit indkast"
+
+#: templates/menntagatt/community/social.html:25
+msgid "Change information"
+msgstr "Ændr oplysninger"
+
+#: templates/menntagatt/community/social.html:25
+msgid "Change information about me"
+msgstr "Ændr mine personlige oplysninger"
+
+#: templates/menntagatt/community/social.html:27
+msgid "Look at submissions from"
+msgstr "Se på indskud fra"
+
+#: templates/menntagatt/community/social.html:28
+msgid "Me"
+msgstr "Mig"
+
+#: templates/menntagatt/community/social.html:29
+msgid "My friends"
+msgstr "Mine venner"
+
+#: templates/menntagatt/community/social.html:30
+msgid "Everyone"
+msgstr "Alle"
+
+#: templates/menntagatt/community/social.html:47
+#: templates/menntagatt/users/login.html:15
+#: templates/menntagatt/users/register.html:28
+#: templates/menntagatt/users/register.html:35
+msgid "Password"
+msgstr "Nøgleord"
+
+#: templates/menntagatt/community/social.html:66
+msgid "Subscribe"
+msgstr "Følg med"
+
+#: templates/menntagatt/community/social.html:77
+#, python-format
+msgid "What has %(vieweduser.username)s been doing?"
+msgstr "Hvad har %(vieweduser.username)s lavet?"
+
+#: templates/menntagatt/community/social.html:80
+msgid "Recent activity in the community"
+msgstr "Nylig aktivitet i samfundet"
+
+#: templates/menntagatt/community/social.html:87
+msgid "Events"
+msgstr "Begivenheder"
+
+#: templates/menntagatt/community/social.html:93
+msgid "No upcoming events"
+msgstr "Ingen begivenheder i nærmeste fremtid"
+
+#: templates/menntagatt/community/social.html:95
+msgid "New event"
+msgstr "Ny begivenhed"
+
+#: templates/menntagatt/community/social.html:95
+msgid "Create event"
+msgstr "Opret en begivenhed"
+
+#: templates/menntagatt/community/social.html:98
+msgid "is following"
+msgstr "følger med"
+
+#: templates/menntagatt/community/social.html:102
+msgid "is not following anything"
+msgstr "følger ikke med noget lige nu"
+
+#: templates/menntagatt/community/social.html:104
+msgid "has these subscribers"
+msgstr "har disse medfølgende"
+
+#: templates/menntagatt/community/social.html:108
+msgid "does not have any subscribers"
+msgstr "har ingen medfølgende"
+
+#: templates/menntagatt/community/social.html:110
+msgid "Statistics"
+msgstr "Statistikker"
+
+#: templates/menntagatt/community/social.html:112
+msgid "Member since"
+msgstr "medlem siden"
+
+#: templates/menntagatt/community/social.html:113
+msgid "Subscriber to"
+msgstr "Abonnerer på"
+
+#: templates/menntagatt/community/social.html:114
+msgid "Subscribers"
+msgstr "Følgere"
+
+#: templates/menntagatt/community/social.html:115
+msgid "Groups"
+msgstr "Grupper"
+
+#: templates/menntagatt/community/social.html:116
+msgid "Notes"
+msgstr "Notater"
+
+#: templates/menntagatt/community/social.html:117
+msgid "Articles"
+msgstr "Artikkler"
+
+#: templates/menntagatt/community/social.html:118
+msgid "Photos/Images"
+msgstr "Billeder"
+
+#: templates/menntagatt/community/social.html:119
+msgid "Videos"
+msgstr "Film"
+
+#: templates/menntagatt/community/social.html:120
+msgid "Audio files"
+msgstr "Lyd filer"
+
+#: templates/menntagatt/community/social.html:121
+msgid "Files"
+msgstr "Filer"
+
+#: templates/menntagatt/community/social.html:122
+msgid "Links"
+msgstr "links"
+
+#: templates/menntagatt/community/social.html:123
+msgid "Finds interesting"
+msgstr "Synes at det er interessant"
+
+#: templates/menntagatt/community/timeline-actor-share.html:3
+msgid "decided to share this which"
+msgstr ""
+
+#: templates/menntagatt/community/timeline-actor-share.html:3
+#, fuzzy
+msgid "posted"
+msgstr "post"
+
+#: templates/menntagatt/community/timeline-object.html:6
+msgid "Read more"
+msgstr "Læs mere"
+
+#: templates/menntagatt/community/timeline-object.html:28
+msgid "Tags"
+msgstr "Kategori"
+
+#: templates/menntagatt/community/timeline-object.html:31
+#, python-format
+msgid ""
+"\n"
+"%(counter)s finds this interesting\n"
+msgid_plural ""
+"\n"
+"%(counter)s find this interesting.\n"
+msgstr[0] ""
+"\n"
+"%(counter)s finder dette interessant.\n"
+msgstr[1] ""
+"\n"
+"%(counter)s finder dette interessant.\n"
+
+#: templates/menntagatt/community/timeline-object.html:39
+msgid "Mark as interesting"
+msgstr "Marker som interessant"
+
+#: templates/menntagatt/community/timeline-object.html:39
+msgid "Interesting"
+msgstr "Interessant"
+
+#: templates/menntagatt/community/timeline-object.html:39
+msgid "Share with my friends"
+msgstr "Del med mine venner"
+
+#: templates/menntagatt/community/timeline-object.html:39
+msgid "Share forward"
+msgstr "Del videre"
+
+#: templates/menntagatt/country/law.html:21
+#, python-format
+msgid "Chapter %(section.number|romanize)s - %(section.title)s"
+msgstr "Kapittel %(section.number|romanize)s - %(section.title)s"
+
+#: templates/menntagatt/country/law.html:25
+#, python-format
+msgid "Article %(article.number)s %(article.subnumber)s"
+msgstr "Artikkel %(article.number)s %(article.subnumber)s"
+
+#: templates/menntagatt/curricula/course_info.html:4
+#: templates/menntagatt/curricula/course_list.html:15
+#: templates/menntagatt/curricula/newcourse_subject_topic.html:20
+#: templates/menntagatt/curricula/newcourse_subject_topic.html:37
+msgid "Subjects"
+msgstr "Emner"
+
+#: templates/menntagatt/curricula/course_info.html:5
+#: templates/menntagatt/curricula/course_list.html:15
+#: templates/menntagatt/curricula/newcourse_subject_topic.html:28
+#: templates/menntagatt/curricula/newcourse_subject_topic.html:41
+msgid "Topics"
+msgstr "Emner"
+
+#: templates/menntagatt/curricula/course_info.html:9
+#: templates/menntagatt/curricula/course_list.html:15
+msgid "Level"
+msgstr "Niveau"
+
+#: templates/menntagatt/curricula/course_info.html:10
+msgid "Credits"
+msgstr "Point"
+
+#: templates/menntagatt/curricula/course_info.html:14
+msgid "Prerequisites"
+msgstr "Vilkår"
+
+#: templates/menntagatt/curricula/course_info.html:15
+msgid "Description"
+msgstr "Beskrivelse"
+
+#: templates/menntagatt/curricula/course_info.html:19
+msgid "Knowledge goals"
+msgstr "Viden mål"
+
+#: templates/menntagatt/curricula/course_info.html:24
+msgid "Skill goals"
+msgstr ""
+
+#: templates/menntagatt/curricula/course_info.html:29
+msgid "Competence goals"
+msgstr "Kompetence mål"
+
+#: templates/menntagatt/curricula/course_info.html:39
+msgid "Additional evaluation"
+msgstr "Nærmere evaluering"
+
+#: templates/menntagatt/curricula/course_list.html:9
+msgid "Courses"
+msgstr "Kurser"
+
+#: templates/menntagatt/curricula/course_list.html:12
+msgid "Courses in progress"
+msgstr "Kurser i brug"
+
+#: templates/menntagatt/curricula/course_list.html:15
+msgid "Descriptive name"
+msgstr "Beskrivende navn"
+
+#: templates/menntagatt/curricula/course_list.html:15
+msgid "Abbreviation"
+msgstr "Forkortelse"
+
+#: templates/menntagatt/curricula/course_list.html:15
+msgid "Operations"
+msgstr "Virksomhed"
+
+#: templates/menntagatt/curricula/course_list.html:17
+msgid "Publish course"
+msgstr "Udgiv kursus"
+
+#: templates/menntagatt/curricula/course_list.html:17
+msgid "Delete course"
+msgstr "Slet kursus"
+
+#: templates/menntagatt/curricula/course_list.html:17
+msgid "Delete"
+msgstr "Slet"
+
+#: templates/menntagatt/curricula/delete_course.html:10
+msgid "Are you sure you want to delete this course?"
+msgstr "Er du sikker på at du vil slette dette kursus?"
+
+#: templates/menntagatt/curricula/delete_course.html:11
+#: templates/menntagatt/curricula/publish_course.html:11
+#: templates/menntagatt/management/delete_header.html:14
+msgid "Yes, I am sure"
+msgstr "Ja, jeg er sikker"
+
+#: templates/menntagatt/curricula/newcourse.html:12
+#: templates/menntagatt/curricula/newcourse_goals_credits.html:12
+#: templates/menntagatt/curricula/newcourse_subject_topic.html:13
+#: templates/menntagatt/curricula/newprogramme.html:12
+#: templates/menntagatt/curricula/newprogramme_key_competences.html:13
+#: templates/menntagatt/curricula/newprogramme_profession_title.html:13
+#, python-format
+msgid "Step %(step)s of %(step_count)s"
+msgstr "Trin %(step)s af %(step_count)s"
+
+#: templates/menntagatt/curricula/newcourse.html:40
+#: templates/menntagatt/curricula/newcourse_goals_credits.html:39
+#: templates/menntagatt/curricula/newcourse_subject_topic.html:52
+#: templates/menntagatt/curricula/newprogramme.html:24
+#: templates/menntagatt/curricula/newprogramme_key_competences.html:29
+#: templates/menntagatt/curricula/newprogramme_profession_title.html:41
+msgid "Continue"
+msgstr "Videre"
+
+#: templates/menntagatt/curricula/newcourse_goals_credits.html:43
+#: templates/menntagatt/curricula/newcourse_goals_credits.html:52
+#: templates/menntagatt/curricula/newcourse_goals_credits.html:61
+#, fuzzy
+msgid "Create a new goal"
+msgstr "Sæt ind som en artikkel"
+
+#: templates/menntagatt/curricula/newcourse_goals_credits.html:45
+#: templates/menntagatt/curricula/newcourse_goals_credits.html:54
+#: templates/menntagatt/curricula/newcourse_goals_credits.html:63
+msgid "New goal"
+msgstr ""
+
+#: templates/menntagatt/curricula/newcourse_goals_credits.html:46
+msgid "The pupil shall have acquired knowledge and understanding to:"
+msgstr ""
+
+#: templates/menntagatt/curricula/newcourse_goals_credits.html:55
+msgid "The pupil shall have acquired skills to:"
+msgstr ""
+
+#: templates/menntagatt/curricula/newcourse_goals_credits.html:65
+msgid "The pupil shall be able to use the acquired knowledge and skills to:"
+msgstr ""
+
+#: templates/menntagatt/curricula/newcourse_goals_credits.html:67
+msgid "How will this goal be evaluated?"
+msgstr ""
+
+#: templates/menntagatt/curricula/newcourse_goals_credits.html:69
+msgid ""
+"Evaluation focuses on how the competence goals of the course will be "
+"evaluated, that is to say the evaluation method and not a ratio between "
+"measurements. It is not necessary to fill in evaluation but it is strongly "
+"recommended."
+msgstr ""
+
+#: templates/menntagatt/curricula/newcourse_goals_credits.html:75
+#, fuzzy
+msgid "Delete goal?"
+msgstr "Slet billede"
+
+#: templates/menntagatt/curricula/newcourse_goals_credits.html:78
+#, fuzzy
+msgid "Are you sure you want to delete the following goal?"
+msgstr "Er du sikker på at du vil slette dette kursus?"
+
+#: templates/menntagatt/curricula/newcourse_subject_topic.html:21
+msgid "Click on a subject"
+msgstr "Klik på et fag"
+
+#: templates/menntagatt/curricula/newcourse_subject_topic.html:29
+msgid "Click on a topic"
+msgstr "Click på et emne"
+
+#: templates/menntagatt/curricula/newcourse_subject_topic.html:56
+msgid "Abbreviations"
+msgstr "Forkortelser"
+
+#: templates/menntagatt/curricula/newcourse_subject_topic.html:59
+msgid "Subject abbreviation"
+msgstr "Forkortelse af fag"
+
+#: templates/menntagatt/curricula/newcourse_subject_topic.html:60
+msgid ""
+"Subject abbreviation consists of four letters like for example MATH which "
+"stands for mathematics."
+msgstr ""
+"Forkortelserne af fag er sammensatte af fire bogstaver. For exempel \"MATE\" "
+"som står for matematik"
+
+#: templates/menntagatt/curricula/newcourse_subject_topic.html:60
+#: templates/menntagatt/curricula/newcourse_subject_topic.html:67
+msgid ""
+"This abbreviation will be used in the curricula database for all schools"
+msgstr ""
+"Denne forkortelse bliver brugt i undervisnings databaser for alle skoler"
+
+#: templates/menntagatt/curricula/newcourse_subject_topic.html:66
+msgid "Topic abbreviation"
+msgstr "Emnes-forkortelse"
+
+#: templates/menntagatt/curricula/newcourse_subject_topic.html:67
+msgid ""
+"Topic abbreviation consists of two letters like for example RL which can "
+"stand for reading and listening."
+msgstr ""
+"Emnes forkortelser består af to bogstaver. For eksempel LL som kan stå for "
+"at Læse og Lytte."
+
+#: templates/menntagatt/curricula/newcourse_subject_topic.html:71
+msgid "Examples of how related topics have been abbreviated in other courses"
+msgstr ""
+"Her er eksempler af hvordan relaterede emner er blevet forkortede i andre "
+"kurser"
+
+#: templates/menntagatt/curricula/newprogramme_key_competences.html:19
+#: templates/menntagatt/curricula/newprogramme_key_competences.html:35
+msgid "In the programme, this key competence is fulfilled:"
+msgstr ""
+
+#: templates/menntagatt/curricula/newprogramme_key_competences.html:21
+msgid "Add an item"
+msgstr ""
+
+#: templates/menntagatt/curricula/newprogramme_key_competences.html:32
+#, fuzzy
+msgid "Create a new competence item"
+msgstr "Skab en ny bruger"
+
+#: templates/menntagatt/curricula/newprogramme_key_competences.html:34
+#, fuzzy
+msgid "New competence item"
+msgstr "kompetence mål"
+
+#: templates/menntagatt/curricula/newprogramme_profession_title.html:20
+msgid "Professions"
+msgstr ""
+
+#: templates/menntagatt/curricula/newprogramme_profession_title.html:21
+#, fuzzy
+msgid "Click on a profession"
+msgstr "Click på et emne"
+
+#: templates/menntagatt/curricula/publish_course.html:10
+msgid "Are you sure you want to publish this course?"
+msgstr "Er du sikker på at du vil udgive denne kurs?"
+
+#: templates/menntagatt/curricula/stakeholder.html:15
+msgid "Interested in"
+msgstr "Interesseret i"
+
+#: templates/menntagatt/curricula/stakeholder_new.html:15
+#: templates/menntagatt/users/register.html:39
+msgid "Create"
+msgstr "Skab"
+
+#: templates/menntagatt/curricula/stakeholders.html:4
+msgid "List of stakeholders"
+msgstr ""
+"Liste af de grupper eller personer, som påvirker eller kan påvirke og/eller "
+"påvirkes eller kan påvirkes af organisationen"
+
+#: templates/menntagatt/feedback/feedback_list.html:31
+msgid "Submit"
+msgstr "Send ind"
+
+#: templates/menntagatt/management/delete_header.html:12
+msgid "Are you sure you want to delte this image?"
+msgstr "Er du sikker på at du vil slette dette billede?"
+
+#: templates/menntagatt/management/headers.html:11
+msgid "Delete image"
+msgstr "Slet billede"
+
+#: templates/menntagatt/schools/info.html:29
+msgid "School not found"
+msgstr "ingen skole fundet"
+
+#: templates/menntagatt/users/login.html:6
+msgid "An error occurred during log in"
+msgstr "En fejl opstod ved log-in"
+
+#: templates/menntagatt/users/logout.html:4
+msgid "Log out successful"
+msgstr "Du er nu logget ud"
+
+#: templates/menntagatt/users/password_change.html:6
+msgid "An error occurred changing the passwords "
+msgstr "Der opstod en fejl ved ændringen af nøgleordet"
+
+#: templates/menntagatt/users/password_change.html:12
+msgid "Older password"
+msgstr "Ældre nøgleord"
+
+#: templates/menntagatt/users/password_change.html:18
+msgid "New password"
+msgstr "Nytt nøgleord"
+
+#: templates/menntagatt/users/password_change.html:23
+msgid "Retype the new password"
+msgstr "Indskriv det nye nøgleord igen"
+
+#: templates/menntagatt/users/password_change_done.html:4
+msgid "Password change successful"
+msgstr "Nøgleordet er nu blevet ændret"
+
+#: templates/menntagatt/users/password_change_done.html:5
+msgid "My preferences"
+msgstr "Mine preferancer"
+
+#: templates/menntagatt/users/password_change_done.html:5
+msgid "my preferences"
+msgstr "mine preferancer"
+
+#: templates/menntagatt/users/register.html:4
+msgid "Create an account"
+msgstr "Skab en ny bruger"
+
+#: templates/menntagatt/users/register.html:21
+msgid "E-mail"
+msgstr "e-mail"
+
+#: templates/menntagatt/users/register.html:35
+msgid "again"
+msgstr "igen"
+
+#: webservice/views/curricula.py:31
+msgid ""
+"No topics found for subject. You will setting the guideline for this subject "
+"so take care and be responsible."
+msgstr ""
+
+#: webservice/views/curricula.py:98
+msgid "Both subjects and topics must be provided"
+msgstr ""
+
+#: webservice/views/curricula.py:185
+msgid "User does not have permission"
+msgstr ""
+
+#: webservice/views/curricula.py:194 webservice/views/curricula.py:199
+#, python-format
+msgid "Abbreviation must be %d characters"
+msgstr ""
+
+#: webservice/views/curricula.py:222
+msgid "Abbreviation is already in use by another subject combination"
+msgstr ""
+
+#: webservice/views/curricula.py:272
+msgid "No goal provided"
+msgstr ""
+
+#: webservice/views/curricula.py:299
+msgid "Not authorized to create goal"
+msgstr ""
+
+#: webservice/views/curricula.py:317
+#, fuzzy
+msgid "Goal not found"
+msgstr "ingen skole fundet"
+
+#: webservice/views/curricula.py:326
+msgid "Not authorized to delete goals"
+msgstr ""
+
+#: webservice/views/curricula.py:334
+msgid "No professions provided"
+msgstr ""
+
+#~ msgid ""
+#~ "<a href=\"%(entry.actor.permalink)s\" title=\"%(entry.actor)s\">"
+#~ "%(entry.actor.display_name|capfirst)s</a> decided to share this which <a "
+#~ "href=\"%(entry.activityobject.author.permalink)s\" title="
+#~ "\"%(entry.activityobject.author)s\">"
+#~ "%(entry.activityobject.author.display_name|capfirst)s</a> posted"
+#~ msgstr ""
+#~ "<a href=\"%(entry.actor.permalink)s\" title=\"%(entry.actor)s\">"
+#~ "%(entry.actor.display_name|capfirst)s</a> besluttede sig for at dele "
+#~ "dette, som  <a href=\"%(entry.activityobject.author.permalink)s\" title="
+#~ "\"%(entry.activityobject.author)s\">"
+#~ "%(entry.activityobject.author.display_name|capfirst)s</a> skrev"

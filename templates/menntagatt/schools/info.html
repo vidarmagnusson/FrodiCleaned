@@ -1,0 +1,31 @@
+{% extends "contentbox.html" %}
+{% load i18n %}
+{% block stylesheet %}
+{% if type %}<link rel="stylesheet" href="/media/css/{{ type }}.css"/>{% endif %}
+{% endblock %}
+
+{% block content %}
+
+{% if school %}
+<h1>{{school.name}} {% if school.abbreviation %}({{school.abbreviation}}){% endif %}</h1>
+
+<div id="small_area_select">
+{% include "country/map.html" %}
+</div>
+
+<p>
+{{school.address}}<br>
+{{school.municipality}}<br>
+
+{% if school.telephone %}{{school.telephone}}<br/>{% endif %}
+{% if school.fax %}
+{{school.fax}}<br/>
+{% endif %}
+
+{% if school.email %}<a href="mailto:{{school.email}}">{{school.email}}</a><br/>{% endif %}
+{% if school.website %}<a href="{{school.website}}" title="{{school.name}}">{{school.website}}</a><br>{% endif %}
+</p>
+{% else %}
+<h1>{% trans "School not found" %}.</h1>
+{% endif %}
+{% endblock %}

@@ -1,0 +1,27 @@
+{% extends "contentbox.html" %}
+{% load i18n %}
+{% block content %}
+
+  {% if form.errors %}
+    <p class="error">{% trans "An error occurred during log in" %}</p>
+  {% endif %}
+
+  <form action="" method="post">{% csrf_token %}
+<p>
+    <label for="username">{% trans "Username" %}:</label>
+    <input type="text" name="username" value="" id="username">
+</p>
+<p>
+    <label for="password">{% trans "Password" %}:</label>
+    <input type="password" name="password" value="" id="password">
+</p>
+<p>
+    <input type="submit" value="{% trans 'Log in' %}" />
+    <input type="hidden" name="next" value="{{ next|escape }}" />
+</p>
+
+{% trans "Not a user on the site?" %} <a title="{% trans 'Register' %}" href="{% url user-register %}">{% trans "Register" %}</a>
+  </form>
+
+{% endblock %}
+

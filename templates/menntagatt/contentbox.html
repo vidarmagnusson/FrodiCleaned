@@ -1,0 +1,36 @@
+{% extends "base.html"%}
+{% load i18n %} 
+
+{% load crumbs %}
+	{% block contentbox %}
+	{% if crumbs|length > 2 and crumbs.2.children %}
+	<div id="content-menu">
+		<div id="content-title">{{crumbs.2.title}}</div>
+		<div id="content-list">
+			<ul>{% for menuitem in crumbs.2.children %}
+				<li class="headline">{{menuitem.title}}</li>
+				{% for subitem in menuitem.children %}<li class="{{subitem.status}}"><a href="{{subitem.url}}">{{subitem.title}}</a>
+				{% if crumbs|length > 4 and crumbs.4 == subitem and subitem.children %}<ul>
+					{% for subsubitem in subitem.children %}
+						<li class="{{subsubitem.status}}"><a href="{{subsubitem.url}}">{{subsubitem.title}}</a></li>
+					{% endfor %}</ul>
+				{% endif %}
+				</li>{% endfor %}
+		{% endfor %}</ul>
+		</div>
+	</div>{% endif %}
+
+	{% if crumbs|length > 2 and crumbs.2.children and highlights %}<div id="content-main-trisected">
+	{% else %}{% if highlights or crumbs|length > 2 and crumbs.2.children %}<div id="content-main-bisected">
+	{% else %}<div id="content-main">{% endif %}{% endif %}
+	<div id="content-crumbs">{% trans "You are here" %}: {% for crumb in crumbs %}<a title="{{crumb.title}}" href="{{crumb.url}}">{% if forloop.last %}{{crumb.title}}</a>{% else %}{% if forloop.first %}{{crumb.title}}</a> > {% else %}{{crumb.title|truncatestring:6}}</a> > {% endif %}{% endif%}{% endfor %}</div>
+	<div id="content">
+	{% block content %}{% endblock %}
+	</div>
+	</div>{% block right-sidebar %}{% if highlights %}<div id="content-highlights">
+		<ul>{% for highlight in highlights %}
+			<li>{% if highlight.image %}<img src="{{highlight.image.image.url}}"/>{% endif %}<a href="{{highlight.link}}">{{highlight.title}}</a></li>
+		{% endfor%}</ul>
+        </div>
+	{% endif %}{% endblock %}
+	{% endblock %}

@@ -1,0 +1,69 @@
+{% load i18n %}
+<form action="{% url new-activity %}" method="post" id="community-form">{% csrf_token %}
+<div id="submit_community_wrapper">
+  <div class="right-upper-text" id="character-counter">140</div>
+  <textarea name="title" class="never-selected-input" id="id_community_note">{% trans "Express yourself about something related to studies, teaching, or educations" %}</textarea>
+  <div id="content-input" class="hide-on-load article bookmark file">
+    <div id="wmd-button-bar"></div>
+    <textarea name="content" id="id_community_content"></textarea>
+    <a href="#" class="fold-out right-align">{% trans "Preview" %}</a>
+    <div class="hide-on-load fold-out-input">
+      <div id="content_preview"></div>
+      <a href="#" class="fold-out-close right-align">{% trans "Close" %}</a>
+    </div>
+  </div>
+  <div class="hide-on-load article bookmark file" id="tags-input">
+    <input name="tags" class="never-selected-input" id="id_community_tags" value="{% trans 'Tags (e.g. resources, icelandic, primary school, language plaza)' %}">
+    <div id="tag-suggestions">
+      <div id="tag-suggestion-recommendation">{% trans "The following categories help others find your submissions faster" %}</div>
+      <div class="tag-cluster">
+	<span class="tag-suggestion-headline">{% trans "Site-wide" %}:</span>
+	<a href="#" class="tag-suggestion">{% trans "resources" %}</a>
+	<a href="#" class="tag-suggestion">{% trans "data" %}</a>
+      </div>
+      <div class="tag-cluster">
+	<span class="tag-suggestion-headline">{% trans "Specific" %}:</span>
+	<a href="#" class="tag-suggestion">{% trans "adult education" %}</a>
+	<a href="#" class="tag-suggestion">{% trans "university" %}</a>
+	<a href="#" class="tag-suggestion">{% trans "secondary school" %}</a>
+	<a href="#" class="tag-suggestion">{% trans "primary school" %}</a>
+	<a href="#" class="tag-suggestion">{% trans "preschool" %}</a>
+      </div>
+    </div>
+  </div>
+  <div class="hide-on-load article file" id="additional-default-information">
+  <div id="creative_commons_license">
+    {% trans "License" %}: <span id="chosen-cc">Creative Commons Attribution Share-Alike (CC-BY-SA)</span> <a href="#" class="fold-out">{% trans "Change" %}</a>
+    <div class="hide-on-load fold-out-input">
+      <a href="#" class="fold-out-close right-align">{% trans "Close" %}</a>
+      <div><select name="license" id="id_community_license">
+	<option value="1">Creative Commons Attribution (CC-BY)</option>
+	<option value="2" selected="selected">Creative Commons Attribution Share-Alike (CC-BY-SA)</option>
+	<option value="3">Creative Commons Attribution Non-Commercial (CC-BY-NC)</option>
+	<option value="4">Creative Commons Attribution No-Derivatives (CC-BY-ND)</option>	
+	<option value="5">Creative Commons Attribution Non-Commercial Share-Alike (CC-BY-NC-SA)</option>
+
+	<option value="6">Creative Commons Attribution Non-Commercial No-Derivatives (CC-BY-NC-ND)</option>
+      </select></div>
+    </div>
+  </div>
+  <div class="hide-on-load article file" id="original-author">
+    {% trans "Author"%}: <span id="original-author-name">{% trans "You" %}</span> <a href="#" class="fold-out">{% trans "Change" %}</a>
+    <div class="hide-on-load fold-out-input">
+      <input type="text" name="author" id="id_author_input">
+      <a href="#" id="change_author">{% trans "Change" %}</a>
+    </div>
+  </div>
+  </div>
+  <div id="community_submit_icons">
+    <span class="left-icon" title="{% trans 'Create as an article' %}" id="icon-article"> </span>
+    <span class="right-icon" title="{% trans 'Submit files' %}" id="icon-attachment"> </span>
+  </div>
+</div>
+<div class="hide-on-load" id="loading-area">
+  {% trans "Drag and drop files here to attach them to your submission" %}
+  <input name="file" class="hide-on-load" id="id_community_file">
+</div>
+{% if group%}<input type="hidden" name="group" value="{{group.atom_id}}">{% endif %}
+  <input type="submit" class="community_submit" id="submit-note" value="{% trans 'Publish' %}">
+</form>

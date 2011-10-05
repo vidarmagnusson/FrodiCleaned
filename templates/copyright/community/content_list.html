@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% load markup %}
+
+{% block javascript %}
+<script type="text/javascript" src="/media/js/tag.js"></script>
+{% endblock %}
+
+{% block stylesheet %}
+<link rel="stylesheet" href="/media/css/community.css">
+{% endblock %}
+
+{% block pagetitle %}<h1>{{title}}</h1>{% endblock %}
+
+{% block content %}
+{% for c in content %}
+<div id="community-content">
+<h2><a href="{{c.target_url}}">{{c.title}}</a></h2>
+{% with itemtype as "bookmark" %}{% include "community/tagbookmark.html" %}{% endwith %}
+{% if c.thumbnail %}<img alt="{{c.title}}" src="{{c.thumbnail}}">{% endif %}
+{{c.description|markdown}}
+</div>
+{% endfor %}
+{% endblock %}
+
+{% block new_content %}
+{% if form %}{% include "community/new.html" %}{% endif %}
+{% endblock %}
+

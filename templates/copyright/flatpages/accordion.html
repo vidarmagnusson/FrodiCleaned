@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block stylesheet %}
+<link rel="stylesheet" href="/media/css/accordion.css"/>
+{% endblock %}
+
+{% block javascript %}
+<script src="/media/js/accordion.js"></script>
+{% endblock %}
+
+{% block content %}
+
+<h1>{{flatpage.title}}</h1>
+
+{{flatpage.content}}
+
+{% endblock %}

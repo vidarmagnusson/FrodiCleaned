@@ -1,0 +1,20 @@
+{% extends "contentbox.html" %}
+{% load i18n %}
+{% block stylesheet %}
+    <link rel="stylesheet" href="/media/css/builder.css"/>
+{% endblock %}
+
+{% block content %}
+<div id="content">
+<h1>Námslok</h1>
+
+{% for p in professions %}
+<h3>{{p.title|capfirst}}</h3>
+<em>{{p.exam}} - {{p.field.title}}</em>
+<p>
+{{p.description}}
+</p>
+{% endfor %}
+
+</div>
+{% endblock %}

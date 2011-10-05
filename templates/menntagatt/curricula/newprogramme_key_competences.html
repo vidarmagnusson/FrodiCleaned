@@ -1,0 +1,49 @@
+{% extends "contentbox.html" %}
+{% load i18n %}
+{% block stylesheet %}
+    <link rel="stylesheet" href="/media/css/builder.css"/> 
+{% endblock %}
+
+{% block javascript %}
+    <script src="/media/js/add-competences.js"></script>
+    {{ form.media }}
+{% endblock%}
+
+{% block content %}
+<p>{% blocktrans %}Step {{ step }} of {{ step_count }}{% endblocktrans %}</p>
+<form id="key_competence_form" action="." method="post">{% csrf_token %}
+{% for field in key_competence_fields %}
+<label>{{field.label_tag}}</label>
+<textarea id="{{field.choice}}_competence" class="competence_description" name="{{field.name}}">{{field.value}}</textarea>
+<div class="prepend_question">{% trans "In the programme, this key competence is fulfilled:" %}</div>
+<ul id="{{field.choice}}_added" class="added"></ul>
+<button id="{{field.choice}}_add" class="add-to-list button">{% trans "Add an item" %}</button><br/>
+{% endfor %}
+<div id="competence-add-wrapper"></div>
+
+<input type="hidden" name="{{ step_field }}" value="{{ step0 }}" />
+{{ previous_fields|safe }}
+
+<div><input type="submit" id="key_competence_submit" path="{% url webservice-get-competence %}" value="{% trans "Continue" %}"></div>
+</form>
+
+<div id="competence_add-form" class="dialog-add-form" title="{% trans 'Create a new competence item' %}">
+<form action="{% url webservice-new-competence %}" method="post" id="competence_form">{% csrf_token %}
+<label for="competence_item_input">{% trans "New competence item" %}</label><br/>
+<div class="prepend_question">{% trans "In the programme, this key competence is fulfilled:" %}</div>
+<input type="text" name="goal" id="competence_goal" class="text ui-widget-content ui-corner-all"/>
+<input type="hidden" name="key_competence_choice" id="key_competence_choice">
+</form>
+</div>
+
+<div id="confirm-delete-dialog" title="{% trans 'Delete key competence goal?' %}">
+<form id="delete-competence_form" action="{% url webservice-delete-competence %}" method="post"> {% csrf_token %}
+<fieldset>
+{% trans "Are you sure you want to delete the following key competence item?" %}
+<div id="competence_text"></div>
+<input type="hidden" name="goal" id="competence_to_delete"/>
+</fieldset>
+</form>
+</div>	
+
+{% endblock %}

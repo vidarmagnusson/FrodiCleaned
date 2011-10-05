@@ -1,0 +1,82 @@
+{% extends "contentbox.html" %}
+{% load i18n %}
+{% block stylesheet %}
+    <link rel="stylesheet" href="/media/css/builder.css"/> 
+{% endblock %}
+
+{% block javascript %}
+    <script type="text/javascript" src="/media/js/subject-topic-clouds.js"></script>
+    <script type="text/javascript" src="/media/js/subject-topic-abbreviations.js"></script>
+{% endblock%}
+
+{% block content %}
+<p>{% blocktrans %}Step {{ step }} of {{ step_count }}{% endblocktrans %}</p>
+<!-- This form is a part of step 1 of the form wizard.  It displays the subjects and the topics fields. -->
+
+<!-- Information sidepanel -->
+<!-- Displays all the SubjectCombinations in alphabetical order next to the form. A JavaScript is added to each <a href> so that the user can click on the subject and it will be copied to the subject text box. -->
+<div id="information">
+  <div id="subject-list">
+    <strong>{% trans "Subjects" %}</strong></br>
+    <em>{% trans "Click on a subject" %}</em>
+    <div id="subjects-cloud">
+      {% for subject in subject_cloud %}<a id="{{subject.element}}" class="raindrop {{subject.size}}" href="#">{{subject.element}}</a>
+      {% endfor %}
+    </div>
+  </div>
+  <div id="topic-list">
+    <strong>{% trans "Topics" %}</strong></br>
+    <em>{% trans "Click on a topic" %}</em>
+    <div id="topics-cloud"></div>
+  </div>
+</div>
+<!-- Information sidepanel ends -->
+
+<form action="." method="post">{% csrf_token %}
+
+<label for="subjects-input">{% trans "Subjects" %}</label>
+{% if form.subjects.help_text %}<div class="description-text">{{form.subjects.help_text}} <a href="#">Ítarlegri leiðbeiningar</a></div>{% endif %}
+<input autoComplete="off" name="subjects-input" type="text" class="input-filter" id="subjects-input" />
+
+<label for="topics-input">{% trans "Topics" %}</label>
+{% if form.topics.help_text %}<div class="description-text">{{form.topics.help_text}} <a href="#">Ítarlegri leiðbeiningar</a></div>{% endif %}
+<input autoComplete="off" name="topics-input" type="text" class="input-filter" id="topics-input" path="{% url webservice-topic-cloud %}" />
+
+{% for field in form %}
+{{field.as_hidden}}
+{% endfor %}
+
+<input type="hidden" name="{{ step_field }}" value="{{ step0 }}" />
+{{ previous_fields|safe }}
+
+<div><input type="submit" id="submit-subjects-topics" path="{% url webservice-abbreviations %}" value="{% trans 'Continue' %}" /></div>
+</form>
+
+<!-- Pop-up form for the abbreviations -->
+<div id="abbreviations-form" title="{% trans 'Abbreviations' %}">
+	<form id="subjects_and_topics_form" action="{% url webservice-abbreviations %}" method="post">{% csrf_token %}
+	<fieldset>
+		<label for="subjects-abbreviation">{% trans "Subject abbreviation" %}</label>
+		<div id="subjects-abbreviation-description" class="description-text">4 stafir sem tákna námsgreinarnar þvert á alla skóla</div>
+{# trans "Subject abbreviation consists of four letters like for example MATH which stands for mathematics." trans "This abbreviation will be used in the curricula database for all schools" #}
+		<div id="subjects-abbreviation-text"></div>
+		<div id="subjects-abbreviation-error" class="errorlist"></div>
+		<input type="hidden" name="subjects-list" id="subjects-list"/>
+		<input type="text" maxlength="4" name="subjects-abbreviation" id="subjects-abbreviation" class="text ui-widget-content ui-corner-all"/>
+
+		<label for="topics-abbreviation">{% trans "Topic abbreviation" %}</label>
+		<div id="topics-abbreviation-description" class="description-text">2 stafir sem tákna viðfangsefni innan námsgreinar þvert á skóla</div>
+{# trans "Topic abbreviation consists of two letters like for example RL which can stand for reading and listening." trans "This abbreviation will be used in the curricula database for all schools" #}
+		<div id="topics-abbreviation-text"></div>
+		<div id="topics-abbreviation-error" class="errorlist"></div>
+		<div id="suggestions">
+		  <strong>{% trans "Examples of how related topics have been abbreviated in other courses" %}:</strong>
+		  <ul id="topics-suggestions"></ul>
+		</div>
+		<input type="hidden" name="topics-list" id="topics-list"/>
+		<input type="text" maxlength="2" name="topics-abbreviation" id="topics-abbreviation" value="" class="text ui-widget-content ui-corner-all" />
+	</fieldset>
+	</form>
+</div>
+
+{% endblock %}

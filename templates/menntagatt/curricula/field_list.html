@@ -1,0 +1,20 @@
+{% extends "contentbox.html" %}
+{% load i18n %}
+{% block stylesheet %}
+    <link rel="stylesheet" href="/media/css/builder.css"/>
+{% endblock %}
+
+{% block content %}
+<div id="content">
+<h1>Námssvið</h1>
+
+{% for p in fields %}
+<h3>{{p.title}}</h3>
+<p><em>{{p.description}}</em></p>
+<ul>{% for s in p.subfield_set.all %}
+<li><strong>{{s.title}}</strong> (ensk lýsing: <em>{{s.description}}</em>)
+{% endfor %}</ul>
+{% endfor %}
+
+</div>
+{% endblock %}

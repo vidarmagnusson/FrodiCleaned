@@ -1,0 +1,60 @@
+.feedback {
+	width: 500px;
+	margin-bottom: 30px;
+}
+
+.feedback-title {
+	font-size: 128%;
+	color: #3155a6;
+}
+
+.feedback-author {
+        font-size: 92%;
+        color: #a6b6d9;
+	margin-left: 5px;
+	margin-bottom: 5px;
+}
+
+.feedback-description {
+	margin-bottom: 5px;
+}
+
+.feedback ul {
+	list-style-type: none;
+	margin: 0px;
+	margin-left: 20px;
+}
+
+.feedback ul li {
+	background: #efefef;
+	padding: 5px;
+	margin: 5px;
+}
+
+.feedback ul li .comment-author {
+	margin-left: 5px;
+	color: #a6a6a6;
+}
+
+.add-comment {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-left: 65px;
+	color: #3155a6;
+	cursor: pointer;
+}
+
+.add-new-comment {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	color: #3155a6;
+	cursor: pointer;
+}
+
+.comment_form {
+	margin-left: 65px;
+}
+
+#new-idea {
+	width: 500px;
+}

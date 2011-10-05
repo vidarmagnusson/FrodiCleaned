@@ -1,0 +1,280 @@
+html {
+	overflow-y: scroll
+}
+
+body {
+	font-family: sans-serif;
+	font-size: 13px;
+	margin: 0px;
+	padding: 0px;
+	background: #51c625;;
+}
+
+div {
+    border:0px;
+    margin:0px;
+    padding:0px;
+}
+
+#website {
+	margin-top: 8px;
+	background: #ffffff;
+}
+
+#header {
+	height: 204px;
+}
+
+#top-title {
+	position: relative;
+	height: 60px;
+	background: #333333;
+	border-bottom: 1px solid #3b9816;
+   	text-shadow: rgba(0,0,0,.2) 0 1px 0;
+}
+
+#top-title #community {
+	position: absolute;
+	right: 20px;
+	top: 5px;
+}
+
+#top-title #community img {
+	margin: 5px;
+}
+
+#header #top-title a {
+	position:absolute;
+	top: 10px;
+	left: 20px;
+	font-size: 30px;
+	color: #99a099;
+	text-decoration: none;
+	font-family: 'MuseoCustom','Century Gothic',Arial,Helvetica,sans-serif;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-shadow: 0 1px 0 #111111;
+}
+
+#header #top-title a:hover {
+	color: #31a82f;
+}
+
+#header #top-title a:first-letter {
+	font-size: 125%;
+}
+
+#header #top-title a span {
+	color: #51c625;;
+	font-size:85%;
+	text-transform: none;
+}
+
+#header #lower-header {
+	height: 144px;
+	background: #51c625;/*#3b9816;*/
+	background-image: url("/media/hausmyndir/background.png");
+	background-repeat: repeat-x;
+	background-position: top left;
+	border-top: 1px solid #73e847;
+	border-bottom: 1px solid #333333;
+}
+
+#header #lower-header #main-menu {
+	width: 980px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#header #lower-header #main-menu #menu {
+	height: 144px;
+	padding: 0px;
+	padding-left: 60px;
+}
+
+#header #lower-header #main-menu #menu .valmynd {
+	display: inline-block;
+	width: 100px;
+	margin-top: 80px;
+	margin-left: 5px;
+	margin-right:5px;
+	padding: 0 10px 10px 0;
+	text-align: center;
+	bottom: 0px;
+	color: #333333;
+	font-weight: bold;
+	vertical-align: bottom;
+}
+
+#header #lower-header #main-menu #menu .active {
+	margin-top: 0px;
+}
+
+.valmynd .active {
+	margin-top: 40px;
+	color: #ffffff;
+}
+
+#header #lower-header #main-menu #menu .valmynd img {
+	display: block;
+	margin: 5px;
+	margin-left: auto;
+	margin-right: auto;
+	vertical-align: baseline;
+}
+
+#header #lower-header #main-menu #menu .valmynd:hover {
+   background: -moz-linear-gradient(top, #51c625, #3b9816);
+   color: #ffffff;
+   text-shadow: 0 1px 0 #518f25;
+}
+
+#header #lower-header #main-menu #menu .active:hover {
+	background: none;
+	text-shadow: none;
+}
+
+.valmynd .undirvalmynd {
+	list-style: none;
+	margin: 0px;
+	margin-top: 5px;
+	padding: 0px;
+}
+
+.valmynd .undirvalmynd li {
+	margin: 0px;
+	padding: 0px;
+	font-size: 90%;
+	font-weight: normal;
+	width: 100px;
+	text-align: left;
+}
+
+.valmynd .undirvalmynd li a {
+	text-decoration: none;
+	color: #333333;
+}
+
+.valmynd .undirvalmynd li a:hover {
+	text-decoration: underline;
+}
+
+#content-box {
+	display:block;
+	background: #ffffff;
+	margin-top: 20px;
+}
+
+#content-wrap {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	width: 980px;
+}
+
+#content {
+	padding: 20px;
+	display:block;
+	float: left;
+	width: 550px;
+}
+
+#content h1 {
+	margin-top: 0px;
+	margin-left: -5px;
+	padding-top: 0px;
+	font-size: 190%;
+	font-weight: bold;
+	color: #333333;
+	text-transform: uppercase;
+}
+
+#content h1 + p:first-letter {
+	font-family: sans-serif;
+	font-size: 225%;
+	font-weight: bold;
+	border: 1px solid #51c625;
+	background-color: #3b9816;/*#518f25;*/
+	color: #333333;
+	padding: 0.1em;
+	margin-right: 0.2em;
+	position: relative;
+	float: left;
+}
+
+#highlights {
+	display: block;
+	float: left;
+	margin-left: 130px;
+	width: 220px;
+}
+
+#highlights ul {
+	list-style: none;
+}
+
+#highlights ul li {
+   display:table;
+   border-top: 1px solid #aff797;
+   background: #1c7209;
+   background: -webkit-gradient(linear, left top, left bottom, from(#51c625), to(#3c9716));
+   background: -moz-linear-gradient(top, #51c625, #3b9816);
+   /*padding: 14.5px 29px;*/
+   padding: 5px;
+   margin-bottom: 5px;
+   margin-top: 10px;
+   height: 70px;
+   width: 200px;
+   -webkit-border-radius: 0px;
+   -moz-border-radius: 0px;
+   border-radius: 0px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   color: #333333;
+   font-size: 13px;
+   font-weight: bold;
+   font-family: Helvetica, Arial, Sans-Serif;
+   text-decoration: none;
+   vertical-align: middle;
+   }
+
+#highlights ul li:hover {
+   border-top-color: #357828;
+   background: #357828;
+   color: #ccc;
+   }
+
+#highlights ul li:active {
+   border-top-color: #2b5c1b;
+   background: #2b5c1b;
+   }
+
+#footer {
+	clear:both;
+	width: 980px:
+	height: 30px;
+	color: #ffffff;
+}
+
+#highlights ul li div {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+
+#highlights ul li div a {
+	text-decoration: none;
+	color: #333333;
+	font-size: 110%;
+	font-weight: bold;
+	/*text-shadow: 0 1px 0 *//*#f6979b;*//*#fc9000;*/ /*#ff7b23;*/
+}
+
+#highlights ul li div a img {
+	display: block;
+	border: none;
+	margin: 5px;
+	margin-left: auto;
+	margin-right: auto;
+}

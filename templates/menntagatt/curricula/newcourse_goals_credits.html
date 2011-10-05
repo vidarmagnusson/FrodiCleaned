@@ -1,0 +1,85 @@
+{% extends "contentbox.html" %}
+{% load i18n %}
+{% block stylesheet %}
+    <link rel="stylesheet" href="/media/css/builder.css"/> 
+{% endblock %}
+
+{% block javascript %}
+    {{ form.media }}
+{% endblock%}
+
+{% block content %}
+<p>{% blocktrans %}Step {{ step }} of {{ step_count }}{% endblocktrans %}</p>
+<!-- This form is a part of step 3 of the form wizard.  It displays the goals and the number of credits the student gets for taking this course. -->
+
+<!-- Information sidepanel -->
+<div id="information">
+	<div id="id-abbreviation">{{abbreviation}}</div>
+
+	<div id="information-list">
+	{% for previous in previous_values %}
+		<div class="information-label">{{previous.label}}</div>
+		{{previous.value|safe}}
+	{% endfor %}
+	</div>
+</div>
+<!-- Information sidepanel ends -->
+
+<form action="." method="post">{% csrf_token %}
+{% for field in form %}{{field.label_tag}}
+{{ field.errors }}
+{% if field.help_text %}<div class="description-text">{{field.help_text}} <a href="#">Ítarlegri leiðbeiningar</a></div>{% endif %}
+{{field}}
+{% endfor %}
+
+<input type="hidden" name="{{ step_field }}" value="{{ step0 }}" />
+{{ previous_fields|safe }}
+
+<div><input type="submit" value="{% trans 'Continue' %}"></div>
+</form>
+
+<!-- The pop-up form for the knowledge goals -->
+<div id="2-knowledge_goals_add-form" class="dialog-add-form" title="{% trans 'Create a new goal' %}">
+<form action="{% url webservice-new-goal %}" method="post" id="2-knowledge_goals_form">{% csrf_token %}
+<label for="2-knowledge_goals_input">{% trans "New goal" %}</label><br/>
+<div class="prepend_question">{% trans "The pupil shall have acquired knowledge and understanding to:" %}</div>
+<input type="text" name="goal" id="2-knowledge_goals_input" class="text ui-widget-content ui-corner-all"/><br/>
+</form>
+</div>		
+
+<!-- The pop-up form for the skill goals -->
+<div id="2-skills_goals_add-form" class="dialog-add-form" title="{% trans 'Create a new goal' %}">
+<form action="{% url webservice-new-goal %}" method="post" id="2-skills_goals_form">{% csrf_token %}
+<label for="2-skills_goals_input">{% trans "New goal" %}</label><br/>
+<div class="prepend_question">{% trans "The pupil shall have acquired skills to:" %}</div>
+<input type="text" name="goal" id="2-skills_goals_input" class="text ui-widget-content ui-corner-all"/><br/>
+</form>
+</div>
+
+<!-- The pop-up form for the competence goals -->
+<div id="2-competence_goals_add-form" class="dialog-add-form" title="{% trans 'Create a new goal' %}">
+<form action="{% url webservice-new-goal %}" method="post" id="2-competence_goals_form">{% csrf_token%}
+<label for="2-competence_goals_input">{% trans "New goal" %}</label><br/>
+<div class="prepend_question">
+{% trans "The pupil shall be able to use the acquired knowledge and skills to:" %}</div>
+<input type="text" name="goal" id="2-competence_goals_input" class="text ui-widget-content ui-corner-all"/><br/>
+<br/><label for="2-competence_evaluation">{% trans "How will this goal be evaluated?" %}</label><br/>
+<div class="description-text">
+Aðferðafræði sem á að nota við matið (ekki nota hlutföll)
+{# trans "Evaluation focuses on how the competence goals of the course will be evaluated, that is to say the evaluation method and not a ratio between measurements. It is not necessary to fill in evaluation but it is strongly recommended." #}
+</div>
+<textarea name="evaluation" id="2-competence_evaluation" class="text ui-widget-content ui-corner-all"/></textarea><br/>
+</form>
+</div>
+
+<div id="confirm-delete-dialog" title="{% trans 'Delete goal?' %}">
+<form id="delete-goal_form" action="{% url webservice-delete-goal %}" method="post"> {% csrf_token %}
+<fieldset>
+{% trans "Are you sure you want to delete the following goal?" %}
+<div id="goal_text"></div>
+<input type="hidden" name="goal" id="goal_to_delete"/>
+</fieldset>
+</form>
+</div>	
+
+{% endblock %}

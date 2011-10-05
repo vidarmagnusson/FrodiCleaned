@@ -1,0 +1,37 @@
+{% load i18n %}
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 5.0 Transitional//EN"
+"http://www.w3.org/TR/html5/loose.dtd">
+
+<html>
+  <head>
+    <title>{{crumbs.0.title}}</title>
+
+    <link rel="stylesheet" href="/media/css/theme.css"/>
+    {% if crumbs.2 and crumbs.2.title == 'Leikskólar' %}<link rel="stylesheet" href="/media/css/preschool.css"/>{% else %}{% if crumbs.2 and crumbs.2.title == 'Grunnskólar' %}<link rel="stylesheet" href="/media/css/primaryschool.css"/>{% else %}{% if crumbs.2 and crumbs.2.title == 'Framhaldsskólar' %}<link rel="stylesheet" href="/media/css/secondaryschool.css"/>{% endif %}{% endif %}{% endif %}{% block stylesheet %}
+    {% endblock %}
+
+    <link href="/media/css/redmond/jquery-ui-1.8.12.custom.css" rel="stylesheet" type="text/css"/>
+    <script src="/media/js/jquery-1.5.1.min.js"></script>
+    <script src="/media/js/jquery-ui-1.8.12.custom.min.js"></script>
+    <script src="/media/js/modernizr.min.js"></script>{% block javascript %}
+    {% endblock %}
+  </head>
+  <body>
+    <div id="website">
+	
+      {% include "header.html" %}
+
+	<div id="content-box">
+	{% block contentbox %}
+	{% endblock %}
+      </div>
+
+      <div id="footer">
+	<div id="left"><a href="http://menntagatt.is">{% trans "School information web site" %}</a></div>
+	<div id="right"><a href="http://menntagatt.is/um">{% trans "About the site" %}</a></div>
+      </div>
+
+    </div>
+    {# if user.is_authenticated %}<script src="/media/js/geo.js"></script>{% endif #}
+  </body>
+</html>

@@ -1,0 +1,43 @@
+{% extends "contentbox.html" %}
+{% load i18n %}
+{% block content %}
+  <h1>{% trans "Create an account" %}</h1>
+  <form action="" method="post">{% csrf_token %}
+    {% if form.error_dict %}
+      <p class="error">{% trans "Please correct the following errors" %}</p>
+    {% endif %}
+
+    <p>
+    {% if form.username.errors %}
+      {{ form.username.html_error_list }}
+    {% endif %}
+    <label for="id_username">{% trans "Username" %}:</label>
+    {{ form.username }}
+    </p>
+    <p>
+    {% if form.email.errors %}
+      {{ form.email.html_error_list }}
+    {% endif %}
+    <label for="id_email">{% trans "E-mail" %}:</label>
+    {{ form.email }}
+    </p>
+    <p>
+    {% if form.password1.errors %}
+      {{ form.password1.html_error_list }}
+    {% endif %}
+    <label for="id_password1">{% trans "Password" %}:</label>
+    {{ form.password1 }}
+    </p>
+    <p>
+    {% if form.password2.errors %}
+      {{ form.password2.html_error_list }}
+    {% endif %}
+    <label for="id_password2">{% trans "Password" %} ({% trans "again" %}):</label>
+    {{ form.password2 }}
+    </p>
+    <p>
+    <input type="submit" value="{% trans 'Create' %}" />
+    </p>
+  </label>
+
+{% endblock %}

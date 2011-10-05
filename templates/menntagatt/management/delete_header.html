@@ -1,0 +1,16 @@
+{% extends "contentbox.html" %}
+{% load i18n %}
+{% block stylesheet %}
+    <link rel="stylesheet" href="/media/css/community.css"/> 
+{% endblock %}
+
+{% block content %}
+<h1>{{ header.image.url }}</h1>
+
+<p><img src="{{header.image.url}}"></p>
+
+<p>{% trans "Are you sure you want to delte this image?" %}</p>
+<form action="" method="POST">{% csrf_token %}
+<input type="submit" value="{% trans 'Yes, I am sure' %}">
+</form>
+{% endblock %}

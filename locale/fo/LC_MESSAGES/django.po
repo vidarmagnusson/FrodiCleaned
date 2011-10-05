@@ -1,0 +1,1392 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-08-12 07:02-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: country/models/laws.py:19 country/models/laws.py:50
+#: country/models/laws.py:82 feedzilla/models.py:48
+#: schools/models/housing.py:15 schools/models/housing.py:42
+#: schools/models/housing.py:69 schools/models/housing.py:88
+msgid "title"
+msgstr ""
+
+#: country/models/laws.py:20 country/models/laws.py:49
+#: country/models/laws.py:80
+msgid "number"
+msgstr ""
+
+#: country/models/laws.py:21 country/models/laws.py:51
+#: country/models/regions.py:15 curricula/models/courses.py:203
+#: curricula/models/extra_information.py:19 schools/models/housing.py:16
+#: schools/models/housing.py:43 schools/models/housing.py:70
+#: schools/models/housing.py:89 schools/models/schools.py:161
+#: schools/models/students.py:18
+msgid "description"
+msgstr ""
+
+#: country/models/laws.py:26
+msgid "URL of original version"
+msgstr ""
+
+#: country/models/laws.py:40 country/models/laws.py:54
+msgid "law"
+msgstr ""
+
+#: country/models/laws.py:41
+msgid "laws"
+msgstr ""
+
+#: country/models/laws.py:61
+#, python-format
+msgid "Chapter %(number)s - %(title)s (%(law)s)"
+msgstr ""
+
+#: country/models/laws.py:67 country/models/laws.py:90
+msgid "law section"
+msgstr ""
+
+#: country/models/laws.py:68
+msgid "law sections"
+msgstr ""
+
+#: country/models/laws.py:81
+msgid "subnumber"
+msgstr ""
+
+#: country/models/laws.py:86 feedzilla/models.py:51
+msgid "content"
+msgstr ""
+
+#: country/models/laws.py:103
+#, python-format
+msgid "Article %(number)d"
+msgstr ""
+
+#: country/models/laws.py:124
+msgid "law article"
+msgstr ""
+
+#: country/models/laws.py:125
+msgid "law articles"
+msgstr ""
+
+#: country/models/regions.py:13 country/models/regions.py:43
+#: curricula/models/extra_information.py:17 schools/models/schools.py:17
+#: schools/models/students.py:16
+msgid "name"
+msgstr ""
+
+#: country/models/regions.py:18
+msgid "coordinate points"
+msgstr ""
+
+#: country/models/regions.py:31
+msgid "country area"
+msgstr ""
+
+#: country/models/regions.py:32
+msgid "country areas"
+msgstr ""
+
+#: country/models/regions.py:42
+msgid "zip code"
+msgstr ""
+
+#: country/models/regions.py:44 schools/models/schools.py:169
+#: schools/models/students.py:22
+msgid "logo"
+msgstr ""
+
+#: country/models/regions.py:45
+msgid "area"
+msgstr ""
+
+#: country/models/regions.py:54 curricula/models/extra_information.py:21
+#: schools/models/housing.py:18 schools/models/schools.py:25
+msgid "municipality"
+msgstr ""
+
+#: country/models/regions.py:55
+msgid "municipalities"
+msgstr ""
+
+#: creativecommons/models.py:15
+msgid "title of license"
+msgstr ""
+
+#: creativecommons/models.py:18
+msgid "creativecommons.org url"
+msgstr ""
+
+#: creativecommons/models.py:21
+msgid "large representative image"
+msgstr ""
+
+#: creativecommons/models.py:22
+msgid "small representative image"
+msgstr ""
+
+#: creativecommons/models.py:25
+msgid "license abbreviation"
+msgstr ""
+
+#: curricula/forms/courses.py:48 curricula/forms/courses.py:49
+#: curricula/forms/courses.py:50
+msgid ""
+"Hold down \"Control\", or \"Command\" on a Mac, to select more than one."
+msgstr ""
+
+#: curricula/models/courses.py:40
+msgid "subject"
+msgstr ""
+
+#: curricula/models/courses.py:41 curricula/models/courses.py:196
+msgid "subjects"
+msgstr ""
+
+#: curricula/models/courses.py:66
+msgid "subject combination"
+msgstr ""
+
+#: curricula/models/courses.py:67
+msgid "subjects combinations"
+msgstr ""
+
+#: curricula/models/courses.py:82
+msgid "topic"
+msgstr ""
+
+#: curricula/models/courses.py:83 curricula/models/courses.py:197
+msgid "topics"
+msgstr ""
+
+#: curricula/models/courses.py:108
+msgid "topic combination"
+msgstr ""
+
+#: curricula/models/courses.py:109
+msgid "topics combinations"
+msgstr ""
+
+#: curricula/models/courses.py:175 curricula/models/courses.py:213
+#: curricula/models/extra_information.py:55
+msgid "evaluation"
+msgstr ""
+
+#: curricula/models/courses.py:176
+msgid "evaluations"
+msgstr ""
+
+#: curricula/models/courses.py:181
+msgid "In progress"
+msgstr ""
+
+#: curricula/models/courses.py:182
+msgid "Ready for inspection"
+msgstr ""
+
+#: curricula/models/courses.py:183
+msgid "Approved by school"
+msgstr ""
+
+#: curricula/models/courses.py:184
+msgid "Officially approved"
+msgstr ""
+
+#: curricula/models/courses.py:188
+msgid "Level 1"
+msgstr ""
+
+#: curricula/models/courses.py:189
+msgid "Level 2"
+msgstr ""
+
+#: curricula/models/courses.py:190
+msgid "Level 3"
+msgstr ""
+
+#: curricula/models/courses.py:191
+msgid "Level 4"
+msgstr ""
+
+#: curricula/models/courses.py:194
+msgid "descriptive name"
+msgstr ""
+
+#: curricula/models/courses.py:194
+msgid ""
+"Write a short sentence which describes the subject and the topic of the "
+"course. Examples of descriptive names are: 21st century Icelandic art "
+"history, Maintenance control of machines, Sales and services, German "
+"pronunciation and vocabulary, Hair coloring, Linux administration."
+msgstr ""
+
+#: curricula/models/courses.py:196
+msgid ""
+"Write or choose from the list to the right a subject that describes the "
+"foundational area of expertise which is taught in the course. Examples of "
+"subjects are: Mathematics, Icelandic, chemistry, electrical circuits, first "
+"aid, media, hair styling, industrial control, machine handling, management, "
+"electrical engineering, industrial architecture. It is permissible to name "
+"more than one subjects (separated by a comma) when creating multi-"
+"disciplinary courses."
+msgstr ""
+
+#: curricula/models/courses.py:197
+msgid ""
+"Write or choose from the list to the right one to four of the most "
+"influential topics of the course. Separate the topics by a comma. Examples "
+"of topics are: Pedagogy, genetics, statistics, grammar, alternating "
+"currents, machine architecture, welding. Keep in mind that only two letters "
+"will represent the topic in the course abbreviation"
+msgstr ""
+
+#: curricula/models/courses.py:199
+msgid "level"
+msgstr ""
+
+#: curricula/models/courses.py:199
+#, python-format
+msgid ""
+"Make a suggestion about the course's competence level. Choose the "
+"corresponding competence level below. Note that at least 75% of the course "
+"topics should belong to the course's competence level"
+msgstr ""
+
+#: curricula/models/courses.py:201
+#: templates/menntagatt/curricula/course_info.html:10
+msgid "school credits"
+msgstr ""
+
+#: curricula/models/courses.py:201
+msgid ""
+"Here is the scope of the course given in school credits. A school credit is "
+"the measurement of an average student work contribution in school, "
+"disregarding whether the studies are practical or theoretical and whether it "
+"takes place within or outside the school. Each school credit translates to "
+"about three days of work (6-8 hours a day) for the student. It is advised to "
+"keep the competence goals in mind when estimating work contribution and "
+"assigning school credits. (To use old school credits it is necessary to "
+"configure the schools information accordingly. This system will "
+"automatically translate between the two credits systems according to the "
+"formula: school credits = old credits x 60/35.)"
+msgstr ""
+
+#: curricula/models/courses.py:203
+msgid "A short description of the main content of the course"
+msgstr ""
+
+#: curricula/models/courses.py:205
+msgid "prerequisites"
+msgstr ""
+
+#: curricula/models/courses.py:205
+msgid ""
+"Here are listed the prerequisites for the course if there are any. "
+"Prerequisites can for example be specific courses that the student must have "
+"passed before or at the same time as this course, the amount of school "
+"credits for a specific topic on a specific level or any other description of "
+"prerequisites the student must fulfill."
+msgstr ""
+
+#: curricula/models/courses.py:207
+msgid "knowledge goals"
+msgstr ""
+
+#: curricula/models/courses.py:207
+msgid ""
+"Knowledge goals describe the knowledge the student shall have acquired by "
+"passing the course. Knowledge ranges from facts to laws to processes and is "
+"both theoretical and applicable. The course evaluation takes these goals "
+"into account. On average 2 to 10 goals are expected to be added as "
+"continuation of the following sentence: A studet shall have acquired "
+"knowledge and understanding of:"
+msgstr ""
+
+#: curricula/models/courses.py:209
+msgid "skill goals"
+msgstr ""
+
+#: curricula/models/courses.py:209
+msgid ""
+"Skill goals describe the skills the student shall have acquired by passing "
+"the course. Skills can be both mental and practical and allow the student to "
+"apply methods and processes. The course evaluation takes these goals into "
+"account. On average 2 to 10 goals are expected to be added as continuation "
+"of the following sentence: A student shall have acquired the skills to: "
+"Verbs related to skills are e.g. apply, inspect, use, speak, write, draw, "
+"calculate, express, do, construct, manage..."
+msgstr ""
+
+#: curricula/models/courses.py:211
+msgid "competence goals"
+msgstr ""
+
+#: curricula/models/courses.py:211
+msgid ""
+"Competence goals describe the competence the student shall have acquired by "
+"passing the course. Competence means the overlook and ability to apply the "
+"knowledge and skills. These goals must therefore relate to or build upon the "
+"knowlede and skill goals of the course. Care must be taken to allow the "
+"competence goals to be evaluated. After writing each comptence goals one can "
+"describe its evaluation to make it easier to write the competence goals with "
+"evaluation in mind. Examples of evaluation methods can be: Oral exams, peer "
+"evaluation, guided evaluation, self-evaluation, evaluation of oral debates, "
+"normal debates, talks, presentations, arguments, work processes, work "
+"organization, finishing, resourcefulness, communications, responsible/"
+"consciencous work contribution ... On average 2 to 10 goals are expected to "
+"be added as continuation of the following sentence: A student shall be able "
+"to apply the general knowledge and skills he/she has acquired to: Verbs and "
+"phrases that relate to competence are e.g. gather, use, express, debate, "
+"explain, describe, participate, relate ... to, be active, be responsible, be "
+"able to, argue, understand, show initiative, do, work, evaluate ..."
+msgstr ""
+
+#: curricula/models/courses.py:213
+msgid ""
+"Here is a general description of evaluation and evaluation methods used in "
+"the course to evaluate the knowledge, skills and competences which the "
+"student has acquired in the course and worked according to the goals set "
+"forward in the course description. This is not the place to put ratios "
+"between evaluation techniques, that information belongs to the course "
+"syllabus"
+msgstr ""
+
+#: curricula/models/courses.py:215
+msgid "status"
+msgstr ""
+
+#: curricula/models/courses.py:216
+msgid "last modified"
+msgstr ""
+
+#: curricula/models/courses.py:218
+msgid "derived from"
+msgstr ""
+
+#: curricula/models/courses.py:219
+msgid "authors"
+msgstr ""
+
+#: curricula/models/courses.py:219
+msgid ""
+"The curricula system allows many individuals to collaborate on courses. It "
+"is easy to give others a chance to review, comment on, and improve the "
+"course, even if they work within or outside of your school. You as an author "
+"can choose co-authors. Author and co-authors are assigned while the course "
+"is being designed and created. When a course has been approved by school "
+"officals and added to a curricula database and connected to a programme, "
+"authors will not be attributed. Here below is a list of possible co-authors. "
+"The list contains persons you follow in the community who have access to the "
+"curricula database. If somebody is missing from the list you need to "
+"subscribe to that person in the community and/or ask the curricula managers "
+"in that person's school to give them access to the curricula database."
+msgstr ""
+
+#: curricula/models/courses.py:221
+msgid "course abbreviation"
+msgstr ""
+
+#: curricula/models/courses.py:222
+msgid "version number"
+msgstr ""
+
+#: curricula/models/courses.py:260
+msgid "course"
+msgstr ""
+
+#: curricula/models/courses.py:261
+msgid "courses"
+msgstr ""
+
+#: curricula/models/extra_information.py:20
+msgid "address)"
+msgstr ""
+
+#: curricula/models/extra_information.py:22 schools/models/housing.py:22
+#: schools/models/schools.py:27
+msgid "telephone"
+msgstr ""
+
+#: curricula/models/extra_information.py:23 schools/models/housing.py:23
+#: schools/models/schools.py:30
+msgid "fax"
+msgstr ""
+
+#: curricula/models/extra_information.py:24 schools/models/housing.py:19
+#: schools/models/schools.py:33
+msgid "e-mail"
+msgstr ""
+
+#: curricula/models/extra_information.py:25 schools/models/schools.py:34
+#: schools/models/students.py:19
+msgid "website"
+msgstr ""
+
+#: curricula/models/extra_information.py:26
+msgid "field"
+msgstr ""
+
+#: curricula/models/extra_information.py:47 schools/models/registration.py:15
+#: schools/models/schools.py:50 schools/models/schools.py:158
+#: schools/models/students.py:17
+msgid "school"
+msgstr ""
+
+#: curricula/models/extra_information.py:50
+msgid "activities"
+msgstr ""
+
+#: curricula/models/extra_information.py:51
+msgid "policy"
+msgstr ""
+
+#: curricula/models/extra_information.py:52
+msgid "administration"
+msgstr ""
+
+#: curricula/models/extra_information.py:53
+msgid "organization"
+msgstr ""
+
+#: curricula/models/extra_information.py:54
+msgid "instructional methods"
+msgstr ""
+
+#: curricula/models/extra_information.py:56
+msgid "support measures"
+msgstr ""
+
+#: curricula/models/extra_information.py:57
+msgid "student services"
+msgstr ""
+
+#: curricula/models/extra_information.py:58
+msgid "pupil rights"
+msgstr ""
+
+#: curricula/models/extra_information.py:59
+msgid "co-operation"
+msgstr ""
+
+#: curricula/models/extra_information.py:60
+msgid "quality control"
+msgstr ""
+
+#: curricula/models/extra_information.py:61
+msgid "national curriculum"
+msgstr ""
+
+#: curricula/models/extra_information.py:62
+msgid "other information"
+msgstr ""
+
+#: curricula/models/extra_information.py:65
+#, python-format
+msgid "Curriculum information for %(school)s"
+msgstr ""
+
+#: curricula/models/extra_information.py:70
+#: curricula/models/extra_information.py:71
+msgid "curriculum information"
+msgstr ""
+
+#: feedzilla/admin.py:33
+msgid "Post link"
+msgstr ""
+
+#: feedzilla/models.py:15
+msgid "feed url"
+msgstr ""
+
+#: feedzilla/models.py:17
+msgid "last checked"
+msgstr ""
+
+#: feedzilla/models.py:32 feedzilla/models.py:47 schools/models/schools.py:179
+msgid "feed"
+msgstr ""
+
+#: feedzilla/models.py:33
+msgid "feeds"
+msgstr ""
+
+#: feedzilla/models.py:49
+msgid "link"
+msgstr ""
+
+#: feedzilla/models.py:50
+msgid "summary"
+msgstr ""
+
+#: feedzilla/models.py:52
+msgid "creation time"
+msgstr ""
+
+#: feedzilla/models.py:53
+msgid "identifier"
+msgstr ""
+
+#: feedzilla/models.py:54
+msgid "active"
+msgstr ""
+
+#: feedzilla/models.py:61
+msgid "post"
+msgstr ""
+
+#: feedzilla/models.py:62
+msgid "posts"
+msgstr ""
+
+#: schools/models/housing.py:17 schools/models/schools.py:22
+msgid "address"
+msgstr ""
+
+#: schools/models/housing.py:20
+msgid "URL for more information"
+msgstr ""
+
+#: schools/models/housing.py:21
+msgid "manager"
+msgstr ""
+
+#: schools/models/housing.py:32 schools/models/housing.py:45
+#: schools/models/housing.py:71 schools/models/schools.py:165
+msgid "student housing"
+msgstr ""
+
+#: schools/models/housing.py:33
+msgid "student housings"
+msgstr ""
+
+#: schools/models/housing.py:44
+msgid "monthly rent"
+msgstr ""
+
+#: schools/models/housing.py:47
+msgid "available amount"
+msgstr ""
+
+#: schools/models/housing.py:48
+msgid "size in square meters"
+msgstr ""
+
+#: schools/models/housing.py:57
+msgid "room type"
+msgstr ""
+
+#: schools/models/housing.py:58
+msgid "room types"
+msgstr ""
+
+#: schools/models/housing.py:76
+msgid "housing service"
+msgstr ""
+
+#: schools/models/housing.py:77
+msgid "housing services"
+msgstr ""
+
+#: schools/models/housing.py:90
+msgid "price"
+msgstr ""
+
+#: schools/models/housing.py:91
+msgid "service"
+msgstr ""
+
+#: schools/models/housing.py:96
+msgid "service offering"
+msgstr ""
+
+#: schools/models/housing.py:97
+msgid "service offerings"
+msgstr ""
+
+#: schools/models/registration.py:16
+msgid "contact person"
+msgstr ""
+
+#: schools/models/registration.py:17
+msgid "email address of contact person"
+msgstr ""
+
+#: schools/models/registration.py:18
+msgid "telephone number of contact person"
+msgstr ""
+
+#: schools/models/registration.py:19
+msgid "programmes"
+msgstr ""
+
+#: schools/models/registration.py:21
+msgid "start date of registration"
+msgstr ""
+
+#: schools/models/registration.py:22
+msgid "end date of registration"
+msgstr ""
+
+#: schools/models/registration.py:26
+msgid "acceptance prerequisites"
+msgstr ""
+
+#: schools/models/registration.py:29
+#, python-format
+msgid "Registration information for %(programmes)s in %(school)s"
+msgstr ""
+
+#: schools/models/registration.py:34 schools/models/registration.py:35
+msgid "registration information"
+msgstr ""
+
+#: schools/models/schools.py:19
+msgid "identity number"
+msgstr ""
+
+#: schools/models/schools.py:37
+msgid "principal"
+msgstr ""
+
+#: schools/models/schools.py:51
+msgid "schools"
+msgstr ""
+
+#: schools/models/schools.py:61 schools/models/schools.py:77
+msgid "official name"
+msgstr ""
+
+#: schools/models/schools.py:67
+#: templates/menntagatt/community/social-submit.html:30
+msgid "preschool"
+msgstr ""
+
+#: schools/models/schools.py:68 schools/views/schools.py:25
+msgid "preschools"
+msgstr ""
+
+#: schools/models/schools.py:83
+#: templates/menntagatt/community/social-submit.html:29
+msgid "primary school"
+msgstr ""
+
+#: schools/models/schools.py:84 schools/views/schools.py:30
+msgid "primary schools"
+msgstr ""
+
+#: schools/models/schools.py:92 schools/models/schools.py:114
+#: schools/models/schools.py:136
+msgid "abbreviation"
+msgstr ""
+
+#: schools/models/schools.py:104
+#: templates/menntagatt/community/social-submit.html:28
+msgid "secondary school"
+msgstr ""
+
+#: schools/models/schools.py:105 schools/views/schools.py:35
+msgid "secondary schools"
+msgstr ""
+
+#: schools/models/schools.py:126
+#: templates/menntagatt/community/social-submit.html:27
+msgid "university"
+msgstr ""
+
+#: schools/models/schools.py:127 schools/views/schools.py:40
+msgid "universities"
+msgstr ""
+
+#: schools/models/schools.py:148
+msgid "learning center"
+msgstr ""
+
+#: schools/models/schools.py:149 schools/views/schools.py:45
+msgid "learning centers"
+msgstr ""
+
+#: schools/models/schools.py:170 schools/models/students.py:23
+msgid "representative photo"
+msgstr ""
+
+#: schools/models/schools.py:171 schools/models/students.py:24
+msgid "introductory video"
+msgstr ""
+
+#: schools/models/schools.py:175
+msgid "members"
+msgstr ""
+
+#: schools/models/schools.py:182
+#, python-format
+msgid "School Information for %(school)s"
+msgstr ""
+
+#: schools/models/schools.py:187 schools/models/schools.py:188
+msgid "school information"
+msgstr ""
+
+#: schools/models/schools.py:195
+msgid "Staff"
+msgstr ""
+
+#: schools/models/schools.py:196
+msgid "Teacher"
+msgstr ""
+
+#: schools/models/schools.py:197
+msgid "Pupil"
+msgstr ""
+
+#: schools/models/schools.py:198
+msgid "Stakeholder"
+msgstr ""
+
+#: schools/models/students.py:20
+msgid "email"
+msgstr ""
+
+#: schools/models/students.py:21
+msgid "board members"
+msgstr ""
+
+#: schools/models/students.py:33
+msgid "student society"
+msgstr ""
+
+#: schools/models/students.py:34
+msgid "student societies"
+msgstr ""
+
+#: schools/views/schools.py:19
+msgid "all schools"
+msgstr ""
+
+#: schools/views/schools.py:77
+#, python-format
+msgid "%(schools)s in %(area)s"
+msgstr ""
+
+#: schools/views/schools.py:79
+#, python-format
+msgid "All %(schools)s in the country"
+msgstr ""
+
+#: templates/menntagatt/404.html:9
+msgid "Subpages"
+msgstr ""
+
+#: templates/menntagatt/404.html:14
+msgid ""
+"Website not found. Please contact system administrator if you are sure that "
+"this should lead to a specific website."
+msgstr ""
+
+#: templates/menntagatt/500.html:6
+msgid ""
+"An error occurred on the web server. The system administrator has been "
+"notified"
+msgstr ""
+
+#: templates/menntagatt/base.html:29 templates/menntagatt/welcome.html:89
+msgid "School information web site"
+msgstr ""
+
+#: templates/menntagatt/base.html:30 templates/menntagatt/welcome.html:90
+msgid "About the site"
+msgstr ""
+
+#: templates/menntagatt/contentbox.html:26
+msgid "You are here"
+msgstr ""
+
+#: templates/menntagatt/header.html:8
+msgid "Logout"
+msgstr ""
+
+#: templates/menntagatt/header.html:10 templates/menntagatt/welcome.html:65
+#: templates/menntagatt/community/social.html:43
+msgid "Login"
+msgstr ""
+
+#: templates/menntagatt/message.html:8
+#: templates/menntagatt/users/password_change_done.html:5
+msgid "Return to"
+msgstr ""
+
+#: templates/menntagatt/notfound.html:6
+msgid "Website not found"
+msgstr ""
+
+#: templates/menntagatt/welcome.html:39
+msgid "Recent community activity"
+msgstr ""
+
+#: templates/menntagatt/welcome.html:46
+msgid "News from the schools"
+msgstr ""
+
+#: templates/menntagatt/welcome.html:67
+#: templates/menntagatt/community/social.html:45
+#: templates/menntagatt/users/login.html:11
+#: templates/menntagatt/users/register.html:14
+msgid "Username"
+msgstr ""
+
+#: templates/menntagatt/welcome.html:69
+#: templates/menntagatt/community/social.html:49
+#: templates/menntagatt/users/login.html:19
+msgid "Log in"
+msgstr ""
+
+#: templates/menntagatt/welcome.html:72
+#: templates/menntagatt/community/social.html:52
+#: templates/menntagatt/users/login.html:23
+msgid "Not a user on the site?"
+msgstr ""
+
+#: templates/menntagatt/welcome.html:73
+#: templates/menntagatt/community/social.html:53
+#: templates/menntagatt/users/login.html:23
+msgid "Register"
+msgstr ""
+
+#: templates/menntagatt/community/articles.html:8
+msgid "Read article"
+msgstr ""
+
+#: templates/menntagatt/community/entry.html:20
+#: templates/menntagatt/community/social-submit.html:51
+msgid "Author"
+msgstr ""
+
+#: templates/menntagatt/community/file.html:7
+msgid "Get"
+msgstr ""
+
+#: templates/menntagatt/community/new.html:15
+#: templates/menntagatt/management/new.html:11
+#: templates/menntagatt/users/register.html:7
+msgid "Please correct the following errors"
+msgstr ""
+
+#: templates/menntagatt/community/new.html:20
+#: templates/menntagatt/community/social-submit.html:67
+#: templates/menntagatt/curricula/course_list.html:17
+#: templates/menntagatt/management/new.html:16
+msgid "Publish"
+msgstr ""
+
+#: templates/menntagatt/community/pluggable-timeline.html:4
+#: templates/menntagatt/community/timeline.html:8
+msgid "marked"
+msgstr ""
+
+#: templates/menntagatt/community/pluggable-timeline.html:4
+#: templates/menntagatt/community/timeline.html:8
+msgid "as interesting"
+msgstr ""
+
+#: templates/menntagatt/community/pluggable-timeline.html:10
+#: templates/menntagatt/community/timeline.html:14
+msgid "is now following what"
+msgstr ""
+
+#: templates/menntagatt/community/pluggable-timeline.html:10
+#: templates/menntagatt/community/timeline.html:14
+msgid "does"
+msgstr ""
+
+#: templates/menntagatt/community/social-submit.html:5
+msgid ""
+"Express yourself about something related to studies, teaching, or educations"
+msgstr ""
+
+#: templates/menntagatt/community/social-submit.html:9
+msgid "Preview"
+msgstr ""
+
+#: templates/menntagatt/community/social-submit.html:12
+#: templates/menntagatt/community/social-submit.html:38
+msgid "Close"
+msgstr ""
+
+#: templates/menntagatt/community/social-submit.html:16
+msgid "Tags (e.g. resources, icelandic, primary school, language plaza)"
+msgstr ""
+
+#: templates/menntagatt/community/social-submit.html:18
+msgid "The following categories help others find your submissions faster"
+msgstr ""
+
+#: templates/menntagatt/community/social-submit.html:20
+msgid "Site-wide"
+msgstr ""
+
+#: templates/menntagatt/community/social-submit.html:21
+msgid "resources"
+msgstr ""
+
+#: templates/menntagatt/community/social-submit.html:22
+msgid "data"
+msgstr ""
+
+#: templates/menntagatt/community/social-submit.html:25
+msgid "Specific"
+msgstr ""
+
+#: templates/menntagatt/community/social-submit.html:26
+msgid "adult education"
+msgstr ""
+
+#: templates/menntagatt/community/social-submit.html:36
+msgid "License"
+msgstr ""
+
+#: templates/menntagatt/community/social-submit.html:36
+#: templates/menntagatt/community/social-submit.html:51
+#: templates/menntagatt/community/social-submit.html:54
+#: templates/menntagatt/users/password_change.html:27
+msgid "Change"
+msgstr ""
+
+#: templates/menntagatt/community/social-submit.html:51
+msgid "You"
+msgstr ""
+
+#: templates/menntagatt/community/social-submit.html:59
+msgid "Create as an article"
+msgstr ""
+
+#: templates/menntagatt/community/social-submit.html:60
+msgid "Submit files"
+msgstr ""
+
+#: templates/menntagatt/community/social-submit.html:64
+msgid "Drag and drop files here to attach them to your submission"
+msgstr ""
+
+#: templates/menntagatt/community/social.html:25
+msgid "Change information"
+msgstr ""
+
+#: templates/menntagatt/community/social.html:25
+msgid "Change information about me"
+msgstr ""
+
+#: templates/menntagatt/community/social.html:27
+msgid "Look at submissions from"
+msgstr ""
+
+#: templates/menntagatt/community/social.html:28
+msgid "Me"
+msgstr ""
+
+#: templates/menntagatt/community/social.html:29
+msgid "My friends"
+msgstr ""
+
+#: templates/menntagatt/community/social.html:30
+msgid "Everyone"
+msgstr ""
+
+#: templates/menntagatt/community/social.html:47
+#: templates/menntagatt/users/login.html:15
+#: templates/menntagatt/users/register.html:28
+#: templates/menntagatt/users/register.html:35
+msgid "Password"
+msgstr ""
+
+#: templates/menntagatt/community/social.html:66
+msgid "Subscribe"
+msgstr ""
+
+#: templates/menntagatt/community/social.html:77
+#, python-format
+msgid "What has %(vieweduser.username)s been doing?"
+msgstr ""
+
+#: templates/menntagatt/community/social.html:80
+msgid "Recent activity in the community"
+msgstr ""
+
+#: templates/menntagatt/community/social.html:87
+msgid "Events"
+msgstr ""
+
+#: templates/menntagatt/community/social.html:93
+msgid "No upcoming events"
+msgstr ""
+
+#: templates/menntagatt/community/social.html:95
+msgid "New event"
+msgstr ""
+
+#: templates/menntagatt/community/social.html:95
+msgid "Create event"
+msgstr ""
+
+#: templates/menntagatt/community/social.html:98
+msgid "is following"
+msgstr ""
+
+#: templates/menntagatt/community/social.html:102
+msgid "is not following anything"
+msgstr ""
+
+#: templates/menntagatt/community/social.html:104
+msgid "has these subscribers"
+msgstr ""
+
+#: templates/menntagatt/community/social.html:108
+msgid "does not have any subscribers"
+msgstr ""
+
+#: templates/menntagatt/community/social.html:110
+msgid "Statistics"
+msgstr ""
+
+#: templates/menntagatt/community/social.html:112
+msgid "Member since"
+msgstr ""
+
+#: templates/menntagatt/community/social.html:113
+msgid "Subscriber to"
+msgstr ""
+
+#: templates/menntagatt/community/social.html:114
+msgid "Subscribers"
+msgstr ""
+
+#: templates/menntagatt/community/social.html:115
+msgid "Groups"
+msgstr ""
+
+#: templates/menntagatt/community/social.html:116
+msgid "Notes"
+msgstr ""
+
+#: templates/menntagatt/community/social.html:117
+msgid "Articles"
+msgstr ""
+
+#: templates/menntagatt/community/social.html:118
+msgid "Photos/Images"
+msgstr ""
+
+#: templates/menntagatt/community/social.html:119
+msgid "Videos"
+msgstr ""
+
+#: templates/menntagatt/community/social.html:120
+msgid "Audio files"
+msgstr ""
+
+#: templates/menntagatt/community/social.html:121
+msgid "Files"
+msgstr ""
+
+#: templates/menntagatt/community/social.html:122
+msgid "Links"
+msgstr ""
+
+#: templates/menntagatt/community/social.html:123
+msgid "Finds interesting"
+msgstr ""
+
+#: templates/menntagatt/community/timeline-actor-share.html:3
+#, python-format
+msgid ""
+"<a href=\"%(entry.actor.permalink)s\" title=\"%(entry.actor)s\">"
+"%(entry.actor.display_name|capfirst)s</a> decided to share this which <a "
+"href=\"%(entry.activityobject.author.permalink)s\" title="
+"\"%(entry.activityobject.author)s\">"
+"%(entry.activityobject.author.display_name|capfirst)s</a> posted"
+msgstr ""
+
+#: templates/menntagatt/community/timeline-object.html:6
+msgid "Read more"
+msgstr ""
+
+#: templates/menntagatt/community/timeline-object.html:28
+msgid "Tags"
+msgstr ""
+
+#: templates/menntagatt/community/timeline-object.html:31
+#, python-format
+msgid ""
+"\n"
+"%(counter)s finds this interesting\n"
+msgid_plural ""
+"\n"
+"%(counter)s find this interesting.\n"
+msgstr[0] ""
+msgstr[1] ""
+
+#: templates/menntagatt/community/timeline-object.html:39
+msgid "Mark as interesting"
+msgstr ""
+
+#: templates/menntagatt/community/timeline-object.html:39
+msgid "Interesting"
+msgstr ""
+
+#: templates/menntagatt/community/timeline-object.html:39
+msgid "Share with my friends"
+msgstr ""
+
+#: templates/menntagatt/community/timeline-object.html:39
+msgid "Share forward"
+msgstr ""
+
+#: templates/menntagatt/country/law.html:21
+#, python-format
+msgid "Chapter %(section.number|romanize)s - %(section.title)s"
+msgstr ""
+
+#: templates/menntagatt/country/law.html:25
+#, python-format
+msgid "Article %(article.number)s %(article.subnumber)s"
+msgstr ""
+
+#: templates/menntagatt/curricula/course_info.html:4
+#: templates/menntagatt/curricula/course_list.html:15
+#: templates/menntagatt/curricula/newcourse_subject_topic.html:20
+#: templates/menntagatt/curricula/newcourse_subject_topic.html:37
+msgid "Subjects"
+msgstr ""
+
+#: templates/menntagatt/curricula/course_info.html:5
+#: templates/menntagatt/curricula/course_list.html:15
+#: templates/menntagatt/curricula/newcourse_subject_topic.html:28
+#: templates/menntagatt/curricula/newcourse_subject_topic.html:41
+msgid "Topics"
+msgstr ""
+
+#: templates/menntagatt/curricula/course_info.html:9
+#: templates/menntagatt/curricula/course_list.html:15
+msgid "Level"
+msgstr ""
+
+#: templates/menntagatt/curricula/course_info.html:10
+msgid "Credits"
+msgstr ""
+
+#: templates/menntagatt/curricula/course_info.html:14
+msgid "Prerequisites"
+msgstr ""
+
+#: templates/menntagatt/curricula/course_info.html:15
+msgid "Description"
+msgstr ""
+
+#: templates/menntagatt/curricula/course_info.html:19
+msgid "Knowledge goals"
+msgstr ""
+
+#: templates/menntagatt/curricula/course_info.html:24
+msgid "Skill goals"
+msgstr ""
+
+#: templates/menntagatt/curricula/course_info.html:29
+msgid "Competence goals"
+msgstr ""
+
+#: templates/menntagatt/curricula/course_info.html:39
+msgid "Additional evaluation"
+msgstr ""
+
+#: templates/menntagatt/curricula/course_list.html:9
+msgid "Courses"
+msgstr ""
+
+#: templates/menntagatt/curricula/course_list.html:12
+msgid "Courses in progress"
+msgstr ""
+
+#: templates/menntagatt/curricula/course_list.html:15
+msgid "Descriptive name"
+msgstr ""
+
+#: templates/menntagatt/curricula/course_list.html:15
+msgid "Abbreviation"
+msgstr ""
+
+#: templates/menntagatt/curricula/course_list.html:15
+msgid "Operations"
+msgstr ""
+
+#: templates/menntagatt/curricula/course_list.html:17
+msgid "Publish course"
+msgstr ""
+
+#: templates/menntagatt/curricula/course_list.html:17
+msgid "Delete course"
+msgstr ""
+
+#: templates/menntagatt/curricula/course_list.html:17
+msgid "Delete"
+msgstr ""
+
+#: templates/menntagatt/curricula/delete_course.html:10
+msgid "Are you sure you want to delete this course?"
+msgstr ""
+
+#: templates/menntagatt/curricula/delete_course.html:11
+#: templates/menntagatt/curricula/publish_course.html:11
+#: templates/menntagatt/management/delete_header.html:14
+msgid "Yes, I am sure"
+msgstr ""
+
+#: templates/menntagatt/curricula/newcourse.html:12
+#: templates/menntagatt/curricula/newcourse_goals_credits.html:12
+#: templates/menntagatt/curricula/newcourse_subject_topic.html:13
+#: templates/menntagatt/curricula/newprogramme.html:12
+#, python-format
+msgid "Step %(step)s of %(step_count)s"
+msgstr ""
+
+#: templates/menntagatt/curricula/newcourse.html:40
+#: templates/menntagatt/curricula/newcourse_goals_credits.html:39
+#: templates/menntagatt/curricula/newcourse_subject_topic.html:52
+#: templates/menntagatt/curricula/newprogramme.html:24
+msgid "Continue"
+msgstr ""
+
+#: templates/menntagatt/curricula/newcourse_subject_topic.html:21
+msgid "Click on a subject"
+msgstr ""
+
+#: templates/menntagatt/curricula/newcourse_subject_topic.html:29
+msgid "Click on a topic"
+msgstr ""
+
+#: templates/menntagatt/curricula/newcourse_subject_topic.html:56
+msgid "Abbreviations"
+msgstr ""
+
+#: templates/menntagatt/curricula/newcourse_subject_topic.html:59
+msgid "Subject abbreviation"
+msgstr ""
+
+#: templates/menntagatt/curricula/newcourse_subject_topic.html:60
+msgid ""
+"Subject abbreviation consists of four letters like for example MATH which "
+"stands for mathematics."
+msgstr ""
+
+#: templates/menntagatt/curricula/newcourse_subject_topic.html:60
+#: templates/menntagatt/curricula/newcourse_subject_topic.html:67
+msgid ""
+"This abbreviation will be used in the curricula database for all schools"
+msgstr ""
+
+#: templates/menntagatt/curricula/newcourse_subject_topic.html:66
+msgid "Topic abbreviation"
+msgstr ""
+
+#: templates/menntagatt/curricula/newcourse_subject_topic.html:67
+msgid ""
+"Topic abbreviation consists of two letters like for example RL which can "
+"stand for reading and listening."
+msgstr ""
+
+#: templates/menntagatt/curricula/newcourse_subject_topic.html:71
+msgid "Examples of how related topics have been abbreviated in other courses"
+msgstr ""
+
+#: templates/menntagatt/curricula/publish_course.html:10
+msgid "Are you sure you want to publish this course?"
+msgstr ""
+
+#: templates/menntagatt/curricula/stakeholder.html:15
+msgid "Interested in"
+msgstr ""
+
+#: templates/menntagatt/curricula/stakeholder_new.html:15
+#: templates/menntagatt/users/register.html:39
+msgid "Create"
+msgstr ""
+
+#: templates/menntagatt/curricula/stakeholders.html:4
+msgid "List of stakeholders"
+msgstr ""
+
+#: templates/menntagatt/feedback/feedback_list.html:31
+msgid "Submit"
+msgstr ""
+
+#: templates/menntagatt/management/delete_header.html:12
+msgid "Are you sure you want to delte this image?"
+msgstr ""
+
+#: templates/menntagatt/management/headers.html:11
+msgid "Delete image"
+msgstr ""
+
+#: templates/menntagatt/schools/info.html:29
+msgid "School not found"
+msgstr ""
+
+#: templates/menntagatt/users/login.html:6
+msgid "An error occurred during log in"
+msgstr ""
+
+#: templates/menntagatt/users/logout.html:4
+msgid "Log out successful"
+msgstr ""
+
+#: templates/menntagatt/users/password_change.html:6
+msgid "An error occurred changing the passwords "
+msgstr ""
+
+#: templates/menntagatt/users/password_change.html:12
+msgid "Older password"
+msgstr ""
+
+#: templates/menntagatt/users/password_change.html:18
+msgid "New password"
+msgstr ""
+
+#: templates/menntagatt/users/password_change.html:23
+msgid "Retype the new password"
+msgstr ""
+
+#: templates/menntagatt/users/password_change_done.html:4
+msgid "Password change successful"
+msgstr ""
+
+#: templates/menntagatt/users/password_change_done.html:5
+msgid "My preferences"
+msgstr ""
+
+#: templates/menntagatt/users/password_change_done.html:5
+msgid "my preferences"
+msgstr ""
+
+#: templates/menntagatt/users/register.html:4
+msgid "Create an account"
+msgstr ""
+
+#: templates/menntagatt/users/register.html:21
+msgid "E-mail"
+msgstr ""
+
+#: templates/menntagatt/users/register.html:35
+msgid "again"
+msgstr ""

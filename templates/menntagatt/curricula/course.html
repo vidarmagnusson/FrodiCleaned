@@ -1,0 +1,9 @@
+{% extends "contentbox.html" %}
+{% load markup %}
+{% block content %}
+<h1>{{course.descriptive_name}} - {{course.id_name}}</h1>
+{{course.get_status_display}}
+
+{% include "curricula/course_info.html" %}
+
+{% endblock %}

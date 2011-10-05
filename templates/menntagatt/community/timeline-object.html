@@ -1,0 +1,65 @@
+{% load i18n %}
+{% load humanize %}
+<div class="timeline-headline"><a href="{% if entry.activityobject.bookmark%}{{entry.activityobject.bookmark.target_url }}{% else %}{{entry.activityobject.permalink}}{% endif %}">{{entry.activityobject.title}}</a></div>
+<div class="timeline-content">
+  {% if entry.activityobject.article %}
+    {{entry.activityobject.article.summary|safe}}... <a href="{{entry.activityobject.permalink}}">{% trans "Read more" %}</a>
+  {% endif %}
+  {% if entry.activityobject.audio %}
+    <audio src="{{entry.activityobject.audio.audio_stream}}">
+    <p>{{entry.activityobject.audio.description|safe}}</p>
+  {% endif %}
+  {% if entry.activityobject.bookmark %}
+    <a href="{{entry.activityobject.bookmark.target_url}}" title="{{entry.activityobject.bookmark.title}}"><img src="{{entry.activityobject.bookmark.thumbnail}}" width="150"></a>
+    <p>{{entry.activityobject.bookmark.description|safe}}</p>
+  {% endif %}
+  {% if entry.activityobject.file %}
+    <a href="{{entry.activityobject.file.associated_file_url}}">{{entry.activityobject.title}}</a>
+  {% endif %}
+  {% if entry.activityobject.photo %}
+    <img src="{{entry.activityobject.photo.larger_image}}">
+    <p>{{entry.activityobject.photo.description|safe}}</p>
+  {% endif %}
+  {% if entry.activityobject.video %}
+    <video src="{{entry.activityobject.video.video_stream}}" width="300" controls>
+    <p>{{entry.activityobject.video.description|safe}}</p>
+  {% endif %}
+</div>
+<div class="timeline-tag">{% if entry.activityobject.tag_set.all|length != 0 %}{% trans "Tags" %}: <span class="tag-list">{% for tag in entry.activityobject.tag_set.all %}<a href="{% url view-tag-info tag=tag.slug %}">{{tag.tag}}</a> {% endfor %}{% endif %}</span>{% if user.is_authenticated %}<form class="tag-form" action="{% url webservice-community-tag %}" method="post">{% csrf_token %}<input type="hidden" class="tag_atom" name="atom" value="{{entry.activityobject.atom_id}}"><input type="text" class="tag_form_tag" name="tag"><input type="submit" value="{% trans 'Add' %}"></form><a class="cancel-tag" href="#">{% trans "Cancel" %}</a><a class="add-tag" href="#">{% trans "Add a tag" %}</a>{% endif %}</div>
+<div class="timeline-time">
+{{entry.time|naturalday|capfirst}}
+{% if entry.activityobject.favorites.all|length != 0 %} - {% blocktrans count entry.activityobject.favorites.all|length as counter %}
+{{counter}} finds this interesting
+{% plural %}
+{{ counter }} find this interesting.
+{% endblocktrans %}{% endif %}
+</div>
+{% if user.is_authenticated and user.get_profile.person != entry.actor %}
+<div class="timeline-footer">
+{% if entry.activityobject not in user.get_profile.favorites.all %}<form id="" action="{% url mark-like %}" method="post">{% csrf_token %}<input type="hidden" name="activityobject" value="{{entry.activityobject.atom_id}}"><input type="submit" class="text-submit" title="{% trans 'Mark as interesting' %}" value="{% trans 'Interesting' %}"></form>{% endif %} - <form id="" action="{% url share %}" method="post">{% csrf_token %}<input type="hidden" name="activityobject" value="{{entry.activityobject.atom_id}}"><input type="submit" class="text-submit" title="{% trans 'Share with my friends' %}" value="{% trans 'Share forward' %}"></form>
+</div>
+{% endif %}
+<div class="timeline-comments">
+  <div class="comment-list">
+  {% if entry.activityobject.comments.all|length != 0 %}
+  {% for comment in entry.activityobject.comments.all %}
+    <div class="comment">
+      <img src="{{comment.creator.avatar}}" title="{{comment.creator}}" width="30">
+      <div class="comment-author"><a href="{{comment.creator.permalink}}" title="{{comment.creator}}">{{comment.creator.title|capfirst}}</a></div>
+      {{comment.content}}
+      <div class="comment-time">{{comment.published}}</div>
+    </div>
+    {% endfor%}
+{% else %}
+<a class="add-comment" href="#">Bæta við athugasemd</a>
+{% endif %}
+  </div>
+{% if user.is_authenticated %}
+<form action="{% url webservice-community-comment %}" method="post" class="comment-form {% if entry.activityobject.comments.all|length == 0 %}hide-on-load{% endif %}">{% csrf_token %}
+<textarea class="comment_form_comment" name="comment"></textarea>
+<input type="hidden" name="atom" value="{{entry.activityobject.atom_id}}"><br/>
+<input type="submit" value="Birta">
+</form>
+{% endif %}
+</div>
+<div class="clear-both"></div>

@@ -1,0 +1,2 @@
+{% if user.is_authenticated %}<div class="tags">{% if c.tags.all %}Merkingar: {{ c.tags.all|join:", "}}{% else %}Engin merki skráð{% endif %}</div> - <div class="add-tag">Bæta við merkingu</div>
+<form class="tag-form"><input type="text" class="input-tags" name="tags"><input type="submit" class="submit-tag question" value="merkja"></form>{% endif %}

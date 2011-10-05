@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% load romanize %}
+
+{% block stylesheet %}
+<link rel="stylesheet" href="/media/css/accordion.css"/>
+{% endblock %}
+
+{% block javascript %}
+<script type="text/javascript" src="http://canvg.googlecode.com/svn/trunk/rgbcolor.js"></script> 
+<script type="text/javascript" src="http://canvg.googlecode.com/svn/trunk/canvg.js"></script>
+
+<script src="/media/js/accordion.js"></script>
+{% endblock %}
+
+{% block content %}
+
+<h1>{{title}}</h1>
+
+{% for section in sections %}
+<h2>{% blocktrans %}Chapter {{section.number|romanize}} - {{section.title}}{% endblocktrans %}</h2>
+
+{% for article in section.article_set.all %}
+<div class="collapse">
+<div id="{% if article.number %}{{article.number}}{{article.subnumber}}{% else %}{{article.title|lower}}{% endif %}" class="collapse-header">{% if article.number %}{% blocktrans %}Article {{article.number}} {{article.subnumber}}{% endblocktrans %}{% endif %}{{article.title}}</div>
+<div class="collapse-text">{{article.html_content|safe}}</div>
+</div>
+{% endfor %}
+{% endfor %}
+{% endblock %}

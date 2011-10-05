@@ -1,0 +1,142 @@
+{% extends "base.html"%}
+{% load humanize %}
+{% load i18n %}
+
+{% block stylesheet %}
+<link rel="stylesheet" href="/media/css/social.css"/>
+<link rel="stylesheet" href="/media/css/wmd.css"/>
+{% endblock %}
+
+{% if vieweduser.username == user.username %}{% block javascript %}
+<script type="text/javascript" src="/media/js/showdown.js"></script>
+<script type="text/javascript" src="/media/js/wmd.js"></script>
+<script type="text/javascript" src="/media/js/note.js"></script>
+<script type="text/javascript" src="/media/js/social.js"></script>
+{% endblock %}{% endif %}
+
+{% block contentbox %}
+<div id="content-personal-information">
+{% if user.is_authenticated %}
+ <div id="personal-names">
+ <div id="username">{{vieweduser.username|capfirst}}</div>
+ <div id="full-name">{{vieweduser.get_profile.full_name}}</div>
+ </div>
+ {% if user.get_profile.person.avatar %}<div id="avatar"><img src="{{vieweduser.get_profile.person.avatar}}?s=150"></div>{% endif %}
+ <!--<div id="change-profile"><a href="#" title="{% trans 'Change information' %}">{% trans "Change information about me" %}</a></div>-->
+ <div id="information-sources">
+  <strong>{% trans "Look at submissions from" %}:</strong><br/>
+  <a href="{% url user-timeline username=vieweduser.username %}">{% trans "Me" %}</a><br/>
+  <a href="{% url friends-timeline username=vieweduser.username %}">{% trans "My friends" %}</a><br/>
+  <a href="/">{% trans "Everyone" %}</a>
+ </div>
+<div id="filter">
+  <strong>Sía út:</strong><br/>
+  <a href="{% if vieweduser.username != user.username %}{% url filter-user-timeline username=vieweduser.username construct='articles' %}{% else %}{% url filter-timeline construct='articles' %}{% endif %}">{% trans "Articles" %}</a><br/>
+  <a href="{% if vieweduser.username != user.username %}{% url filter-user-timeline username=vieweduser.username construct='photos' %}{% else %}{% url filter-timeline construct='photos' %}{% endif %}">{% trans "Photos" %}</a><br/>
+  <a href="{% if vieweduser.username != user.username %}{% url filter-user-timeline username=vieweduser.username construct='videos' %}{% else %}{% url filter-timeline construct='videos' %}{% endif %}">{% trans "Videos" %}</a><br/>
+  <a href="{% if vieweduser.username != user.username %}{% url filter-user-timeline username=vieweduser.username construct='audio' %}{% else %}{% url filter-timeline construct='audio' %}{% endif %}">{% trans "Audio" %}</a><br/>
+  <a href="{% if vieweduser.username != user.username %}{% url filter-user-timeline username=vieweduser.username construct='bookmarks' %}{% else %}{% url filter-timeline construct='bookmarks' %}{% endif %}">{% trans "Bookmarks" %}</a><br/>
+  <a href="{% if vieweduser.username != user.username %}{% url filter-user-timeline username=vieweduser.username construct='files' %}{% else %}{% url filter-timeline construct='files' %}{% endif %}">{% trans "Files" %}</a><br/>
+  <a href="{% if vieweduser.username != user.username %}{% url filter-user-timeline username=vieweduser.username construct='notes' %}{% else %}{% url filter-timeline construct='notes' %}{% endif %}">{% trans "Notes" %}</a><br/>
+ </div>
+{% else %}
+<h2>{% trans "Login" %}</h2>
+<form action="{% url user-login %}" method="post" id="user-login">{% csrf_token %}
+<label for="login_username">{% trans "Username" %}:</label>
+<input type="text" name="username" class="short-password" id="login_username">
+<label for="login_password">{% trans "Password" %}:</label>
+<input type="password" name="password" class="short-password" id="login_password">
+<p><input type="submit" class="button" value="{% trans 'Log in' %}"></p>
+</form>
+<p>
+{% trans "Not a user on the site?" %}<br/>
+<a title="{% trans 'Register' %}" href="{% url user-register %}">{% trans "Register" %}</a>
+</p>
+{% endif %}
+</div>
+
+<div id="content-main-trisected">
+{% if user.is_authenticated %}
+<div id="profession-and-follow">
+<div id="personal-profession">
+{% if user.get_profile.title %}<div id="personal-title">{{vieweduser.get_profile.title}}</div>{% endif %}
+{% if user.get_profile.institution %}<div id="institution">{{vieweduser.get_profile.institution}}</div>{% endif %}
+</div>
+{% if vieweduser.username != user.username %}
+<form id="follow-me" action="{% url start-following %}" method="post">{% csrf_token %}<input type="hidden" name="person" value="{{vieweduser.get_profile.person.atom_id}}"><input type="submit" id="submit-follow" value="{% trans 'Subscribe' %}"></form>
+{% endif %}
+</div>
+<div id="community-submission">
+{% if vieweduser.username == user.username %}
+{% include "community/social-submit.html" %}
+{% else %}
+<div id="latest-note">{{vieweduser.get_profile.latest_note}}</div>
+{% endif %}
+</div>
+{% if not vieweduser.username == user.username %}
+<h1>{% blocktrans %}What has this user been doing?{% endblocktrans%}</h1>
+{% endif %}
+{% else %}
+<h1>{% trans "Recent activity in the community" %}</h1>
+{% endif %}
+{% block community-content %}
+{% endblock%}
+</div>
+
+<div id="content-connections">
+<div class="connection-headline" id="events">{% trans "Events" %}</div>
+{% if events %}
+<ul class="calendar">{% for event in events %}
+<li><span class="date">{{event.start_date|date:"j. F"}}</span> {{event.title}}</li>
+{% endfor %}</ul>
+{% else %}
+{% trans "No upcoming events" %}.
+{% endif%}
+{% if user.is_authenticated %}<div class="click-list"><a href="{% url new-event %}" title="{% trans 'New event' %}"><img src="/media/admin/img/admin/icon_calendar.gif" title="{% trans 'New event' %}"> {% trans "Create event" %}</a></div>{% endif %}
+
+{% if user.is_authenticated %}
+<div class="connection-headline" id="following">{{vieweduser.username|capfirst}} {% trans "is following" %}</div>
+{% if vieweduser.get_profile.following.all|length != 0 %}
+{% for following in vieweduser.get_profile.following.all %}{% if following.person %}<img title="{{following}}" src="{{following.person.avatar}}?s=20">{% endif %}{% endfor %}
+{% else %}
+{{vieweduser.username|capfirst}} {% trans "is not following anything" %}
+{% endif %}
+<div class="connection-headline" id="followers">{{vieweduser.username|capfirst}} {% trans "has these subscribers" %}</div>
+{% if vieweduser.get_profile.followers.all|length != 0 %}
+{% for follower in vieweduser.get_profile.followers.all %}<img title="{{follower}}" src="{{follower.avatar}}?s=20">{% endfor %}
+{% else %}
+{{vieweduser.username|capfirst}} {% trans "does not have any subscribers" %}
+{% endif %}
+
+<div class="connection-headline" id="groups">{% trans "Groups" %}</div>
+{% if vieweduser.get_profile.groups.all|length != 0 %}
+{% for group in vieweduser.get_profile.groups.all %}<a title="{{group.title}}" href="{% url group-info group_id=group.atom_id %}"><img title="{{group.title}}" src="{{group.avatar}}" width="20"></a>{% endfor %}
+{% else %}
+{{vieweduser.username|capfirst}} {% trans "is not in any groups" %}
+{% endif %}
+<div class="click-list"><a href="{% url group-list %}" title="{% trans 'All groups' %}"> {% trans "Show all groups" %}</a></div>
+{% if user.is_authenticated %}<div class="click-list"><a href="{% url create-group %}" title="{% trans 'New group' %}"> {% trans "Create group" %}</a></div>{% endif %}
+<div class="connection-headline">{% trans "Statistics" %}</div>
+<ul id="statistics-list">
+<li>{% trans "Member since" %}: {{vieweduser.date_joined|naturalday}}</li>
+<li>{% trans "Subscriber to" %}: {{vieweduser.get_profile.following.all|length}}</li>
+<li>{% trans "Subscribers" %}: {{vieweduser.get_profile.followers.all|length}}</li>
+<li>{% trans "Groups" %}: {{vieweduser.get_profile.groups.all|length}}</li>
+<li>{% trans "Notes" %}: {{vieweduser.get_profile.count_notes}}</li>
+<li>{% trans "Articles" %}: {{vieweduser.get_profile.count_articles}}</li>
+<li>{% trans "Photos/Images" %}: {{vieweduser.get_profile.count_images}}</li>
+<li>{% trans "Videos" %}: {{vieweduser.get_profile.count_videos}}</li>
+<li>{% trans "Audio files" %}: {{vieweduser.get_profile.count_audio}}</li>
+<li>{% trans "Files" %}: {{vieweduser.get_profile.count_files}}</li>
+<li>{% trans "Links" %}: {{vieweduser.get_profile.count_bookmarks}}</li>
+<li>{% trans "Finds interesting" %}: {{vieweduser.get_profile.count_favorites}}</li>
+</ul>
+{% else %}
+<div id="frontpage-highlights">
+<ul>{% for highlight in highlights %}
+<li>{% if highlight.image %}<img src="{{highlight.image.image.url}}"/>{% endif %}<a href="{{highlight.link}}">{{highlight.title}}</a></li>
+{% endfor%}</ul>
+</div>
+{% endif %}
+</div>
+{% endblock %}

@@ -1,0 +1,76 @@
+<html>
+  <head>
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+    <title>Höfundaréttur | Mennta- og menningarmálaráðuneyti</title>
+    <link rel="stylesheet" href="/media/css/theme.css">{% block stylesheet %}
+    {% endblock %}
+    <link rel="alternate" type="text/xml" title="RSS straumur" href="{% url rss-event %}">
+
+    <script type="text/javascript" src="/media/js/jquery-1.4.4.min.js"></script>
+    <script type="text/javascript" src="/media/js/jquery-ui-1.8.9.custom.min.js"></script>
+    <script type="text/javascript" src="/media/js/valmynd.js"></script>{% block javascript %}
+    {% endblock %}
+  </head>
+  <body>    
+	<div id="upper-header">
+	  <div id="top-title">
+		<div id="site-name"><a title="Mennta- og menningarmálaráðuneyti - Forsíða" href="/">Höfundaréttur<span>.is</span></a></div>
+		<div id="beta">Vinnuvefur</div>
+	  </div>
+	</div>
+      <div id="website">
+      <div id="header">
+	<div id="lower-header">
+	    <div id="header-image"><img src="{{header_img}}"></div>
+	    {% if crumbs|length > 0 and crumbs.0.children %}<div id="main-menu">
+	    {% for crumb in crumbs.0.children %}
+		{% if crumb.title != "Hugtök" %}<div class="menuitem {{crumb.status}}" id="valmynd_{{crumb.menu.slug}}"><a href="{{crumb.menu.url}}"><div>{{crumb.menu.title}}</div></a></div>{% endif %}
+	    {% endfor %}
+	    </div>{% endif %}
+	</div>
+      </div>
+
+      <div id="content-box">
+	<div id="menubar">
+		{% if crumbs|length > 1 and crumbs.1.children %}<ul id="submenu"><li><a class="{% if crumbs|length > 2 %}in{% endif %}{{crumbs.1.status}} menutitle" href="{{crumbs.1.url}}">{{crumbs.1.menu.title}}</a></li>{% for crumb in crumbs.1.children %}<li><a class="{{crumb.status}}" href="{{crumb.url}}">{{crumb.menu.title}}</a></li>{% endfor %}</ul>{% endif %}
+	
+	<div id="community"><a href="http://facebook.com/hofundarettur" title="Höfundaréttur á Facebook"><img src="/media/hausmyndir/facebook.png"></a><a href="http://twitter.com/hofundarettur" title="Höfundaréttur á Twitter"><img src="/media/hausmyndir/twitter.png"></a><a href="{% url rss-event %}" title="RSS straumur"><img src="/media/hausmyndir/rss.png"></a><div id="google_translate_element"></div><script>
+	function googleTranslateElementInit() {
+  		new google.translate.TranslateElement({
+    			pageLanguage: 'is',
+    			layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL
+  		}, 'google_translate_element');
+	}
+	</script>
+	<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+	</div>
+	</div>
+
+         <div id="content-wrap">
+            <div id="content">
+		<div id="main">{% block pagetitle %}{% endblock %}
+			{% block content %}
+			{% endblock %}
+		{% block new_content %}
+		{% endblock %}</div>
+	    </div>
+
+	    <div id="sidebar">
+	    <div id="highlights">
+		{% if random_question %}<div id="question-box"><a href="{% with random_question.slug as question %}{% url singlequestion slug=question %}{% endwith %}">{{random_question.title}}</a></div>{% endif %}
+		{% if highlights %}<ul>{% for highlight in highlights %}
+		<li class="{% cycle "left" "right" %}"><div><a href="{{highlight.link}}">{% if highlight.icon %}<img alt="{{highlight.title}}" src="{{highlight.icon.url}}">{% endif %}{{highlight.title}}</a></div></li>{% endfor %}
+		</ul>{% endif %}
+	    </div>
+	    </div>
+	</div>
+     </div>
+	<div id="west-end">Glimmer!<div id="coat-of-arms"><img src="/media/myndir/skjaldarmerki_footer.png" title="Skjaldarmerki"></div></div>
+	</div>
+	<div id="footer">
+	Mennta- og menningarmálaráðuneytið - Sölvhólsgötu 4 - 150 Reykjavík - <a href="http://www.openstreetmap.org/?lat=64.14840&amp;lon=-21.9311&amp;mlat=64.14840&amp;mlon=-21.9315&amp;zoom=17" title="Staðsetning ráðuneytisins með hjálp OpenStreetMap">Sjá kort</a><br/>
+	Sími 545 9500 - Bréfasími 562 3068 - Kt.: 460269-2969 - Netfang: <a href="mailto:postur@mrn.is">postur@mrn.is</a>
+	</div>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+{% extends "contentbox.html" %}
+{% load i18n %}
+{% block stylesheet %}
+    <link rel="stylesheet" href="/media/css/builder.css"/> 
+{% endblock %}
+
+{% block javascript %}
+    <script type="text/javascript" src="/media/js/manage-clouds.js"></script>
+    <script type="text/javascript" src="/media/js/profession-selection.js"></script>
+{% endblock%}
+
+{% block content %}
+<p>{% blocktrans %}Step {{ step }} of {{ step_count }}{% endblocktrans %}</p>
+<!-- This form is a part of step 1 of the form wizard.  It displays the subjects and the topics fields. -->
+
+<!-- Information sidepanel -->
+<!-- Displays all the SubjectCombinations in alphabetical order next to the form. A JavaScript is added to each <a href> so that the user can click on the subject and it will be copied to the subject text box. -->
+<div id="information">
+  <div id="0-profession-list">
+    <strong>{% trans "Professions" %}</strong></br>
+    <em>{% trans "Click on a profession" %}</em>
+    <div id="0-profession-cloud">
+      {% for profession in profession_cloud %}<a id="{{profession.element}}" class="raindrop {{profession.size}}" href="#">{{profession.element}}</a>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+<!-- Information sidepanel ends -->
+
+<form id="professions-form" action="." method="post">{% csrf_token %}
+{% for field in form %}
+{{field.label_tag}}
+{{ field.errors }}
+{% if field.help_text %}<div class="description-text">{{field.help_text}}</div>{% endif %}
+{{field}}
+{% endfor %}
+
+<input type="hidden" name="{{ step_field }}" value="{{ step0 }}" />
+{{ previous_fields|safe }}
+
+<div><input type="submit" id="submit-professions" path="{% url webservice-professions %}" value="{% trans 'Continue' %}" /></div>
+</form>
+
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends "contentbox.html" %}
+
+{% block content %}
+<div id="content">
+<h1>{{title}}</h1>
+{% for c in content %}
+<h2><a href="{{c.permalink}}">{{c.title}}</a></h2>
+{{c.summary|safe}}
+{% endfor %}
+</div>
+{% endblock %}
+

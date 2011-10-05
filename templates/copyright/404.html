@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block pagetitle %}{% with crumbs|last as page %}<h1>{{page.title}}</h1>{% endwith %}{% endblock %}
+
+{% block content %}
+{% with crumbs|last as page %}
+{% if page.children %}
+<h2>Undirsíður</h2>
+<ul>{% for child in page.children %}
+<li><a title="{{ child.title }}" href="{{child.url}}">{{child.title}}</a></li>
+{% endfor %}</ul>
+{% else %}
+Síða fannst ekki. Vinsamlegast hafið samband við kerfisstjóra
+{% endif %}
+{% endwith %}
+
+{% endblock %}

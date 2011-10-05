@@ -1,0 +1,8 @@
+{% extends "contentbox.html" %}
+{% load i18n %}
+{% block content %}
+<h1>{% trans "List of stakeholders" %}</h1>
+<ul>{% for stakeholder in stakeholders %}
+<li><a href={% url stakeholder slug=stakeholder.slug %}>{{stakeholder.name}}</a>
+{%endfor%}</ul>
+{% endblock %}

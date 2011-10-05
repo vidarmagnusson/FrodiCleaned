@@ -1,0 +1,54 @@
+CONTRIBUTORS
+============
+
+Tryggvi Björgvinsson, tryggvi.bjorgvinsson@mrn.is
+Sigurbjörg Jóhannesdóttir, sigurbjorg.johannesdottir@mrn.is
+Smári McCarthy, smari@fsfi.is
+Viðar Másson, vidar.masson@gmail.com
+Jóhann Sigurðsson, johannsig@gmail.com
+Birita í Dali, birita.i.dali@mrn.is
+Viðar Magnússon, vidar@vma.is
+Hilmar Kári Hallbjörnsson, hilmar@isproject.is
+Einar Aðalsteinsson, einar@isproject.is
+
+
+PROJECTS
+========
+
+Frodi uses the following projects in addition to the regular Python/Django
+stack (hopefully we mention all, but probably not):
+
+* ChiperSoft's WMD (markdown editor - a fork of the StackOverflow WMD)
+  - https://github.com/ChiperSoft/wmd/
+* Canvg (deprecated -- not being used anymore we now just render svg directly)
+  - http://code.google.com/p/canvg/
+* The Noun Project (various graphics)
+  - http://thenounproject.com/
+* jQuery
+  - http://jquery.com/
+* jQuery UI
+  - http://jqueryui.com/
+* Ostatus (Standard for distributed social networking)
+  - http://ostatus.org/
+* Feedzilla by Grigoriy Petukhov (parts of it)
+  - https://bitbucket.org/lorien/feedzilla/
+
+Python modules
+==============
+
+Frodi uses the following Python modules as well:
+
+* Python Markdown
+* Simplejson
+* Hashlib
+* Random
+* Urllib, Urllib2, Urlparse
+* Tweepy (deprecated -- not being used now but probably be used again)
+* Re (Regular expressions)
+* Uuid
+* Datetime
+* Lxml.html
+* Roman
+* Feedparser
+* Htmldata
+* BeautifulSoup

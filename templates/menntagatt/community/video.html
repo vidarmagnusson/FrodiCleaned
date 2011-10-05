@@ -1,0 +1,11 @@
+{% extends "contentbox.html" %}
+
+{% block content %}
+
+<div id="content">
+<h1>{{video.title}}</h1>
+<video alt="{{video.title}}" width="500" src="{{video.video.url}}" controls />
+<p>{{video.description|safe}}</p>
+</div>
+{% endblock %}
+

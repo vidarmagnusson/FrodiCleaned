@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Myndir</h1>
+{% for image in album %}
+<div>
+<img class="thumbnail" src="{{image.path}}"/><br/>
+{{image.name}} - <em>{{image.position}}</em><br/>
+{{image.path}}
+</div>
+<br/>
+{% endfor%}
+{% endblock %}

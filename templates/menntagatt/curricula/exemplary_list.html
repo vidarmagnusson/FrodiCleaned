@@ -1,0 +1,78 @@
+{% extends "contentbox.html" %}
+{% load i18n %}
+{% block stylesheet %}
+    <link rel="stylesheet" href="/media/css/builder.css"/>
+{% endblock %}
+
+{% block content %}
+<div id="content">
+
+<h1>{% trans "Exemplary courses" %}</h1>
+{% if exemplary|length > 0 %}
+
+<div id="courselist">
+  <div id="courseheader">
+    <span class="descriptive_name">{% trans "Course name" %}</span>
+    <span class="name">{% trans "Course abbreviation" %}</span>
+    <span class="subjects">{% trans "Subjects" %}</span>
+    <span class="topics">{% trans "Topics"%}</span>
+    <span class="level">{% trans "Level" %}</span>
+    <span class="credits">{% trans "Credits" %}</span>
+    <span class="actions">{% trans "Operations" %}</span>
+  </div>
+
+  {% for course in exemplary %}
+  <div class="courseline {% cycle 'white-row' 'blue-row' %}">
+    <span class="descriptive_name">
+      <a href="{% url view-exemplary-course id=course.course.unique_id %}" title="{{course.course.descriptive_name}}">{{course.course.descriptive_name}}</a>
+    </span>
+    <span class="name">{{course.course.name}}</span>
+    <span class="subjects">{{course.course.subjects.subjects_list|join:", "}}</span>
+    <span class="topics">{{course.course.topics.topics_list|join:", "}}</span>
+    <span class="level">{{course.course.level}}</span>
+    <span class="credits">{{course.course.credits}}</span>
+    <span class="actions">
+    </span>
+    <div class="exemplary-list">{% trans "Exemplary course for" %}: {{course.exemplary_list|join:" - "}}
+    </div>
+  </div>
+  {% endfor %}
+{% else %}
+{% trans "No courses have been selected as exemplary courses" %}
+{% endif %}
+
+{% if courses and courses|length > 0 %}
+<h1>{% trans "Courses" %}</h1>
+
+<div id="courselist">
+  <div id="courseheader">
+    <span class="descriptive_name">{% trans "Course name" %}</span>
+    <span class="name">{% trans "Course abbreviation" %}</span>
+    <span class="subjects">{% trans "Subjects" %}</span>
+    <span class="topics">{% trans "Topics"%}</span>
+    <span class="level">{% trans "Level" %}</span>
+    <span class="credits">{% trans "Credits" %}</span>
+    <span class="actions">{% trans "Operations" %}</span>
+  </div>
+
+  {% for course in courses %}
+  <div class="courseline {% cycle 'white-row' 'blue-row' %}">
+    <span class="descriptive_name">
+      <a href="{% url view-course id=course.unique_id %}" title="{{course.descriptive_name}}">{{course.descriptive_name}}</a>
+    </span>
+    <span class="name">{{course.name}}</span>
+    <span class="subjects">{{course.subjects.subjects_list|join:", "}}</span>
+    <span class="topics">{{course.topics.topics_list|join:", "}}</span>
+    <span class="level">{{course.level}}</span>
+    <span class="credits">{{course.credits}}</span>
+    <span class="actions">
+      <a href="{% url make-exemplary-course id=course.unique_id %}" alt="{% trans 'Make exemplary' %}">
+	<img style="border:none" src="/media/icons/birta.png" width="12" alt="{% trans 'Make exemplary' %}" />
+      </a>
+    </span>
+  </div>
+  {% endfor%}
+</div>
+{% endif %}
+</div>
+{% endblock %}

@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block stylesheet %}
+    <link rel="stylesheet" href="/media/css/community.css"/> 
+{% endblock %}
+
+{% block content %}
+<h1>{{ title }}</h1>
+
+{% for header in headers %}
+<p><img src="{{header.image.url}}"> <a href="eyda{{header.image.url}}">Eyða mynd</a>
+</p>
+
+{% endfor %}
+{% endblock %}

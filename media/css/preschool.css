@@ -1,0 +1,37 @@
+/* Base color for preschools: #f14349 */
+
+#submenu {
+	background: #f14349;
+	background: -moz-linear-gradient(top, #f76e73, #f14349);
+	border: 1px solid #f76e73;
+}
+
+#submenu-marker {
+    background: #f76e73;
+    background-image: url("/media/icons/arrow-up-with-shadow.png");
+    background-repeat: no-repeat;
+}
+
+#content-highlights li {
+	background: #f14349;
+}
+
+#content-menu #content-title {
+        background: #f14349;
+}
+
+#content-menu #content-list li.active a {
+	color: #f14349;
+}
+
+#content-crumbs, #content-crumbs a:hover {
+        color: #f14349;
+}
+
+#content h1, #content a {
+	color: #f14349;
+}
+
+#content form label, label {
+        color: #f14349;
+}

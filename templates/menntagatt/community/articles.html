@@ -1,0 +1,12 @@
+{% extends "contentbox.html" %}
+{% load i18n %}
+{% block content %}
+<div id="content">
+<h1>{{title}}</h1>
+{% for article in articles %}
+<h2><a href="{{article.url}}">{{article.title}}</a></h2>
+{{article.summary}} <a title="{{article.title}}" href="{{article.url}}">{% trans "Read article" %}</a>
+{% endfor %}
+</div>
+{% endblock %}
+

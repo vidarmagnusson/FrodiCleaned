@@ -1,0 +1,30 @@
+{% extends "contentbox.html" %}
+{% load i18n %}
+
+{% block stylesheet %}
+<link rel="stylesheet" href="/media/css/search.css"/>
+{% endblock %}
+
+{% block javascript %}
+<script src="/media/js/note.js"></script>
+{% endblock %}
+
+{% block content %}
+
+<form id="search">
+<div id="search_input_wrapper"><input type="text" id="search_input" name="search" value="{{search}}"></div><div id="search_submit_wrapper"><input id="search_submit" type="submit" value="{% trans 'Search' %}"><span id="small-link"><a href="#">{% trans "Advanced search" %}</a></span></div>
+
+<input type="hidden" name="tags" value="{{tags}}">
+</form>
+
+{% for result in results %}
+<div class="result">
+<h2>{{result.title}}</h2>
+<p>{{result.description}}</p>
+<div>{{result.published}}</div>
+<div>{{result.tag_set.all|join:", "}}</div>
+<div>{{result.license}}</div>
+</div>
+{% endfor %}
+{% endblock %}
+

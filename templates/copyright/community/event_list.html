@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% load markup %}
+
+{% block stylesheet %}
+<link rel="stylesheet" href="/media/css/community.css">
+{% endblock %}
+
+{% block content %}
+<h1>{{title}}</h1>
+{% for c in content %}
+<div id="community-event">
+<h2>{{c.title}}</h2>
+<div id="event-time">
+<div id="day">{{c.start_date|date:"d"}}.</div>
+<div id="month">{{c.start_date|date:"M"}}</div>
+<div id="time">{{c.start_date|date:"H:i"}}</div>
+<div id="event-location">Staðsetning: {{c.location}}</div>
+</div>
+{{c.description|markdown}}
+</div>
+{% endfor %}
+{% endblock %}
+

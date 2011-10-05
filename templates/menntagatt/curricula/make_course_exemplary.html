@@ -1,0 +1,108 @@
+{% extends "contentbox.html" %}
+{% load markup %}
+{% load i18n %}
+
+{% block stylesheet %}
+    <link rel="stylesheet" href="/media/css/builder.css"/> 
+{% endblock %}
+
+{% block content %}
+
+<h1>{{course.descriptive_name}} - {{course.id_name}}</h1>
+
+<form action="." method="POST">{% csrf_token %}
+
+<div class="exemplary-container">
+  <div class="course-information">
+    <label>{% trans "Descriptive name" %}</label>
+    {{course.descriptive_name}}
+    <label>{% trans "Subjects" %}</label>
+    {{course.subjects.subjects}}
+    <label>{% trans "Topics" %}</label>
+    {{course.topics.topics}}
+  </div>
+  <div class="exemplary-input">
+    <label>{% trans "Notes about" %} {% trans "the descriptive name, the subjects and the topics" %}</label>
+    <textarea name="name_subjects_and_topics"></textarea>
+  </div>
+</div>
+
+<div class="exemplary-container">
+  <div class="course-information">
+    <label>{% trans "Description" %}</label>
+    {{course.description}}
+  </div>
+  <div class="exemplary-input">
+    <label>{% trans "Notes about" %} {% trans "the description" %}</label>
+    <textarea name="description"></textarea>
+  </div>
+</div>
+
+<div class="exemplary-container">
+  <div class="course-information">
+    <label>{% trans "Prerequisites" %}</label>
+    {{course.prerequisites}}
+  </div>
+  <div class="exemplary-input">
+    <label>{% trans "Notes about" %} {% trans "the prerequisites" %}</label>
+    <textarea name="prerequisites"></textarea>
+  </div>
+</div>
+
+<div class="exemplary-container">
+  <div class="course-information">
+    <label>{% trans "Level" %}</label>
+    {{course.get_level_display}}
+  </div>
+  <div class="exemplary-input">
+    <label>{% trans "Notes about" %} {% trans "the level" %}</label>
+    <textarea name="level"></textarea>
+  </div>
+</div>
+
+<div class="exemplary-container">
+  <div class="course-information">
+    <label>{% trans "Knowledge goals" %}</label>
+    <ul>{% for goal in course.knowledge_goals.all %}
+      <li>{{goal}}</li>
+    {% endfor %}</ul>
+    <label>{% trans "Skill goals" %}</label>
+    <ul>{% for goal in course.skills_goals.all %}
+      <li>{{goal}}</li>
+    {% endfor %}</ul>
+    <label>{% trans "Competence goals" %}</label>
+    <ul>{% for goal in course.competence_goals.all %}
+      <li>{{goal}}{% if goal.evaluation_set.all|length > 0 %}<br/>
+	<strong>{% trans "Evaluation" %}</strong><ul>{% for evaluation in goal.evaluation_set.all %}
+	  <li>{{evaluation}}</li>
+	  {% endfor %}</ul>{% endif %}
+      </li>
+    {% endfor %}</ul>
+    <label>{% trans "Credits" %}</label>
+    {{course.credits}} {% trans "School credits" %}
+  </div>
+  <div class="exemplary-input">
+    <label>{% trans "Notes about" %} {% trans "the knowledge, skill, and competence goals" %}</label>
+    <textarea name="goals"></textarea>
+    <label>{% trans "Notes about" %} {% trans "the evaluation of competence goals" %}</label>
+    <textarea name="competence_evaluation"></textarea>
+    <label>{% trans "Notes about" %} {% trans "the credits estimation based on the competence goals" %}</label>
+    <textarea name="competence_goals_and_credits"></textarea>
+  </div>
+</div>
+
+<div class="exemplary-container">
+  <div class="course-information">
+    <label>{% trans "Evaluation" %}</label>
+    {{course.evaluation}}
+  </div>
+  <div class="exemplary-input">
+    <label>{% trans "Notes about" %} {% trans "the evaluation" %}</label>
+    <textarea name="evaluation"></textarea>
+  </div>
+</div>
+
+<input type="hidden" name="course" value="{{course.id}}">
+<input type="submit" value="{% trans 'Create exemplary course' %}">
+</form>
+{% endblock %}

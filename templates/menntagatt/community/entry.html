@@ -1,0 +1,31 @@
+{% extends "contentbox.html" %}
+{% load i18n %}
+{% block content %}
+
+<div id="content">
+{% if entry.article %}
+<h1>{{entry.article.title}}</h1>
+
+{% if entry.author.userprofile.flattr_uid %}
+<a class="FlattrButton" style="display:none;"
+    title="Menntagátt - alpha"
+    data-flattr-uid="{{ entry.author.userprofile.flattr_uid }}"
+    data-flattr-tags="menntagátt, þróun, menntun"
+    data-flattr-category="software"
+    href="http://alpha.menntagatt.is/">
+	Flattr
+</a>
+{% endif %}
+
+<strong>{% trans "Author" %}:</strong> <img src="{{entry.author.avatar}}?s=30" alt="{{entry.author.display_name}}" /> {{entry.author.display_name}}
+<p>{{entry.article.content|safe}}</p>
+{% endif %}
+
+{% if entry.note %}
+<img src="{{entry.author.avatar}}" height="42" alt="{{entry.author.display_name}}"/> <a href="{{entry.author.permalink}}" title="{{entry.author.display_name}}">{{entry.author.display_name|capfirst}}</a>
+<p>{{entry.note.content}}</p>
+{% endif %}
+</div>
+
+{% endblock %}
+

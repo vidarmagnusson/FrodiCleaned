@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>{{ content.name }}</h1>
+<form action='/breyta{{ content.path }}' method='post'>{% csrf_token %}
+	<textarea name='content' cols='64' rows='16'>{{ content.content }}</textarea>
+	<div><input type='submit' value="Vista" class="button"/></div>
+</form>
+{% endblock %}

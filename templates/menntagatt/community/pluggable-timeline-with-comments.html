@@ -1,0 +1,36 @@
+{% load i18n %}
+{% load community %}
+
+{% if entry.verb == "http://activitystrea.ms/schema/1.0/like" %}
+<div class="timeline-activity">
+{% include "community/timeline-actor-small.html" %} {% trans "marked" %} {% include "community/timeline-object-small.html" %} {% trans "as interesting" %}
+</div>
+{% endif %}
+
+{% if entry.verb == "http://activitystrea.ms/schema/1.0/follow" %}
+<div class="timeline-activity">
+{% include "community/timeline-actor-small.html" %} {% trans "is now following what" %} {% include "community/timeline-object-small.html" %} {% trans "does" %}</span>
+</div>
+{% endif %}
+
+{% if entry.verb == "http://activitystrea.ms/schema/1.0/tag" %}
+<div class="timeline-activity">
+{% include "community/timeline-actor-small.html" %} {% trans "tagged" %} {% include "community/timeline-object-small.html" %}
+</div>
+{% endif %}
+
+{% if entry.verb == "http://activitystrea.ms/schema/1.0/post" %}
+{% if entry.activityobject.comment %}{% else %}
+<div class="timeline-entry">
+ {% include "community/timeline-actor.html" %}
+ {% include "community/timeline-object.html" %}
+</div>
+{% endif %}
+{% endif %}
+
+{% if entry.verb == "http://activitystrea.ms/schema/1.0/share" %}
+<div class="timeline-entry">
+ {% include "community/timeline-actor-share.html" %}
+ {% include "community/timeline-object.html" %}
+</div>
+{% endif %}

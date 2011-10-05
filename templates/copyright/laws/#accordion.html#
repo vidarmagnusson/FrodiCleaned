@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% load romanize %}
+
+{% block stylesheet %}
+<link rel="stylesheet" href="/media/css/accordion.css"/>
+{% endblock %}
+
+{% block javascript %}
+<script type="text/javascript" src="http://canvg.googlecode.com/svn/trunk/rgbcolor.js"></script> 
+<script type="text/javascript" src="http://canvg.googlecode.com/svn/trunk/canvg.js"></script>
+
+<script src="/media/js/accordion.js"></script>
+{% endblock %}
+
+{% block content %}
+
+<h1>{{title}}</h1>
+
+{% for section in sections %}
+<h2>{{section.number|romanize}}. kafli {{section.title}}</h2>
+
+{% for article in section.article_set.all %}
+<div class="collapse">
+<div id="{{article.number}}" class="collapse-header">{{article.number}}. grein {{article.title}}</div>
+<div class="collapse-text">{{article.html_content|safe}}</div>
+</div>
+
+{% endfor %}
+{% endfor %}
+
+{% endblock %}

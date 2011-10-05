@@ -1,0 +1,24 @@
+{% load i18n %} 
+     <div id="header">
+	<div id="top-title">
+	  <a title="Menntagátt" href="/"><span class="black">Mennta</span>gátt</a>
+	  <div id="admin-tools">
+	        {% if user.is_authenticated %}
+		<em>{{user.username|capfirst}}</em> -
+	        <a href="/notendur/utskraning/">{% trans "Logout" %}</a>
+	        {% else %}
+        	<a href="/notendur/innskraning/">{% trans "Login" %}</a>
+        	{% endif %}
+	  </div>
+	</div>
+      </div>
+            
+	<div id="header-bar">
+		{% if crumbs|length > 0 and crumbs.0.children %}<ul id="menu">
+			{% for menuitem in crumbs.0.children %}<li class="{{menuitem.status}}"><a href="{{menuitem.url}}">{{menuitem.title}}</a>{% if menuitem.status == "active" %}<span id="submenu-marker"></span>{% endif %}</li>{% endfor %}
+		</ul>{% endif %}
+	</div>
+
+	{% if crumbs|length > 1 and crumbs.1.children %}<div id="submenu"><ul>
+	{% for menuitem in crumbs.1.children %}<li class="{{menuitem.status}}"><a href="{{menuitem.url}}">{{menuitem.title}}</a></li>{% endfor %}
+	</ul></div>{% endif %}

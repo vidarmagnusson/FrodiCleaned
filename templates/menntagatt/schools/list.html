@@ -1,0 +1,16 @@
+{% extends "contentbox.html" %}
+
+{% block content %}
+
+<h1>{{title}}</h1>
+<div id="small_area_select">
+{% include "country/map.html" %}
+</div>
+
+<ul>
+{% for school in schools %}
+<li><a href="{% url school-info school=school.slug %}" title="{{school.name}}">{{school.name}}</a> ({{school.email}})</li>
+{% endfor %}
+</ul>
+
+{% endblock %}

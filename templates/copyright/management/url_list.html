@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>{{title}}</h1>
+
+<ul>
+{% for item in list %}
+<li><a href="{{item.url}}">{{item.title}}</a></li>
+{% endfor %}
+</ul>
+
+{% endblock %}

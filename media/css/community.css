@@ -1,0 +1,18 @@
+#community-form label{
+	display: block;
+	color: #3155a6;
+	font-size:120%;
+}
+
+#community-form input[type='text'], #community-form textarea {
+	width: 400px;
+	border: 1px solid #000000;
+}
+
+#community-form #id_content {
+	height: 400px;
+}
+
+#community-form #id_description {
+	height: 100px;
+}

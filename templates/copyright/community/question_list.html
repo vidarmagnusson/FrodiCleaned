@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% load markup %}
+
+{% block javascript %}
+<script type="text/javascript" src="/media/js/tag.js"></script>
+{% endblock %}
+
+{% block stylesheet %}
+<link rel="stylesheet" href="/media/css/community.css">
+{% endblock %}
+
+{% block pagetitle %}<h1>{{title}}</h1>{% endblock %}
+
+{% block content %}
+{% for c in content %}
+<div id="community-question">
+<h2>{{c.title}}</h2>
+{% with itemtype as "question" %}{% include "community/tag.html" %}{% endwith %}
+<div class="description">{{c.description|markdown}}</div>
+{% for answer in c.answer_set.all %}
+{{answer.description|markdown}}
+{% endfor %}
+</div>
+{% endfor %}
+<h3>Fleiri spurningar og svör</h3>
+{% if crumbs|length > 0 and crumbs.0.children %}<ul>
+{% for crumb in crumbs.0.children %}
+{% if crumb.status != 'active' %}<li><a href="{{crumb.url}}spurt-og-svarad/">Spurningar og svör - {{crumb.menu.title}}</a></li>{% endif %}
+{% endfor %}
+</ul>{% endif %}
+
+{% endblock %}
+
+{% block new_content %}
+{% if form %}{% include "community/new.html" %}{% endif %}
+{% endblock %}

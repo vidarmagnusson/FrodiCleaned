@@ -1,0 +1,123 @@
+{% extends "contentbox.html" %}
+{% load i18n %}
+
+{% block javascript %}
+<script type="text/javascript" src="/media/js/profile.js"></script>
+{% endblock %}
+
+{% block content %}
+<form id="profile_form" action="." method="post">{% csrf_token %}
+<div class="profile-information">
+  <h1>{{profile.title}} <span class="hide-on-load input">{{form.title}}<input type="submit" value="{% trans 'Change' %}"></span><a class="change-form" href="#">{% trans "Change display name" %}</a></h1>
+</div>
+
+<div class="profile-group">
+  <div class="profile">
+    <div class="profile-header">
+      <img src="{{profile.avatar}}?s=150">
+    </div>
+    <div class="profile-information">
+      <div class="profile-subinfo"><span class="profile-subheader">{% trans "Full name" %}</span> {% if profile.full_name %}{{profile.full_name}} <span class="hide-on-load input">{{form.full_name}}<input type="submit" value="{% trans 'Change' %}"></span><a class="change-form" href="#">{% trans "Change"%}</a>{% else %}<span class="hide-on-load input">{{form.full_name}}<input type="submit" value="{% trans 'Change' %}"></span><a class="change-form" href="#">{% trans "Add my full name" %}</a>{% endif %}</div>
+      <div class="profile-subinfo"><span class="profile-subheader">{% trans "E-mail" %}</span> {{profile.user.email}} <a class="change-form" href="#">{% trans "Change" %}</a></div>
+      <div class="profile-subinfo"><span class="profile-subheader">{% trans "Location" %}</span> <span id="location">{% if profile.location %}{{profile.location}}{% else %}{% trans "Not published" %}{% endif %}</span></div>
+      <div class="profile-subinfo"><span class="profile-subheader">{% trans "Website" %}</span> {% if profile.website %}{{profile.website}} <span class="hide-on-load input">{{form.website}}<input type="submit" value="{% trans 'Change' %}"></span><a class="change-form" href="#">{% trans "Change" %}</a>{% else %}<span class="hide-on-load input"><input type="text" name="website" value="http://"><input type="submit" value="{% trans 'Add' %}"></span><a class="change-form" href="#">{% trans "Add my personal website" %}</a>{% endif %}</div>
+      <div class="profile-subinfo"><span class="profile-subheader">{% trans "Password" %}</span> <a href="{% url change-password %}">{% trans "Change" %}</a></div>
+      <div class="profile-subinfo">{% trans "Your avatar is a Gravatar based on your email" %} <a href="http://gravatar.com">{% trans "Get a Gravatar" %}</a></div>
+    </div>
+  </div>
+</div>
+
+<div class="profile-group">
+  <div class="profile">
+    <div class="profile-header">{% trans "Schools" %}</div>
+    <div class="profile-information">
+      {% for school in profile.school.all %}<ul>
+	<li>{{school.name}}<input type="hidden" name="school" value="{{school.id}}"> <a class="remove-school" href="#">{% trans "Remove" %}</a></li>
+	{% endfor %}</ul>
+      <span class="hide-on-load input">{{form.school}}<input type="submit" value="{% trans 'Add' %}"></span><a class="change-form" href="#">{% trans "Add a school"%}</a>
+    </div>
+  </div>
+  <div class="profile">
+    <div class="profile-header">
+      {% trans "How are you connected to the school/schools?" %}
+    </div>
+    <div class="profile-information">
+      {% if profile.position %}{{profile.position}} <span class="hide-on-load input">{{form.position}}<input type="submit" value="{% trans 'Change' %}"></span><a class="change-form" href="#">{% trans "Change" %}</a>{% else %}<span class="hide-on-load input">{{form.position}}<input type="submit" value="{% trans 'Change' %}"></span><a class="change-form" href="#">{% trans "Add my school connection description" %}</a>{% endif %}
+    </div>
+  </div>
+</div>
+
+<div class="profile-group">
+  <div class="profile">
+    <div class="profile-header">
+      {% trans "Interested in" %}
+    </div>
+    <div class="profile-information">
+      {% if profile.interests %}{{profile.interests}} <span class="hide-on-load input">{{form.interests}}<input type="submit" value="{% trans 'Change' %}"></span><a class="change-form" href="#">{% trans "Change" %}</a>{% else %}<span class="hide-on-load input">{{form.interests}}<input type="submit" value="{% trans 'Add' %}"></span><a class="change-form" href="#">{% trans "Add my interests" %}</a>{% endif %}
+    </div>
+  </div>
+  <div class="profile">
+    <div class="profile-header">
+      {% trans "Bio" %}
+    </div>
+    <div class="profile-information">
+      {% if profile.bio %}{{profile.bio}} <span class="hide-on-load input">{{form.bio}}<input type="submit" value="{% trans 'Change' %}"></span><a class="change-form" href="#">{% trans "Change" %}</a>{% else %}<span class="hide-on-load input">{{form.bio}}<input type="submit" value="{% trans 'Add' %}"></span><a class="change-form" href="#">{% trans "Add my bio" %}</a>{% endif %}
+    </div>
+  </div>
+</div>
+
+<div class="profile-group">
+  <div class="profile">
+    <div class="profile-header">
+      Flattr
+    </div>
+    <div class="profile-information">{% if profile.flattr_uid %}{{profile.flattr_uid}} <span class="hide-on-load input">{{form.flattr_uid}}<input type="submit" value="{% trans 'Change' %}"></span><a class="change-form" href="#">{% trans "Change" %}</a>{% else %}<span class="hide-on-load input">{{form.flattr_uid}}<input type="submit" value="{% trans 'Add' %}"></span><a class="change-form" href="#">{% trans "Add Flattr username" %}</a> - <a class="change-form" href="#">{% trans "What is Flattr?" %}</a>{% endif %}
+    </div>
+  </div>
+  <div class="profile">
+    <div class="profile-header">
+      {% trans "Preferred license for content"%}
+    </div>
+    <div class="profile-information">
+      {{profile.default_cc_license}}<br/> <span class="hide-on-load input">{{form.default_cc_license}}<input type="submit" value="{% trans 'Change' %}"></span><a class="change-form" href="#">{% trans "Change"%}</a> - <a class="change-form" href="#">{% trans "What is Creative Commons?" %}</a>
+    </div>
+  </div>
+</div>
+
+<div>
+  <ul>{% for construct in profile.following.all %}
+    <li>{{construct.title}}</li>
+    {% endfor %}</ul>
+</div>
+
+<div>
+  <ul>{% for person in profile.followers.all %}
+    <li>{{person.title}}</li>
+    {% endfor %}</ul>
+</div>
+
+<div>
+  <ul>{% for construct in profile.favorites.all %}
+    <li>{{construct.title}}</li>
+    {% endfor %}</ul>
+</div>
+
+<div>
+  <ul>{% for person in profile.friends.all %}
+    <li>{{person.title}}</li>
+    {% endfor %}</ul>
+</div>
+
+<div>
+  <ul>{% for group in profile.groups.all %}
+    <li>{{group.title}}</li>
+    {% endfor %}</ul>
+</div>
+
+<div>
+  <ul>{% for construct in profile.saved_objects.all %}
+    <li>{{construct.title}}</li>
+    {% endfor %}</ul>
+</div>
+</form>
+{% endblock %}

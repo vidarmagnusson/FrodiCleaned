@@ -1,0 +1,20 @@
+{% extends "contentbox.html" %}
+{% load i18n %}
+{% block stylesheet %}
+    <link rel="stylesheet" href="/media/css/builder.css"/>
+{% endblock %}
+
+{% block content %}
+<div id="content">
+<h1>Próflok</h1>
+
+{% for p in exams %}
+<h3>{{p.title}}</h3>
+<em>{{p.level}} | {{p.minimum_credits}}-{{p.maximum_credits}} fein.</em>
+<p>
+{{p.description}}
+</p>
+{% endfor %}
+
+</div>
+{% endblock %}

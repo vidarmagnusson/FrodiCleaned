@@ -1,0 +1,12 @@
+{% if user.is_authenticated%}<div id="community-form">
+<h1>{{ formtitle }}</h1>
+
+	{% if form.errors %}
+	<p><span class="red-text">Vinsamlegast lagaðu þær villur sem upp komu</span></p>
+	{% endif %}
+	<form action="{{formpostto}}" method="post">{% csrf_token %}
+		{{ form.as_p }}
+		{% if formtag %}<input type="hidden" name="tag" value="{{formtag}}">{% endif %}
+		<input type="submit" value="Senda inn">
+	</form>
+</div>{% endif %}

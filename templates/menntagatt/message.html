@@ -1,0 +1,10 @@
+{% extends "contentbox.html" %}
+{% load i18n %} 
+
+{% block content %}
+
+<h1>{{ msg }}</h1>
+
+{% if return_site %}{% trans "Return to" %} <a href="{{return_site.url}}" title="{{return_site.name}}">{{return_site.name}}</a>{% endif %}
+
+{% endblock %}

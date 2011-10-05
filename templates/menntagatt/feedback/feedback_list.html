@@ -1,0 +1,47 @@
+{% extends "contentbox.html" %}
+{% load humanize %}
+{% load i18n %}
+{% block stylesheet %}
+    <link rel="stylesheet" href="/media/css/feedback.css"/>
+{% endblock %}
+
+{% block javascript %}
+<script src="/media/js/feedback.js"></script>
+{% endblock %}
+
+{% block content %}
+{% if feedback|length == 0 %}
+<h1>{% trans No ideas have been posted, please share your idea on how to improve the site %}</h1>
+{% endif %}
+{% for feed in feedback %}
+<div class="feedback">
+<div class="feedback-title">{{feed.feedback.title}}</div>
+<div class="feedback-author">{{feed.feedback.author|capfirst}} - {{feed.feedback.published|naturalday}}</div>
+<div class="feedback-description">
+{{feed.feedback.description}}
+</div>
+{% if feed.feedback.comment_set.all|length > 0 %}
+<ul class="feedback-comment">{% for comment in feed.feedback.comment_set.all %}
+<li><div class="comment">{{comment.comment}}</div><div class="comment-author">{{comment.author|capfirst}} - {{comment.published|naturalday}}</li>
+{% endfor %}</ul>{% endif %}
+<div class="add-{% if feed.feedback.comment_set.all|length == 0%}new-{% endif %}comment">Bæta við athugasemd</div>
+<div class="comment_form">
+<form id="comment_form_{{feed.feedback.pk}}" action="{% url feedback-comment feedback=feed.feedback.pk %}" method="post">{% csrf_token %}
+{{feed.commentform.as_table}}<br>
+<input type="submit" id="submit_comment_{{feed.feedback.pk}}" value="{% trans 'Submit' %}"/>
+</form>
+</div>
+</div>
+{% endfor %}
+
+<div id="new-idea">
+<h1>Bættu við þinni hugmynd</h1>
+<p>Ert þú með hugmynd um hvernig megi bæta Menntagáttina? Taktu þátt í umræðunni og bættu við þinni tillögu.</p>
+<p>Hægt verður að gera athugasemdir við hugmyndina þína en þróunaraðilar munu auðvitað skoða hugmyndina og umræðurnar sem tengjast henni</p>
+
+<form action="{% url feedback-list %}" method="post" id="new_feedback">{% csrf_token %}
+{{form.as_table}}<br/>
+<input type="submit" id="submitfeedback" value="Senda inn"/>
+</form>
+</div>
+{% endblock %}

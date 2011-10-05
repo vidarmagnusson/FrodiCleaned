@@ -1,0 +1,23 @@
+{% extends "contentbox.html" %}
+{% load i18n %}
+{% block stylesheet %}
+    <link rel="stylesheet" href="/media/css/community.css"/> 
+{% endblock %}
+
+{% block javascript %}
+    {{ form.media }}
+{% endblock%}
+
+{% block content %}
+<h1>{{ title }}</h1>
+
+{% if form.errors %}
+	<p><span class="red-text">{% trans "Please correct the following errors" %}</span></p>
+{% endif %}
+	<div id="community-form">
+	<form action="" method="post">{% csrf_token %}
+		{{ form.as_p }}
+		<input type="submit" value="{% trans 'Publish' %}">
+	</form>
+	</div>
+{% endblock %}

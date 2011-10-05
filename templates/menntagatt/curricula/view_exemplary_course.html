@@ -1,0 +1,120 @@
+{% extends "contentbox.html" %}
+{% load markup %}
+{% load i18n %}
+
+{% block stylesheet %}
+    <link rel="stylesheet" href="/media/css/builder.css"/> 
+{% endblock %}
+
+{% block content %}
+
+<h1>{% trans "The exemplary course" %}: {{exemplary.course.descriptive_name}} - {{exemplary.course.id_name}}</h1>
+
+<div class="exemplary-container">
+  <div class="course-information{% if not exemplary.name_subjects_and_topics %} no-exemplary-notes{% endif %}">
+    <label>{% trans "Descriptive name" %}</label>
+    {{exemplary.course.descriptive_name}}
+    <label>{% trans "Subjects" %}</label>
+    {{exemplary.course.subjects.subjects}}
+    <label>{% trans "Topics" %}</label>
+    {{exemplary.course.topics.topics}}
+  </div>
+  {% if exemplary.name_subjects_and_topics %}
+  <div class="exemplary-input">
+    <label>{% trans "Notes about the descriptive name, the subjects and the topics" %}</label>
+    <p>{{exemplary.name_subjects_and_topics}}</p>
+  </div>
+  {% endif %}
+</div>
+
+<div class="exemplary-container">
+  <div class="course-information{% if not exemplary.description %} no-exemplary-notes{% endif %}">
+    <label>{% trans "Description" %}</label>
+    {{exemplary.course.description}}
+  </div>
+  {% if exemplary.description %}
+  <div class="exemplary-input">
+    <label>{% trans "Notes about the description" %}</label>
+    <p>{{exemplary.description}}</p>
+  </div>
+  {% endif %}
+</div>
+
+<div class="exemplary-container">
+  <div class="course-information{% if not exemplary.prerequisites %} no-exemplary-notes{% endif %}">
+    <label>{% trans "Prerequisites" %}</label>
+    {{exemplary.course.prerequisites}}
+  </div>
+  {% if exemplary.prerequisites %}
+  <div class="exemplary-input">
+    <label>{% trans "Notes about the prerequisites" %}</label>
+    <p>{{exemplary.prerequisites}}</p>
+  </div>
+  {% endif %}
+</div>
+
+<div class="exemplary-container">
+  <div class="course-information{% if not exemplary.level %} no-exemplary-notes{% endif %}">
+    <label>{% trans "Level" %}</label>
+    {{exemplary.course.get_level_display}}
+  </div>
+  {% if exemplary.level %}
+  <div class="exemplary-input">
+    <label>{% trans "Notes about the level" %}</label>
+    <p>{{exemplary.level}}</p>
+  </div>
+  {% endif %}
+</div>
+
+<div class="exemplary-container">
+  <div class="course-information{% if not exemplary.goals and not exemplary.competence_evaluation and not exemplary.comptence_goals_and_credits %} no-exemplary-notes{% endif %}">
+    <label>{% trans "Knowledge goals" %}</label>
+    <ul>{% for goal in exemplary.course.knowledge_goals.all %}
+      <li>{{goal}}</li>
+    {% endfor %}</ul>
+    <label>{% trans "Skill goals" %}</label>
+    <ul>{% for goal in exemplary.course.skills_goals.all %}
+      <li>{{goal}}</li>
+    {% endfor %}</ul>
+    <label>{% trans "Competence goals" %}</label>
+    <ul>{% for goal in exemplary.course.competence_goals.all %}
+      <li>{{goal}}{% if goal.evaluation_set.all|length > 0 %}<br/>
+	<strong>{% trans "Evaluation" %}</strong><ul>{% for evaluation in goal.evaluation_set.all %}
+	  <li>{{evaluation}}</li>
+	  {% endfor %}</ul>{% endif %}
+      </li>
+    {% endfor %}</ul>
+    <label>{% trans "Credits" %}</label>
+    {{exemplary.course.credits}} {% trans "School credits" %}
+  </div>
+  {% if exemplary.goals or exemplary.competence_evaluation or exemplary.comptence_goals_and_credits %}
+  <div class="exemplary-input">
+    {% if exemplary.goals %}
+    <label>{% trans "Notes about the knowledge, skill, and competence goals" %}</label>
+    <p>{{exemplary.goals}}</p>
+    {% endif %}
+    {% if exemplary.competence_evaluation %}
+    <label>{% trans "Notes about the evaluation of competence goals" %}</label>
+    <p>{{exemplary.competence_evaluation}}</p>
+    {% endif %}
+    {% if exemplary.competence_goals_and_credits %}
+    <label>{% trans "Notes about the credits estimation based on the competence goals" %}</label>
+    <p>{{exemplary.competence_goals_and_credits}}</p>
+    {% endif %}
+  </div>
+  {% endif %}
+</div>
+
+<div class="exemplary-container">
+  <div class="course-information{% if not exemplary.evaluation %} no-exemplary-notes{% endif %}">
+    <label>{% trans "Evaluation" %}</label>
+    {{exemplary.course.evaluation}}
+  </div>
+  {% if exemplary.evaluation %}
+  <div class="exemplary-input">
+    <label>{% trans "Notes about the evaluation" %}</label>
+    <p>{{exemplary.evaluation}}</p>
+  </div>
+  {% endif %}
+</div>
+{% endblock %}

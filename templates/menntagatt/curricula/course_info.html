@@ -1,0 +1,40 @@
+{% load markup %}
+{% load i18n %}
+<p>
+<div><label>{% trans "Subjects" %}</label> {{course.subjects.subjects}}</div>
+<div><label>{% trans "Topics" %}</label> {{course.topics.topics}}</div>
+</p>
+
+<p>
+<div><label>{% trans "Level" %}</label> <p>{{course.level}}. þrep</p></div>
+<div><label>{% trans "Credits" %}</label> <p>{{course.credits}} {% trans "school credits" %}</p></div>
+</p>
+
+<p>
+<div><label>{% trans "Prerequisites" %}</label> {{course.prerequisites|markdown}}</div>
+<div><label>{% trans "Description" %}</label> {{course.description|markdown}}</div>
+</p>
+
+<p>
+<label>{% trans "Knowledge goals" %}</label>
+<ul>{% for goal in course.knowledge_goals.all %}
+<li>{{goal|markdown}}</li>
+{% endfor %}</ul>
+
+<label>{% trans "Skill goals" %}</label>
+<ul>{% for goal in course.skills_goals.all %}
+<li>{{goal|markdown}}</li>
+{% endfor %}</ul>
+
+<label>{% trans "Competence goals" %}</label>
+<ul>{% for goal in course.competence_goals.all %}
+<li>{{goal|markdown}}
+<ul>{% for evaluation in goal.evaluation_set.all %}
+<li>{{ evaluation|markdown }}</li>
+{% endfor %}</ul></li>
+{% endfor %}</ul>
+</p>
+
+<p>
+{% if course.evaluation %}<div><label>{% trans "Additional evaluation" %}</label> {{course.evaluation|markdown}}</div>{% endif %}
+</p>

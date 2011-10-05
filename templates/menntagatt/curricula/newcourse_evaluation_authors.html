@@ -1,0 +1,53 @@
+{% extends "contentbox.html" %}
+{% load i18n %}
+{% block stylesheet %}
+    <link rel="stylesheet" href="/media/css/builder.css"/> 
+{% endblock %}
+
+{% block javascript %}
+    {{ form.media }}
+{% endblock%}
+
+{% block content %}
+<p>{% blocktrans %}Step {{ step }} of {{ step_count }}{% endblocktrans%}</p>
+<!-- This form is a part of step 2 of the form wizard.  It displays the descriptive name, level of the course, the description and the prerequisites. -->
+
+<!-- Information sidepanel -->
+<div id="information">
+	<div id="id-abbreviation">{{abbreviation}}</div>
+
+	<div id="information-list">
+	{% for previous in previous_values %}
+		<div class="information-label">{{previous.label}}</div>
+		{{previous.value|safe}}
+	{% endfor %}
+	</div>
+</div>
+<!-- Information sidepanel ends -->
+
+<form action="." method="post">{% csrf_token %}
+{{form.evaluation.label_tag}}
+{{form.evaluation.errors}}
+{% if form.evaluation.help_text %}
+<div class="description-text">{{form.evaluation.help_text}} <a href="#">Ítarlegri leiðbeiningar</a></div>{% endif %}
+{{form.evaluation}}
+
+<label>{% trans "Main author" %}</label>
+<div class="description-text">Upprunalegur höfundur áfangans<a href="#">Ítarlegri leiðbeiningar</a></div>
+<div id="user-author">
+<img src="{{author.avatar}}" alt="{{author.title}}"> Ég ({{author.title}})
+</div>
+<br/>
+
+{{form.coauthors.label_tag}}
+{{form.coauthors.errors}}
+{% if form.coauthors.help_text %}
+<div class="description-text">{{form.coauthors.help_text}} <a href="#">Ítarlegri leiðbeiningar</a></div>{% endif %}
+{{form.coauthors}}
+
+<input type="hidden" name="{{ step_field }}" value="{{ step0 }}" />
+{{ previous_fields|safe }}
+
+<div><input type="submit" value="{% trans 'Continue' %}"></div>
+</form>
+{% endblock %}

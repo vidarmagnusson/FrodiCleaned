@@ -1,0 +1,319 @@
+html {
+	overflow-y: scroll
+}
+
+body {
+	font-family: sans-serif;
+	font-size: 13px;
+	background: #333333;
+	background-repeat: no-repeat;
+
+}
+
+/*div {
+    border:0px;
+    margin:0px;
+    padding:0px;
+}*/
+
+#website {
+	width: 980px;
+	padding: 5px;
+	margin: 10px auto;
+	background: #ffffff;
+}
+
+#top-title {
+	position: relative;
+	width: 980px;
+	height: 120px;
+	background: #ffffff;
+	background-image: url("/media/hausmyndir/banner_green.png");
+	background-repeat: no-repeat;
+	background-position: bottom;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 15px;
+	border-bottom: 1px solid #000000;
+   	text-shadow: rgba(0,0,0,.4) 0 1px 0;
+}
+
+#top-title #community {
+	position: absolute;
+	right: 5px;
+	top: 10px;
+}
+
+#top-title #community img {
+	margin: 5px;
+}
+
+#top-title a {
+	position:absolute;
+	bottom: -5px;
+	font-size: 450%;
+	color: #ff6633;
+	text-decoration: none;
+	font-family: sans-serif;
+	text-transform: uppercase;
+	font-weight: bold;
+	/*font-family: Helvetica, Arial, Sans-Serif;*/
+	/*text-shadow: 0 1px 0 #0c3803;*/*//*#ff7b23*/
+}
+
+#top-title a:hover {
+	color: #31a82f;
+}
+
+#top-title a:first-letter {
+	font-size: 125%;
+}
+
+#top-title #site-gradient {
+	background: url("/media/hausmyndir/gradient.png") repeat-x;
+	display: block;
+  	width: 100%;
+	z-index: 2;
+}
+
+#content-box {
+	display:block;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#content-main {
+	float: left;
+	display: block;
+	width: 760px;
+}
+
+#content {
+	float: right;
+	display:block;
+	padding-top: 10px;
+	width: 540px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#menu {
+	display:block;
+	float: left;
+	width: 200px;
+   	left: 0px;
+	top: 0px;
+}
+
+#content-highlights {
+	display:block;
+	float: right;
+	width: 200px;
+}
+
+#footer {
+	clear:both;
+	width: 980px:
+	height: 30px;
+	color: #ffffff;
+}
+
+#content h1 {
+	margin-top: 0px;
+	padding-top: 0px;
+	font-size: 180%;
+	font-weight: normal;
+	color: #333333;
+	text-transform: uppercase;
+}
+
+#content h1 + p:first-letter {
+	font-family: serif;
+	font-size: 225%;
+	font-weight: bold;
+	border: 1px solid #009800;
+	background-color: #007800;
+	color: #ff6633;
+	padding: 0.1em;
+	margin-right: 0.2em;
+	margin-left: 0.2em;
+	position: relative;
+	float: left;
+}
+
+#menu ul {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+#menu ul .valmynd {
+   border-top: 1px solid #aff797;
+   background: #1c7209;
+   background: -webkit-gradient(linear, left top, left bottom, from(#3c9716), to(#1c7209));
+   background: -moz-linear-gradient(top, #3c9716, #1c7209);
+   /*padding: 14.5px 29px;*/
+   padding-left: 15px;
+   margin-bottom: 5px;
+   margin-top:10px;
+   height: 40px;
+   width: 175px;
+   -webkit-border-radius: 0px;
+   -moz-border-radius: 0px;
+   border-radius: 0px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.1) 0 1px 0;
+   font-size: 13px;
+   font-family: Helvetica, Arial, Sans-Serif;
+   text-decoration: none;
+ /*  vertical-align: middle;*/
+}
+
+#menu ul .valmynd:hover {
+   border-top-color: #357828;
+   background: #357828;
+   color: #ccc;
+
+}
+#menu ul .valmynd:active {
+   border-top-color: #2b5c1b;
+   background: #2b5c1b;
+   
+}
+
+/*#menu .valmynd {
+	display: table;
+	width: 185px;
+	height: 30px;
+	padding: 0px;
+	cursor: pointer;
+	padding-left: 10px;
+	background: #f6d42f;*//*#FCB415;*//*#fc9000;*//*#d45500;*/
+/*	margin-bottom: 5px;
+	border-top: 1px solid #ffc900; *//*#ff7b23;*/
+/*	border-bottom: 1px solid #000000;/
+}
+
+/*#menu ul .valmynd div {
+	display: table-cell;
+	vertical-align: middle;
+}*/
+
+#menu ul .valmynd div {
+	display: block;
+	vertical-align: middle;
+}
+
+#menu ul .valmynd div img {
+	vertical-align: middle;
+	margin: 5px;
+	margin-right: 5px;
+	border: none;
+}
+
+#menu ul .valmynd div {
+	text-decoration: none;
+	color: #ff6633;
+	font-size: 110%;
+	font-weight: bold;
+	/*text-shadow: 0 1px 0 #ffc900;*//*#ff7b23;*/
+}
+
+.undirvalmynd ul li {
+	background: none;
+	border: none;
+	background-image: url("/media/myndir/or.png");
+	background-repeat: no-repeat;
+	background-position: 0px 3px;
+	margin: 0px;
+	margin-left: 5px;
+	margin-bottom: 5px;
+	padding: 0px;
+	padding-left: 20px;
+	width: 160px;
+	height: auto;
+}
+
+#menu .undirvalmynd ul li a {
+	color: #000000;
+	text-decoration: none;
+}
+
+#highlights ul {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+#highlights ul li {
+   display:table;
+   border-top: 1px solid #aff797;
+   background: #1c7209;
+   background: -webkit-gradient(linear, left top, left bottom, from(#3c9716), to
+(#1c7209));
+   background: -moz-linear-gradient(top, #3c9716, #1c7209);
+   /*padding: 14.5px 29px;*/
+   margin-bottom: 5px;
+   margin-top: 10px;
+   height: 70px;
+   width: 200px;
+   -webkit-border-radius: 0px;
+   -moz-border-radius: 0px;
+   border-radius: 0px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: #fc9000;
+   font-size: 13px;
+   font-weight: bold;
+   font-family: Helvetica, Arial, Sans-Serif;
+   text-decoration: none;
+   vertical-align: middle;
+   }
+#highlights ul li:hover {
+   border-top-color: #357828;
+   background: #357828;
+   color: #ccc;
+   }
+#highlights ul li:active {
+   border-top-color: #2b5c1b;
+   background: #2b5c1b;
+   }
+
+/*#highlights ul li {
+	display: table;
+	width: 190px;
+	height: 70px;
+	padding: 5px;
+	background: #f36100;*//*#ab0d12;*//*#fc9000;*//*#d45500;*/
+/*	margin-bottom: 5px;
+	border-top: 1px solid #ffc900;*//*#ff7b23;*/
+/*	border-bottom: 1px solid #000000;
+	text-align: center;
+}*/
+
+#highlights ul li div {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+
+#highlights ul li div a {
+	text-decoration: none;
+	color: #ff6633;
+	font-size: 110%;
+	font-weight: bold;
+	/*text-shadow: 0 1px 0 *//*#f6979b;*//*#fc9000;*/ /*#ff7b23;*/
+}
+
+#highlights ul li div a img {
+	display: block;
+	border: none;
+	margin: 5px;
+	margin-left: auto;
+	margin-right: auto;
+}

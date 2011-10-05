@@ -1,0 +1,229 @@
+{% extends "base.html" %}
+
+{% block stylesheet %}
+    <link rel="stylesheet" href="/media/css/coursebuilder.css"/>                
+{% endblock %}
+
+{% block javascript %}
+    <script src="/media/js/newcourse.js"></script>	
+{% endblock%}
+
+{% block content %}
+<h1>{{ title }}</h1>
+  <form name="new-course" method="POST" action="">{% csrf_token %}
+
+    <div id="input-information">
+    <div id="div-subjects" class="input-area">
+      <label for="subjects">Námsgrein</label>
+      <div class="description-text">Námsgrein lýsir því grunnsviði eða fagi sem kennt er í áfanganum, til dæmis stærðfræði, íslenska, efnafræði, raflagnir, skyndihjálp, margmiðlunarfræði, hárgreiðsla, iðnfræði. Leyfilegt er að tilgreina fleiri en eina námsgrein þegar um þverfaglegan áfanga er að ræða.</div>
+      <input id="subjects" name="subjects"
+	     autoComplete="off" type="text"
+	     class="basic-information"/>
+      <div class="move-to-course hidden">Færa yfir í áfangalýsingu <div class="right-arrow">&nbsp;</div></div>
+    </div>
+    
+    <div id="div-topics" class="input-area">
+      <label for="topics">Viðfangsefni</label>
+      <div class="description-text">Viðfangsefni er upptalning á einum til fjórum umfangsmestu viðfangsefnum áfangans, til dæmis algebra, listasaga, logsuða, plastefni. Hafðu í huga að það munu aðeins tveir bókstafir í áfanganúmeri lýsa viðfangsefninu.</div>
+      <input id="topics" name="topics" 
+	     autoComplete="off" type="text"
+	     class="basic-information"/>
+      <div class="move-to-course hidden">Færa yfir í áfangalýsingu <div class="right-arrow">&nbsp;</div></div>
+    </div>
+    
+    <div id="create-course"><a href="#" class="button">Búa til áfanga</a></div>
+    
+    <div id="div-course-information">
+      <div id="div-subjects-abbreviation"  class="input-area">
+	<label for="subjects-abbreviation">Skammstöfun fyrir námsgrein</label>
+	<div class="description-text">Skammstöfun námsgreina eru fjórir lýsandi stafir eins og til dæmis STÆR sem stendur fyrir stærðfræði. <strong>Sú skammstöfun sem þú velur verður notuð í námskrárgrunninum fyrir alla skóla.</strong></div>
+	<input id="subjects-abbreviation" name="subjects-abbreviation"
+	       autoComplete="off" type="text" maxlength="4"/>
+	<div class="move-to-course">Færa yfir í áfangalýsingu <div class="right-arrow">&nbsp;</div></div>
+      </div>
+
+      <div id="div-topics-abbreviation" class="input-area">
+	<label for="topics-abbreviation">Skammstöfun fyrir viðfangsefni</label>
+	<div class="description-text">Skammstöfun viðfangsefnis eru tveir bókstafir eins og til dæmis LH sem getur verið skammstöfun fyrir lestur og hlustun. <strong>Sú skammstöfun sem þú velur verður notuð í námskrárgrunninum fyrir alla skóla.</strong></div>
+	<input id="topics-abbreviation" name="topics-abbreviation"
+	       autoComplete="off" type="text"  maxlength="2"/>
+	<div class="move-to-course">Færa yfir í áfangalýsingu <div class="right-arrow">&nbsp;</div></div>
+      </div> 
+
+      <div id="div-descriptive-name" class="input-area">
+	<label for="descriptive-name">Lýsandi heiti áfanga</label>
+	<div class="description-text">Lýsandi heiti áfanga dregur saman námsgrein og viðfangsefni í örfáum orðum. Til dæmis gæti lýsandi heiti fyrir námsgreinina <em>listasögu</em> með viðfangsefnin <em>Ísland, samtímalist</em> verið <em>Íslensk listasaga á 21. öld.</em></div>
+	<input id="descriptive-name" name="descriptive-name" 
+	       autoComplete="off" type="text" maxlength="255"
+	       class="normal-input"/>
+	<div class="move-to-course">Færa yfir í áfangalýsingu <div class="right-arrow">&nbsp;</div></div>
+      </div>
+     
+      <div id="div-level" class="input-area">
+	<label for="level">Þrep</label>
+	<div class="description-text">Nauðsynlegt er að tilgreina á hvaða þrepi á framhaldsskólastigi áfanginn á að vera. Veldu viðeigandi þrep úr valmyndinni.</div>
+	<select id="level" name="level" class="normal-input">
+	  <option value="" selected="selected">-- Veldu þrep --</option>
+	  <option value="1">1. þrep</option>
+	  <option value="2">2. þrep</option>
+	  <option value="3">3. þrep</option>
+	  <option value="4">4. þrep</option>
+	</select>
+	<div class="move-to-course">Færa yfir í áfangalýsingu <div class="right-arrow">&nbsp;</div></div>
+      </div>
+      
+      <div id="div-credits" class="input-area">
+	<label for="credits">Framhaldsskólaeiningar</label>
+	<div class="description-text">Áfanginn er gefinn upp í framhaldsskólaeiningum. Ef skólinn vill nota gamlar einingar þarf að stilla sérstaklega á gamlar einingar. Vefkerfið flytur á milli einingarkerfa með jöfnunni: framhaldsskolaeiningar = gamlar einingar x 60/35</div>
+	<input id="credits" name="credits" class="basic-information"/>
+	<a href="#" id="credits-slider"></a>
+	<div id="div-credits-value" class="hidden">Einingafjöldi: <span id="credits-value"></span></div>
+	<div class="move-to-course">Færa yfir í áfangalýsingu <div class="right-arrow">&nbsp;</div></div>
+      </div>
+      
+      <div id="div-prerequisites" class="input-area">
+	<label for="prerequisites">Forkröfur</label>
+	<div class="description-text">Forkröfur geta verið tilteknir áfangar, fjöldi framhaldsskólaeininga á tilteknu hæfniþrepi eða önnur lýsing á þeim skilyrðum sem nemandi þarf að hafa uppfyllt.</div>
+	<textarea id="prerequisites" name="prerequisites"
+		  autoComplete="off" rows="10" cols="40"
+		  class="normal-input"></textarea>
+	<div class="move-to-course">Færa yfir í áfangalýsingu <div class="right-arrow">&nbsp;</div></div>
+      </div>
+      
+      <div id="div-description" class="input-area">
+	<label for="description">Lýsing</label>
+	<div class="description-text">Stutt lýsing á meginefni áfangans.</div>
+	<textarea id="description" name="description" 
+		  autoComplete="off" rows="10" cols="40"
+		  class="normal-input"></textarea>
+	<div class="move-to-course">Færa yfir í áfangalýsingu <div class="right-arrow">&nbsp;</div></div>
+      </div>
+      
+      <div id="div-knowledge-goals" class="input-area">
+	<label for="knowledge-goals">Þekkingarmarkmið</label>
+	<div class="description-text">Þekkingarmarkmið segja til um þá þekkingu sem nemandinn á að hafa öðlast við lok áfangans. Þekkingin tekur til staðreynda, lögmála og aðferða og er bæði fræðileg og hagnýt. Að jafnaði er gert ráð fyrir 2-10 markmiðum. <strong>Sláið inn eitt hæfnimarkmið fyrir hvern punkt hér fyrir neðan</strong></div>
+	<textarea id="knowledge-goals" name="knowledge-goals" 
+		  rows="10" cols="40"></textarea>
+	<div class="hidden bulletheading">Nemandi skal hafa öðlast þekkingu og skilning á:</div>
+	<ul id="inputlist-knowledge-goals"
+	    class="goal-input hidden">
+	  <li id="bullet-knowledge-goal"><input id="input-knowledge-goals" class="goal-item"/></li>
+	</ul>
+	<div class="move-to-course">Færa yfir í áfangalýsingu <div class="right-arrow">&nbsp;</div></div>
+      </div>
+      
+      <div id="div-skill-goals" class="input-area">
+	<label for="skill-goals">Leiknimarkmið</label>
+	<div class="description-text">Leiknimarkmið segja til um þá leikni sem nemandinn á að hafa öðlast við lok áfangans. Leiknin er bæði vitsmunaleg og verkleg og felur í sér að geta beitt aðferðum og verklagi. Að jafnaði er gert ráð fyrir 2-10 markmiðum. <strong>Sláið inn eitt hæfnimarkmið fyrir hvern punkt hér fyrir neðan</strong></div>
+	<textarea id="skill-goals" name="skill-goals"
+		  rows="10" cols="40"></textarea>
+	<div class="hidden bulletheading">Nemandi skal hafa öðlast leikni í að:</div>
+	<ul id="inputlist-skill-goals"
+	    class="goal-input hidden">
+	  <li id="bullet-skill-goals"><input id="input-skill-goals" class="goal-item" /></li>
+	</ul>
+	<div class="move-to-course">Færa yfir í áfangalýsingu <div class="right-arrow">&nbsp;</div></div>
+      </div>
+      
+      <div id="div-competence-goals" class="input-area">
+	<label for="competence-goals">Hæfnimarkmið</label>
+	<div class="description-text">Hæfnimarkmið segja til um þá hæfni sem nemandinn á að hafa öðlast við lok áfangans. Hæfnin felur í sér yfirsýn og getu til að hagnýta þekkingu og leikni. Hæfnin tekur til siðferðislegra þátta, sjálfstrausts og sjálfstæðis í vinnubrögðum auk fjölbreyttra tjáningarforma. Að jafnaði er gert ráð fyrir 2-10 markmiðum. Fyrir hvert hæfnimarkmið sem slegið er inn verður að gera ráð fyrir námsmati sem birtist hér fyrir neðan.</div>
+        <textarea id="competence-goals" name="competence-goals"
+		  rows="10" cols="40"></textarea>
+	<div class="hidden bulletheading">Nemandi skal geta hagnýtt þá almennu þekkingu og leikni sem hann hefur aflað sér til að:</div>
+        <ul id="inputlist-competence-goals"
+	    class="evaluation-goal-input hidden" >
+	  <li id="bullet-competence-goals"><input id="input-competence-goals" class="evaluation-goal-item"/></li>
+        </ul>
+	<div class="move-to-course">Færa yfir í áfangalýsingu <div class="right-arrow">&nbsp;</div></div>
+      </div>
+      
+      <div id="div-evaluation" class="input-area">
+        <label for="evaluation">Námsmat á hæfnimarkmiðum</label>
+	<div class="description-text">Námsmat miðast við hvernig hæfnimarkmiðum áfangans verða metin, það er að segja aðferðafræðin við matið <strong>ekki hlutfall á milli mælingaraðferða</strong>. Sláið inn eitt eða fleiri atriði fyrir hvern punkt.</div>
+	<textarea id="evaluation" name="evaluation"
+		  rows="10" cols="40"></textarea>
+	<ul id="inputlist-evaluation">
+	</ul>
+	<div class="move-to-course">Færa yfir í áfangalýsingu <div class="right-arrow">&nbsp;</div></div>
+	</div>
+      </div>
+    </div>
+
+    <div id="information">
+      <div id="div-abbreviation">
+	<div id="id-abbreviation"></div>
+      </div>
+      
+      <div id="information-list">
+        <div id="list-descriptive-name" class="edit">
+          <div class="information-label"></div>
+          <div id="item-descriptive-name"></div>
+        </div>
+
+        <div id="list-level" class="edit">
+          <div class="information-label"></div>
+          <div id="item-level"></div>
+        </div>
+	
+	<div id="list-credits" class="edit">
+	  <div class="information-label"></div>
+	  <div id="item-credits"></div>
+	</div>
+        
+	<div id="list-prerequisites" class="edit">
+          <div class="information-label"></div>
+          <div id="item-prerequisites"></div>
+        </div>
+        
+	<div id="list-subjects" class="edit">
+          <div class="information-label"></div>
+          <div id="item-subjects"></div>
+        </div>
+	<div id="list-subjects-abbreviation" class="edit">
+          <div class="information-label"></div>
+          <div id="item-subjects-abbreviation"></div>
+        </div>
+        
+	<div id="list-topics" class="edit">
+          <div class="information-label"></div>
+          <div id="item-topics"></div>
+        </div>
+
+	<div id="list-topics-abbreviation" class="edit">
+          <div class="information-label"></div>
+          <div id="item-topics-abbreviation"></div>
+        </div>
+        
+        <div id="list-description" class="edit">
+          <div class="information-label"></div>
+          <div id="item-description"></div>
+        </div>
+        
+        <div id="list-knowledge-goals" class="edit">
+          <div class="information-label"></div>
+          <div id="item-knowledge-goals"></div>
+        </div>
+        
+        <div id="list-skill-goals" class="edit">
+          <div class="information-label"></div>
+          <div id="item-skill-goals"></div>
+        </div>
+        
+        <div id="list-competence-goals" class="edit">
+          <div class="information-label"></div>
+          <div id="item-competence-goals"></div>
+        </div>
+
+        <div id="list-evaluation" class="edit">
+          <div class="information-label"></div>
+          <div id="item-evaluation"></div>
+        </div>
+
+	<input class="button hidden" id="submit" type="submit" value="Vista"/>
+      </div>
+    </div>
+
+    
+  </form>
+{% endblock %}

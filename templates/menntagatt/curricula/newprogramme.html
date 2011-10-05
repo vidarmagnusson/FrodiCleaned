@@ -1,0 +1,26 @@
+{% extends "contentbox.html" %}
+{% load i18n %}
+{% block stylesheet %}
+    <link rel="stylesheet" href="/media/css/builder.css"/> 
+{% endblock %}
+
+{% block javascript %}
+    {{ form.media }}
+{% endblock%}
+
+{% block content %}
+<p>{% blocktrans %}Step {{ step }} of {{ step_count }}{% endblocktrans %}</p>
+<form action="." method="post">{% csrf_token %}
+{% for field in form %}
+{{field.label_tag}}
+{{ field.errors }}
+{% if field.help_text %}<div class="description-text">{{field.help_text}}</div>{% endif %}
+{{field}}
+{% endfor %}
+
+<input type="hidden" name="{{ step_field }}" value="{{ step0 }}" />
+{{ previous_fields|safe }}
+
+<div><input type="submit" value="{% trans "Continue" %}"></div>
+</form>
+{% endblock %}

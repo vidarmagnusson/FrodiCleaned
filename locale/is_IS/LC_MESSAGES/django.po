@@ -1,0 +1,2330 @@
+# Translation of Frodi - the Educational Gateway
+# Copyright (C) 2011 - Icelandic Ministry for Education, Culture, and Science
+# This file is distributed under the same license as the PACKAGE package.
+# Tryggvi Björgvinsson <tryggvi.bjorgvinsson@mrn.is>, 2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.0alpha\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-08-31 09:59-0500\n"
+"PO-Revision-Date: 2011-08-31 12:16+0000\n"
+"Last-Translator: Tryggvi Björgvinsson <tryggvi.bjorgvinsson@mrn.is>\n"
+"Language-Team: Icelandic <menntagatt@menntagatt.is>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n%10!=1 || n%100==11)\n"
+
+#: country/models/laws.py:19 country/models/laws.py:50
+#: country/models/laws.py:82 curricula/models/extra_information.py:77
+#: curricula/models/fields_and_exams.py:6
+#: curricula/models/fields_and_exams.py:20
+#: curricula/models/fields_and_exams.py:87 curricula/models/programmes.py:18
+#: curricula/models/programmes.py:65 feedzilla/models.py:48
+#: schools/models/housing.py:15 schools/models/housing.py:42
+#: schools/models/housing.py:69 schools/models/housing.py:88
+#: structure/models.py:12 structure/models.py:57 structure/models.py:84
+msgid "title"
+msgstr "titill"
+
+#: country/models/laws.py:20 country/models/laws.py:49
+#: country/models/laws.py:80
+msgid "number"
+msgstr "númer"
+
+#: country/models/laws.py:21 country/models/laws.py:51
+#: country/models/regions.py:15 curricula/models/courses.py:205
+#: curricula/models/courses.py:270 curricula/models/extra_information.py:20
+#: curricula/models/fields_and_exams.py:8
+#: curricula/models/fields_and_exams.py:22
+#: curricula/models/fields_and_exams.py:67
+#: curricula/models/fields_and_exams.py:88 curricula/models/programmes.py:66
+#: schools/models/housing.py:16 schools/models/housing.py:43
+#: schools/models/housing.py:70 schools/models/housing.py:89
+#: schools/models/schools.py:161 schools/models/students.py:18
+#: structure/models.py:61
+msgid "description"
+msgstr "lýsing"
+
+#: country/models/laws.py:26
+msgid "URL of original version"
+msgstr "Vefslóð á upprunanlegu útgáfuna"
+
+#: country/models/laws.py:40 country/models/laws.py:54
+msgid "law"
+msgstr "lög"
+
+#: country/models/laws.py:41
+msgid "laws"
+msgstr "lög"
+
+#: country/models/laws.py:61
+#, python-format
+msgid "Chapter %(number)s - %(title)s (%(law)s)"
+msgstr "%(number)s. kafli - %(title)s (%(law)s)"
+
+#: country/models/laws.py:67 country/models/laws.py:90
+msgid "law section"
+msgstr "lagakafli"
+
+#: country/models/laws.py:68
+msgid "law sections"
+msgstr "lagakaflar"
+
+#: country/models/laws.py:81
+msgid "subnumber"
+msgstr "undirnúmer"
+
+#: country/models/laws.py:86 feedzilla/models.py:51
+msgid "content"
+msgstr "innihald"
+
+#: country/models/laws.py:103
+#, python-format
+msgid "Article %(number)d"
+msgstr "%(number)d. grein"
+
+#: country/models/laws.py:124
+msgid "law article"
+msgstr "lagagrein"
+
+#: country/models/laws.py:125
+msgid "law articles"
+msgstr "lagagreinar"
+
+#: country/models/regions.py:13 country/models/regions.py:43
+#: curricula/models/extra_information.py:18 schools/models/schools.py:17
+#: schools/models/students.py:16
+msgid "name"
+msgstr "nafn"
+
+#: country/models/regions.py:18
+msgid "coordinate points"
+msgstr "hnit"
+
+#: country/models/regions.py:31
+msgid "country area"
+msgstr "landsvæði"
+
+#: country/models/regions.py:32
+msgid "country areas"
+msgstr "landsvæði"
+
+#: country/models/regions.py:42
+msgid "zip code"
+msgstr "póstnúmer"
+
+#: country/models/regions.py:44 schools/models/schools.py:169
+#: schools/models/students.py:22
+msgid "logo"
+msgstr "einkennismerki"
+
+#: country/models/regions.py:45
+msgid "area"
+msgstr "svæði"
+
+#: country/models/regions.py:54 curricula/models/extra_information.py:22
+#: schools/models/housing.py:18 schools/models/schools.py:25
+msgid "municipality"
+msgstr "sveitarfélag"
+
+#: country/models/regions.py:55
+msgid "municipalities"
+msgstr "sveitarfélög"
+
+#: creativecommons/models.py:15
+msgid "title of license"
+msgstr "nafn leyfisins"
+
+#: creativecommons/models.py:18
+msgid "creativecommons.org url"
+msgstr "creativecommons.org vefslóð"
+
+#: creativecommons/models.py:21
+msgid "large representative image"
+msgstr "stór táknmynd"
+
+#: creativecommons/models.py:22
+msgid "small representative image"
+msgstr "lítil táknmynd"
+
+#: creativecommons/models.py:25
+msgid "license abbreviation"
+msgstr "skammstöfun leyfis"
+
+#: curricula/views.py:159
+msgid "Successfully deleted course"
+msgstr "Tókst að eyða áfanganum"
+
+#: curricula/views.py:161
+msgid "You are not authorized to delete course"
+msgstr "Hefur ekki heimild til að eyða áfanga"
+
+#: curricula/views.py:163
+msgid "Course not found"
+msgstr "Áfangi fannst ekki"
+
+#: curricula/views.py:165
+msgid "My courses"
+msgstr "Mínir áfangar"
+
+#: curricula/views.py:233
+msgid "Course has been made into an exemplary course"
+msgstr "Áfanginn hefur verið gerður að fyrirmyndaráfanga"
+
+#: curricula/views.py:235
+msgid "User is not authorized to make this course exemplary"
+msgstr "Hefur ekki heimild til að gera þennan áfanga að fyrirmyndaráfanga"
+
+#: curricula/views.py:238
+msgid "Course could not be made exemplary. Contact system administrator."
+msgstr ""
+"Tókst ekki að búa til áfanga sem fyrirmyndaráfanga. Hafðu samband við "
+"kerfisstjóra."
+
+#: curricula/forms/courses.py:56 curricula/forms/courses.py:57
+#: curricula/forms/courses.py:58 curricula/forms/programmes.py:20
+msgid ""
+"Hold down \"Control\", or \"Command\" on a Mac, to select more than one."
+msgstr ""
+"Haltu niðri \"Control\" eða \"Command\" á Mac til að velja fleiri en einn."
+
+#: curricula/models/courses.py:40 curricula/models/programmes.py:20
+msgid "subject"
+msgstr "námsgrein"
+
+#: curricula/models/courses.py:41 curricula/models/courses.py:198
+#: curricula/models/extra_information.py:78
+msgid "subjects"
+msgstr "námsgreinar"
+
+#: curricula/models/courses.py:66
+msgid "subject combination"
+msgstr "námsgreinasamsetning"
+
+#: curricula/models/courses.py:67
+msgid "subjects combinations"
+msgstr "námsgreinasamsetningar"
+
+#: curricula/models/courses.py:82
+msgid "topic"
+msgstr "viðfangsefni"
+
+#: curricula/models/courses.py:83 curricula/models/courses.py:199
+msgid "topics"
+msgstr "viðfangsefni"
+
+#: curricula/models/courses.py:108
+msgid "topic combination"
+msgstr "viðfangsefnasamsetning"
+
+#: curricula/models/courses.py:109
+msgid "topics combinations"
+msgstr "viðfangsefnasamsetningar"
+
+#: curricula/models/courses.py:175 curricula/models/courses.py:215
+#: curricula/models/extra_information.py:56 curricula/models/programmes.py:99
+msgid "evaluation"
+msgstr "námsmat"
+
+#: curricula/models/courses.py:176
+msgid "evaluations"
+msgstr "námsmat"
+
+#: curricula/models/courses.py:181
+msgid "In progress"
+msgstr "Í vinnslu"
+
+#: curricula/models/courses.py:182
+msgid "Ready for inspection"
+msgstr "Tilbúið til skoðunar"
+
+#: curricula/models/courses.py:183
+msgid "Approved by school"
+msgstr "Samþykkt af skóla"
+
+#: curricula/models/courses.py:184 curricula/models/fields_and_exams.py:84
+msgid "Officially approved"
+msgstr "Samþykkt af ráðuneyti"
+
+#: curricula/models/courses.py:185
+msgid "Rejected by school"
+msgstr "Hafnað af skóla"
+
+#: curricula/models/courses.py:186
+msgid "Rejected officially"
+msgstr "Hafnað af ráðuneyti"
+
+#: curricula/models/courses.py:190 curricula/models/fields_and_exams.py:36
+msgid "Level 1"
+msgstr "1. þrep"
+
+#: curricula/models/courses.py:191 curricula/models/fields_and_exams.py:37
+msgid "Level 2"
+msgstr "2. þrep"
+
+#: curricula/models/courses.py:192 curricula/models/fields_and_exams.py:38
+msgid "Level 3"
+msgstr "3. þrep"
+
+#: curricula/models/courses.py:193 curricula/models/fields_and_exams.py:39
+msgid "Level 4"
+msgstr "4. þrep"
+
+#: curricula/models/courses.py:196
+msgid "descriptive name"
+msgstr "lýsandi heiti"
+
+#: curricula/models/courses.py:196
+msgid ""
+"Write a short sentence which describes the subject and the topic of the "
+"course. Examples of descriptive names are: 21st century Icelandic art "
+"history, Maintenance control of machines, Sales and services, German "
+"pronunciation and vocabulary, Hair coloring, Linux administration."
+msgstr ""
+"Skrifaðu stutta setningu sem lýsir námsgrein og viðfangsefni áfangans. Dæmi "
+"um lýsandi heiti er: Íslensk listasaga á 21. öld, Viðhaldsstjórnun véla, "
+"Sala og þjónusta, Þýskur framburður og orðaforði, Hárlitun, Linux "
+"netstjórnun."
+
+#: curricula/models/courses.py:198
+msgid ""
+"Write or choose from the list to the right a subject that describes the "
+"foundational area of expertise which is taught in the course. Examples of "
+"subjects are: Mathematics, Icelandic, chemistry, electrical circuits, first "
+"aid, media, hair styling, industrial control, machine handling, management, "
+"electrical engineering, industrial architecture. It is permissible to name "
+"more than one subjects (separated by a comma) when creating multi-"
+"disciplinary courses."
+msgstr ""
+"Skrifaðu eða veldu úr lista til hliðar námsgrein sem lýsir því grunnsviði "
+"eða fagi sem kennt er í áfanganum, til dæmis stærðfræði, íslenska, "
+"efnafræði, raflagnir, skyndihjálp, margmiðlunarfræði, hárgreiðsla, iðnfræði, "
+"vélfræði, stjórnun, rafmagnsfræði, iðnteikning. Leyfilegt er að tilgreina "
+"fleiri en eina námsgrein (aðskildar með kommu) þegar um þverfaglegan áfanga "
+"er að ræða."
+
+#: curricula/models/courses.py:199
+msgid ""
+"Write or choose from the list to the right one to four of the most "
+"influential topics of the course. Separate the topics by a comma. Examples "
+"of topics are: Pedagogy, genetics, statistics, grammar, alternating "
+"currents, machine architecture, welding. Keep in mind that only two letters "
+"will represent the topic in the course abbreviation"
+msgstr ""
+"Skrifaðu eða veldu úr lista til hliðar eitt til fjögur umfangsmestu "
+"viðfangsefni áfangans. Aðskilið upptalninguna með kommu. Dæmi um "
+"viðfangsefni er uppeldisfræði, erfðafræði, tölfræði, málfræði, riðstraumur, "
+"vélateikning, logsuða. Hafðu í huga að það munu aðeins tveir bókstafir í "
+"áfanganúmeri lýsa viðfangsefninu."
+
+#: curricula/models/courses.py:201 curricula/models/fields_and_exams.py:42
+msgid "level"
+msgstr "þrep"
+
+#: curricula/models/courses.py:201
+#, python-format
+msgid ""
+"Make a suggestion about the course's competence level. Choose the "
+"corresponding competence level below. Note that at least 75%% of the course "
+"topics should belong to the course's competence level"
+msgstr ""
+"Gerðu tillögu um hvaða hæfniþrep áfanginn tilheyrir. Veldu viðeigandi þrep "
+"hér fyrir neðan. Miða skal við að a.m.k. 75%% viðfangsefna áfangans tilheyri "
+"því hæfniþrepi sem áfanginn er skilgreindur á"
+
+#: curricula/models/courses.py:203
+#: templates/menntagatt/curricula/course_info.html:10
+msgid "school credits"
+msgstr "framhaldsskólaeiningar"
+
+#: curricula/models/courses.py:203
+msgid ""
+"Here is the scope of the course given in school credits. A school credit is "
+"the measurement of an average student work contribution in school, "
+"disregarding whether the studies are practical or theoretical and whether it "
+"takes place within or outside the school. Each school credit translates to "
+"about three days of work (6-8 hours a day) for the student. It is advised to "
+"keep the competence goals in mind when estimating work contribution and "
+"assigning school credits. (To use old school credits it is necessary to "
+"configure the schools information accordingly. This system will "
+"automatically translate between the two credits systems according to the "
+"formula: school credits = old credits x 60/35.)"
+msgstr ""
+"Hér er umfang áfangans gefið upp í framhaldsskólaeiningum. "
+"Framhaldsskólaeining (fein.) er mælikvarði á vinnuframlagi nemenda í "
+"framhaldsskólum óháð því hvort námið er verklegt eða bóklegt og hvort það "
+"fer fram innan skóla eða utan. Hver eining samsvarar u.þ.b. þriggja daga "
+"vinnu nemenda (6-8 klst/dag). Ráðlagt er að hafa hæfniviðmið til hliðsjónar "
+"þegar vinnuframlag nemenda og fjöldi framhaldsskólaeininga er ákvarðaður. "
+"(Ef skólinn vill nota gamlar einingar þarf að stilla sérstaklega á gamlar "
+"einingar. Vefkerfið flytur á milli einingarkerfa með jöfnunni: "
+"framhaldsskólaeiningar = gamlar einingar x 60/35.)"
+
+#: curricula/models/courses.py:205
+msgid "A short description of the main content of the course"
+msgstr "Stutt lýsing á meginefni áfangans."
+
+#: curricula/models/courses.py:207 curricula/models/courses.py:271
+#: curricula/models/programmes.py:90
+msgid "prerequisites"
+msgstr "forkröfur"
+
+#: curricula/models/courses.py:207
+msgid ""
+"Here are listed the prerequisites for the course if there are any. "
+"Prerequisites can for example be specific courses that the student must have "
+"passed before or at the same time as this course, the amount of school "
+"credits for a specific topic on a specific level or any other description of "
+"prerequisites the student must fulfill."
+msgstr ""
+"Hér eru tilgreindar forkröfur fyrir áfangann ef þær eru til staðar. "
+"Forkröfur geta t.d. verið tilteknir áfangar sem nemandi þarf að ljúka áður "
+"eða samhliða þessum áfanga, fjöldi framhaldsskólaeininga innan ákveðins "
+"námssviðs á tilteknu hæfniþrepi eða önnur lýsing á skilyrðum sem nemandi "
+"þarf að hafa uppfyllt."
+
+#: curricula/models/courses.py:209
+msgid "knowledge goals"
+msgstr "þekkingarviðmið"
+
+#: curricula/models/courses.py:209
+msgid ""
+"Knowledge goals describe the knowledge the student shall have acquired by "
+"passing the course. Knowledge ranges from facts to laws to processes and is "
+"both theoretical and applicable. The course evaluation takes these goals "
+"into account. On average 2 to 10 goals are expected to be added as "
+"continuation of the following sentence: A studet shall have acquired "
+"knowledge and understanding of:"
+msgstr ""
+"Þekkingarviðmið segja til um þá þekkingu sem nemandinn á að hafa öðlast við "
+"lok áfangans. Þekking tekur til staðreynda, lögmála og aðferða og er bæði "
+"fræðileg og hagnýt. Námsmat áfangans tekur mið af þessum viðmiðum. Að "
+"jafnaði er gert ráð fyrir 2-10 viðmiðum sem eru skrifuð sem framhald við "
+"setninguna: Nemandi skal hafa öðlast þekkingu og skilnings á:"
+
+#: curricula/models/courses.py:211
+msgid "skill goals"
+msgstr "leikniviðmið"
+
+#: curricula/models/courses.py:211
+msgid ""
+"Skill goals describe the skills the student shall have acquired by passing "
+"the course. Skills can be both mental and practical and allow the student to "
+"apply methods and processes. The course evaluation takes these goals into "
+"account. On average 2 to 10 goals are expected to be added as continuation "
+"of the following sentence: A student shall have acquired the skills to: "
+"Verbs related to skills are e.g. apply, inspect, use, speak, write, draw, "
+"calculate, express, do, construct, manage..."
+msgstr ""
+"Leikniviðmið segja til um þá leikni sem nemandinn á að hafa öðlast við lok "
+"áfangans. Leiknin er bæði vitsmunaleg og verkleg og felur í sér að geta "
+"beitt aðferðum og verklagi. Námsmat áfangans tekur mið af þessum viðmiðum. "
+"Að jafnaði er gert ráð fyrir 2-10 viðmiðum sem eru skrifuð sem framhald við "
+"setninguna: Nemandi skal hafa öðlast leikni í að:  Sagnorð sem vísa í leikni "
+"eru t.d. beita, skoða, nota, tala, skrifa, rita, reikna, teikna, miðla, "
+"framkvæma, smíða, stýra,..."
+
+#: curricula/models/courses.py:213 curricula/models/courses.py:274
+msgid "competence goals"
+msgstr "hæfniviðmið"
+
+#: curricula/models/courses.py:213
+msgid ""
+"Competence goals describe the competence the student shall have acquired by "
+"passing the course. Competence means the overlook and ability to apply the "
+"knowledge and skills. These goals must therefore relate to or build upon the "
+"knowlede and skill goals of the course. Care must be taken to allow the "
+"competence goals to be evaluated. After writing each comptence goals one can "
+"describe its evaluation to make it easier to write the competence goals with "
+"evaluation in mind. Examples of evaluation methods can be: Oral exams, peer "
+"evaluation, guided evaluation, self-evaluation, evaluation of oral debates, "
+"normal debates, talks, presentations, arguments, work processes, work "
+"organization, finishing, resourcefulness, communications, responsible/"
+"consciencous work contribution ... On average 2 to 10 goals are expected to "
+"be added as continuation of the following sentence: A student shall be able "
+"to apply the general knowledge and skills he/she has acquired to: Verbs and "
+"phrases that relate to competence are e.g. gather, use, express, debate, "
+"explain, describe, participate, relate ... to, be active, be responsible, be "
+"able to, argue, understand, show initiative, do, work, evaluate ..."
+msgstr ""
+"Hæfniviðmið segja til um þá hæfni sem nemandinn á að hafa öðlast við lok "
+"áfangans. Hæfnin felur í sér yfirsýn og getu til að hagnýta þekkingu og "
+"leikni. Viðmiðin verða því að tengjast eða byggja á þekkingar- og "
+"leikniviðmiðum áfangans. Gæta þarf að því í framsetningu hæfniviðmiða að "
+"námsmat áfangans geti falið í sér mat á hæfni nemenda með tilliti til þeirra "
+"viðmiða sem hér eru sett fram. Til að auðvelda þetta, gefst kostur eftir að "
+"hvert hæfniviðmið hefur verið ritað, að tilgreina í grófum dráttum hvernig "
+"það verður metið. Sem dæmi má nefna, munnleg próf, jafningjamat, "
+"leiðsagnarmat, sjálfsmat, mat á kappræðum, rökræðum, fyrirlestrum, "
+"kynningum, rökstuðningi, verklagi, verkskipulagi, frágangi, útsjónarsemi, "
+"samskiptahæfni, ábyrgu vinnuframlagi/samviskusemi, ... Að jafnaði er gert "
+"ráð fyrir 2-10 viðmiðum sem eru skrifuð sem framhald við setninguna: Nemandi "
+"skal geta hagnýtt þá almennu þekkingu og leikni sem hann hefur aflað sér til "
+"að:   Sagnorð og orðasambönd sem vísa í hæfni eru t.d. afla, nýta, miðla, "
+"rökræða, útskýra, fjalla um, taka þátt, tengja ... við, vera virkur, vera "
+"ábyrgur, búa yfir, rökstyðja, gera sér grein fyrir, sýna skilning, sýna "
+"frumkvæði, gera, leysa af hendi, vinna, meta"
+
+#: curricula/models/courses.py:215
+msgid ""
+"Here is a general description of evaluation and evaluation methods used in "
+"the course to evaluate the knowledge, skills and competences which the "
+"student has acquired in the course and worked according to the goals set "
+"forward in the course description. This is not the place to put ratios "
+"between evaluation techniques, that information belongs to the course "
+"syllabus"
+msgstr ""
+"Hér er almenn umfjöllun um námsmat og námsmatsaðferðir áfangans en þeim er "
+"ætlað að meta þá þekkingu, leikni og hæfni sem nemandinn hefur öðlast í "
+"áfanganum og unnið var að samkvæmt þeim viðmiðum sem sett eru fram í "
+"áfangalýsingu. Ekki skal setja fram hlutfallstölur, þar sem þær upplýsingar "
+"eiga betur heima í kennsluáætlun."
+
+#: curricula/models/courses.py:217 curricula/models/fields_and_exams.py:91
+msgid "status"
+msgstr "staða"
+
+#: curricula/models/courses.py:218
+msgid "last modified"
+msgstr "síðast uppfært"
+
+#: curricula/models/courses.py:220
+msgid "derived from"
+msgstr "byggir á"
+
+#: curricula/models/courses.py:221
+msgid "authors"
+msgstr "höfundar"
+
+#: curricula/models/courses.py:221
+msgid ""
+"The curricula system allows many individuals to collaborate on courses. It "
+"is easy to give others a chance to review, comment on, and improve the "
+"course, even if they work within or outside of your school. You as an author "
+"can choose co-authors. Author and co-authors are assigned while the course "
+"is being designed and created. When a course has been approved by school "
+"officals and added to a curricula database and connected to a programme, "
+"authors will not be attributed. Here below is a list of possible co-authors. "
+"The list contains persons you follow in the community who have access to the "
+"curricula database. If somebody is missing from the list you need to "
+"subscribe to that person in the community and/or ask the curricula managers "
+"in that person's school to give them access to the curricula database."
+msgstr ""
+"Námskrárgrunnurinn gerir ráð fyrir að margir einstaklingar geti unnið að "
+"gerð sömu áfangalýsingar. Auðvelt er að gefa öðrum tækifæri til að lesa "
+"yfir, koma með athugasemdir og betrumbæta áfangalýsinguna, hvort sem þeir "
+"starfa innan þíns skóla eða utan. Þú sem höfundur áfangans getur valið þér "
+"meðhöfunda. Höfundur og meðhöfundar eru skráðir við áfangalýsingu á meðan "
+"hún er í ritun. Þegar áfangalýsing hefur verið samþykkt af skólayfirvöldum, "
+"sett í grunninn og tengd námsbraut er höfunda ekki getið. Hér fyrir neðan "
+"birtist listi yfir mögulega meðhöfunda. Hann listar upp það fólk sem þú "
+"fylgist með í samfélagi námskrárgrunnsins og hefur jafnframt aðgang að "
+"grunninum. Ef einhvern vantar í listann, þarftu að gerast áskrifandi á "
+"samfélagssíðu viðkomandi notanda og/eða tala við námskrárstjórnendur í "
+"viðkomandi skóla um að leyfa þeim notanda að fá aðgang að námskrárgrunninum."
+
+#: curricula/models/courses.py:223
+msgid "course abbreviation"
+msgstr "áfanganúmer"
+
+#: curricula/models/courses.py:224
+msgid "version number"
+msgstr "útgáfunúmer"
+
+#: curricula/models/courses.py:262
+msgid "course"
+msgstr "áfangi"
+
+#: curricula/models/courses.py:263 curricula/models/programmes.py:67
+msgid "courses"
+msgstr "áfangar"
+
+#: curricula/models/courses.py:266 curricula/models/courses.py:297
+msgid "exemplary course"
+msgstr "Fyrirmyndaráfangi"
+
+#: curricula/models/courses.py:268
+msgid "subjects, topics and the descriptive name"
+msgstr "námsgreinar, viðfangsefni og lýsandi nafn"
+
+#: curricula/models/courses.py:272
+msgid "course level"
+msgstr "þrep áfangans"
+
+#: curricula/models/courses.py:276
+msgid "evaluation of competence_goals"
+msgstr "námsmat hæfniviðmiða"
+
+#: curricula/models/courses.py:278
+msgid "competence goals and credits"
+msgstr "hæfniviðmið og einingar"
+
+#: curricula/models/courses.py:280
+msgid "course evaluation"
+msgstr "námsmat áfanga"
+
+#: curricula/models/courses.py:283
+#, python-format
+msgid "Exemplary course: %(course)s"
+msgstr "Fyrirmyndaráfangi: %(course)s"
+
+#: curricula/models/courses.py:298
+msgid "exemplary courses"
+msgstr "fyrirmyndaráfangar"
+
+#: curricula/models/extra_information.py:21
+msgid "address)"
+msgstr "heimilisfang)"
+
+#: curricula/models/extra_information.py:23 schools/models/housing.py:22
+#: schools/models/schools.py:27
+msgid "telephone"
+msgstr "sími"
+
+#: curricula/models/extra_information.py:24 schools/models/housing.py:23
+#: schools/models/schools.py:30
+msgid "fax"
+msgstr "bréfsími"
+
+#: curricula/models/extra_information.py:25 schools/models/housing.py:19
+#: schools/models/schools.py:33
+msgid "e-mail"
+msgstr "tölvupóstur"
+
+#: curricula/models/extra_information.py:26 schools/models/schools.py:34
+#: schools/models/students.py:19
+msgid "website"
+msgstr "vefsíða"
+
+#: curricula/models/extra_information.py:27
+#: curricula/models/fields_and_exams.py:16
+#: curricula/models/fields_and_exams.py:94
+msgid "field"
+msgstr "svið"
+
+#: curricula/models/extra_information.py:48
+#: curricula/models/extra_information.py:76 schools/models/registration.py:15
+#: schools/models/schools.py:50 schools/models/schools.py:158
+#: schools/models/students.py:17
+msgid "school"
+msgstr "skóli"
+
+#: curricula/models/extra_information.py:51
+msgid "activities"
+msgstr "félagslíf"
+
+#: curricula/models/extra_information.py:52
+msgid "policy"
+msgstr "stefna"
+
+#: curricula/models/extra_information.py:53
+msgid "administration"
+msgstr "stjórn"
+
+#: curricula/models/extra_information.py:54 curricula/models/programmes.py:91
+msgid "organization"
+msgstr "skipulag"
+
+#: curricula/models/extra_information.py:55
+msgid "instructional methods"
+msgstr "kennsluaðferðir"
+
+#: curricula/models/extra_information.py:57
+msgid "support measures"
+msgstr "stuðningur"
+
+#: curricula/models/extra_information.py:58
+msgid "student services"
+msgstr "nemendaþjónusta"
+
+#: curricula/models/extra_information.py:59
+msgid "pupil rights"
+msgstr "réttindi námsmanna"
+
+#: curricula/models/extra_information.py:60
+msgid "co-operation"
+msgstr "samstarf"
+
+#: curricula/models/extra_information.py:61
+msgid "quality control"
+msgstr "gæðaeftirlit"
+
+#: curricula/models/extra_information.py:62
+msgid "national curriculum"
+msgstr "námskrá"
+
+#: curricula/models/extra_information.py:63
+msgid "other information"
+msgstr "aðrar upplýsingar"
+
+#: curricula/models/extra_information.py:66
+#, python-format
+msgid "Curriculum information for %(school)s"
+msgstr "Námskrárupplýsingar fyrir %(school)s"
+
+#: curricula/models/extra_information.py:71
+#: curricula/models/extra_information.py:72
+msgid "curriculum information"
+msgstr "námskrárupplýsingar"
+
+#: curricula/models/extra_information.py:75
+msgid "user"
+msgstr "notandi"
+
+#: curricula/models/extra_information.py:81
+#, python-format
+msgid "%(user)s (%(title)s) in %(school)s"
+msgstr "%(user)s (%(title)s) - %(school)s"
+
+#: curricula/models/extra_information.py:86
+msgid "curriculum administrator"
+msgstr "námskrárstjórnandi"
+
+#: curricula/models/extra_information.py:87
+msgid "curriculum administrators"
+msgstr "námskrárstjórnendur"
+
+#: curricula/models/fields_and_exams.py:7
+#: curricula/models/fields_and_exams.py:21
+msgid "id according to standard"
+msgstr "einkennisnúmer samkvæmt staðli"
+
+#: curricula/models/fields_and_exams.py:17
+msgid "fields"
+msgstr "svið"
+
+#: curricula/models/fields_and_exams.py:23
+msgid "subfield of"
+msgstr "undirsvið"
+
+#: curricula/models/fields_and_exams.py:31
+msgid "subfield"
+msgstr "undirsvið"
+
+#: curricula/models/fields_and_exams.py:32
+msgid "subfields"
+msgstr "undirsvið"
+
+#: curricula/models/fields_and_exams.py:57
+#, python-format
+msgid "Level %d"
+msgstr "%d. þrep"
+
+#: curricula/models/fields_and_exams.py:61
+#: curricula/models/fields_and_exams.py:90
+msgid "exam level"
+msgstr "hæfniþrep prófgráðu"
+
+#: curricula/models/fields_and_exams.py:62
+msgid "exam levels"
+msgstr "hæfniþrep prófgráða"
+
+#: curricula/models/fields_and_exams.py:66
+msgid "exam title"
+msgstr "titill prófgráðu"
+
+#: curricula/models/fields_and_exams.py:70 curricula/models/programmes.py:21
+msgid "minimum credits"
+msgstr "lágmarkseiningafjöldi"
+
+#: curricula/models/fields_and_exams.py:71
+msgid "maximum credits"
+msgstr "hámarkseiningafjöldi"
+
+#: curricula/models/fields_and_exams.py:78 curricula/models/programmes.py:19
+msgid "exam"
+msgstr "prófgráða"
+
+#: curricula/models/fields_and_exams.py:79
+msgid "exams"
+msgstr "prófgráður"
+
+#: curricula/models/fields_and_exams.py:83
+msgid "Unapproved"
+msgstr "Ósamþykkt"
+
+#: curricula/models/fields_and_exams.py:93
+msgid "author"
+msgstr "höfundur"
+
+#: curricula/models/fields_and_exams.py:105 curricula/models/programmes.py:79
+msgid "profession"
+msgstr "námslok"
+
+#: curricula/models/fields_and_exams.py:106
+msgid "professions"
+msgstr "námslok"
+
+#: curricula/models/programmes.py:14
+msgid "subject level"
+msgstr "hæfniþrep námsgreinar"
+
+#: curricula/models/programmes.py:15
+msgid "subject levels"
+msgstr "hæfniþrep námsgreina"
+
+#: curricula/models/programmes.py:28
+msgid "extra rule"
+msgstr "viðbótarregla"
+
+#: curricula/models/programmes.py:29
+msgid "extra rules"
+msgstr "viðbótarreglur"
+
+#: curricula/models/programmes.py:33
+msgid "Education Competence"
+msgstr "Námshæfni"
+
+#: curricula/models/programmes.py:34
+msgid "Health"
+msgstr "Heilsa"
+
+#: curricula/models/programmes.py:35
+msgid "Creative thinking and knowledge application"
+msgstr "Skapandi hugsun og hagnýting þekkingar"
+
+#: curricula/models/programmes.py:36
+msgid "Equality"
+msgstr "Jafnrétti"
+
+#: curricula/models/programmes.py:37
+msgid "Democracy and human rights"
+msgstr "Lýðræði og mannréttindi"
+
+#: curricula/models/programmes.py:38
+msgid "Education for sustainability"
+msgstr "Menntun til sjálfbærni"
+
+#: curricula/models/programmes.py:39
+msgid "Reading, expression, communication in the mother language"
+msgstr "Læsi, tjáning og samskipti á íslensku"
+
+#: curricula/models/programmes.py:40
+msgid "Reading, expression, communication in foreign languages"
+msgstr "Læsi, tjáning og samskipti á erlendum tungumálum"
+
+#: curricula/models/programmes.py:41
+msgid "Reading, expression, communication of numbers and information"
+msgstr "Læsi, tjáning og samskipti um tölur og upplýsingar"
+
+#: curricula/models/programmes.py:51
+msgid "key competence"
+msgstr "lykilhæfni"
+
+#: curricula/models/programmes.py:52
+msgid "key competences"
+msgstr "lykilhæfni"
+
+#: curricula/models/programmes.py:61
+msgid "key competence goal"
+msgstr "lykilhæfniviðmið"
+
+#: curricula/models/programmes.py:62
+msgid "key competence goals"
+msgstr "lykilhæfniviðmið"
+
+#: curricula/models/programmes.py:74
+msgid "course package"
+msgstr "áfangapakki"
+
+#: curricula/models/programmes.py:75
+msgid "course packages"
+msgstr "áfangapakkar"
+
+#: curricula/models/programmes.py:78
+msgid "title of programme"
+msgstr "heiti brautar"
+
+#: curricula/models/programmes.py:78
+msgid "A descriptive title for the programme"
+msgstr "lýsandi titill fyrir brautina"
+
+#: curricula/models/programmes.py:79
+msgid "The resulting professions of the programme"
+msgstr "Þau námslok sem brautin leiðir til"
+
+#: curricula/models/programmes.py:83
+msgid "general description"
+msgstr "almenn lýsing"
+
+#: curricula/models/programmes.py:85
+msgid "rights after graduation"
+msgstr "réttindi að loknu námi"
+
+#: curricula/models/programmes.py:87
+msgid "competence goals of programme"
+msgstr "lykilhæfniviðmið brautarinnar"
+
+#: curricula/models/programmes.py:90
+msgid "Something"
+msgstr "Eitthvað"
+
+#: curricula/models/programmes.py:91
+msgid "organization of programme"
+msgstr "skipulag"
+
+#: curricula/models/programmes.py:92
+msgid "work training and on-site education"
+msgstr "starfsþjálfun og vinnustaðanám"
+
+#: curricula/models/programmes.py:93
+msgid "rules regarding progress"
+msgstr "reglur um námsframvindu"
+
+#: curricula/models/programmes.py:93
+msgid ""
+"rules that must be fulfilled for student to progress in his or her studies"
+msgstr "reglur sem nemandi verður að uppfylla til þess að halda áfram í námi"
+
+#: curricula/models/programmes.py:94
+msgid "quality assurance"
+msgstr "gæðaeftirlit"
+
+#: curricula/models/programmes.py:96
+msgid "foundations and key competences"
+msgstr "grunnþættir og lykilhæfni"
+
+#: curricula/models/programmes.py:97
+msgid "foundation and key competence goals"
+msgstr "grunnþættir og lykilhæfniviðmið"
+
+#: curricula/models/programmes.py:100
+msgid "grades"
+msgstr "einkunnir"
+
+#: curricula/models/programmes.py:101
+msgid "Evaluation of previous education"
+msgstr "Mat á fyrra námi"
+
+#: curricula/models/programmes.py:103
+msgid "credits"
+msgstr "einingar"
+
+#: curricula/models/programmes.py:103
+msgid "The total amount of credits for this programme."
+msgstr "Heildarfjöldi eininga á þessari braut."
+
+#: curricula/models/programmes.py:116
+msgid "programme"
+msgstr "braut"
+
+#: curricula/models/programmes.py:117 schools/models/registration.py:19
+msgid "programmes"
+msgstr "brautir"
+
+#: feedzilla/admin.py:33
+msgid "Post link"
+msgstr "Tengill á færslu"
+
+#: feedzilla/models.py:15
+msgid "feed url"
+msgstr "vefslóð á fréttaveitu"
+
+#: feedzilla/models.py:17
+msgid "last checked"
+msgstr "síðast skoðað"
+
+#: feedzilla/models.py:32 feedzilla/models.py:47 schools/models/schools.py:179
+msgid "feed"
+msgstr "fréttaveita"
+
+#: feedzilla/models.py:33
+msgid "feeds"
+msgstr "fréttaveitur"
+
+#: feedzilla/models.py:49 structure/models.py:85
+msgid "link"
+msgstr "tengill"
+
+#: feedzilla/models.py:50 structure/models.py:60
+msgid "summary"
+msgstr "samantekt"
+
+#: feedzilla/models.py:52
+msgid "creation time"
+msgstr "sköpunartími"
+
+#: feedzilla/models.py:53
+msgid "identifier"
+msgstr "einkenni"
+
+#: feedzilla/models.py:54
+msgid "active"
+msgstr "virk"
+
+#: feedzilla/models.py:61
+msgid "post"
+msgstr "færsla"
+
+#: feedzilla/models.py:62
+msgid "posts"
+msgstr "færslur"
+
+#: schools/models/housing.py:17 schools/models/schools.py:22
+msgid "address"
+msgstr "heimilisfang"
+
+#: schools/models/housing.py:20
+msgid "URL for more information"
+msgstr "Tengill á meiri upplýsingar"
+
+#: schools/models/housing.py:21
+msgid "manager"
+msgstr "stjórnandi"
+
+#: schools/models/housing.py:32 schools/models/housing.py:45
+#: schools/models/housing.py:71 schools/models/schools.py:165
+msgid "student housing"
+msgstr "heimavist"
+
+#: schools/models/housing.py:33
+msgid "student housings"
+msgstr "heimavist"
+
+#: schools/models/housing.py:44
+msgid "monthly rent"
+msgstr "mánaðarleg leiga"
+
+#: schools/models/housing.py:47
+msgid "available amount"
+msgstr "fjöldi í boði"
+
+#: schools/models/housing.py:48
+msgid "size in square meters"
+msgstr "stærð í fermetrum"
+
+#: schools/models/housing.py:57
+msgid "room type"
+msgstr "herbergistegund"
+
+#: schools/models/housing.py:58
+msgid "room types"
+msgstr "herbergistegundir"
+
+#: schools/models/housing.py:76
+msgid "housing service"
+msgstr "húsnæðisþjónusta"
+
+#: schools/models/housing.py:77
+msgid "housing services"
+msgstr "húsnæðisþjónusta"
+
+#: schools/models/housing.py:90
+msgid "price"
+msgstr "verð"
+
+#: schools/models/housing.py:91
+msgid "service"
+msgstr "þjónusta"
+
+#: schools/models/housing.py:96
+msgid "service offering"
+msgstr "þjónusta í boði"
+
+#: schools/models/housing.py:97
+msgid "service offerings"
+msgstr "þjónustur í boði"
+
+#: schools/models/registration.py:16
+msgid "contact person"
+msgstr "tengiliður"
+
+#: schools/models/registration.py:17
+msgid "email address of contact person"
+msgstr "tölvupóstur tengiliðs"
+
+#: schools/models/registration.py:18
+msgid "telephone number of contact person"
+msgstr "símanúmer tengiliðs"
+
+#: schools/models/registration.py:21
+msgid "start date of registration"
+msgstr "byrjunardagur skráninga"
+
+#: schools/models/registration.py:22
+msgid "end date of registration"
+msgstr "lokadagur skráninga"
+
+#: schools/models/registration.py:26
+msgid "acceptance prerequisites"
+msgstr "inntökuskilyrði"
+
+#: schools/models/registration.py:29
+#, python-format
+msgid "Registration information for %(programmes)s in %(school)s"
+msgstr "Skráningarupplýsingar í %(programmes)s í %(school)s"
+
+#: schools/models/registration.py:34 schools/models/registration.py:35
+msgid "registration information"
+msgstr "skráningarupplýsingar"
+
+#: schools/models/schools.py:19
+msgid "identity number"
+msgstr "kennitala"
+
+#: schools/models/schools.py:37
+msgid "principal"
+msgstr "skólastjóri"
+
+#: schools/models/schools.py:51
+msgid "schools"
+msgstr "skólar"
+
+#: schools/models/schools.py:61 schools/models/schools.py:77
+msgid "official name"
+msgstr "opinbert heiti"
+
+#: schools/models/schools.py:67
+#: templates/menntagatt/community/social-submit.html:30
+msgid "preschool"
+msgstr "leikskóli"
+
+#: schools/models/schools.py:68 schools/views/schools.py:25
+msgid "preschools"
+msgstr "leikskólar"
+
+#: schools/models/schools.py:83
+#: templates/menntagatt/community/social-submit.html:29
+msgid "primary school"
+msgstr "grunnskóli"
+
+#: schools/models/schools.py:84 schools/views/schools.py:30
+msgid "primary schools"
+msgstr "grunnskólar"
+
+#: schools/models/schools.py:92 schools/models/schools.py:114
+#: schools/models/schools.py:136
+msgid "abbreviation"
+msgstr "skammstöfun"
+
+#: schools/models/schools.py:104
+#: templates/menntagatt/community/social-submit.html:28
+msgid "secondary school"
+msgstr "framhaldsskóli"
+
+#: schools/models/schools.py:105 schools/views/schools.py:35
+msgid "secondary schools"
+msgstr "framhaldsskólar"
+
+#: schools/models/schools.py:126
+#: templates/menntagatt/community/social-submit.html:27
+msgid "university"
+msgstr "háskóli"
+
+#: schools/models/schools.py:127 schools/views/schools.py:40
+msgid "universities"
+msgstr "háskólar"
+
+#: schools/models/schools.py:148
+msgid "learning center"
+msgstr "fræðslumiðstöð"
+
+#: schools/models/schools.py:149 schools/views/schools.py:45
+msgid "learning centers"
+msgstr "fræðslumiðstöðvar"
+
+#: schools/models/schools.py:170 schools/models/students.py:23
+msgid "representative photo"
+msgstr "einkennandi mynd"
+
+#: schools/models/schools.py:171 schools/models/students.py:24
+msgid "introductory video"
+msgstr "kynningarmyndband"
+
+#: schools/models/schools.py:175
+msgid "members"
+msgstr "meðlimir"
+
+#: schools/models/schools.py:182
+#, python-format
+msgid "School Information for %(school)s"
+msgstr "Skólaupplýsingar fyrir %(school)s"
+
+#: schools/models/schools.py:187 schools/models/schools.py:188
+msgid "school information"
+msgstr "skólaupplýsingar"
+
+#: schools/models/schools.py:195
+msgid "Staff"
+msgstr "Starfsfólk"
+
+#: schools/models/schools.py:196
+msgid "Teacher"
+msgstr "Kennari"
+
+#: schools/models/schools.py:197
+msgid "Pupil"
+msgstr "Nemandi"
+
+#: schools/models/schools.py:198
+msgid "Stakeholder"
+msgstr "Hagsmunaaðili"
+
+#: schools/models/students.py:20
+msgid "email"
+msgstr "tölvupóstur"
+
+#: schools/models/students.py:21
+msgid "board members"
+msgstr "stjórnarmeðlimir"
+
+#: schools/models/students.py:33
+msgid "student society"
+msgstr "nemendafélag"
+
+#: schools/models/students.py:34
+msgid "student societies"
+msgstr "nemendafélög"
+
+#: schools/views/schools.py:19
+msgid "all schools"
+msgstr "allir skólar"
+
+#: schools/views/schools.py:77
+#, python-format
+msgid "%(schools)s in %(area)s"
+msgstr "%(schools)s á %(area)s"
+
+#: schools/views/schools.py:79
+#, python-format
+msgid "All %(schools)s in the country"
+msgstr "Allir %(schools)s á landinu"
+
+#: structure/models.py:13 structure/models.py:86
+msgid "icon"
+msgstr "teikn"
+
+#: structure/models.py:14
+msgid "slug"
+msgstr "vefslóðartitill"
+
+#: structure/models.py:15
+msgid "url"
+msgstr "vefslóð"
+
+#: structure/models.py:16
+msgid "parent"
+msgstr "foreldri"
+
+#: structure/models.py:17 structure/models.py:58 structure/models.py:87
+msgid "order"
+msgstr "röð"
+
+#: structure/models.py:18
+msgid "sites"
+msgstr "síður"
+
+#: structure/models.py:19
+msgid "groups"
+msgstr "hópar"
+
+#: structure/models.py:53
+msgid "menu"
+msgstr "valmynd"
+
+#: structure/models.py:54
+msgid "menus"
+msgstr "valmyndir"
+
+#: structure/models.py:63
+msgid "text description for more information"
+msgstr "Texti sem vísar á ítarlegri upplýsingar"
+
+#: structure/models.py:64
+msgid "link to more information"
+msgstr "tengill sem vísar á ítarlegri upplýsingar"
+
+#: structure/models.py:66
+msgid "representative image"
+msgstr "einkennandi táknmynd"
+
+#: structure/models.py:67
+msgid "license"
+msgstr "leyfi"
+
+#: structure/models.py:68
+msgid "original author"
+msgstr "upprunalegur höfundur"
+
+#: structure/models.py:69
+msgid "url of original author"
+msgstr "vefslóð upprunalegs höfundar"
+
+#: structure/models.py:80
+msgid "slide"
+msgstr "skyggna"
+
+#: structure/models.py:81
+msgid "slides"
+msgstr "skyggnur"
+
+#: structure/models.py:88
+msgid "pages"
+msgstr "síður"
+
+#: structure/models.py:96
+msgid "highlight"
+msgstr "flýtival"
+
+#: structure/models.py:97
+msgid "highlights"
+msgstr "flýtival"
+
+#: templates/menntagatt/404.html:9
+msgid "Subpages"
+msgstr "Undirsíður"
+
+#: templates/menntagatt/404.html:14
+msgid ""
+"Website not found. Please contact system administrator if you are sure that "
+"this should lead to a specific website."
+msgstr ""
+"Vefsíða fannst ekki. Vinsamlegast hafðu samband við kerfisstjóra ef þú ert "
+"viss um að hér eigi að vera tiltekin vefsíða."
+
+#: templates/menntagatt/500.html:6
+msgid ""
+"An error occurred on the web server. The system administrator has been "
+"notified"
+msgstr ""
+"Villa kom upp á vefþjóninum. Kerfisstjórinn hefur fengið skilaboð um villuna."
+
+#: templates/menntagatt/base.html:29 templates/menntagatt/welcome.html:91
+msgid "School information web site"
+msgstr "Skólavefur mennta- og menningarmálaráðuneytisins"
+
+#: templates/menntagatt/base.html:30 templates/menntagatt/welcome.html:92
+msgid "About the site"
+msgstr "Um síðuna"
+
+#: templates/menntagatt/contentbox.html:26
+msgid "You are here"
+msgstr "Þú ert hér"
+
+#: templates/menntagatt/header.html:8
+msgid "Logout"
+msgstr "Útskráning"
+
+#: templates/menntagatt/header.html:10 templates/menntagatt/welcome.html:67
+#: templates/menntagatt/community/social.html:43
+msgid "Login"
+msgstr "Innskráning"
+
+#: templates/menntagatt/message.html:8
+#: templates/menntagatt/users/password_change_done.html:5
+msgid "Return to"
+msgstr "Snúa aftur á"
+
+#: templates/menntagatt/notfound.html:6
+msgid "Website not found"
+msgstr "Vefsvæðið fannst ekki"
+
+#: templates/menntagatt/welcome.html:38
+msgid "Recent community activity"
+msgstr "Nýleg virkni í samfélaginu"
+
+#: templates/menntagatt/welcome.html:45
+msgid "News from the schools"
+msgstr "Fréttir frá skólunum"
+
+#: templates/menntagatt/welcome.html:69
+#: templates/menntagatt/community/social.html:45
+#: templates/menntagatt/users/login.html:11
+#: templates/menntagatt/users/register.html:14
+msgid "Username"
+msgstr "Notendanafn"
+
+#: templates/menntagatt/welcome.html:71
+#: templates/menntagatt/community/social.html:49
+#: templates/menntagatt/users/login.html:19
+msgid "Log in"
+msgstr "Innskrá"
+
+#: templates/menntagatt/welcome.html:74
+#: templates/menntagatt/community/social.html:52
+#: templates/menntagatt/users/login.html:23
+msgid "Not a user on the site?"
+msgstr "Nýr notandi?"
+
+#: templates/menntagatt/welcome.html:75
+#: templates/menntagatt/community/social.html:53
+#: templates/menntagatt/users/login.html:23
+msgid "Register"
+msgstr "Nýskrá"
+
+#: templates/menntagatt/community/articles.html:8
+msgid "Read article"
+msgstr "Lesa grein"
+
+#: templates/menntagatt/community/entry.html:20
+#: templates/menntagatt/community/social-submit.html:51
+msgid "Author"
+msgstr "Höfundur"
+
+#: templates/menntagatt/community/file.html:7
+msgid "Get"
+msgstr "Ná í"
+
+#: templates/menntagatt/community/new.html:15
+#: templates/menntagatt/management/new.html:11
+#: templates/menntagatt/users/register.html:7
+msgid "Please correct the following errors"
+msgstr "Vinsamlegast lagfærðu eftirfarandi villur"
+
+#: templates/menntagatt/community/new.html:20
+#: templates/menntagatt/community/social-submit.html:67
+#: templates/menntagatt/curricula/course_list.html:40
+#: templates/menntagatt/management/new.html:16
+msgid "Publish"
+msgstr "Birta"
+
+#: templates/menntagatt/community/pluggable-timeline.html:4
+#: templates/menntagatt/community/timeline.html:8
+msgid "marked"
+msgstr "merkti"
+
+#: templates/menntagatt/community/pluggable-timeline.html:4
+#: templates/menntagatt/community/timeline.html:8
+msgid "as interesting"
+msgstr "sem áhugavert"
+
+#: templates/menntagatt/community/pluggable-timeline.html:10
+#: templates/menntagatt/community/timeline.html:14
+msgid "is now following what"
+msgstr "fylgist núna með því sem"
+
+#: templates/menntagatt/community/pluggable-timeline.html:10
+#: templates/menntagatt/community/timeline.html:14
+msgid "does"
+msgstr "gerir"
+
+#: templates/menntagatt/community/social-submit.html:5
+msgid ""
+"Express yourself about something related to studies, teaching, or educations"
+msgstr "Tjáðu þig um eitthvað sem tengist námi, kennslu eða menntun"
+
+#: templates/menntagatt/community/social-submit.html:9
+msgid "Preview"
+msgstr "Forskoða"
+
+#: templates/menntagatt/community/social-submit.html:12
+#: templates/menntagatt/community/social-submit.html:38
+msgid "Close"
+msgstr "Loka"
+
+#: templates/menntagatt/community/social-submit.html:16
+msgid "Tags (e.g. resources, icelandic, primary school, language plaza)"
+msgstr "Merki (t.d. grunngögn, íslenska, grunnskóli, tungumálatorg)"
+
+#: templates/menntagatt/community/social-submit.html:18
+msgid "The following categories help others find your submissions faster"
+msgstr "Eftirfarandi flokkar hjálpa öðrum að finna efnið þitt"
+
+#: templates/menntagatt/community/social-submit.html:20
+msgid "Site-wide"
+msgstr "Menntagátt"
+
+#: templates/menntagatt/community/social-submit.html:21
+msgid "resources"
+msgstr "menntaefni"
+
+#: templates/menntagatt/community/social-submit.html:22
+msgid "data"
+msgstr "gögn"
+
+#: templates/menntagatt/community/social-submit.html:25
+msgid "Specific"
+msgstr "Skólatengt"
+
+#: templates/menntagatt/community/social-submit.html:26
+msgid "adult education"
+msgstr "fullorðnisfræðsla"
+
+#: templates/menntagatt/community/social-submit.html:36
+msgid "License"
+msgstr "Leyfi"
+
+#: templates/menntagatt/community/social-submit.html:36
+#: templates/menntagatt/community/social-submit.html:51
+#: templates/menntagatt/community/social-submit.html:54
+#: templates/menntagatt/users/password_change.html:27
+msgid "Change"
+msgstr "Breyta"
+
+#: templates/menntagatt/community/social-submit.html:51
+msgid "You"
+msgstr "Þú"
+
+#: templates/menntagatt/community/social-submit.html:59
+msgid "Create as an article"
+msgstr "Búa til sem grein"
+
+#: templates/menntagatt/community/social-submit.html:60
+msgid "Submit files"
+msgstr "Senda inn skjöl"
+
+#: templates/menntagatt/community/social-submit.html:64
+msgid "Drag and drop files here to attach them to your submission"
+msgstr "Dragðu skrár hingað til þess að hengja þær við færsluna þína"
+
+#: templates/menntagatt/community/social.html:25
+msgid "Change information"
+msgstr "Breyta upplýsingum"
+
+#: templates/menntagatt/community/social.html:25
+msgid "Change information about me"
+msgstr "Breyta upplýsingum um mig"
+
+#: templates/menntagatt/community/social.html:27
+msgid "Look at submissions from"
+msgstr "Skoða efni frá"
+
+#: templates/menntagatt/community/social.html:28
+msgid "Me"
+msgstr "Mér"
+
+#: templates/menntagatt/community/social.html:29
+msgid "My friends"
+msgstr "Vinum mínum"
+
+#: templates/menntagatt/community/social.html:30
+msgid "Everyone"
+msgstr "Öllum á Menntagátt"
+
+#: templates/menntagatt/community/social.html:34
+#: templates/menntagatt/community/social.html:117
+msgid "Articles"
+msgstr "Greinar"
+
+#: templates/menntagatt/community/social.html:35
+msgid "Photos"
+msgstr "Myndir"
+
+#: templates/menntagatt/community/social.html:36
+#: templates/menntagatt/community/social.html:119
+msgid "Videos"
+msgstr "Myndbönd"
+
+#: templates/menntagatt/community/social.html:37
+msgid "Audio"
+msgstr "Hljóðskrár"
+
+#: templates/menntagatt/community/social.html:38
+msgid "Bookmarks"
+msgstr "Tenglar"
+
+#: templates/menntagatt/community/social.html:39
+#: templates/menntagatt/community/social.html:121
+msgid "Files"
+msgstr "Skrár"
+
+#: templates/menntagatt/community/social.html:40
+#: templates/menntagatt/community/social.html:116
+msgid "Notes"
+msgstr "Skilaboð"
+
+#: templates/menntagatt/community/social.html:47
+#: templates/menntagatt/users/login.html:15
+#: templates/menntagatt/users/register.html:28
+#: templates/menntagatt/users/register.html:35
+msgid "Password"
+msgstr "Lykilorð"
+
+#: templates/menntagatt/community/social.html:66
+msgid "Subscribe"
+msgstr "Gerast áskrifandi"
+
+#: templates/menntagatt/community/social.html:77
+msgid "What has this user been doing?"
+msgstr "Hvað hefur þessi notandi verið að gera?"
+
+#: templates/menntagatt/community/social.html:80
+msgid "Recent activity in the community"
+msgstr "Nýleg virkni í samfélaginu"
+
+#: templates/menntagatt/community/social.html:87
+msgid "Events"
+msgstr "Viðburðir"
+
+#: templates/menntagatt/community/social.html:93
+msgid "No upcoming events"
+msgstr "Engir viðburðir á döfinni"
+
+#: templates/menntagatt/community/social.html:95
+msgid "New event"
+msgstr "Nýr viðburður"
+
+#: templates/menntagatt/community/social.html:95
+msgid "Create event"
+msgstr "Skrá viðburð"
+
+#: templates/menntagatt/community/social.html:98
+msgid "is following"
+msgstr "fylgist með"
+
+#: templates/menntagatt/community/social.html:102
+msgid "is not following anything"
+msgstr "er ekki að fylgjast með neinum"
+
+#: templates/menntagatt/community/social.html:104
+msgid "has these subscribers"
+msgstr "hefur þessa áskrifendur"
+
+#: templates/menntagatt/community/social.html:108
+msgid "does not have any subscribers"
+msgstr "hefur enga áskrifendur"
+
+#: templates/menntagatt/community/social.html:110
+msgid "Statistics"
+msgstr "Tölfræði"
+
+#: templates/menntagatt/community/social.html:112
+msgid "Member since"
+msgstr "Meðlimur síðan"
+
+#: templates/menntagatt/community/social.html:113
+msgid "Subscriber to"
+msgstr "Áskrifandi að"
+
+#: templates/menntagatt/community/social.html:114
+msgid "Subscribers"
+msgstr "Áskrifendur"
+
+#: templates/menntagatt/community/social.html:115
+msgid "Groups"
+msgstr "Hópar"
+
+#: templates/menntagatt/community/social.html:118
+msgid "Photos/Images"
+msgstr "Myndir"
+
+#: templates/menntagatt/community/social.html:120
+msgid "Audio files"
+msgstr "Hljóðskrár"
+
+#: templates/menntagatt/community/social.html:122
+msgid "Links"
+msgstr "Tenglar"
+
+#: templates/menntagatt/community/social.html:123
+msgid "Finds interesting"
+msgstr "Þykir áhugavert"
+
+#: templates/menntagatt/community/timeline-actor-share.html:3
+msgid "decided to share this which"
+msgstr "ákvað að deila þessu sem"
+
+#: templates/menntagatt/community/timeline-actor-share.html:3
+msgid "posted"
+msgstr "setti inn"
+
+#: templates/menntagatt/community/timeline-object-noinput.html:6
+#: templates/menntagatt/community/timeline-object.html:6
+msgid "Read more"
+msgstr "Lesa nánar"
+
+#: templates/menntagatt/community/timeline-object-noinput.html:28
+#: templates/menntagatt/community/timeline-object.html:28
+msgid "Tags"
+msgstr "Flokkar"
+
+#: templates/menntagatt/community/timeline-object-noinput.html:31
+#: templates/menntagatt/community/timeline-object.html:31
+#, python-format
+msgid ""
+"\n"
+"%(counter)s finds this interesting\n"
+msgid_plural ""
+"\n"
+"%(counter)s find this interesting.\n"
+msgstr[0] ""
+"\n"
+"%(counter)s finnst þetta áhugavert.\n"
+msgstr[1] ""
+"\n"
+"%(counter)s finnst þetta áhugavert.\n"
+
+#: templates/menntagatt/community/timeline-object.html:28
+msgid "Add"
+msgstr "Bæta við"
+
+#: templates/menntagatt/community/timeline-object.html:28
+msgid "Cancel"
+msgstr "Hætta við"
+
+#: templates/menntagatt/community/timeline-object.html:28
+msgid "Add a tag"
+msgstr "Bæta við flokk"
+
+#: templates/menntagatt/community/timeline-object.html:39
+msgid "Mark as interesting"
+msgstr "Merkja sem áhugavert"
+
+#: templates/menntagatt/community/timeline-object.html:39
+msgid "Interesting"
+msgstr "Áhugavert"
+
+#: templates/menntagatt/community/timeline-object.html:39
+msgid "Share with my friends"
+msgstr "Deila með vinum mínum"
+
+#: templates/menntagatt/community/timeline-object.html:39
+msgid "Share forward"
+msgstr "Deila áfram"
+
+#: templates/menntagatt/country/law.html:21
+#, python-format
+msgid "Chapter %(section.number|romanize)s - %(section.title)s"
+msgstr "%(section.number|romanize)s. kafli - %(section.title)s"
+
+#: templates/menntagatt/country/law.html:25
+#, python-format
+msgid "Article %(article.number)s %(article.subnumber)s"
+msgstr "%(article.number)s. grein - %(article.subnumber)s"
+
+#: templates/menntagatt/curricula/approve_course.html:10
+msgid "Are you sure you want to approve this course on behalf of the school?"
+msgstr ""
+"Ertu viss um að þú viljir samþykkja þennan áfanga fyrir hönd skólans þíns?"
+
+#: templates/menntagatt/curricula/approve_course.html:11
+#: templates/menntagatt/curricula/delete_course.html:11
+#: templates/menntagatt/curricula/publish_course.html:11
+#: templates/menntagatt/curricula/reactivate_course.html:11
+#: templates/menntagatt/management/delete_header.html:14
+msgid "Yes, I am sure"
+msgstr "Já, ég er viss."
+
+#: templates/menntagatt/curricula/approve_course.html:11
+msgid "No, I reject this course"
+msgstr "Nei, ég hafna þessum áfanga"
+
+#: templates/menntagatt/curricula/course_info.html:4
+#: templates/menntagatt/curricula/course_list.html:20
+#: templates/menntagatt/curricula/exemplary_list.html:17
+#: templates/menntagatt/curricula/exemplary_list.html:51
+#: templates/menntagatt/curricula/make_course_exemplary.html:19
+#: templates/menntagatt/curricula/newcourse_subject_topic.html:20
+#: templates/menntagatt/curricula/newcourse_subject_topic.html:37
+#: templates/menntagatt/curricula/view_exemplary_course.html:17
+msgid "Subjects"
+msgstr "Námsgreinar"
+
+#: templates/menntagatt/curricula/course_info.html:5
+#: templates/menntagatt/curricula/course_list.html:21
+#: templates/menntagatt/curricula/exemplary_list.html:18
+#: templates/menntagatt/curricula/exemplary_list.html:52
+#: templates/menntagatt/curricula/make_course_exemplary.html:21
+#: templates/menntagatt/curricula/newcourse_subject_topic.html:28
+#: templates/menntagatt/curricula/newcourse_subject_topic.html:41
+#: templates/menntagatt/curricula/view_exemplary_course.html:19
+msgid "Topics"
+msgstr "Viðfangsefni"
+
+#: templates/menntagatt/curricula/course_info.html:9
+#: templates/menntagatt/curricula/course_list.html:22
+#: templates/menntagatt/curricula/exemplary_list.html:19
+#: templates/menntagatt/curricula/exemplary_list.html:53
+#: templates/menntagatt/curricula/make_course_exemplary.html:54
+#: templates/menntagatt/curricula/view_exemplary_course.html:58
+msgid "Level"
+msgstr "Þrep"
+
+#: templates/menntagatt/curricula/course_info.html:10
+#: templates/menntagatt/curricula/course_list.html:23
+#: templates/menntagatt/curricula/exemplary_list.html:20
+#: templates/menntagatt/curricula/exemplary_list.html:54
+#: templates/menntagatt/curricula/make_course_exemplary.html:81
+#: templates/menntagatt/curricula/view_exemplary_course.html:87
+msgid "Credits"
+msgstr "Einingar"
+
+#: templates/menntagatt/curricula/course_info.html:14
+#: templates/menntagatt/curricula/make_course_exemplary.html:43
+#: templates/menntagatt/curricula/view_exemplary_course.html:45
+msgid "Prerequisites"
+msgstr "Kröfur"
+
+#: templates/menntagatt/curricula/course_info.html:15
+#: templates/menntagatt/curricula/make_course_exemplary.html:32
+#: templates/menntagatt/curricula/view_exemplary_course.html:32
+msgid "Description"
+msgstr "Lýsing"
+
+#: templates/menntagatt/curricula/course_info.html:19
+#: templates/menntagatt/curricula/make_course_exemplary.html:65
+#: templates/menntagatt/curricula/view_exemplary_course.html:71
+msgid "Knowledge goals"
+msgstr "Þekkingarviðmið"
+
+#: templates/menntagatt/curricula/course_info.html:24
+#: templates/menntagatt/curricula/make_course_exemplary.html:69
+#: templates/menntagatt/curricula/view_exemplary_course.html:75
+msgid "Skill goals"
+msgstr "Leikniviðmið"
+
+#: templates/menntagatt/curricula/course_info.html:29
+#: templates/menntagatt/curricula/make_course_exemplary.html:73
+#: templates/menntagatt/curricula/view_exemplary_course.html:79
+msgid "Competence goals"
+msgstr "Hæfniviðmið"
+
+#: templates/menntagatt/curricula/course_info.html:39
+msgid "Additional evaluation"
+msgstr "Námsmat"
+
+#: templates/menntagatt/curricula/course_list.html:9
+#: templates/menntagatt/curricula/exemplary_list.html:45
+msgid "Courses"
+msgstr "Áfangar"
+
+#: templates/menntagatt/curricula/course_list.html:18
+#: templates/menntagatt/curricula/exemplary_list.html:15
+#: templates/menntagatt/curricula/exemplary_list.html:49
+msgid "Course name"
+msgstr "Áfangaheiti"
+
+#: templates/menntagatt/curricula/course_list.html:19
+#: templates/menntagatt/curricula/exemplary_list.html:16
+#: templates/menntagatt/curricula/exemplary_list.html:50
+msgid "Course abbreviation"
+msgstr "áfanganúmer"
+
+#: templates/menntagatt/curricula/course_list.html:24
+#: templates/menntagatt/curricula/exemplary_list.html:21
+#: templates/menntagatt/curricula/exemplary_list.html:55
+msgid "Operations"
+msgstr "Aðgerðir"
+
+#: templates/menntagatt/curricula/course_list.html:39
+msgid "Publish course"
+msgstr "Birta áfanga"
+
+#: templates/menntagatt/curricula/course_list.html:44
+#: templates/menntagatt/curricula/course_list.html:45
+msgid "Reactivate"
+msgstr "Endurvekja"
+
+#: templates/menntagatt/curricula/course_list.html:49
+msgid "Delete course"
+msgstr "Eyða áfanga"
+
+#: templates/menntagatt/curricula/course_list.html:50
+msgid "Delete"
+msgstr "Eyða"
+
+#: templates/menntagatt/curricula/course_list.html:59
+msgid "No courses found"
+msgstr "Engir áfangar fundust"
+
+#: templates/menntagatt/curricula/delete_course.html:10
+msgid "Are you sure you want to delete this course?"
+msgstr "Ertu viss um að þú viljir eyða þessum áfanga?"
+
+#: templates/menntagatt/curricula/exemplary_list.html:10
+msgid "Exemplary courses"
+msgstr "Fyrirmyndaráfangar"
+
+#: templates/menntagatt/curricula/exemplary_list.html:36
+msgid "Exemplary course for"
+msgstr "Fyrirmyndaráfangi fyrir"
+
+#: templates/menntagatt/curricula/exemplary_list.html:41
+msgid "No courses have been selected as exemplary courses"
+msgstr "Engir áfangar hafa verið valdir sem fyrirmyndaráfangar"
+
+#: templates/menntagatt/curricula/exemplary_list.html:69
+#: templates/menntagatt/curricula/exemplary_list.html:70
+msgid "Make exemplary"
+msgstr "Gera að fyrirmynd"
+
+#: templates/menntagatt/curricula/make_course_exemplary.html:17
+#: templates/menntagatt/curricula/view_exemplary_course.html:15
+msgid "Descriptive name"
+msgstr "Lýsandi nafn"
+
+#: templates/menntagatt/curricula/make_course_exemplary.html:25
+#: templates/menntagatt/curricula/make_course_exemplary.html:36
+#: templates/menntagatt/curricula/make_course_exemplary.html:47
+#: templates/menntagatt/curricula/make_course_exemplary.html:58
+#: templates/menntagatt/curricula/make_course_exemplary.html:85
+#: templates/menntagatt/curricula/make_course_exemplary.html:87
+#: templates/menntagatt/curricula/make_course_exemplary.html:89
+#: templates/menntagatt/curricula/make_course_exemplary.html:100
+msgid "Notes about"
+msgstr "Athugasemdir um"
+
+#: templates/menntagatt/curricula/make_course_exemplary.html:25
+msgid "the descriptive name, the subjects and the topics"
+msgstr "lýsandi nafnið, námsgreinarnar og viðfangsefnin"
+
+#: templates/menntagatt/curricula/make_course_exemplary.html:36
+msgid "the description"
+msgstr "lýsinguna"
+
+#: templates/menntagatt/curricula/make_course_exemplary.html:47
+msgid "the prerequisites"
+msgstr "forkröfurnar"
+
+#: templates/menntagatt/curricula/make_course_exemplary.html:58
+msgid "the level"
+msgstr "þrepið"
+
+#: templates/menntagatt/curricula/make_course_exemplary.html:76
+#: templates/menntagatt/curricula/make_course_exemplary.html:96
+#: templates/menntagatt/curricula/view_exemplary_course.html:82
+#: templates/menntagatt/curricula/view_exemplary_course.html:110
+msgid "Evaluation"
+msgstr "Námsmat"
+
+#: templates/menntagatt/curricula/make_course_exemplary.html:82
+#: templates/menntagatt/curricula/view_exemplary_course.html:88
+msgid "School credits"
+msgstr "Framhaldsskólaeiningar"
+
+#: templates/menntagatt/curricula/make_course_exemplary.html:85
+msgid "the knowledge, skill, and competence goals"
+msgstr "þekkingar-, leikni og hæfniviðmiðin"
+
+#: templates/menntagatt/curricula/make_course_exemplary.html:87
+msgid "the evaluation of competence goals"
+msgstr "námsmat hæfniviðmiðanna"
+
+#: templates/menntagatt/curricula/make_course_exemplary.html:89
+msgid "the credits estimation based on the competence goals"
+msgstr "framhaldskólaeiningafjölda út frá hæfnimarkmiðum"
+
+#: templates/menntagatt/curricula/make_course_exemplary.html:100
+msgid "the evaluation"
+msgstr "námsmatið"
+
+#: templates/menntagatt/curricula/make_course_exemplary.html:106
+msgid "Create exemplary course"
+msgstr "Búa til fyrirmyndaráfanga"
+
+#: templates/menntagatt/curricula/newcourse.html:12
+#: templates/menntagatt/curricula/newcourse_goals_credits.html:12
+#: templates/menntagatt/curricula/newcourse_subject_topic.html:13
+#: templates/menntagatt/curricula/newprogramme.html:12
+#: templates/menntagatt/curricula/newprogramme_key_competences.html:13
+#: templates/menntagatt/curricula/newprogramme_profession_title.html:13
+#, python-format
+msgid "Step %(step)s of %(step_count)s"
+msgstr "Skref %(step)s af %(step_count)s"
+
+#: templates/menntagatt/curricula/newcourse.html:40
+#: templates/menntagatt/curricula/newcourse_goals_credits.html:39
+#: templates/menntagatt/curricula/newcourse_subject_topic.html:52
+#: templates/menntagatt/curricula/newprogramme.html:24
+#: templates/menntagatt/curricula/newprogramme_key_competences.html:27
+#: templates/menntagatt/curricula/newprogramme_profession_title.html:41
+msgid "Continue"
+msgstr "Halda áfram"
+
+#: templates/menntagatt/curricula/newcourse_goals_credits.html:43
+#: templates/menntagatt/curricula/newcourse_goals_credits.html:52
+#: templates/menntagatt/curricula/newcourse_goals_credits.html:61
+msgid "Create a new goal"
+msgstr "Búa til nýtt viðmið"
+
+#: templates/menntagatt/curricula/newcourse_goals_credits.html:45
+#: templates/menntagatt/curricula/newcourse_goals_credits.html:54
+#: templates/menntagatt/curricula/newcourse_goals_credits.html:63
+msgid "New goal"
+msgstr "Nýtt viðmið"
+
+#: templates/menntagatt/curricula/newcourse_goals_credits.html:46
+msgid "The pupil shall have acquired knowledge and understanding to:"
+msgstr "Nemandinn skal hafa öðlast þekkingu og skilning til að:"
+
+#: templates/menntagatt/curricula/newcourse_goals_credits.html:55
+msgid "The pupil shall have acquired skills to:"
+msgstr "Nemandinn skal hafa öðlast leikni í að:"
+
+#: templates/menntagatt/curricula/newcourse_goals_credits.html:65
+msgid "The pupil shall be able to use the acquired knowledge and skills to:"
+msgstr ""
+"Nemandinn skal geta nýtt þá þekkingu og leikni sem hann hefur aflað sér til "
+"að:"
+
+#: templates/menntagatt/curricula/newcourse_goals_credits.html:67
+msgid "How will this goal be evaluated?"
+msgstr "Hvernig verður þetta viðmið metið?"
+
+#: templates/menntagatt/curricula/newcourse_goals_credits.html:69
+msgid ""
+"Evaluation focuses on how the competence goals of the course will be "
+"evaluated, that is to say the evaluation method and not a ratio between "
+"measurements. It is not necessary to fill in evaluation but it is strongly "
+"recommended."
+msgstr ""
+"Námsmat miðast við hvernig hæfniviðmiðum áfangans verða metin, það er að það "
+"er að segja aðferðafræðin við matið ekki hlutfall á milli mælingaraðferða. "
+"Ekki er nauðsynlegt að slá inn námsmat en sterklega er mælt með því að það "
+"sé gert."
+
+#: templates/menntagatt/curricula/newcourse_goals_credits.html:75
+msgid "Delete goal?"
+msgstr "Eyða viðmiði"
+
+#: templates/menntagatt/curricula/newcourse_goals_credits.html:78
+msgid "Are you sure you want to delete the following goal?"
+msgstr "Ertu viss um að þú viljir eyða þessu viðmiði?"
+
+#: templates/menntagatt/curricula/newcourse_subject_topic.html:21
+msgid "Click on a subject"
+msgstr "Veldu námsgrein"
+
+#: templates/menntagatt/curricula/newcourse_subject_topic.html:29
+msgid "Click on a topic"
+msgstr "Veldu viðfangsefni"
+
+#: templates/menntagatt/curricula/newcourse_subject_topic.html:56
+msgid "Abbreviations"
+msgstr "Skammstafanir"
+
+#: templates/menntagatt/curricula/newcourse_subject_topic.html:59
+msgid "Subject abbreviation"
+msgstr "Skammstafanir námsgreina"
+
+#: templates/menntagatt/curricula/newcourse_subject_topic.html:60
+msgid ""
+"Subject abbreviation consists of four letters like for example MATH which "
+"stands for mathematics."
+msgstr ""
+"Skammstafanir námsgreina samanstanda af fjórum bókstöfum eins og til dæmis "
+"STÆR sem stendur fyrir stærðfræði."
+
+#: templates/menntagatt/curricula/newcourse_subject_topic.html:60
+#: templates/menntagatt/curricula/newcourse_subject_topic.html:67
+msgid ""
+"This abbreviation will be used in the curricula database for all schools"
+msgstr "Þessi skammstöfun verður notuð í námskrárgrunninum fyrir alla skóla"
+
+#: templates/menntagatt/curricula/newcourse_subject_topic.html:66
+msgid "Topic abbreviation"
+msgstr "Skammstöfun viðfangsefna"
+
+#: templates/menntagatt/curricula/newcourse_subject_topic.html:67
+msgid ""
+"Topic abbreviation consists of two letters like for example RL which can "
+"stand for reading and listening."
+msgstr ""
+"Skammstöfun viðfangsefna samanstendur af tveimur bókstöfum eins og til dæmis "
+"LH sem gæti staðið fyrir lestur, hlustun"
+
+#: templates/menntagatt/curricula/newcourse_subject_topic.html:71
+msgid "Examples of how related topics have been abbreviated in other courses"
+msgstr ""
+"Dæmi um það hvernig skyld viðfangsefni hafa verið skammstöfuð í öðrum áföngum"
+
+#: templates/menntagatt/curricula/newprogramme_key_competences.html:18
+#: templates/menntagatt/curricula/newprogramme_key_competences.html:33
+msgid "In the programme, this key competence is fulfilled:"
+msgstr "Á námsbrautinni er unnið að þessari lykilhæfni:"
+
+#: templates/menntagatt/curricula/newprogramme_key_competences.html:20
+msgid "Add an item"
+msgstr "Bæta við atriði"
+
+#: templates/menntagatt/curricula/newprogramme_key_competences.html:30
+msgid "Create a new competence item"
+msgstr "Búa til nýtt lykilhæfniatriði"
+
+#: templates/menntagatt/curricula/newprogramme_key_competences.html:32
+msgid "New competence item"
+msgstr "Nýtt lykilhæfniatriði"
+
+#: templates/menntagatt/curricula/newprogramme_key_competences.html:39
+msgid "Delete key competence goal?"
+msgstr "Eyða lykilhæfniviðmiði?"
+
+#: templates/menntagatt/curricula/newprogramme_key_competences.html:42
+msgid "Are you sure you want to delete the following key competence item?"
+msgstr "Ertu viss um að þú viljir eyða þessu lykilhæfniviðmiði?"
+
+#: templates/menntagatt/curricula/newprogramme_profession_title.html:20
+msgid "Professions"
+msgstr "Námslok"
+
+#: templates/menntagatt/curricula/newprogramme_profession_title.html:21
+msgid "Click on a profession"
+msgstr "Veldu námslok"
+
+#: templates/menntagatt/curricula/publish_course.html:10
+msgid "Are you sure you want to publish this course?"
+msgstr "Ertu viss um að þú viljir birta þennan áfanga?"
+
+#: templates/menntagatt/curricula/reactivate_course.html:10
+msgid "Are you sure you want to reactivate this course?"
+msgstr "Ertu viss um að þú viljir endurvekja þennan áfanga?"
+
+#: templates/menntagatt/curricula/stakeholder.html:15
+msgid "Interested in"
+msgstr "Hefur áhuga á"
+
+#: templates/menntagatt/curricula/stakeholder_new.html:15
+#: templates/menntagatt/users/register.html:39
+msgid "Create"
+msgstr "Búa til"
+
+#: templates/menntagatt/curricula/stakeholders.html:4
+msgid "List of stakeholders"
+msgstr "Listi yfir hagsmunaaðila"
+
+#: templates/menntagatt/curricula/view_exemplary_course.html:11
+msgid "The exemplary course"
+msgstr "Fyrirmyndaráfanginn"
+
+#: templates/menntagatt/curricula/view_exemplary_course.html:24
+msgid "Notes about the descriptive name, the subjects and the topics"
+msgstr "Athugasemdir um lýsandi nafn, námsgreinar og viðfangsefni"
+
+#: templates/menntagatt/curricula/view_exemplary_course.html:37
+msgid "Notes about the description"
+msgstr "Athugasemdir um lýsingu"
+
+#: templates/menntagatt/curricula/view_exemplary_course.html:50
+msgid "Notes about the prerequisites"
+msgstr "Athugasemdir um forkröfur"
+
+#: templates/menntagatt/curricula/view_exemplary_course.html:63
+msgid "Notes about the level"
+msgstr "Athugasemdir um þrep"
+
+#: templates/menntagatt/curricula/view_exemplary_course.html:93
+msgid "Notes about the knowledge, skill, and competence goals"
+msgstr "Athugasemdir um þekkingar-, leikni og hæfniviðmið"
+
+#: templates/menntagatt/curricula/view_exemplary_course.html:97
+msgid "Notes about the evaluation of competence goals"
+msgstr "Athugasemdir um námsmat hæfniviðmiða"
+
+#: templates/menntagatt/curricula/view_exemplary_course.html:101
+msgid "Notes about the credits estimation based on the competence goals"
+msgstr "Athugasemdir um framhaldskólaeiningafjölda miðað við hæfnimarkmið"
+
+#: templates/menntagatt/curricula/view_exemplary_course.html:115
+msgid "Notes about the evaluation"
+msgstr "Athugasemdir um námsmat"
+
+#: templates/menntagatt/feedback/feedback_list.html:31
+msgid "Submit"
+msgstr "Senda inn"
+
+#: templates/menntagatt/management/delete_header.html:12
+msgid "Are you sure you want to delte this image?"
+msgstr "Ertu viss um að þú viljir eyða þessari mynd?"
+
+#: templates/menntagatt/management/headers.html:11
+msgid "Delete image"
+msgstr "Eyða mynd"
+
+#: templates/menntagatt/oer/search.html:15
+msgid "What are you looking for?"
+msgstr "Hvað viltu finna?"
+
+#: templates/menntagatt/oer/search.html:15
+#: templates/menntagatt/oer/search_results.html:15
+msgid "Search"
+msgstr "Leita"
+
+#: templates/menntagatt/oer/search.html:15
+#: templates/menntagatt/oer/search_results.html:15
+msgid "Advanced search"
+msgstr "Ítarleg leit"
+
+#: templates/menntagatt/oer/search.html:27
+msgid "My latest search strings"
+msgstr "Síðustu leitarorðin mín"
+
+#: templates/menntagatt/oer/search.html:34
+msgid "You haven't searched for anything recently"
+msgstr "Þú hefur ekki leitað að neinu nýlega"
+
+#: templates/menntagatt/oer/search.html:39
+msgid "Popular search strings"
+msgstr "Vinsæl leitarorð"
+
+#: templates/menntagatt/oer/search.html:46
+msgid "Users haven't searched for anything recently"
+msgstr "Notendur síðunnar hafa ekki leitað að neinu nýlega"
+
+#: templates/menntagatt/oer/search.html:51
+msgid "Newest content"
+msgstr "Nýjasta efnið"
+
+#: templates/menntagatt/oer/search.html:57
+msgid "Nothing has been submitted."
+msgstr "Ekkert hefur verið sent inn."
+
+#: templates/menntagatt/schools/info.html:29
+msgid "School not found"
+msgstr "Skóli fannst ekki"
+
+#: templates/menntagatt/users/login.html:6
+msgid "An error occurred during log in"
+msgstr "Villa kom upp við innskráningu"
+
+#: templates/menntagatt/users/logout.html:4
+msgid "Log out successful"
+msgstr "Tókst að skrá þig út"
+
+#: templates/menntagatt/users/password_change.html:6
+msgid "An error occurred changing the passwords "
+msgstr "Villa kom upp við að breyta lykilorðum"
+
+#: templates/menntagatt/users/password_change.html:12
+msgid "Older password"
+msgstr "Eldra lykilorð"
+
+#: templates/menntagatt/users/password_change.html:18
+msgid "New password"
+msgstr "Nýtt lykilorð"
+
+#: templates/menntagatt/users/password_change.html:23
+msgid "Retype the new password"
+msgstr "Nýtt lykilorð (aftur)"
+
+#: templates/menntagatt/users/password_change_done.html:4
+msgid "Password change successful"
+msgstr "Tókst að breyta lykilorði"
+
+#: templates/menntagatt/users/password_change_done.html:5
+msgid "My preferences"
+msgstr "Stillingarnar mínar"
+
+#: templates/menntagatt/users/password_change_done.html:5
+msgid "my preferences"
+msgstr "stillingarnar mínar"
+
+#: templates/menntagatt/users/register.html:4
+msgid "Create an account"
+msgstr "Búa til aðgang"
+
+#: templates/menntagatt/users/register.html:21
+msgid "E-mail"
+msgstr "Tölvupóstur"
+
+#: templates/menntagatt/users/register.html:35
+msgid "again"
+msgstr "aftur"
+
+#: webservice/views/community.py:13
+msgid "User is not authorized to add a tag"
+msgstr "Hefur ekki heimild til að bæta við flokk"
+
+#: webservice/views/community.py:19 webservice/views/community.py:41
+msgid "Activity not found"
+msgstr "Virkni fannst ekki"
+
+#: webservice/views/community.py:36
+msgid "User is not authorized to add a comment"
+msgstr "Hefur ekki heimild til að bæta við athugasemd"
+
+#: webservice/views/community.py:48
+msgid "just now"
+msgstr ""
+
+#: webservice/views/community.py:50
+msgid "Could not create a comment"
+msgstr "Gat ekki búið til athugasemd"
+
+#: webservice/views/curricula.py:32
+msgid ""
+"No topics found for subject. You will setting the guideline for this subject "
+"so take care and be responsible."
+msgstr ""
+"Engin viðfangsefni fundust fyrir þessa námsgrein. Þitt val mun gilda fyrir "
+"alla sem kenna námsgreinina þannig að vandaðu valið."
+
+#: webservice/views/curricula.py:99
+msgid "Both subjects and topics must be provided"
+msgstr "Bæði námsgrein og viðfangsefni verða að vera tilgreind"
+
+#: webservice/views/curricula.py:186
+msgid "User does not have permission"
+msgstr "Notandi hefur ekki heimild"
+
+#: webservice/views/curricula.py:195 webservice/views/curricula.py:200
+#, python-format
+msgid "Abbreviation must be %d characters"
+msgstr "Skammstöfun verður að vera %d bókstafir"
+
+#: webservice/views/curricula.py:223
+msgid "Abbreviation is already in use by another subject combination"
+msgstr "Skammstöfun er nú þegar í notkun fyrir aðra námsgreinasamsetningu"
+
+#: webservice/views/curricula.py:273
+msgid "No goal provided"
+msgstr "Ekkert viðmið tilgreint"
+
+#: webservice/views/curricula.py:300
+msgid "Not authorized to create goal"
+msgstr "Hefur ekki heimild til að búa til viðmið"
+
+#: webservice/views/curricula.py:318 webservice/views/curricula.py:392
+msgid "Goal not found"
+msgstr "Viðmið fannst ekki"
+
+#: webservice/views/curricula.py:327 webservice/views/curricula.py:401
+msgid "Not authorized to delete goals"
+msgstr "Hefur ekki heimild til að eyða viðmiðum"
+
+#: webservice/views/curricula.py:335
+msgid "No professions provided"
+msgstr "Engin námslok tilgreind"
+
+#: webservice/views/curricula.py:368
+msgid ""
+"Both competence description and competence type (number) must be provided"
+msgstr ""
+"Bæði lykilhæfnilýsing og og lykilhæfnigerð (númer) verða að vera gefin upp"
+
+#: webservice/views/curricula.py:379
+msgid "Unable to create competence goal"
+msgstr "Tókst ekki að búa til lykilhæfniviðmið"
+
+#: webservice/views/curricula.py:383
+msgid "Not authorized to create competence goal"
+msgstr "Hefur ekki heimild til að búa til lykilhæfniviðmið"
+
+#: webservice/views/curricula.py:413
+msgid "Choice of competence not supplied"
+msgstr "Lykilhæfnigerð er ekki gefin upp"
+
+#: webservice/views/curricula.py:419
+msgid "Key competence description not found"
+msgstr "Lykilhæfnilýsing fannst ekki"
+
+#: webservice/views/curricula.py:430
+msgid "User not authorized to create key competence descriptions"
+msgstr "Notandi hefur ekki leyfi til þess að búa til lykilhæfnilýsingar"
+
+#~ msgid "discussion about %s"
+#~ msgstr "umfjöllun um %s"
+
+#~ msgid ""
+#~ "Only officially approved courses can be made into exemplary courses. No "
+#~ "such courses found."
+#~ msgstr ""
+#~ "Aðeins áfangar sem hafa verið samþykktir af ráðuneyti geta verið gerðir "
+#~ "að fyrirmyndaráföngum. Engir slíkir áfangar fundust."
+
+#~ msgid "course title"
+#~ msgstr "Titill áfanga"
+
+#~ msgid "course subjects"
+#~ msgstr "námsgreinar áfangans"
+
+#~ msgid "course topics"
+#~ msgstr "viðfangsefni áfanga"
+
+#~ msgid "Courses in progress"
+#~ msgstr "Áfangar í vinnslu"
+
+#~ msgid "Abbreviation"
+#~ msgstr "Skammstöfun"

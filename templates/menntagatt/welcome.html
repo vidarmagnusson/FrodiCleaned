@@ -1,0 +1,97 @@
+{% load humanize %}
+{% load i18n %}
+{% load creativecommons %}
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 5.0 Transitional//EN"
+"http://www.w3.org/TR/html5/loose.dtd">
+
+<html>
+  <head>
+    <title>Menntagátt</title>
+
+    <link rel="stylesheet" href="/media/css/social.css"/>
+    <link rel="stylesheet" href="/media/css/theme.css"/>
+
+    <script type="text/javascript" src="/media/js/jquery-1.5.1.min.js"></script>
+    <script type="text/javascript" src="/media/js/slideshow.js"></script>
+  </head>
+  <body>
+    <div id="website">
+      {% include "header.html" %}
+      
+      <div id="content-box">
+	<div id="welcome-left">
+	  <div id="slideshow">
+	    {% for slide in slides %}
+	    <div class="slide{% if forloop.first %} active{% endif %}">
+	      <span class="welcome-text">{{slide.title}}</span>
+	      <img src="{{slide.image}}" alt="{{slide.title}}"/>
+	      <div class="license">{{slide.license|mark_small:slide.author_with_url|safe}}</div>
+	      <span class="welcome-description">{{slide.summary}}</span>
+	      <p>{{slide.description}}</p>
+	      <div class="bottom-text">{% if slide.see_more_link %}<a href="{{slide.see_more_link}}" title="{{slide.title}}">{{slide.see_more_text}}</a>{% endif %}</div>
+	    </div>
+	    {% endfor %}
+	  </div>
+	  
+	  <div id="news_and_activities">
+	    <div id="activities_feed">
+	      <h1>{% trans "Recent community activity" %}</h1>
+	      {% for entry in activity_entries %}
+	      {% include "community/pluggable-timeline.html" %}
+	      {% endfor %}
+	    </div>
+
+	    <div id="news_feed">
+	      <h1>{% trans "News from the schools" %}</h1>
+	      {% for post in school_feeds %}
+	      <div class="school_post">
+	      <div class="author_and_date">
+		{% if post.feed.schoolinformation.logo %}<img src="{{post.feed.schoolinformation.logo}}">
+		{% endif %}<a href="{% url school-info post.feed.schoolinformation.school.slug %}" title="{{post.feed.schoolinformation.school.name}}" class="author">{{post.feed.schoolinformation.school.name}}</a>
+		<div class="date">{{post.created|naturalday|capfirst}}</div>
+	      </div>
+	      <a href="{{post.link}}" class="title">{{post.title}}</a>
+	      <div class="summary">{{post.summary|safe}}</div>
+	      <div class="clearboth"></div>
+	      </div>
+	      {% endfor %}
+	    </div>
+
+	  </div>
+	</div>
+
+      <div id="welcome-right">
+      {% if not user.is_authenticated %}
+      <div id="loginbox">
+	
+	<h1>{% trans "Login" %}</h1>
+	<form action="{% url user-login %}" method="post" id="user-login">{% csrf_token %}
+	  <input type="text" name="username" class="never-selected-input" id="login_username" value="{% trans 'Username' %}">
+	  <input type="password" name="password" class="never-selected-input" id="login_password" value="........">
+	  <input type="submit" class="button" value="{% trans 'Log in' %}">
+	</form>
+	<div id="register-question">
+	  {% trans "Not a user on the site?" %}
+	  <a title="{% trans 'Register' %}" href="{% url user-register %}">{% trans "Register" %}</a>
+	</div>
+      </div>
+      {% endif %}
+
+      {% if highlights %}<div id="content-highlights">
+	<ul>{% for highlight in highlights %}
+	  <li>{% if highlight.image %}<img src="{{highlight.image.image.url}}"/>{% endif %}<a href="{{highlight.link}}">{{highlight.title}}</a></li>
+	  {% endfor%}</ul>
+      </div>
+      {% endif %}
+      </div>
+
+      </div>
+
+      <div id="footer">
+	<div id="left"><a href="http://menntagatt.is">{% trans "School information web site" %}</a></div>
+	<div id="right"><a href="http://menntagatt.is/um">{% trans "About the site" %}</a></div>
+      </div>
+
+    </div>
+  </body>
+</html>

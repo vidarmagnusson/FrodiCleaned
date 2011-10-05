@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block stylesheet %}
+    <link rel="stylesheet" href="/media/css/coursebuilder.css"/>
+{% endblock %}
+
+{% block content %}
+<div id="content">
+<h1>Áfangar</h1>
+
+{% if inprogress|length > 0 %}
+<h2>Áfangar í vinnslu</h2>
+
+<div id="courselist">
+<div id="courseheader"><span class="descriptive_name">Áfangaheiti</span><span class="name">Áfanganúmer</span><span class="subjects">Námsgreinar</span><span class="topics">Viðfangsefni</span><span class="level">Þrep</span><span class="credits">Einingar</span><span class="actions">Aðgerðir</span></div>
+{% for course in inprogress %}
+<div class="courseline {% cycle 'white-row' 'blue-row' %}"><span class="descriptive_name">{{course.descriptive_name}}</span><span class="name">{{course.name}}</span><span class="subjects">{{course.subjects.subjects_list|join:", "}}</span><span class="topics">{{course.topics.topics_list|join:", "}}</span><span class="level">{{course.level}}</span><span class="credits">{{course.credits}}</span><span class="actions">Birta</span></div>
+{% endfor%}
+</div>
+
+{% endif %}
+</div>
+{% endblock %}

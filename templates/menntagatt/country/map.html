@@ -1,0 +1,6 @@
+{% load multiply %}
+
+<svg height="{% if scale_map %}{{ scale_map|multiply:"150" }}{% else %}150{% endif %}" width="{% if scale_map %}{{ scale_map|multiply:"200"}}{% else %}200{% endif %}" viewBox="0 0 {% if scale_map %}{{ scale_map|multiply:"200" }}{% else %}200{% endif %} {% if scale_map %}{{ scale_map|multiply:"150" }}{% else %}150{% endif %}">
+{% for area in areas %}{% if not selected_area %}<a xlink:href="{{area.slug}}/">{% endif %}<path {% if scale_map %}transform="scale({{ scale_map }})"{% endif %} d="{{area.points}}" style="fill:{% if selected_area and selected_area == area %}#333333{% else %}{% if base_color %}{{base_color}}{% else %}#4b76bb{% endif %}{% endif %};stroke:#ffffff;stroke-width:0">{% if not selected_area %}<set attributeName="fill" from="{% if base_color %}{{base_color}}{% else %}#4b76bb{% endif %}" to="#333333" begin="mouseover" end="mouseout"/>{% endif %}</path>{% if not selected_area %}</a>{% endif %}{% endfor %}
+</svg>
+

@@ -1,0 +1,37 @@
+/* Base color for primary schools: #35b5dc */
+
+#submenu {
+	background: #35b5dc;
+	background: -moz-linear-gradient(top, #48cbf3, #35b5dc);
+	border: 1px solid #48cbf3;
+}
+
+#submenu-marker {
+    background: #48cbf3;
+    background-image: url("/media/icons/arrow-up-with-shadow.png");
+    background-repeat: no-repeat;
+}
+
+#content-highlights li {
+	background: #35b5dc;
+}
+
+#content-menu #content-title {
+        background: #35b5dc;
+}
+
+#content-menu #content-list li.active a {
+	color: #35b5dc;
+}
+
+#content-crumbs, #content-crumbs a:hover {
+        color: #35b5dc;
+}
+
+#content h1, #content a {
+	color: #35b5dc;
+}
+
+#content form label, label {
+        color: #35b5dc;
+}

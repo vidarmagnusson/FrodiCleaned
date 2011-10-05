@@ -1,0 +1,20 @@
+{% extends "contentbox.html" %}
+{% load i18n %}
+{% block content %}
+<h1>{{stakeholder.name}}</h1>
+
+<p>{{stakeholder.address}}<br/>
+{{stakeholder.municipality}}</p>
+
+<p>{{stakeholder.telephone}}<br/>
+{{stakeholder.email}}<br/>
+{{stakeholder.fax}}</p>
+
+<p><a href="{{stakeholder.website}}">{{stakeholder.website}}</a></p>
+
+<h2>{% trans "Interested in" %}:</h2>
+<ul>{% for field in stakeholder.fields.all %}
+<li>{{field}}</li>
+{% endfor %}</ul>
+
+{% endblock %}

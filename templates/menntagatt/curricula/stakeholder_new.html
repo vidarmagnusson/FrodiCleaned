@@ -1,0 +1,17 @@
+{% extends "contentbox.html" %}
+{% load i18n %}
+{% block stylesheet %}
+    <link rel="stylesheet" href="/media/css/coursebuilder.css"/>                
+{% endblock %}
+
+{% block javascript %}
+{% endblock%}
+
+{% block content %}
+<form action="." method="post">{% csrf_token %}
+<table>
+{{ form.as_p }}
+</table>
+<input type="submit" value="{% trans 'Create' %}">
+</form>
+{% endblock %}

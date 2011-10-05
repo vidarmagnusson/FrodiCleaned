@@ -1,0 +1,62 @@
+{% extends "contentbox.html" %}
+{% load i18n %}
+
+{% block stylesheet %}
+<link rel="stylesheet" href="/media/css/search.css"/>
+{% endblock %}
+
+{% block javascript %}
+<script src="/media/js/note.js"></script>
+{% endblock %}
+
+{% block content %}
+
+<form id="search" action="." method="post">{% csrf_token %}
+<div id="search_input_wrapper"><input type="text" id="search_input" class="never-selected-input" name="search" value="{% trans 'What are you looking for?' %}"></div><div id="search_submit_wrapper"><input id="search_submit" type="submit" value="{% trans 'Search' %}"><span id="small-link"><a href="#">{% trans "Advanced search" %}</a></span></div>
+
+<input type="hidden" name="tags" value="{{tags}}">
+</form>
+
+<div id="search_cloud">
+{% for searchword in searchcloud %}<a id="{{searchword.element}}" class="raindrop {{searchword.size}}" href="#">{{searchword.element}}</a> {% endfor %}
+</div>
+
+
+<div id="shortcut-searches">
+<div class="shortcut-search">
+<h2>{% trans "My latest search strings" %}</h2>
+{% if personal|length > 0 %}
+{% for search_result in personal %}
+<h1>{{search_result.search}}</h1>
+<p>{{search_result.result}}</p>
+{% endfor %}
+{% else %}
+{% trans "You haven't searched for anything recently" %}
+{% endif %}
+</div>
+
+<div class="shortcut-search middle-box">
+<h2>{% trans "Popular search strings" %}</h2>
+{% if popular|length > 0 %}
+{% for search_result in popular %}
+<h1>{{search_result.search}}</h1>
+<p>{{search_result.result}}</p>
+{% endfor %}
+{% else %}
+{% trans "Users haven't searched for anything recently" %}
+{% endif %}
+</div>
+
+<div class="shortcut-search">
+<h2>{% trans "Newest content" %}</h2>
+{% if activity_entries|length > 0 %}
+{% for entry in activity_entries %}
+{% include "community/pluggable-timeline.html" %}
+{% endfor %}
+{% else %}
+{% trans "Nothing has been submitted." %}
+{% endif %}
+</div>
+</div>
+{% endblock %}
+

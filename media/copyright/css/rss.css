@@ -1,0 +1,174 @@
+
+h2.date {
+color: #ffffff
+padding: 0px;
+margin: 0px;
+font-weight: normal;
+font-size: 11px;
+}
+
+div.person-info {
+	position: relative;
+	z-index: 1;
+	float: left;
+	margin: 0px;
+	padding: 1px;
+	margin-right:10px;
+	text-align: center;
+}
+
+div.person-info a {
+	text-decoration: none;
+	font-size: small;
+}
+div.person-info a:hover {
+	color: inherit;
+}
+div.person-info a img {
+	border: 0px;
+	margin-bottom: 1ex;
+}
+
+div.post {
+	position: relative;
+	margin-bottom: 30px;
+}
+
+.post-title {
+	position: relative;
+	z-index: 1;
+
+	margin-top: 0px;
+	font-size: large;
+}
+
+.post-title a {
+	text-decoration: none;
+}
+
+.post-title a:hover {
+	text-decoration: underline;
+}
+
+.post-contents {
+	position: relative;
+	overflow: auto;
+}
+
+.post-contents h2, .post-contents h3, .post-contents h4 {
+	font-size: 100%;
+	color: #ffaa44;
+	font-weight: bold;
+}
+
+.post-contents img,
+.post-contents video {
+	width: auto;
+	max-width: 100%;
+	height: auto;
+}
+
+.post-contents a img {
+	border: 0px;
+}
+
+.post-contents blockquote, .post-contents pre {
+	color: #777;
+	margin: auto 1em auto 1em;
+	padding-left: 1em;
+	border-left: 5px solid #ddd;
+}
+
+.post-fixedwidth {
+	white-space: pre;
+}
+
+.post-contents pre {
+	overflow: auto;
+}
+
+.post-contents ul {
+	margin: 0px;
+	margin-left: 1em;
+	padding: 0px;
+}
+.post-contents ul li {
+	margin: 1em;
+	padding: 0px;
+}
+
+.post-contents .delicious-tags {
+	text-align: right;
+	font-size: x-small;
+}
+
+.post-contents:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+/* Often-used WordPress styles */
+.alignleft {
+	float:left;
+	margin-right:1em;
+	margin-bottom:1em;
+}
+.alignright {
+	float:right;
+	margin-left:1em;
+	margin-bottom:1em;
+}
+.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.wp-smiley {
+	vertical-align: middle;
+}
+
+.wp-caption {
+	border: 1px solid #ddd;
+	text-align: center;
+	background-color: #f3f3f3;
+	padding-top: 4px;
+	margin: 10px;
+	/* optional rounded corners for browsers that support it */
+	-moz-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+.wp-caption img {
+	margin: 0;
+	padding: 0;
+	border: 0 none;
+}
+.wp-caption p.wp-caption-text {
+	font-size: 11px;
+	line-height: 17px;
+	padding: 0 4px 5px;
+	margin: 0;
+}
+/* Often-used WordPress styles */
+
+.post-footer {
+	margin-top: 1em;
+}
+.post-footer p {
+	position: relative;
+	z-index: 1;
+	margin: 0;
+	font-size: small;
+	text-align: right;
+}
+.post-footer p a {
+	text-decoration: none;
+	color: #777;
+}
+.post-footer p a:hover {
+	text-decoration: underline;
+	color: inherit;
+}

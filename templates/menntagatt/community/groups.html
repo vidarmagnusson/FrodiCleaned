@@ -1,0 +1,22 @@
+{% extends "contentbox.html" %}
+{% load i18n %}
+{% block content %}
+<h1>{% trans "Groups" %}</h1>
+
+<div id="group-list">
+  {% for group in groups %}
+  <div class="group-title"><a title="{{group.title}}" href="{% url group-info group_id=group.atom_id %}">{{group.title}}</a></div>
+  <div class="group-description">
+    <div><img src="{{group.avatar}}" width="120" alt="{{group.title}}">{{group.description}}</div>
+    <div class="clearboth"> </div>
+  </div>
+  <div class="group-members">
+    <div class="group-member-title">{% trans "Members" %}</div>
+    {% for member in group.members.all %}<img src="{{member.avatar}}?s=30">{% endfor %}
+  </div>
+    {% endfor %}
+</div>
+
+{% trans "Didn't find what you were looking for?" %} <a title="{% trans 'Create a new group' %}" href="{% url create-group %}">{% trans "Create a new group" %}</a>
+{% endblock %}
+

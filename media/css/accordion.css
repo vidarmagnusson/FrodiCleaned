@@ -1,0 +1,26 @@
+#content h2 {
+	margin-top: 25px;
+	font-size: 125%;
+}
+
+.collapse-header {
+	background: #4b76bb;
+	border-bottom: 1px solid #000000;
+	font-weight: bold;
+	padding: 10px;
+	color: #ffffff;
+	font-size: 110%;
+	cursor: pointer;
+	margin:0px;
+}
+
+.collapse-text {
+	background: #efefef;
+	border: 1px solid #4b76bb;
+	border-top: none;
+	padding: 10px;	
+	margin: 0px;
+}
+
+.collapse-text p {
+}

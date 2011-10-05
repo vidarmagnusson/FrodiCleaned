@@ -1,0 +1,58 @@
+{% extends "contentbox.html" %}
+{% load i18n %}
+{% block stylesheet %}
+    <link rel="stylesheet" href="/media/css/builder.css"/>
+{% endblock %}
+
+{% block content %}
+<div id="content">
+<h1>{% trans "Private Messages" %}</h1>
+
+{% if inbox %}
+<h2>{% trans "Inbox" %}</h2>
+{% if inbox|length > 0 %}
+<div class="postbox-list">
+  <div class="postbox-header">
+    <span>{% trans "Subject" %}</span>
+    <span>{% trans "Sender" %}</span>
+    <span>{% trans "Time" %}</span>
+  </div>
+
+  {% for message in inbox %}
+  <div class="postbox-item {% cycle 'white-row' 'blue-row' %}">
+    <span><a href="#" {% if not message.read %} class="unread"{% endif %} title="{{message.subject}}">{{message.subject}}</a></span>
+    <span>{{message.sender}}</span>
+    <span>{{message.time}}</span>
+  </div>
+  {% endfor%}
+</div>
+{% else %}
+{% trans "No messages found" %}
+{% endif %}
+{% endif %}
+
+{% if outbox %}
+<h2>{% trans "Outbox" %}</h2>
+{% if outbox|length > 0 %}
+<div class="postbox-list">
+  <div class="postbox-header">
+    <span>{% trans "Subject" %}</span>
+    <span>{% trans "Time" %}</span>
+    <span>{% trans "Sender" %}</span>
+  </div>
+
+  {% for message in outbox %}
+  <div class="postbox-item {% cycle 'white-row' 'blue-row' %}">
+    <span><a href="#" title="{{message.subject}}">{{message.subject}}</a></span>
+    <span>{{message.sender}}</span>
+    <span>{{message.time}}</span>
+  </div>
+  {% endfor%}
+</div>
+{% else %}
+{% trans "No messages found" %}
+{% endif %}
+{% endif %}
+
+</div>
+{% endblock %}

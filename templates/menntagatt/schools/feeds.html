@@ -1,0 +1,31 @@
+{% extends "contentbox.html" %}
+
+{% block content %}
+
+<h1>{{title}}</h1>
+<ul>
+<! vm -->
+<div class="clear-both"></div> 
+<div id="news_and_activities"> 
+<div id="news_feed">
+
+{% for post in school_feeds %}
+<div class="school_post">
+  <div class="author_and_date">
+    {% if post.feed.schoolinformation.logo %}<img src="{{post.feed.schoolinformation.logo}}">
+    {% endif %}<a href="{% url school-info post.feed.schoolinformation.school.slug %}"     title="{{post.feed.schoolinformation.school.name}}" class="author">{{post.feed.schoolinformation.school.name}}</a>
+    <div class="date">{{post.created|capfirst}}</div>
+  </div>
+  <a href="{{post.link}}" class="title">{{post.title}}</a>
+  <div class="summary">
+    <p>{{post.content|safe}}</p>
+  </div>
+</div>
+{% endfor %}
+
+</div>
+</div>
+
+</ul>
+
+{% endblock %}

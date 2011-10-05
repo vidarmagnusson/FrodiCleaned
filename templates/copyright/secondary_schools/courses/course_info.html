@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>Áfangi: {{ course.name }}</h1>
+
+<h2>{% if course.subjects.subjects_list|length <= 1 %}
+Námsgrein{% else %}Námsgreinar{% endif %}</h2>
+{{ course.subjects.subjects }}
+
+<h2>Umfjöllunarefni</h2>
+{{ course.topics.topics }}
+
+<h2>Þrep</h2>
+{{ course.level}}
+
+<h2>Einingar</h2>
+{{ course.credits }}
+
+<h2>Lýsing</h2>
+{{ course.description }}
+
+<h2>Innihald</h2>
+{{ course.content }}
+
+<h2>Markmið</h2>
+{{ course.goals }}
+
+<h2>Námsmat</h2>
+{{ course.evaluation }}
+
+<h2>Forkröfur</h2>
+{{ course.prerequisites }}
+
+{% endblock %}

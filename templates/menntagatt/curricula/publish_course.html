@@ -1,0 +1,15 @@
+{% extends "contentbox.html" %}
+{% load markup %}
+{% load i18n %}
+{% block content %}
+
+<h1>{{course.descriptive_name}} - {{course.id_name}}</h1>
+
+<form action="." method="POST">{% csrf_token %}
+<input type="hidden" name="unique-id" value="{{course.unique_id}}">
+<label>{% trans "Are you sure you want to publish this course?" %}</label>
+<input type="submit" value="{% trans 'Yes, I am sure' %}">
+</form>
+
+{% include "curricula/course_info.html" %}
+{% endblock %}

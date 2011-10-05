@@ -1,0 +1,3 @@
+{% load i18n %}
+<div class="timeline-avatar"><img src="{{entry.actor.avatar}}" title="{{entry.actor}}" width="50"></div>
+ <div class="timeline-actor"><a href="{{entry.actor.permalink}}" title="{{entry.actor}}">{{entry.actor.title|capfirst}}</a> {% trans "decided to share this which" %} <a href="{{entry.activityobject.author.permalink}}" title="{{entry.activityobject.author}}">{{entry.activityobject.creator.title|capfirst}}</a> {% trans "posted" %}</div>

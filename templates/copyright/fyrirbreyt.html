@@ -1,0 +1,93 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+{% load webdesign %}
+
+<html>
+  <head>
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+    <title>Höfundaréttur | Mennta- og menningarmálaráðuneyti</title>
+    <link rel="stylesheet" href="/media/css/theme.css">{% block stylesheet %}
+    {% endblock %}
+
+    <link href="/media/css/humanity/jquery-ui-1.8.9.custom.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="/media/js/jquery-1.4.4.min.js"></script>
+    <script type="text/javascript" src="/media/js/jquery-ui-1.8.9.custom.min.js"></script>
+    <script type="text/javascript" src="/media/js/valmynd.js"></script>{% block javascript %}
+    {% endblock %}
+  </head>
+  <body>
+    <div id="website">
+      <div id="header">
+	<div id="top-title">
+		<div id="community"><img src="/media/hausmyndir/facebook.png"> <img src="/media/hausmyndir/twitter.png"> <img src="/media/hausmyndir/rss.png"></div>
+		<!--<div id="logo"><img alt="Leikari" src="/media/logo/leikari.png"></div>-->
+		<div id="site-name"><a title="Mennta- og menningarmálaráðuneyti - Forsíða" href="/">Höfundaréttur</a></div>
+		<div id="site-gradient">
+		</div>
+	</div>
+      </div>
+
+	<div id="content-box">
+
+	<div id="content-main">
+		<div id="menu"><ul>
+			<li class="valmynd" id="valmynd_a-dofinni"><div><img alt="Á döfinni" src="/media/valmyndarmerki/dagatal.png">Á döfinni</div></li>
+			<li class="valmynd" id="valmynd_tonlist"><div><img alt="Tónlist" src="/media/valmyndarmerki/tonlist.png">Tónlist</div></li>
+			<li class="undirvalmynd" id="undirvalmynd_tonlist">
+			<ul>
+				<li><a href="#">Spurt og svarað</a></li>
+				<li><a href="#">Hvað er höfundaréttur á tónlist?</a></li>
+				<li><a href="#">Stafræn eintakagerð</a></li>
+				<li><a href="#">Hvert á að leita?</a></li>
+				<li><a href="#">Afritunarvarnir</a></li>
+			</ul></li>
+			<li class="valmynd" id="valmynd_biomyndir-thaettir"><div><img alt="Bíómyndir og þættir" src="/media/valmyndarmerki/kvikmyndir.png">Bíómyndir/þættir</div></li>
+			<li class="undirvalmynd" id="undirvalmynd_biomyndir-thaettir">
+			<ul>
+				<li><a href="#">Spurt og svarað</a></li>
+				<li><a href="#">Hvað er höfundaréttur á bíómyndum og þáttum?</a></li>
+				<li><a href="#">Stafræn eintakagerð</a></li>
+				<li><a href="#">Hvert á að leita?</a></li>
+				<li><a href="#">Afritunarvarnir</a></li>
+			</ul></li>
+			<li class="valmynd" id="valmynd_utvarp"><div><img alt="Útvarp" src="/media/valmyndarmerki/utvarp.png">Útvarp</div></li>
+			<li class="undirvalmynd" id="undirvalmynd_utvarp">
+			<ul>
+				<li><a href="#">Spurt og svarað</a></li>
+				<li><a href="#">Hvernig virkar höfundaréttur með útvarpi?</a></li>
+				<li><a href="#">Stafræn eintakagerð</a></li>
+				<li><a href="#">Hvert á að leita?</a></li>
+				<li><a href="#">Afritunarvarnir</a></li>
+			</ul></li>
+			<li class="valmynd" id="valmynd_texti"><div><img alt="Texti" src="/media/valmyndarmerki/texti.png">Texti</div></li>
+			<li class="undirvalmynd" id="undirvalmynd_texti">
+			<ul>
+				<li><a href="#">Spurt og svarað</a></li>
+				<li><a href="#">Hvað er höfundaréttur á texta?</a></li>
+				<li><a href="#">Stafræn eintakagerð</a></li>
+				<li><a href="#">Hvert á að leita?</a></li>
+				<li><a href="#">Afritunarvarnir</a></li>
+			</ul></li>
+			<li class="valmynd" id="valmynd_myndir"><div><img alt="Myndir" src="/media/valmyndarmerki/myndir.png">Myndir</div></li>
+			<li class="valmynd" id="valmynd_netid"><div><img alt="Netið" src="/media/valmyndarmerki/internet.png">Netið</div></li>
+			<li class="valmynd" id="valmynd_tolvur"><div><img alt="Tölvur" src="/media/valmyndarmerki/tolva.png">Tölvur</div></li>
+		</ul></div>
+
+		<div id="content">{% block content %}
+		{% endblock %}</div>
+	</div>
+	<div id="content-highlights">
+		<div id="highlights"><ul>
+			<li><div><a href="/hofundalog/93/2010/"><img alt="Athugasemdir" src="/media/valmyndarmerki/athugasemdir.png">Gerðu athugasemdir við höfundalögin</a></div></li>
+			<li><div><a href="#"><img alt="Löglegt efni" src="/media/valmyndarmerki/hvar.png">Hvar er löglegt efni aðgengilegt á Netinu?</a></div></li>
+			<li><div><a href="#"><img alt="Umfjöllun" src="/media/valmyndarmerki/umfjollun.png">Umfjöllun um höfundarétt</a></div></li>
+			<li><div><a href="#"><img alt="Nefndir og ráð" src="/media/valmyndarmerki/nefndir.png">Nefndir, ráð og samtök</a></div></li>
+		</ul></div>
+	</div>
+	</div>
+	<div id="footer">Mennta- og menningarmálaráðuneytið</div>
+    </div>
+  </body>
+</html>

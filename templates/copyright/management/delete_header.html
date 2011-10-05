@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block stylesheet %}
+    <link rel="stylesheet" href="/media/css/community.css"/> 
+{% endblock %}
+
+{% block content %}
+<h1>{{ header.image.url }}</h1>
+
+<p><img src="{{header.image.url}}"></p>
+
+<p>Ertu viss um að þú viljir eyða þessari mynd?</p>
+<form action="" method="POST">{% csrf_token %}
+<input type="submit" value="Já, alveg viss">
+</form>
+{% endblock %}

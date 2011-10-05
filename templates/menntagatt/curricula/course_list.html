@@ -1,0 +1,62 @@
+{% extends "contentbox.html" %}
+{% load i18n %}
+{% block stylesheet %}
+    <link rel="stylesheet" href="/media/css/builder.css"/>
+{% endblock %}
+
+{% block content %}
+<div id="content">
+<h1>{% trans "Courses" %}</h1>
+
+{% if courses|length > 0 %}
+{% regroup courses by get_status_display as courselist %}
+
+{% for status in courselist %}
+<h2>{{status.grouper}}</h2>
+<div id="courselist">
+  <div id="courseheader">
+    <span class="descriptive_name">{% trans "Course name" %}</span>
+    <span class="name">{% trans "Course abbreviation" %}</span>
+    <span class="subjects">{% trans "Subjects" %}</span>
+    <span class="topics">{% trans "Topics"%}</span>
+    <span class="level">{% trans "Level" %}</span>
+    <span class="credits">{% trans "Credits" %}</span>
+    <span class="actions">{% trans "Operations" %}</span>
+  </div>
+
+  {% for course in status.list %}
+  <div class="courseline {% cycle 'white-row' 'blue-row' %}">
+    <span class="descriptive_name">
+      <a href="{% url view-course id=course.unique_id %}" title="{{course.descriptive_name}}">{% if course.descriptive_name %}{{course.descriptive_name}}{% else %}Síðast breytt: {{course.modification_date}}{% endif %}</a>
+    </span>
+    <span class="name">{{course.name}}</span>
+    <span class="subjects">{{course.subjects.subjects_list|join:", "}}</span>
+    <span class="topics">{{course.topics.topics_list|join:", "}}</span>
+    <span class="level">{{course.level}}</span>
+    <span class="credits">{{course.credits}}</span>
+    <span class="actions">
+      {% if course.status == 1 %} {# Course is publishable #}
+      <a href="{% url publish-course id=course.unique_id %}" alt="{% trans 'Publish course' %}">
+	<img style="border:none" src="/media/icons/birta.png" width="12" alt="{% trans 'Publish' %}" />
+      </a> 
+      {% endif%}
+      {% if course.status == 5 or course.status == 6 %} {# Course has been rejected either by school or officially #}
+      <a href="{% url reactivate-course id=course.unique_id %}" alt="{% trans 'Reactivate' %}">
+	<img style="border:none" src="/media/icons/birta.png" width="12" alt="{% trans 'Reactivate' %}" />
+      </a>
+      {% endif %}
+      {% if course.status != 3 or course.status != 4 %} {# Course has not been approved by school nor officially #}
+      <a href="{% url delete-course id=course.unique_id %}" alt="{% trans 'Delete course' %}">
+	<img style="border:none" src="/media/icons/eyda.png" alt="{% trans 'Delete' %}" />
+      </a>
+      {% endif %}
+    </span>
+  </div>
+  {% endfor%}
+</div>
+{% endfor %}
+{% else %}
+{% trans "No courses found" %}
+{% endif %}
+</div>
+{% endblock %}

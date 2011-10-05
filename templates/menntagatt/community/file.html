@@ -1,0 +1,11 @@
+{% extends "contentbox.html" %}
+{% load i18n %}
+{% block content %}
+
+<div id="content">
+<h1>{{file.title}}</h1>
+<a title="{{file.title}}" href="{{file.file.path}}">{% trans "Get" %}: {{file.title}}</a>
+<p>{{file.description|safe}}</p>
+</div>
+{% endblock %}
+

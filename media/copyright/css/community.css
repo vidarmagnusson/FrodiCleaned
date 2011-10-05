@@ -1,0 +1,112 @@
+#community-form {
+	margin-top: 20px;
+        padding: 20px;
+        display:block;
+        border: 1px solid #3b9816;
+}
+
+#community-form label{
+	display: block;
+	color: #333333;
+}
+
+#community-form input[type='text'], #community-form textarea {
+	width: 400px;
+	border: 1px solid #3b9816;
+	background: #d5f7c8;
+}
+
+#community-form #id_content {
+	height: 400px;
+}
+
+#community-form #id_description {
+	height: 50px;
+}
+
+#community-content h2 a {
+	color: #009900;
+	text-decoration: none;
+	margin-bottom: 0px;
+}
+
+#community-content img {
+	max-width: 150px;
+	float: right;
+	margin: 10px;
+}
+
+#community-question h2 {
+	font-size: 110%;
+	color: #3b9816;
+	margin-bottom: 0px;
+}
+
+#community-question .description {
+	font-size: 70%;
+	color: #aaaaaa;
+	margin-bottom: 10px;
+}
+
+.tags, .add-tag {
+	display: inline;
+	font-size: 70%;
+	color: #666666;
+}
+
+.add-tag {
+	cursor: pointer;
+}
+
+.tag-form {
+	display: block;
+}
+
+.tag-form input[type="text"] {
+	width: 100px;
+	border: none;
+	border: 1px solid #aaaaaa;
+	border-bottom: 2px solid: #aaaaaa;
+	height: 13px;
+	font-size: 11px;
+}
+
+.tag-form input[type="submit"] {
+	border: none;
+	background: #aaaaaa;
+	border: 1px solid #333333;
+	margin-left: 3px;
+	width: 50px;
+	font-size: 11px;
+}
+
+#community-question .answers {
+	margin: 10px;
+	margin-left: 20px;
+	padding-bottom: 10px;
+}
+
+#community-event #event-time {
+	padding: 5px;
+	color: #aaaaaa;
+	font-size: 90%
+}
+
+#community-event #event-time #day {
+	display: inline;
+}
+
+#community-event #event-time #month {
+	display: inline;
+	text-transform:lowercase;
+}
+
+#community-event #event-time #time {
+	display: inline;
+	font-size: 90%;
+}
+
+#community-event #event-location {
+	color: #aaaaaa;
+	clear:both;
+}

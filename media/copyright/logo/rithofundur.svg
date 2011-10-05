@@ -1,0 +1,658 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="744.09448819"
+   height="1052.3622047"
+   id="svg3846"
+   version="1.1"
+   inkscape:version="0.47 r22583"
+   sodipodi:docname="rithofundur.svg">
+  <defs
+     id="defs3848">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       id="perspective3854" />
+    <inkscape:perspective
+       id="perspective4378"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective4402"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective4429"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective4453"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective4453-9"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective4453-0"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective4493"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective4493-2"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective4493-6"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective4493-9"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective4542"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective4542-2"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective4542-6"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective4542-7"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective4542-9"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective4600"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective4600-1"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective4631"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective4631-9"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective4631-7"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective4631-75"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective4631-74"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective4631-1"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective4631-8"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective4631-6"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective4631-0"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective4631-4"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective4631-2"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective4767"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective4810"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective4832"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective4856"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective5137"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective5163"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective5197"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective5235"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective5257"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective5279"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective6642"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.7"
+     inkscape:cx="166.5452"
+     inkscape:cy="246.27597"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1024"
+     inkscape:window-height="696"
+     inkscape:window-x="0"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata3851">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:8.08789062;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="m 136.80803,852.92691 0,16.125 -32.4375,0 0,60.875 32.4375,0 0,16.15625 25.3125,-23.28125 25.3125,-23.3125 -25.3125,-23.28125 -25.3125,-23.28125 z"
+       id="path6629-1"
+       inkscape:export-filename="/home/tryggvi/Fróði/Copyright/Frodi/media/myndir/or.png"
+       inkscape:export-xdpi="10.817564"
+       inkscape:export-ydpi="10.817564" />
+    <g
+       id="g6547"
+       inkscape:export-filename="/home/tryggvi/Fróði/Copyright/Frodi/media/logo/rithofundur.png"
+       inkscape:export-xdpi="18.280752"
+       inkscape:export-ydpi="18.280752">
+      <path
+         inkscape:export-ydpi="18.280752"
+         inkscape:export-xdpi="18.280752"
+         inkscape:export-filename="/home/tryggvi/Fróði/Copyright/Frodi/media/logo/rithofundur.png"
+         sodipodi:nodetypes="ccccsccsccssscccccccsssccscccccscccccccccc"
+         id="path4757-9-4-8-0"
+         d="m 296.03457,149.17814 c -88.36556,0 -160,35.81722 -160,80 180.90305,86.81645 -94.763651,153.38481 13.625,232.875 l 10.71875,6.4375 c -10.31066,41.64482 -16.125,88.7598 -16.125,138.65625 0,3.34865 0.0403,6.71565 0.0937,10.0625 l 50.4375,-3.40625 c -1.09239,30.04941 0.21611,91.03825 25.34375,129.46875 0.85664,1.31015 1.68372,2.50439 2.5,3.6875 -0.85388,0.12443 -1.61796,0.21275 -2.5,0.34375 0,0 -101.00476,-16.14991 -119.1875,8.09375 -18.182752,24.24366 12.13753,20.21875 20.21875,20.21875 8.08122,0 124.46109,-4.94018 147.46875,-6.0625 20.70813,-1.01015 6.0625,-26.28125 6.0625,-26.28125 0,0 -1.68866,-1.66543 -19.5,-0.21875 -5.34534,-8.21352 -37.3544,-60.95612 -26.90625,-131.5 l 65.65625,-4.40625 77.03125,0 c 12.48655,72.72759 -20.72692,127.51494 -26.1875,135.90625 -17.81134,-1.44668 -19.5,0.21875 -19.5,0.21875 0,0 -14.67688,25.2711 6.03125,26.28125 23.00766,1.12232 139.41878,6.0625 147.5,6.0625 8.08122,0 38.37025,4.02491 20.1875,-20.21875 -18.18274,-24.24366 -119.1875,-8.09375 -119.1875,-8.09375 -0.88204,-0.131 -1.64612,-0.21932 -2.5,-0.34375 0.81628,-1.18311 1.64336,-2.37735 2.5,-3.6875 27.16938,-41.55316 26.51798,-109.48105 25.0625,-136.125 l 38.78125,0 c 0,-45.96286 -4.94447,-89.54671 -13.78125,-128.6875 l 3.03125,0.34375 c 96.64247,-2.13725 50.46883,-92.12317 -92.46875,-172.75 66.76637,-9.62222 115.59375,-40.39468 115.59375,-76.875 0,-44.18278 -71.63444,-80 -160,-80 l 5e-5,0 z m -74.03125,188.875 c -20.08504,22.6079 -37.36716,54.3636 -50.5,92.5625 l -1.125,-0.625 c 0,0 18.33511,-65.63118 51.625,-91.9375 z m 183.9375,65.5 c 18.01876,20.2935 30.125,37.21875 30.125,37.21875 l -17.21875,-2.8125 c -3.90808,-12.09361 -8.22431,-23.5959 -12.90625,-34.40625 z"
+         style="fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <path
+         inkscape:export-ydpi="18.280752"
+         inkscape:export-xdpi="18.280752"
+         inkscape:export-filename="/home/tryggvi/Fróði/Copyright/Frodi/media/logo/rithofundur.png"
+         transform="matrix(0.84848485,0,0,0.84848485,5.1776957,-179.36235)"
+         d="m 314.28571,449.50504 a 37.142857,37.142857 0 1 1 -74.28571,0 37.142857,37.142857 0 1 1 74.28571,0 z"
+         sodipodi:ry="37.142857"
+         sodipodi:rx="37.142857"
+         sodipodi:cy="449.50504"
+         sodipodi:cx="277.14285"
+         id="path3858"
+         style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:20;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         sodipodi:type="arc" />
+      <path
+         inkscape:export-ydpi="18.280752"
+         inkscape:export-xdpi="18.280752"
+         inkscape:export-filename="/home/tryggvi/Fróði/Copyright/Frodi/media/logo/rithofundur.png"
+         transform="matrix(0.84848485,0,0,0.84848485,103.74913,-180.79093)"
+         d="m 314.28571,449.50504 a 37.142857,37.142857 0 1 1 -74.28571,0 37.142857,37.142857 0 1 1 74.28571,0 z"
+         sodipodi:ry="37.142857"
+         sodipodi:rx="37.142857"
+         sodipodi:cy="449.50504"
+         sodipodi:cx="277.14285"
+         id="path3858-7"
+         style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:20;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         sodipodi:type="arc" />
+      <path
+         inkscape:export-ydpi="18.280752"
+         inkscape:export-xdpi="18.280752"
+         inkscape:export-filename="/home/tryggvi/Fróði/Copyright/Frodi/media/logo/rithofundur.png"
+         transform="matrix(0.57573592,0,0,0.57573592,110.01946,-145.90343)"
+         d="m 265.71429,586.64789 a 14.285714,14.285714 0 1 1 -28.57143,0 14.285714,14.285714 0 1 1 28.57143,0 z"
+         sodipodi:ry="14.285714"
+         sodipodi:rx="14.285714"
+         sodipodi:cy="586.64789"
+         sodipodi:cx="251.42857"
+         id="path4392"
+         style="color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:20;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         sodipodi:type="arc" />
+      <path
+         inkscape:export-ydpi="18.280752"
+         inkscape:export-xdpi="18.280752"
+         inkscape:export-filename="/home/tryggvi/Fróði/Copyright/Frodi/media/logo/rithofundur.png"
+         sodipodi:nodetypes="csssc"
+         id="path4418"
+         d="m 425.19372,222.67239 c 0,18.96832 -66.66795,64.86513 -138.63599,64.86513 -71.96805,0 -144.4266,-56.33789 -119.12621,-63.43656 19.82799,-5.56325 53.21908,45.25381 125.18713,45.25381 71.96804,0 129.54461,-81.81314 132.57507,-46.68238 z"
+         style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <path
+         inkscape:export-ydpi="18.280752"
+         inkscape:export-xdpi="18.280752"
+         inkscape:export-filename="/home/tryggvi/Fróði/Copyright/Frodi/media/logo/rithofundur.png"
+         transform="matrix(0.57573592,0,0,0.57573592,204.35894,-148.72659)"
+         d="m 265.71429,586.64789 a 14.285714,14.285714 0 1 1 -28.57143,0 14.285714,14.285714 0 1 1 28.57143,0 z"
+         sodipodi:ry="14.285714"
+         sodipodi:rx="14.285714"
+         sodipodi:cy="586.64789"
+         sodipodi:cx="251.42857"
+         id="path4392-6"
+         style="color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:20;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         sodipodi:type="arc" />
+      <path
+         inkscape:export-ydpi="18.280752"
+         inkscape:export-xdpi="18.280752"
+         inkscape:export-filename="/home/tryggvi/Fróði/Copyright/Frodi/media/logo/rithofundur.png"
+         id="path4735"
+         d="m 197.47207,233.46443 -17.14286,37.14286"
+         style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <path
+         inkscape:export-ydpi="18.280752"
+         inkscape:export-xdpi="18.280752"
+         inkscape:export-filename="/home/tryggvi/Fróði/Copyright/Frodi/media/logo/rithofundur.png"
+         id="path4737"
+         d="m 216.75778,244.17871 -13.57142,36.42858"
+         style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <path
+         inkscape:export-ydpi="18.280752"
+         inkscape:export-xdpi="18.280752"
+         inkscape:export-filename="/home/tryggvi/Fróði/Copyright/Frodi/media/logo/rithofundur.png"
+         id="path4739"
+         d="m 236.0435,249.17871 -10,41.42858"
+         style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <path
+         inkscape:export-ydpi="18.280752"
+         inkscape:export-xdpi="18.280752"
+         inkscape:export-filename="/home/tryggvi/Fróði/Copyright/Frodi/media/logo/rithofundur.png"
+         id="path4741"
+         d="m 258.18636,257.75014 -5,32.14286"
+         style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <path
+         inkscape:export-ydpi="18.280752"
+         inkscape:export-xdpi="18.280752"
+         inkscape:export-filename="/home/tryggvi/Fróði/Copyright/Frodi/media/logo/rithofundur.png"
+         id="path4743"
+         d="m 280.32921,266.32157 0.71429,29.28572"
+         style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <path
+         inkscape:export-ydpi="18.280752"
+         inkscape:export-xdpi="18.280752"
+         inkscape:export-filename="/home/tryggvi/Fróði/Copyright/Frodi/media/logo/rithofundur.png"
+         id="path4745"
+         d="m 300.32921,263.46443 7.85715,29.28571"
+         style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <path
+         inkscape:export-ydpi="18.280752"
+         inkscape:export-xdpi="18.280752"
+         inkscape:export-filename="/home/tryggvi/Fróði/Copyright/Frodi/media/logo/rithofundur.png"
+         id="path4747"
+         d="m 321.0435,259.17871 10,28.57143"
+         style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <path
+         inkscape:export-ydpi="18.280752"
+         inkscape:export-xdpi="18.280752"
+         inkscape:export-filename="/home/tryggvi/Fróði/Copyright/Frodi/media/logo/rithofundur.png"
+         id="path4749"
+         d="m 346.0435,251.32157 15.71428,37.14286"
+         style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <path
+         inkscape:export-ydpi="18.280752"
+         inkscape:export-xdpi="18.280752"
+         inkscape:export-filename="/home/tryggvi/Fróði/Copyright/Frodi/media/logo/rithofundur.png"
+         id="path4751"
+         d="m 370.32921,237.75015 12.14286,35.71428"
+         style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <path
+         inkscape:export-ydpi="18.280752"
+         inkscape:export-xdpi="18.280752"
+         inkscape:export-filename="/home/tryggvi/Fróði/Copyright/Frodi/media/logo/rithofundur.png"
+         id="path4753"
+         d="m 389.61493,228.46443 19.28571,27.85715"
+         style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <path
+         inkscape:export-ydpi="18.280752"
+         inkscape:export-xdpi="18.280752"
+         inkscape:export-filename="/home/tryggvi/Fróði/Copyright/Frodi/media/logo/rithofundur.png"
+         transform="matrix(-0.5561984,0,0,0.5561984,557.11918,102.47795)"
+         d="m 622.25397,574.56006 a 154.55334,154.55334 0 1 1 -309.10669,0 154.55334,154.55334 0 1 1 309.10669,0 z"
+         sodipodi:ry="154.55334"
+         sodipodi:rx="154.55334"
+         sodipodi:cy="574.56006"
+         sodipodi:cx="467.70062"
+         id="path4781"
+         style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         sodipodi:type="arc" />
+      <text
+         inkscape:export-ydpi="18.280752"
+         inkscape:export-xdpi="18.280752"
+         inkscape:export-filename="/home/tryggvi/Fróði/Copyright/Frodi/media/logo/rithofundur.png"
+         transform="scale(-1.1542093,0.86639399)"
+         id="text4791"
+         y="545.15973"
+         x="-317.54529"
+         style="font-size:159.18963623px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Sans L;-inkscape-font-specification:Nimbus Sans L"
+         xml:space="preserve"><tspan
+           y="545.15973"
+           x="-317.54529"
+           id="tspan4793"
+           sodipodi:role="line">C</tspan></text>
+      <rect
+         inkscape:export-ydpi="18.280752"
+         inkscape:export-xdpi="18.280752"
+         inkscape:export-filename="/home/tryggvi/Fróði/Copyright/Frodi/media/logo/rithofundur.png"
+         y="544.5816"
+         x="136.33356"
+         height="26.337147"
+         width="316.56271"
+         id="rect4846-2"
+         style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:5.58014345;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <rect
+         inkscape:export-ydpi="18.280752"
+         inkscape:export-xdpi="18.280752"
+         inkscape:export-filename="/home/tryggvi/Fróði/Copyright/Frodi/media/logo/rithofundur.png"
+         y="534.3667"
+         x="249.8029"
+         height="45.112778"
+         width="92.481201"
+         id="rect4846"
+         style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:3.94736838;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <path
+         id="path5184"
+         d="m 330.17353,646.47673 59.45855,81.1455 0.37662,-0.27597 64.74684,33.96291 64.74691,33.96302 -12.89254,-71.95879 -12.87535,-71.97122 0.37662,-0.27597 -59.45855,-81.1455 -104.4791,76.55602 z"
+         style="color:#000000;fill:#eacb95;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:8.04878712000000007;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <path
+         sodipodi:nodetypes="cccccccc"
+         id="rect5151"
+         d="m 85.53947,307.12654 99.2471,-72.72233 299.80451,409.15537 -47.92626,-3.37145 -3.56373,41.10023 -38.27533,-10.80393 -9.48178,45.79747 L 85.53947,307.12654 z"
+         style="color:#000000;fill:#ff7d00;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:13.58282089000000070;stroke-miterlimit:4;stroke-opacity:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <rect
+         transform="matrix(0.80663317,-0.5910524,0.5910524,0.80663317,0,0)"
+         rx="34.935642"
+         ry="23.085566"
+         y="164.79947"
+         x="-112.14693"
+         height="88.494659"
+         width="122.27474"
+         id="rect5178"
+         style="color:#000000;fill:#fb5a5a;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:14.34670067000000060;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <rect
+         transform="matrix(0.80663317,-0.5910524,0.5910524,0.80663317,0,0)"
+         y="233.69662"
+         x="-112.69168"
+         height="76.050415"
+         width="123.36427"
+         id="rect5151-5"
+         style="color:#000000;fill:#b2b2b2;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:13.25717925999999913;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <path
+         id="path5180"
+         d="M 64.630487,273.62519 161.67248,202.51864"
+         style="fill:none;stroke:#000000;stroke-width:6.79141045;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <path
+         id="path5182"
+         d="M 72.8204,297.93414 176.12317,222.24007"
+         style="fill:none;stroke:#000000;stroke-width:6.79141045;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <path
+         transform="matrix(0.19001424,-0.13923103,0.16422404,0.2241232,552.77985,525.8612)"
+         d="m -791.42859,706.81102 -43.37191,-75.12235 -43.37191,-75.12235 86.74382,0 86.74382,0 -43.37191,75.12235 -43.37191,75.12235 z"
+         inkscape:randomized="0"
+         inkscape:rounded="0"
+         inkscape:flatsided="false"
+         sodipodi:arg2="2.6179939"
+         sodipodi:arg1="1.5707963"
+         sodipodi:r2="50.081566"
+         sodipodi:r1="100.16313"
+         sodipodi:cy="606.64789"
+         sodipodi:cx="-791.42859"
+         sodipodi:sides="3"
+         id="path5184-6"
+         style="color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:10;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         sodipodi:type="star" />
+      <path
+         id="path5212"
+         d="M 116.10868,291.02149 393.45922,669.53302"
+         style="fill:none;stroke:#000000;stroke-width:6.79141045;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <path
+         id="path5214"
+         d="M 157.98654,259.04384 436.67835,639.38586"
+         style="fill:none;stroke:#000000;stroke-width:6.79141045;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <path
+         inkscape:export-ydpi="18.280752"
+         inkscape:export-xdpi="18.280752"
+         inkscape:export-filename="/home/tryggvi/Fróði/Copyright/Frodi/media/logo/rithofundur.png"
+         sodipodi:nodetypes="ccscc"
+         id="path4757-9-4-8"
+         d="m 150.56015,462.03215 106.14842,37.54249 c 0,0 -16.76448,9.038 5.66069,35.57303 46.0598,54.50117 27.11465,-55.86005 27.11465,-55.86005 L 162.16636,418.57761"
+         style="fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:5;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <path
+         inkscape:export-ydpi="18.280752"
+         inkscape:export-xdpi="18.280752"
+         inkscape:export-filename="/home/tryggvi/Fróði/Copyright/Frodi/media/logo/rithofundur.png"
+         sodipodi:nodetypes="ccscc"
+         id="path4757-9"
+         d="m 431.1338,478.80569 -99.66434,-13.12523 c 0,0 -9.84682,32.29872 -27.97053,7.11529 -22.25316,-30.92142 7.97358,-53.56878 7.97358,-53.56878 l 120.30644,20.83685"
+         style="fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <path
+         inkscape:export-ydpi="18.280752"
+         inkscape:export-xdpi="18.280752"
+         inkscape:export-filename="/home/tryggvi/Fróði/Copyright/Frodi/media/logo/rithofundur.png"
+         d="m 712.9297,844.15484 c 2.21376,0.6448 4.41563,0.13468 6.64019,-0.1397 2.2113,-0.36155 4.8391,-0.16038 6.85981,-1.28565 2.70525,-1.13386 4.90003,-2.96638 6.52452,-5.38571 1.30575,-2.34957 2.19392,-4.92144 1.13427,-7.50133 -2.08163,-2.4236 -5.36595,-3.17775 -8.34756,-3.91639 -2.97911,-0.82982 -6.0035,-1.04344 -9.07439,-1.10585 -2.64582,-0.25901 -5.1766,-0.24413 -7.79047,0.21713 -2.48838,0.42685 -5.03631,0.561 -7.50664,-8.6e-4 -2.91705,-0.66767 -4.90829,-2.76773 -6.77701,-4.95767 -2.37411,-2.98728 -4.69014,-6.02526 -6.42782,-9.43075 -1.34472,-2.91566 -2.09097,-6.01958 -2.72292,-9.15054 -0.62316,-3.65464 0.61309,-5.7201 3.36235,-7.98757 2.56408,-1.87747 5.78436,-1.78642 8.71302,-2.57268 2.30311,-0.75978 4.67896,-0.80662 7.06883,-0.61589 2.78585,0.2958 5.54438,0.79692 8.30041,1.29052 2.93786,0.83923 5.83056,1.81084 8.662,2.95672 1.74173,0.73427 3.54024,1.3086 5.35405,1.83207 0,0 -1.07998,0.50952 -1.07998,0.50952 l 0,0 c -1.81357,-0.52896 -3.61126,-1.10952 -5.35352,-1.84567 -2.82678,-1.14226 -5.71763,-2.10985 -8.65388,-2.93322 -2.75546,-0.48915 -5.51238,-0.9944 -8.29838,-1.27821 -2.38793,-0.17437 -4.75581,-0.10624 -7.05427,0.65325 -2.27512,0.58487 -4.53178,0.27501 -6.50054,1.74066 -2.74835,2.21404 -4.01231,4.23372 -3.39337,7.86226 0.62487,3.12156 1.36279,6.21678 2.70104,9.12386 1.73749,3.39521 4.03974,6.43212 6.41924,9.40408 1.87093,2.16707 3.8531,4.23832 6.76,4.88149 2.46846,0.53072 5.00383,0.39408 7.48348,-0.0397 2.61497,-0.45465 5.15479,-0.43607 7.7991,-0.1955 3.07403,0.0663 6.10063,0.30652 9.08224,1.13162 3.0122,0.75682 6.32211,1.53687 8.39815,4.01642 1.10368,2.71104 0.21913,5.13723 -1.10075,7.613 -1.6133,2.44268 -3.80135,4.30162 -6.51272,5.45707 -2.9539,1.12317 -5.89855,1.98284 -9.08701,2.06679 -2.23802,0.27997 -4.45027,0.75219 -6.6782,0.11823 0,0 1.09673,-0.53167 1.09673,-0.53167 z"
+         id="path5358"
+         style="color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:10;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <path
+         inkscape:export-ydpi="18.280752"
+         inkscape:export-xdpi="18.280752"
+         inkscape:export-filename="/home/tryggvi/Fróði/Copyright/Frodi/media/logo/rithofundur.png"
+         d="m 671.12975,791.94524 c -0.58418,2.30305 -0.58666,4.66004 -0.70647,7.0162 -0.10346,3.45395 0.85081,6.77637 1.68155,10.08947 0.74579,3.0664 0.72854,6.23735 1.12897,9.35302 0.59165,2.99189 1.48662,5.90775 2.44501,8.79898 0.85023,2.98622 1.89124,5.91928 2.53745,8.95912 0.50126,4.12456 1.65649,4.7455 -2.87276,5.80347 -2.70357,-0.26814 -5.21923,-1.62333 -7.56031,-2.93135 -3.24053,-1.48703 -5.74892,-3.93395 -8.29507,-6.34639 -2.41139,-2.23975 -4.45052,-4.82403 -6.42381,-7.44565 -2.07349,-2.93989 -4.3022,-5.7727 -6.73132,-8.42706 -2.69618,-2.48199 -5.23841,-5.10318 -7.58949,-7.91315 -2.14881,-2.73058 -4.28778,-5.48853 -6.10349,-8.45464 -1.10329,-2.20309 -2.00351,-4.49443 -2.90534,-6.7842 0,0 1.119,-0.40787 1.119,-0.40787 l 0,0 c 0.89954,2.28324 1.79655,4.56807 2.89306,6.76675 1.81011,2.96255 3.94831,5.71401 6.09334,8.43982 2.3511,2.80801 4.89499,5.42514 7.5878,7.90838 2.42407,2.6638 4.6622,5.49336 6.73791,8.4364 1.97149,2.61545 4.01038,5.19156 6.41718,7.42714 2.53624,2.41147 5.04934,4.83692 8.28144,6.31969 2.33607,1.28831 4.84815,2.64753 7.54754,2.8578 -0.4589,0.99563 1.02553,-0.47452 1.1159,-0.91988 0.13302,-0.65538 -0.16822,-1.9836 -0.26076,-2.60348 -0.0664,-0.44442 -0.11817,-0.8909 -0.17725,-1.33635 -0.6389,-3.03708 -1.67829,-5.9664 -2.52793,-8.94824 -0.96855,-2.89617 -1.85747,-5.82151 -2.45353,-8.82029 -0.4023,-3.11137 -0.38655,-6.27722 -1.11998,-9.34141 -0.83234,-3.32463 -1.79231,-6.65558 -1.69572,-10.12154 0.11252,-2.35719 0.10507,-4.71353 0.67069,-7.02118 0,0 1.16639,-0.35356 1.16639,-0.35356 z"
+         id="path5360"
+         style="color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:10;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <path
+         inkscape:export-ydpi="18.280752"
+         inkscape:export-xdpi="18.280752"
+         inkscape:export-filename="/home/tryggvi/Fróði/Copyright/Frodi/media/logo/rithofundur.png"
+         d="m 665.93135,815.49506 c -2.57553,-0.0458 -5.07539,0.0986 -7.62188,0.51175 -3.13797,0.5166 -6.3194,0.55189 -9.48039,0.80767 -0.54413,0.0444 -1.08826,0.0888 -1.63239,0.13313 0,0 1.05332,-0.54462 1.05332,-0.54462 l 0,0 c 0.54359,-0.044 1.0872,-0.088 1.63078,-0.13205 3.16245,-0.246 6.34303,-0.30173 9.48108,-0.81886 2.55443,-0.4104 5.06777,-0.51814 7.64795,-0.5234 0,0 -1.07847,0.56638 -1.07847,0.56638 z"
+         id="path5362"
+         style="color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:10;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <path
+         inkscape:export-ydpi="18.280752"
+         inkscape:export-xdpi="18.280752"
+         inkscape:export-filename="/home/tryggvi/Fróði/Copyright/Frodi/media/logo/rithofundur.png"
+         d="m 596.3818,839.75807 c 2.13929,0.38949 4.27997,0.77135 6.42034,1.1549 2.4787,0.44332 4.95744,0.88631 7.43618,1.3294 2.65271,0.60349 5.27953,0.27167 7.82068,-0.60221 2.12893,-1.20249 3.52856,-3.00815 4.85423,-5.01334 1.32873,-2.15731 1.97208,-4.60566 2.53119,-7.04976 0.51195,-2.44235 1.11881,-4.84609 0.86378,-7.34808 -0.38075,-2.69707 -1.08198,-5.35149 -2.36893,-7.75827 -1.79448,-2.41791 -4.05169,-4.43521 -6.12733,-6.60298 -2.29894,-2.61809 -4.94742,-4.92156 -8.02572,-6.56254 -3.00706,-2.13068 -6.42814,-3.43689 -9.75919,-4.93494 -2.51185,-1.23484 -5.15719,-2.11701 -7.86317,-2.80527 -2.40907,-0.50496 -4.81518,-1.14398 -7.27934,-1.27217 -2.44861,0.0387 -3.84635,1.22847 -5.19375,3.18445 -1.1988,2.14965 -1.64772,4.59051 -2.10861,6.97956 -0.666,2.47952 -0.0633,4.97292 0.21065,7.45211 -1.11359,2.40741 -3.94193,-2.81175 -4.32996,-3.37304 -2.13286,-3.11459 -4.27415,-6.22334 -6.42398,-9.32624 -1.4509,-2.32241 -2.82707,-4.68941 -4.15181,-7.08548 0,0 1.09094,-0.414 1.09094,-0.414 l 0,0 c 1.33205,2.38813 2.71058,4.7496 4.15537,7.07171 2.14921,3.10463 4.29663,6.21051 6.43759,9.32083 0.74126,1.06494 1.46259,2.15624 2.27196,3.17192 0.15797,0.19822 0.56628,0.33036 0.49819,0.57452 -0.0739,0.26532 -1.21886,0.99375 -0.69743,0.44312 -0.22327,-2.49357 -0.88327,-4.9988 -0.20729,-7.4898 0.46115,-2.40248 0.91053,-4.8547 2.09441,-7.02617 1.71197,-2.55148 4.3221,-3.89194 7.42437,-4.01845 2.46655,0.15355 4.8776,0.77577 7.28873,1.29327 2.70616,0.6963 5.34907,1.59076 7.86143,2.82863 3.33465,1.49645 6.74361,2.83038 9.76326,4.9422 3.07895,1.65966 5.72876,3.97643 8.03788,6.5978 2.08648,2.17286 4.36369,4.1894 6.14882,6.62959 1.28787,2.42352 2.00288,5.08795 2.38693,7.80081 0.26644,2.51541 -0.33326,4.92907 -0.85084,7.38511 -0.5583,2.45615 -1.19874,4.91757 -2.52162,7.09148 -1.81459,2.77226 -3.72266,4.93202 -7.05448,5.88583 -2.56035,0.85008 -5.19224,1.16292 -7.8537,0.55174 -2.47858,-0.44325 -4.95715,-0.88659 -7.43578,-1.3296 -2.14658,-0.38348 -4.29297,-0.76813 -6.44081,-1.14456 0,0 1.09674,-0.53168 1.09674,-0.53168 z"
+         id="path5364"
+         style="color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:10;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <path
+         inkscape:export-ydpi="18.280752"
+         inkscape:export-xdpi="18.280752"
+         inkscape:export-filename="/home/tryggvi/Fróði/Copyright/Frodi/media/logo/rithofundur.png"
+         d="m 590.12067,808.26829 c -2.22332,0.63546 -4.54107,0.80814 -6.82586,1.11184 -2.34587,0.56246 -4.67202,1.23917 -7.07139,1.51966 -1.48251,0.22498 -2.9684,0.41475 -4.45063,0.64209 0,0 1.05,-0.55235 1.05,-0.55235 l 0,0 c 1.48507,-0.22668 2.97345,-0.42037 4.45915,-0.64242 2.39638,-0.30264 4.72011,-0.9789 7.071,-1.52103 2.29253,-0.30748 4.61298,-0.49241 6.8462,-1.12416 0,0 -1.07847,0.56637 -1.07847,0.56637 z"
+         id="path5366"
+         style="color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:10;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <path
+         inkscape:export-ydpi="18.280752"
+         inkscape:export-xdpi="18.280752"
+         inkscape:export-filename="/home/tryggvi/Fróði/Copyright/Frodi/media/logo/rithofundur.png"
+         d="m 545.66647,788.34481 c 2.02399,2.84113 3.97822,5.71083 5.71481,8.73681 1.72517,3.80026 3.48811,7.5809 5.2206,11.37836 1.46741,3.47344 2.49382,7.09909 3.61907,10.68973 1.14857,4.12244 2.74459,8.06179 4.69624,11.86311 1.13922,3.03024 4.4979,5.5644 4.52833,8.94359 -1.72013,2.34822 -5.83988,1.26135 -8.20088,0.65242 -3.59813,-0.90615 -6.64483,-2.86929 -9.49933,-5.15766 -2.70116,-2.59415 -5.78048,-4.72706 -8.75656,-6.98142 -3.45181,-2.81291 -6.42247,-6.14107 -9.26485,-9.55154 -2.44145,-3.29565 -5.18443,-6.34167 -7.79814,-9.49753 -2.67395,-3.06865 -4.40044,-6.75876 -6.22,-10.3573 -1.03476,-2.15053 -1.85875,-4.38387 -2.70168,-6.61297 0,0 1.2983,-0.4712 1.2983,-0.4712 l 0,0 c 0.84056,2.22474 1.65973,4.45439 2.68999,6.60165 1.81421,3.59093 3.53454,7.27176 6.2104,10.32802 2.61359,3.15419 5.34663,6.20701 7.78736,9.5014 2.83791,3.40561 5.80695,6.72427 9.26844,9.51616 2.97775,2.25256 6.04257,4.40294 8.75199,6.98725 2.85156,2.26774 5.89259,4.21342 9.4794,5.10234 0.57649,0.1433 1.14544,0.32142 1.72947,0.43003 0.98373,0.183 2.06228,-0.10685 2.98975,0.26864 0.13632,0.0552 -0.34713,0.34765 -0.20629,0.38999 0.514,0.15458 0.86875,-0.43652 1.10421,-0.71765 0.0809,-3.34187 -3.39027,-5.89719 -4.47079,-8.89297 -1.95219,-3.80903 -3.55058,-7.75618 -4.71692,-11.8805 -1.12237,-3.58567 -2.13866,-7.20843 -3.59732,-10.67949 -1.72738,-3.79504 -3.51054,-7.56243 -5.22636,-11.36252 -1.73637,-3.02432 -3.68569,-5.89618 -5.741,-8.71365 0,0 1.31176,-0.5131 1.31176,-0.5131 z"
+         id="path5368"
+         style="color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:10;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    </g>
+    <path
+       style="color:#000000;fill:#fc9000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:8.08789062;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="m 136.80803,846.24553 0,16.125 -32.4375,0 0,60.875 32.4375,0 0,16.15625 25.3125,-23.28125 25.3125,-23.3125 -25.3125,-23.28125 -25.3125,-23.28125 z"
+       id="path6629"
+       inkscape:export-filename="/home/tryggvi/Fróði/Copyright/Frodi/media/myndir/or.png"
+       inkscape:export-xdpi="10.817564"
+       inkscape:export-ydpi="10.817564" />
+  </g>
+</svg>

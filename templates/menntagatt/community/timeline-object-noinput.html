@@ -1,0 +1,37 @@
+{% load i18n %}
+{% load humanize %}
+<div class="timeline-headline"><a href="{% if entry.activityobject.bookmark%}{{entry.activityobject.bookmark.target_url }}{% else %}{{entry.activityobject.permalink}}{% endif %}">{{entry.activityobject.title}}</a></div>
+<div class="timeline-content">
+  {% if entry.activityobject.article %}
+    {{entry.activityobject.article.summary|safe}}... <a href="{{entry.activityobject.permalink}}">{% trans "Read more" %}</a>
+  {% endif %}
+  {% if entry.activityobject.audio %}
+    <audio src="{{entry.activityobject.audio.audio_stream}}">
+    <p>{{entry.activityobject.audio.description|safe}}</p>
+  {% endif %}
+  {% if entry.activityobject.bookmark %}
+    <a href="{{entry.activityobject.bookmark.target_url}}" title="{{entry.activityobject.bookmark.title}}"><img src="{{entry.activityobject.bookmark.thumbnail}}" width="150"></a>
+    <p>{{entry.activityobject.bookmark.description|safe}}</p>
+  {% endif %}
+  {% if entry.activityobject.file %}
+    <a href="{{entry.activityobject.file.associated_file_url}}">{{entry.activityobject.title}}</a>
+  {% endif %}
+  {% if entry.activityobject.photo %}
+    <img src="{{entry.activityobject.photo.larger_image}}">
+    <p>{{entry.activityobject.photo.description|safe}}</p>
+  {% endif %}
+  {% if entry.activityobject.video %}
+    <video src="{{entry.activityobject.video.video_stream}}" width="300" controls>
+    <p>{{entry.activityobject.video.description|safe}}</p>
+  {% endif %}
+</div>
+<div class="timeline-tag">{% if entry.activityobject.tag_set.all|length != 0 %}{% trans "Tags" %}: <span class="tag-list">{% for tag in entry.activityobject.tag_set.all %}<a href="{% url view-tag-info tag=tag.slug %}">{{tag.tag}}</a> {% endfor %}{% endif %}</span></div>
+<div class="timeline-time">
+{{entry.time|naturalday|capfirst}}
+{% if entry.activityobject.favorites.all|length != 0 %} - {% blocktrans count entry.activityobject.favorites.all|length as counter %}
+{{counter}} finds this interesting
+{% plural %}
+{{ counter }} find this interesting.
+{% endblocktrans %}{% endif %}
+</div>
+<div class="clear-both"></div>

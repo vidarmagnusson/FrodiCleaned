@@ -1,0 +1,234 @@
+#id-abbreviation {
+	display: block;
+	margin-bottom: 10px;
+	font-size: 180%;
+}
+
+#input-information {
+    display:inline-block;
+    width: 420px;
+}
+
+#information {
+    display:inline-block;
+    float:right;
+    width: 300px;
+    margin:0px;
+    margin-right:10px;
+}
+
+#information-list .information-label{
+       	font-weight: bold;
+}
+
+.description-text {
+        font-size: 80%;
+	width: 400px;
+	background: #bacae5;
+	margin: 0px;
+	margin-bottom: 2px;
+	padding: 3px;
+	border: 1px solid #3155a6;
+}
+
+#content form select {
+	display: inline-block;
+	background: none;
+	margin-bottom: 10px;
+	width: 120px;
+	border: 1px solid #3155a6;
+        -moz-border-radius: 3px;
+        -khtml-border-radius: 3px;
+        -webkit-border-radius: 3px;
+        filter:alpha(opacity=13);
+	font-size: 100%;
+}
+
+#content form textarea, #content form input[type=text]{
+	margin: 0px;
+	margin-bottom: 10px;
+	width: 400px;
+}
+
+#content form ul{
+        margin: 0px;
+        margin-bottom: 10px;
+        display: block;
+        border: none;
+        font-size: 12px;
+	padding: 0px;
+	padding-left: 20px;
+	width: 320px;
+}
+
+#content form ul li input {
+        margin: 0px;
+        width: 100%;
+        font-size: 12px;
+}
+
+.bullet_delete {
+	float: right;
+	color: #ff0000;
+	cursor: default;
+}
+
+.input-area {
+    width: 500px;
+
+}
+
+.hidden {
+	visibility: hidden;
+	height: 0px;
+}
+
+#credits-slider {
+	display: inline-block;
+	outline: none;
+	margin: 0px;
+	margin-left: 10px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	width: 380px;
+}
+
+.ui-slider-handle {
+	outline: none;
+}
+
+#div-credits-value {
+	margin: 0px;
+	margin-bottom: 10px;
+	color: #666666;
+}
+
+.move-to-course {
+	display: inline-block;
+	color: #3155a6;
+	margin: 0px;
+	font-weight: bold;
+	text-align: right;
+	width: 400px;
+	cursor: pointer;
+}
+
+.bulletheading {
+    margin: 0px;
+    margin-top: 5px;
+    margin-bottom: 2px;
+    font-weight: bold;
+    color: #555555;
+    width: 400px;
+}
+
+.right-arrow {
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+    background: #3155a6;
+    background-image: url('/media/myndir/orvakassi.png');
+    vertical-align: middle;
+    width: 10px;
+    height: 10px;
+}
+
+#content #courselist {
+	width: 560px;
+}
+
+#content #courselist .white-row {
+	background: #ffffff;
+	color: #3155a6;
+	padding: 5px;
+}
+
+#content #courselist .blue-row {
+	background: #bacae5;
+	padding: 5px;
+}
+
+#content #courselist #courseheader {
+	font-weight: bold;
+	padding: 5px;
+}
+
+#content #courselist .courseline {
+	margin-bottom: 5px;
+}
+
+#content #courselist div span {
+	display: inline-block;
+	width: 100px;
+	margin-left:auto;
+	margin-right:auto;
+	vertical-align: top;
+}
+
+#content #courselist div .descriptive_name {
+	width: 115px;
+}
+
+#content #courselist div .name {
+	width: 95px;
+}
+
+#content #courselist div .subjects {
+	width: 90px;
+}
+
+#content #courselist div .topics {
+	width: 90px;
+}
+
+#content #courselist div .level {
+	width: 30px;
+	text-align: center;
+}
+
+#content #courselist div .credits {
+	width: 70px;
+	text-align: center;
+}
+
+#content #courselist div .actions {
+	width: 60px;
+}
+
+/*
+#create-course {
+   border-top: 1px solid #ffffff;
+   background: #3462a8;
+   background: -webkit-gradient(linear, left top, left bottom, from(#afd7f2), to(#3462a8));
+   background: -moz-linear-gradient(top, #afd7f2, #3462a8);
+   padding: 3.5px 7px;
+   -webkit-border-radius: 0px;
+   -moz-border-radius: 0px;
+   border-radius: 0px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: white;
+   width: 75px;
+   float: right;
+   font-size: 12px;
+   font-family: Helvetica, Arial, Sans-Serif;
+   text-decoration: none;
+   text-align: center;
+   vertical-align: middle;
+   margin:0px;
+   margin-right: 14px;
+   }
+
+#create-course:hover {
+   border-top-color: #3154a6;
+   background: #3154a6;
+   color: #ffffff;
+   }
+
+#create-course:active {
+   border-top-color: #1106a3;
+   background: #1106a3;
+   }*/
+

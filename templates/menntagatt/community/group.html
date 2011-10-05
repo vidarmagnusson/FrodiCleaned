@@ -1,0 +1,49 @@
+{% extends "base.html"%}
+{% load humanize %}
+{% load i18n %}
+
+{% block stylesheet %}
+<link rel="stylesheet" href="/media/css/social.css"/>
+<link rel="stylesheet" href="/media/css/wmd.css"/>
+{% endblock %}
+
+{% if vieweduser.username == user.username %}{% block javascript %}
+<script type="text/javascript" src="/media/js/showdown.js"></script>
+<script type="text/javascript" src="/media/js/wmd.js"></script>
+<script type="text/javascript" src="/media/js/note.js"></script>
+<script type="text/javascript" src="/media/js/social.js"></script>
+{% endblock %}{% endif %}
+
+{% block contentbox %}
+<div class="group-description">
+<img alt="{{group.title}}" src="{{group.avatar}}">
+<div class="group-title">{{group.title}}</div>
+{{group.description}}
+
+{% if group in user.get_profile.groups.all %}
+<form action="{% url leave-group %}" method="post">{% csrf_token %}
+<input type="hidden" name="group" value="{{group.atom_id}}">
+<input type="submit" value="{% trans 'Leave group' %}">
+</form>
+{% else %}
+<form action="{% url join-group %}" method="post">{% csrf_token %}
+<input type="hidden" name="group" value="{{group.atom_id}}">
+<input type="submit" value="{% trans 'Join group' %}">
+</form>
+{% endif %}
+
+<div>
+  <div class="group-member-title">{% trans "Members" %}</div>
+  {% for member in group.members.all %}<img src="{{member.avatar}}?s=30">{% endfor %}
+</div>
+</div>
+
+<div class="group-feed">
+{% include "community/social-submit.html" %}
+
+{% for entry in groupactivities %}
+{% include "community/pluggable-timeline-with-comments.html" %}
+{% endfor %}
+</div>
+
+{% endblock %}
