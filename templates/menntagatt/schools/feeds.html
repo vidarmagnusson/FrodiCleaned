@@ -7,7 +7,7 @@
 <! vm -->
 <div class="clear-both"></div> 
 <div id="news_and_activities"> 
-<div id="news_feed">
+<div id="news_feed_wide">
 
 {% for post in school_feeds %}
 <div class="school_post">
@@ -17,7 +17,7 @@
     <div class="date">{{post.created|capfirst}}</div>
   </div>
   <a href="{{post.link}}" class="title">{{post.title}}</a>
-  <div class="summary">
+  <div class="summary_wide">
     <p>{{post.content|safe}}</p>
   </div>
 </div>

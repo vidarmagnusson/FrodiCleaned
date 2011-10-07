@@ -771,22 +771,24 @@ div {
     vertical-align: top;
 }
 
-<! vm -->
+/* vm 06.10.2011 - style added -> */
+
 #news_and_activities #news_feed_wide {
-    width: 450px;
+    width: 550px;
     display: inline-block;
     margin-left: 15px;
     position: relative;
     vertical-align: top;
 }
 
-<! vm -->
 #news_and_activities #news_feed_wide .summary_wide img {
     float:left;
     max-width: 100px;
     margin: 4px;
     margin-left: 0px;
 }
+
+/* <- vm */
 
 #news_and_activities #activities_feed {
     width: 350px;
@@ -808,10 +810,10 @@ div {
 }
 
 #news_and_activities .author_and_date img {
-    float: left;
+    float: right;
     max-width: 40px;
-    vertical-align: middle;
-    margin-right: 3px;
+    vertical-align: right;
+    margin-right: 30px;
 }
 
 #news_and_activities .title {
@@ -826,9 +828,9 @@ div {
 }
 
 #news_and_activities .school_post {
-    margin-bottom: 20px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #cccccc;
+    margin-bottom: 30px;
+    padding-bottom: 15px;        	/* vm 06.10.2011 - padding - bottom changed to 15 */
+    border-top: 1px solid #cccccc; 	/* vm 06.10.2011 - bottom changed to top */
 }
 
 #news_and_activities #news_feed .summary img {
@@ -896,6 +898,7 @@ div {
     color: #4b76bb;
     text-decoration: none;
 }
+
 
 .timeline-entry {
     width: 350px;
