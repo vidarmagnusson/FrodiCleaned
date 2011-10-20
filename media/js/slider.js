@@ -15,7 +15,7 @@ function slider_behavior() {
             }
         })
         $(slider_unit).html($(input_id).attr('unit'));
-    }); 
+    });
 }
 
 $(slider_behavior);

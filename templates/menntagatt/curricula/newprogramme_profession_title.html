@@ -16,11 +16,15 @@
 <!-- Information sidepanel -->
 <!-- Displays all the SubjectCombinations in alphabetical order next to the form. A JavaScript is added to each <a href> so that the user can click on the subject and it will be copied to the subject text box. -->
 <div id="information">
+  
   <div id="0-profession-list">
     <strong>{% trans "Professions" %}</strong></br>
-    <em>{% trans "Click on a profession" %}</em>
+    <em>{% trans "Click on a profession" %}</em><br/>
     <div id="0-profession-cloud">
-      {% for profession in profession_cloud %}<a id="{{profession.element}}" class="raindrop {{profession.size}}" href="#">{{profession.element}}</a>
+      {% for professions in profession_clouds %}
+	<strong>{{professions.exam}}</strong><br/>
+      {% for profession in professions.cloud %}<a id="{{profession.element}}" class="raindrop {{profession.size}}" href="#">{{profession.element}}</a>
+      {% endfor %}<br/>
       {% endfor %}
     </div>
   </div>

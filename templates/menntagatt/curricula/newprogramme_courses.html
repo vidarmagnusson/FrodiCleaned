@@ -10,6 +10,13 @@
 
 {% block content %}
 <p>{% blocktrans %}Step {{ step }} of {{ step_count }}{% endblocktrans %}</p>
+
+<div id="information">
+<ul id="draggable-courses">{% for course in courses %}
+<li id="{{course.unique_id}}" class="draggable-course">{{course}}</li>
+{% endfor %}</ul>
+</div>
+
 <form action="." method="post">{% csrf_token %}
 {% for field in form %}
 {{field.label_tag}}
@@ -17,10 +24,6 @@
 {% if field.help_text != '' %}<div class="description-text">{{field.help_text}}</div>{% endif %}
 {{field|safe}}
 {% endfor %}
-
-<ul>{% for course in courses %}
-<li>{{course}}</li>
-{% endfor %}</ul>
 
 <input type="hidden" name="{{ step_field }}" value="{{ step0 }}" />
 {{ previous_fields|safe }}

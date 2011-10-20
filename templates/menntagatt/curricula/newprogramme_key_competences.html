@@ -14,10 +14,17 @@
 <form id="key_competence_form" action="." method="post">{% csrf_token %}
 {% for field in key_competence_fields %}
 <label>{{field.label_tag}}</label>
-<textarea id="{{field.choice}}_competence" class="competence_description" name="{{field.name}}">{{field.value}}</textarea>
-<div class="prepend_question">{% trans "In the programme, this key competence is fulfilled:" %}</div>
+<div>
+<div class="left-text">
+<p><div class="prepend_question">{% trans "In the programme, this key competence is fulfilled:" %}</div>
 <ul id="{{field.choice}}_added" class="added"></ul>
-<button id="{{field.choice}}_add" class="add-to-list button">{% trans "Add an item" %}</button><br/>
+<button id="{{field.choice}}_add" class="add-to-list button">{% trans "Add an item" %}</button>
+</p>
+</div>
+<div class="right-list">
+<textarea id="{{field.choice}}_competence" class="competence_description" name="{{field.name}}">{{field.value}}</textarea>
+</div>
+</div>
 {% endfor %}
 <div id="competence-add-wrapper"></div>
 

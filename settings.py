@@ -3,7 +3,7 @@
 import os
 here = lambda x: os.path.abspath(os.path.join(os.path.abspath(os.path.dirname(__file__)), x))
 
-DEBUG = True
+DEBUG = False
 TEMPLATE_DEBUG = DEBUG
 
 SITE_ID = 1
@@ -83,7 +83,7 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.flatpages.middleware.FlatpageFallbackMiddleware',
 )
 
-ROOT_URLCONF = 'FrodiWork.urls.menntagatt'
+ROOT_URLCONF = 'Frodi.urls.menntagatt'
 
 TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
@@ -93,8 +93,8 @@ TEMPLATE_DIRS = (
 )
 
 TEMPLATE_CONTEXT_PROCESSORS = (
-    "FrodiWork.structure.context_processors.generate_menu",
-    "FrodiWork.structure.context_processors.generate_highlights",
+    "Frodi.structure.context_processors.generate_menu",
+    "Frodi.structure.context_processors.generate_highlights",
     "django.contrib.auth.context_processors.auth",
     "django.core.context_processors.debug",
     "django.core.context_processors.i18n",

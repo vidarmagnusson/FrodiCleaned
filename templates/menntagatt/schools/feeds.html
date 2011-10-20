@@ -3,11 +3,299 @@
 {% block content %}
 
 <h1>{{title}}</h1>
-<ul>
-<! vm -->
+
+<ul> 
 <div class="clear-both"></div> 
-<div id="news_and_activities"> 
+<div id="news_and_activities" style="width: 700px"> 
+
+        <link rel="stylesheet" href="/media/css/style.css" type="text/css" media="screen"/> 
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+
+        <style>
+			body{
+				background:#000 url(/media/myndir/stripe.png) repeat top left;
+				margin:0;
+				padding:0;
+			}
+			span.reference{
+				font-family:Arial;
+				text-transform:uppercase;
+				position:fixed;
+				right:95px;
+				bottom:10px;
+				font-size:11px;
+				text-shadow:1px 1px 1px #000;
+			}
+			span.reference a{
+				color:#aaa;
+				text-decoration:none;
+				margin-right:20px;
+			}
+			span.reference a:hover{
+				color:#ddd;
+			}
+
+
+		</style>
+
+
+		<div class="title"></div>
+		<div id="cc_menu" class="cc_menu">
+			<div class="cc_item" style="z-index:5;">
+				<img id="img1" style="display: none;" src="/media/myndir/1.png" alt="image" /> 
+				<span class="cc_title">Námsleiðir</span>
+				<div class="cc_submenu">
+					<ul>
+						<li class="cc_content_1">Námsleiðir</li>
+						<li class="cc_content_2">Námskeið</li>
+					</ul>
+				</div>
+			</div>
+			<div class="cc_item" style="z-index:4;">
+				<img style="display: none;" src="/media/myndir/2.png" alt="image" />
+				<span class="cc_title">Bækur</span>
+				<div class="cc_submenu">
+					<ul>
+						<li class="cc_content_3">Skiptibækur</li>
+						<li class="cc_content_4">Vefbókabúðir</li>
+						<li class="cc_content_5">Bókasöfn</li>
+						<li class="cc_content_6">Hljóðbækur</li>
+					</ul>
+				</div>
+			</div>
+			<div class="cc_item" style="z-index:3;">
+				<img style="display: none;" src="/media/myndir/3.png" alt="image" />
+				<span class="cc_title">Félagslíf</span>
+				<div class="cc_submenu">
+					<ul>
+						<li class="cc_content_7">Kraginn</li>
+						<li class="cc_content_8">Landsbyggðin</li>
+					</ul>
+				</div>
+			</div>
+			<div class="cc_item" style="z-index:2;">
+				<img style="display: none;" src="/media/myndir/4.png" alt="image" />
+				<span class="cc_title">Viðburðir</span>
+				<div class="cc_submenu">
+					<ul>
+						<li class="cc_content_9">Kraginn</li>
+						<li class="cc_content_10">Landsbyggðin</li>
+					</ul>
+				</div>
+			</div>
+			<div class="cc_item" style="z-index:1;">
+				<img style="display: none;" src="/media/myndir/5.png" alt="image" />
+				<span class="cc_title">Tengiliðir</span>
+				<div class="cc_submenu">
+					<ul>
+						<li class="cc_content_11">Nám á Íslandi</li>
+						<li class="cc_content_12">Nám á Norðurlöndum</li>
+					</ul>
+				</div>
+			</div>
+			<div id="cc_content" class="cc_content" style="display: none;">
+				<span id="cc_back" class="cc_back">&lt;&lt; Til baka</span>
+				<div class="cc_content_1">
+					<h1>Námsleiðir</h1>
+					<p>Lýsing 1 - http://www.menntagatt.is</p>
+				</div>
+				<div class="cc_content_2">
+					<h1>Námskeið</h1>
+					<p>Lýsing 2</p>
+				</div>
+				<div class="cc_content_3">
+					<h1>Bókamarkaðir</h1>
+					<p>Lýsing 3</p>
+				</div>
+				<div class="cc_content_4">
+					<h1>Vefbókabúðir</h1>
+					<p>Lýsing 4</p>
+				</div>
+				<div class="cc_content_5">
+					<h1>Bókasöfn</h1>
+					<p>Lýsing 5/p>
+				</div>
+				<div class="cc_content_6">
+					<h1>Hljóðbækur</h1>
+					<p>Lýsing 6</p>
+				</div>
+				<div class="cc_content_7">
+					<h1>About us</h1>
+					<p>Lýsing 7</p>
+				</div>
+				<div class="cc_content_8">
+					<h1>Our Philosophy</h1>
+					<p>Lýsing 8</p>
+				</div>
+				<div class="cc_content_9">
+					<h1>Summer Party</h1>
+					<p>Lýsing 9</p>
+				</div>
+				<div class="cc_content_10">
+					<h1>Fyrirsögn 10</h1>
+					<p>Lýsing 10</p>
+				</div>
+				<div class="cc_content_11">
+					<h1>Fyrirsögn 11</h1>
+					<p>Lýsing 11</p>
+				</div>
+				<div class="cc_content_12">
+					<h1>Fyrirsögn 12</h1>
+					<p>Lýsing 12</p>
+				</div>
+			</div>
+		</div>
+        <!-- The JavaScript -->
+        <script type="text/javascript">
+            $(function() {
+				//all the menu items
+				var $items 		= $('#cc_menu .cc_item');
+				//number of menu items
+				var cnt_items	= $items.length;
+				//if menu is expanded then folded is true
+				var folded		= false;
+				//timeout to trigger the mouseenter event on the menu items
+				var menu_time;
+				/**
+				bind the mouseenter, mouseleave to each item:
+				- shows / hides image and submenu
+				bind the click event to the list elements (submenu):
+				- hides all items except the clicked one, 
+				and shows the content for that item
+				*/
+				$items.unbind('mouseenter')
+					  .bind('mouseenter',m_enter)
+				      .unbind('mouseleave')
+					  .bind('mouseleave',m_leave)
+					  .find('.cc_submenu > ul > li')
+					  .bind('click',function(){
+					var $li_e = $(this);
+						  //if the menu is already folded,
+						  //just replace the content
+					if(folded){
+						hideContent();
+						showContent($li_e.attr('class'));
+					}	
+					      else //fold and show the content
+						fold($li_e);
+				});
+				
+				/**
+				mouseenter function for the items
+				the timeout is used to prevent this event 
+				to trigger if the user moves the mouse with 
+				a considerable speed through the menu items
+				*/
+				function m_enter(){					
+					var $this 	= $(this);
+					clearTimeout(menu_time);
+					menu_time 	= setTimeout(function(){
+					/* document.getElementById('img1').style.display='block';   		/* vm */
+					$this.find('img').show(); 						/* vm */
+					//img
+					$this.find('img').stop().animate({'top':'0px'},400);
+					//cc_submenu ul
+					$this.find('.cc_submenu > ul').stop().animate({'height':'200px'},400);
+					},200);
+				}
+				
+				//mouseleave function for the items
+				function m_leave(){
+					var $this = $(this);
+
+					clearTimeout(menu_time);
+					//img
+					$this.find('img').stop().animate({'top':'-250px'},400);
+					//cc_submenu ul
+					$this.find('.cc_submenu > ul').stop().animate({'height':'0px'},400);
+					/* document.getElementById('img1').style.display='none'; 		/* vm */
+					$this.find('img').hide(); 						/* vm */
+				}
+				
+				//back to menu button - unfolds the menu
+				$('#cc_back').bind('click',unfold);
+				
+				/**
+				hides all the menu items except the clicked one
+				after that, the content is shown
+				*/
+				function fold($li_e){
+					var $item		= $li_e.closest('.cc_item');
+					
+					var d = 100;
+					var step = 0;
+					$items.unbind('mouseenter mouseleave');
+					$items.not($item).each(function(){
+						var $item = $(this);
+						$item.stop().animate({
+							'marginLeft':'-140px'
+						},d += 200,function(){
+							++step;
+							if(step == cnt_items-1){
+								folded = true;
+								showContent($li_e.attr('class'));
+							}	
+						});
+					});
+				}
+				
+				/**
+				shows all the menu items 
+				also hides any item's image / submenu 
+				that might be displayed
+				*/
+				function unfold(){					
+					$('#cc_content').stop().animate({'left':'-700px'},250,function(){
+						var d = 100;
+						var step = 0;
+					$items.each(function(){
+							var $item = $(this);
+							
+							$item.find('img')
+								 .stop()
+								 .animate({'top':'-250px'},200)
+								 .andSelf()
+								 .find('.cc_submenu > ul')
+								 .stop()
+								 .animate({'height':'0px'},200);
+								 
+							$item.stop().animate({
+							'marginLeft':'0px'
+							},d += 200,function(){
+								++step;
+								if(step == cnt_items-1){
+									folded = false;
+									$items.unbind('mouseenter')
+										  .bind('mouseenter',m_enter)
+										  .unbind('mouseleave')
+										  .bind('mouseleave',m_leave);
+									
+									hideContent();
+								}		  
+							});
+						});
+					});
+				}
+				
+				//function to show the content
+				function showContent(idx){
+					$('#cc_content').show();						/* vm */
+					$('#cc_content').stop().animate({'left':'140px'},200,function(){
+						$(this).find('.'+idx).fadeIn();					
+					});
+				}
+				
+				//function to hide the content
+				function hideContent(){
+					$('#cc_content').hide(); 						/*vm */					
+					$('#cc_content').find('div').hide();				
+
+				}
+            });
+        </script>
+
 <div id="news_feed_wide">
+
 
 {% for post in school_feeds %}
 <div class="school_post">
@@ -24,6 +312,7 @@
 {% endfor %}
 
 </div>
+
 </div>
 
 </ul>

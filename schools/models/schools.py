@@ -1,7 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
 from country.models.regions import Municipality
-from FrodiWork.schools.models.housing import Housing
+from Frodi.schools.models.housing import Housing
 from feedzilla.models import Feed
 from structure.utils import slugicefy
 

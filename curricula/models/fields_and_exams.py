@@ -75,6 +75,7 @@ class Exam(models.Model):
     
     class Meta:
         app_label = 'curricula'
+        ordering = ['title']
         verbose_name = _('exam')
         verbose_name_plural = _('exams')
 

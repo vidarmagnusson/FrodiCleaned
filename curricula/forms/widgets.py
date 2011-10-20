@@ -112,9 +112,23 @@ class ProfessionInput(MultipleHiddenInput):
 
 class CourseSelection(MultipleHiddenInput):
 	def render(self, name, value, attrs):
-		res = '<div id="%s-wrapper" class="package-selector">' % name[2:]
-		res += '<div class="new-package"></div>'
-		res += '<div class="package-list"></div>'
-		res += '</div>'
+		res = u'<div id="%s-wrapper" class="package-selector">' % name[2:]
+		res += u'<div class="new-package">%s</div>' % u'Dragðu áfanga hingað til að búa til nýjan pakka'
+		res += u'<div id="%s-wrapper-packages" class="package-list"></div>'
+		res += u'</div>'
 
 		return mark_safe(res)
+
+	class Media:
+		js = ('/media/js/programme-builder.js',)
+
+class PinnedCourseSelection(MultipleHiddenInput):
+	def render(self, name, value, attrs):
+		res = u'<div id="%s-wrapper" class="package-selector">' % name[2:]
+		res += u'<div id="%s-wrapper-packages" class="package-list bound-package-list" packages="%s"></div>' % (name[2:], self.attrs['packages'])
+		res += u'</div>'
+		return mark_safe(res)
+
+	class Media:
+		js = ('/media/js/programme-builder.js',)
+

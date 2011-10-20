@@ -1,5 +1,5 @@
 from django.forms import ModelForm, Form, TextInput, MultipleHiddenInput
-from curricula.forms.widgets import SliderInput, ProfessionInput, CourseSelection
+from curricula.forms.widgets import SliderInput, ProfessionInput, CourseSelection, PinnedCourseSelection
 from django.shortcuts import render_to_response
 from django.contrib.formtools.wizard import FormWizard
 from django.http import HttpResponseRedirect
@@ -49,6 +49,7 @@ class ProgrammeCoursesForm(ModelForm):
     		super(ProgrammeCoursesForm, self).__init__(*args, **kwargs)
     		self.fields['credits'].widget.attrs['max'] = kwargs['initial']['maximum_credits']
    		self.fields['credits'].widget.attrs['min'] = kwargs['initial']['minimum_credits']
+		self.fields['specialization'].widget.attrs['packages'] = kwargs['initial']['packages']
 
 		self.fields['core'].help_text = self.fields['core'].help_text.replace(_(u'Hold down "Control", or "Command" on a Mac, to select more than one.'), '')
 		self.fields['specialization'].help_text = self.fields['specialization'].help_text.replace(_(u'Hold down "Control", or "Command" on a Mac, to select more than one.'), '')
@@ -60,7 +61,7 @@ class ProgrammeCoursesForm(ModelForm):
 		fields = ('credits', 'core', 'specialization', 'packaged_electives', 'free_electives')
 		widgets = {'credits':SliderInput(attrs={'unit':'fein.'}),
 			   'core':CourseSelection(),
-			   'specialization':CourseSelection(),
+			   'specialization':PinnedCourseSelection(),
 			   'packaged_electives':CourseSelection(),
 			   'free_electives':CourseSelection()}
 
@@ -86,7 +87,8 @@ class ProgrammeWizard(FormWizard):
 
 			self.initial[5] = {'credits':minimum_credits,
 					   'maximum_credits':maximum_credits,
-					   'minimum_credits':minimum_credits}
+					   'minimum_credits':minimum_credits,
+					   'packages':','.join([p.title for p in professions])}
 
 	def render_template(self, request, form, previous_fields, step, context=None):
 		if not context:
@@ -104,14 +106,29 @@ class ProgrammeWizard(FormWizard):
                     sizes = ['tiny','small','normal','large','huge']
 
                     # Get all professions
-                    professions = [p.title.lower() for p in Profession.objects.all()]
+		    profession_clouds = {}
+		    for p in Profession.objects.all():
+			    try:
+				    profession_clouds[p.exam.title].append(p.title.lower())
+			    except:
+				    profession_clouds[p.exam.title] = [p.title.lower()]
+
 		    if request.user.is_authenticated():
 			    # If user is authenticated add to the list all professions within the same field as the profession she has used
 			    fields = Field.objects.filter(subfield__profession__programme__author=request.user)
-			    professions.extend([p.title.lower() for p in Profession.objects.filter(field__field__in=fields)])
+			    for p in Profession.objects.filter(field__field__in=fields):
+				    try:
+					    profession_clouds[p.exam.title].append(p.title.lower())
+				    except:
+					    profession_clouds[p.exam.title] = [p.title.lower()]
 			    
 			    # Create a profession cloud
-			    ctx['profession_cloud'] = cloudify(professions,sizes)
+			    ctx['exams'] = Exam.objects.all()
+			    ctx['levels'] = [_('Level 1'), _('Level 2'), _('Level 3'), _('Level 4'), ]
+			    ctx['fields'] = Field.objects.all()
+			    ctx['profession_clouds'] = []
+			    for exam in profession_clouds.keys():
+				  ctx['profession_clouds'].append({'exam':exam, 'cloud':cloudify(profession_clouds[exam],sizes)})
 
 		if step == 3:
 			default_competence_values = {}

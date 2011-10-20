@@ -774,10 +774,10 @@ div {
 /* vm 06.10.2011 - style added -> */
 
 #news_and_activities #news_feed_wide {
-    width: 550px;
+    width: 650px;
     display: inline-block;
-    margin-left: 15px;
-    position: relative;
+    margin-left: 0px;
+
     vertical-align: top;
 }
 
@@ -786,6 +786,18 @@ div {
     max-width: 100px;
     margin: 4px;
     margin-left: 0px;
+}
+
+#shortcut_topic_area {
+    border-top: 2px solid #4b76bb;
+    padding-top: 10px;
+    position: relative; /* test */
+}
+
+.shortcut_topic {
+    display: inline-block;
+    width: 170px;
+    vertical-align: top;
 }
 
 /* <- vm */

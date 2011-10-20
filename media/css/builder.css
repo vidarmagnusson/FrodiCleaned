@@ -51,6 +51,10 @@
 	width: 400px;
 }
 
+#content form textarea.competence_description {
+    height: 225px;
+}
+
 #content form ul{
         margin: 0px;
         margin-bottom: 10px;
@@ -350,35 +354,125 @@ a.huge { font-size: 160%; }
 }
 
 .package-selector {
-    width: 350px;
-    height:150px;
-    padding: 25px;
+    width: 390px;
+    min-height:170px;
+    padding: 5px;
+    margin-bottom: 10px;
 }
 
 #content #core-wrapper {
-    background: #9b6410;
+    background: #d6be9c;
+    border: 1px solid #9c7948;
 }
 
 #content #specialization-wrapper {
-    background: #508cc3;
+    background: #aec6de;
+    border: 1px solid #5a81a9;
 }
 
 #content #packaged_electives-wrapper {
-    background: #a033cf;
+    background: #c4a4d1;
+    border: 1px solid #9c5cb5;
 }
 
 #content #free_electives-wrapper {
-    background: #ff8c1d;
+    background: #ecb986;
+    border: 1px solid #da7340;
 }
 
 .new-package {
     width: 175px;
-    height: 40px;
-    background: #00ff00;
+    padding: 10px;
+    text-align: center;
+    background: #bbf1bd;
+    border: 1px solid #5dc561;
+}
+
+.package-hover {
+    background: #dff6e2;
+    -moz-box-shadow: 0 0 .3em rgba(0, 0, 0, .8);
+    -webkit-box-shadow: 0 0 .3em rgba(0, 0, 0, .8);
+    box-shadow: 0 0 .3em rgba(0, 0, 0, .8);
 }
 
 .package-list {
-    width: 350px;
-    height: 100px;
-    background: #ff0000;
+    margin-top: 10px;
+}
+
+.package {
+    display: inline-block;
+    background: #e3e3e3;
+    border: 1px solid #828282;
+    width: 110px;
+    margin: 2px;
+    padding: 3px;
+    color: #333333;
+    font-size: 80%;
+}
+
+.package .title {
+    font-weight: bold;
+    border-bottom: 1px solid #333333;
+    padding-bottom: 2px;
+    margin-bottom: 4px;
+}
+
+.package ul.list {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.package ul.list li {
+    margin: 0px;
+    padding: 0px;
+}
+
+.package .package-add {
+    padding: 2px;
+    text-align: center;
+    background: #bbf1bd;
+    border: 1px solid #5dc561;
+}
+
+#draggable-courses {
+    list-style-type: none;
+    margin: 0px
+    padding: 0px;
+}
+
+.draggable-course {
+    background: #b7ffff;
+    border: 1px solid #60a9a9;
+    color: #000000;
+    font-weight: bold;
+    width: 80px;
+    height: 10px;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.filter-header {
+    font-size: 90%;
+    color: #333333;
+}
+
+.filter-list {
+    font-size: 80%;
+}
+
+.left-text {
+    display: inline-block;
+    width: 280px;
+    font-size: 90%;
+    vertical-align: top;
+}
+
+.right-list {
+    display: inline-block;
+    width: 420px;
+    margin-left: 10px;
+    font-size: 90%;
+    vertical-align: top;
 }

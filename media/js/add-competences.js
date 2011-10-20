@@ -88,6 +88,12 @@ function make_dialogs() {
 	    });			  
 	});
     });
+
+    $('.competence_description').each(function() {
+	$(this).parent().append('<p>'+$(this).val()+'<br/><a href="#">Breyta</a></p>');
+	$(this).hide()
+    });
+    
 }
 
 $.ajaxSetup( { "async": false } );

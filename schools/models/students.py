@@ -1,6 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
-from FrodiWork.schools.models.schools import School
+from Frodi.schools.models.schools import School
 
 from django.utils.translation import gettext as _
 
