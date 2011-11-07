@@ -301,7 +301,6 @@
 {% for post in school_feeds %}
 <div class="school_post">
   <div class="author_and_date">
-    <p></p>
     {% if post.feed.schoolinformation.logo %}<img src="{{post.feed.schoolinformation.logo}}">
     {% endif %}<a href="{% url school-info post.feed.schoolinformation.school.slug %}"     title="{{post.feed.schoolinformation.school.name}}" class="author">{{post.feed.schoolinformation.school.name}}</a>
     <div class="date">{{post.created|date:"D. d. F, Y"}}</div>
