@@ -97,7 +97,7 @@
 				<span id="cc_back" class="cc_back">&lt;&lt; Til baka</span>
 				<div class="cc_content_1">
 					<h1>Námsleiðir</h1>
-					<p>Lýsing 1 - http://www.menntagatt.is</p>
+					<p><a href="http://www.menntagatt.is" title="Menntagátt">Menntagátt</a></p>
 				</div>
 				<div class="cc_content_2">
 					<h1>Námskeið</h1>
@@ -254,7 +254,7 @@
 							$item.find('img')
 								 .stop()
 								 .animate({'top':'-250px'},200)
-								 .hide() 				/* vm */
+								 .hide() 					/* vm */
 								 .andSelf()
 								 .find('.cc_submenu > ul')
 								 .stop()
@@ -301,9 +301,10 @@
 {% for post in school_feeds %}
 <div class="school_post">
   <div class="author_and_date">
+    <p></p>
     {% if post.feed.schoolinformation.logo %}<img src="{{post.feed.schoolinformation.logo}}">
     {% endif %}<a href="{% url school-info post.feed.schoolinformation.school.slug %}"     title="{{post.feed.schoolinformation.school.name}}" class="author">{{post.feed.schoolinformation.school.name}}</a>
-    <div class="date">{{post.created|capfirst}}</div>
+    <div class="date">{{post.created|date:"D. d. F, Y"}}</div>
   </div>
   <a href="{{post.link}}" class="title">{{post.title}}</a>
   <div class="summary_wide">
